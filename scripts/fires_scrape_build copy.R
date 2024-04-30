@@ -14,23 +14,8 @@ library(janitor)
 # Data fetched hourly or similar is downloaded in this script to be as "live" as possible
 # Currently, smoke polygons is once daily and CA fire, federal fire, satellite hotspots and AQ are "live"
 
-# Overview of steps
-# SECTION 1. Fetch all data.
-# SECTION 2. Read in Air Quality and Smoke data.
-# SECTION 3. Read in and reshape satellite hot spots data.
-# SECTION 4. Read in and reshape Federal fire data into points and polygons.
-# SECTION 5. Read in and reshape California fire data.
-# SECTION 6. Merge federal and California fire points.
-# SECTION 7. Script popup and icons for fire layer(s).
-# SECTION 8. Script color palettes for maps.
-# SECTION 9. Script a base wildfire map.
-# SECTION 10. Script national map variant(s).
-# SECTION 11. Script California map variant(s).
-# SECTION 12. Write all leaflet maps to html.
-
 ### SECTION 1. Fetch all data ###
-# We use try function throughout so that if a file is down temporarily
-# this script won't stop; the map will be made with the last/newest data
+# Function ensures if a file is down temporarily this script won't stop; the map will be made with the last/newest data
 
 # Get active CALIFORNIA FIRES data from Calfire
 temp_file <- "data/temp.geojson"
@@ -331,7 +316,7 @@ tag.map.title <- tags$style(HTML("
 padding: 5px;
 text-align: left;
 background-color: #99a0a5 !important;
-    border-radius: 0px 0px 0px px;
+    border-radius: 0px 0px 0px 0px;
 }
   
   @media only screen and (max-width: 550px) {
