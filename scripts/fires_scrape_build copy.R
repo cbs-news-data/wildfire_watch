@@ -258,8 +258,7 @@ fires <- st_as_sf(fires, coords = c("longitude", "latitude"),
 
 fireLabel <- paste(sep = "",
                    paste("<font size='3'><b>",fires$name,"</font size></b><br><font size='2'>",fires$county," County<b>,",fires$state_name,"</b><br>"),
-                   paste("Started ",ifelse(fires$days_burning<2,"about <b>1</b> day ago",paste(sep="","<b>",fires$days_burning,"</b> days ago<br>"))),
-                   paste("<b>",prettyNum(fires$acres_burned,big.mark=","),"</b> acres burned<br>"),
+                   paste("<b>",prettyNum(fires$acres_burned,big.mark=","),"</b> acres | Started ",ifelse(fires$days_burning<2,"about <b>1</b> day ago",paste(sep="","<b>",fires$days_burning,"</b> days ago<br>"))),
                    paste("<b>",ifelse(is.na(fires$percent_contained),"</b>Percent contained not available",paste(sep="",fires$percent_contained,"</b>","% contained"))),
                    paste("<br>"),
                    paste("<i>Last update: ", paste(as.character(as.POSIXct(fires$updated, format = "%Y-%m-%d %H:%M"), format = "%b %d at %I:%M %p")),"</font size>")
