@@ -258,7 +258,7 @@ fires <- st_as_sf(fires, coords = c("longitude", "latitude"),
 
 fireLabel <- paste(sep = "",
                    paste("<font size='3'><b>",fires$name,"</font size></b><br><font size='2'>",fires$county," County<b>,",fires$state_name,"</b><br>"),
-                   paste("Burning for ",ifelse(fires$days_burning<2,"about <b>1</b> day",paste(sep="","<b>",fires$days_burning,"</b> days<br>"))),
+                   paste("Started ",ifelse(fires$days_burning<2,"about <b>1</b> day ago",paste(sep="","<b>",fires$days_burning,"</b> days ago<br>"))),
                    paste("<b>",prettyNum(fires$acres_burned,big.mark=","),"</b> acres burned<br>"),
                    paste("<b>",ifelse(is.na(fires$percent_contained),"</b>Percent contained not available",paste(sep="",fires$percent_contained,"</b>","% contained"))),
                    paste("<br>"),
@@ -329,9 +329,10 @@ tag.map.title <- tags$style(HTML("
   }
   
   .leaflet-popup-content-wrapper {
-padding: 10px;
-text-align: center;
+padding: 5px;
+text-align: left;
 background-color: #99a0a5 !important;
+    border-radius: 0px 0px 0px px;
 }
   
   @media only screen and (max-width: 550px) {
