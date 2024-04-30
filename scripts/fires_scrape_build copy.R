@@ -257,12 +257,12 @@ fires <- st_as_sf(fires, coords = c("longitude", "latitude"),
 ### SECTION 7. Script popups, buttons and icons ###
 
 fireLabel <- paste(sep = "",
-                   paste("<font size='3'><b>",fires$name,"</font size></b><hr style='margin-top:0px; margin-bottom:0px;'><font size='2'>",fires$county," County<b>,",fires$state_name,"</b>"),
-                   paste("<hr style='margin-top:0px; margin-bottom:0px;'>Burning for ",ifelse(fires$days_burning<2,"about <b>1</b> day",paste(sep="","<b>",fires$days_burning,"</b> days"))),
-                   paste("<hr style='margin-top:0px; margin-bottom:0px;'><b>",prettyNum(fires$acres_burned,big.mark=","),"</b> acres burned"),
-                   paste("<hr style='margin-top:0px; margin-bottom:0px;'><b>",ifelse(is.na(fires$percent_contained),"</b>Percent contained not available",paste(sep="",fires$percent_contained,"</b>","% contained"))),
-                   paste("<hr style='margin-top:0px; margin-bottom:2px;'>"),
-                   paste("<i>Updated ", paste(as.character(as.POSIXct(fires$updated, format = "%Y-%m-%d %H:%M"), format = "%b %d at %I:%M %p")),"</font size>")
+                   paste("<font size='3'><b>",fires$name,"</font size></b><br><font size='2'>",fires$county," County<b>,",fires$state_name,"</b><br>"),
+                   paste("Burning for ",ifelse(fires$days_burning<2,"about <b>1</b> day",paste(sep="","<b>",fires$days_burning,"</b> days<br>"))),
+                   paste("<b>",prettyNum(fires$acres_burned,big.mark=","),"</b> acres burned<br>"),
+                   paste("<b>",ifelse(is.na(fires$percent_contained),"</b>Percent contained not available",paste(sep="",fires$percent_contained,"</b>","% contained"))),
+                   paste("<br>"),
+                   paste("<i>Last update: ", paste(as.character(as.POSIXct(fires$updated, format = "%Y-%m-%d %H:%M"), format = "%b %d at %I:%M %p")),"</font size>")
 )
 
 # Create temporary perimeter label
@@ -327,6 +327,12 @@ tag.map.title <- tags$style(HTML("
     color: #BE0000;
     font-weight: bold;
   }
+  
+  .leaflet-popup-content-wrapper {
+padding: 10px;
+text-align: center;
+background-color: #99a0a5 !important;
+}
   
   @media only screen and (max-width: 550px) {
     .leaflet-control.map-title .headline {
