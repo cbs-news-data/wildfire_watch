@@ -41,11 +41,11 @@ today <- Sys.Date()
 yesterday <- today - 1
 hotspot_url2 <- paste(sep="","https://satepsanone.nesdis.noaa.gov/pub/FIRE/web/HMS/Fire_Points/Text/",
                       year(yesterday),"/",
-                      month(yesterday),"/",
+                      format(yesterday, "%m"),"/",
                       "hms_fire",format(yesterday, "%Y%m%d"),".txt")
 hotspot_url1 <- paste(sep="","https://satepsanone.nesdis.noaa.gov/pub/FIRE/web/HMS/Fire_Points/Text/",
                       year(today),"/",
-                      month(today),"/",
+                      format(today, "%m"),"/",
                       "hms_fire",format(today, "%Y%m%d"),".txt")
 
 ## download the yesterday file and then download the today file

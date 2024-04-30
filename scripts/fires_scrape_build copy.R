@@ -96,59 +96,6 @@ usfs_forecast$longitude <- gsub("--", "-", usfs_forecast$longitude)
 usfs_forecast$latitude <- as.numeric(usfs_forecast$latitude)
 usfs_forecast$longitude <- as.numeric(usfs_forecast$longitude)
 
-### SECTION 3. Read in and reshape satellite hot spots data. ###
-
-# Load/read three satellites shapefiles
-#hotspots_modis <- read_csv("data/hotspots_modis.csv", 
-#                           col_types = cols(satellite = col_character(),
-#                                            latitude = col_number(),
-#                                            longitude = col_number(),
-#                                            scan = col_number(),
-#                                            track = col_number(),
-#                                            frp = col_number(),
-#                                            bright_t31 = col_number(),
-#                                            brightness = col_number(),
-#                                            confidence = col_character(),
-#                                            version = col_character(),
-#                                            daynight = col_character(),
-#                                            acq_date = col_date(format = "%Y-%m-%d"), 
-#                                            acq_time = col_time(format = "%H%M")
-#                                            ))
-#hotspots_noaa20 <- read_csv("data/hotspots_noaa20.csv", 
-#                            col_types = cols(satellite = col_character(),
-#                                             latitude = col_number(),
-#                                             longitude = col_number(),
-#                                            scan = col_number(),
-#                                             track = col_number(),
-#                                             frp = col_number(),
-#                                             bright_ti5 = col_number(),
-#                                             bright_ti4 = col_number(),
-#                                             confidence = col_character(),
-#                                             version = col_character(),
-#                                             daynight = col_character(),
-#                                             acq_date = col_date(format = "%Y-%m-%d"), 
-#                                             acq_time = col_time(format = "%H%M")
-#                            ))
-#hotspots_npp <- read_csv("data/hotspots_npp.csv", 
-#                         col_types = cols(satellite = col_character(),
-#                                          latitude = col_number(),
-#                                          longitude = col_number(),
-#                                          scan = col_number(),
-#                                          track = col_number(),
-#                                          frp = col_number(),
-#                                          bright_ti5 = col_number(),
-#                                          bright_ti4 = col_number(),
-#                                          confidence = col_character(),
-#                                          version = col_character(),
-#                                          daynight = col_character(),
-#                                          acq_date = col_date(format = "%Y-%m-%d"), 
-#                                          acq_time = col_time(format = "%H%M")
-#                         ))
-
-# Combine those three hotspots files into a single geo layer, then clean up
-# hotspots <- bind_rows(hotspots_modis,hotspots_noaa20,hotspots_npp)
-# rm(hotspots_modis,hotspots_noaa20,hotspots_npp)
-
 # Read in hotspots 
 hotspots <- read_csv("data/hotspots.csv")
 
@@ -298,7 +245,7 @@ fires$active <- if_else(fires$days_sinceupdate<4,"Yes","No")
 fires_count <- fires %>% st_drop_geometry() %>% count()
 fires_topstate <- top_states$state_name
 fires_topstatecount <- top_states$count
-fires_topstateacres <- prettyNum(top_states$acres,big.mark=",")
+fires_topstateacres <- prettyNum(round(top_states$acres,0),big.mark = ",")
 
 
 
@@ -324,10 +271,10 @@ perimeterLabel <- paste(nfis_perimeters$name)
 # Create the fire icons
 fireIcons <- awesomeIcons(
   icon = "fire",
-  iconColor = "white",
+  iconColor = "red",
   library = 'glyphicon',
-  squareMarker = TRUE,
-  markerColor = "orange")
+  squareMarker = FALSE,
+  markerColor = "white")
 # options include ion-flame, ion-fireball, fa-fire
 
 # Set values for EasyButtonBar controls here
@@ -358,7 +305,6 @@ tag.map.title <- tags$style(HTML("
     left: 0.5%;
     top: 0.8%;
     text-align: left;
-    background-color: rgba(255, 255, 255, 0);
     width: 90%;
     border-radius: 4px 4px 4px 4px;
   }
@@ -367,15 +313,14 @@ tag.map.title <- tags$style(HTML("
     font-size: 28px;
     color: white;
     padding: 0px 5px;
-    background-color: #F98C00;
-    background: linear-gradient(90deg, rgba(190,0,0,1) 0%, rgba(249,140,0,1) 43%, rgba(255,186,0,1) 90%, rgba(255,186,0,0) 100%);
+        width: 90%;
     border-radius: 4px 4px 0px 0px;
   }
   .leaflet-control.map-title .subheadline {
     font-size: 14px;
-    color: black;
+    color: yellow;
     padding: 5px 30px 5px 10px;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%);
+        width: 90%;
     border-radius: 0px 0px 4px 4px;
   }
   .leaflet-control.map-title .subheadline a {
@@ -405,23 +350,18 @@ tag.map.title <- tags$style(HTML("
 
 headerhtml <- tags$div(
   tag.map.title, HTML(paste(sep="",
-  "<div class='headline'>Wildfire Tracker</div>
-  <div class='subheadline'>ABC News is tracking data about ",fires_count," wildfires nationwide. 
-  The most active state is ",
-  fires_topstate,", with ",
-  fires_topstatecount," fires that have burned ",
-  fires_topstateacres," acres.
-  Click on a fire for live status details. The buttons below add or remove more data about air quality, smoke and fire risk forecast. <div>")
+  "<div class='headline'>CBS News Wildfire Tracker</div>
+  <div class='subheadline'>Tracking <b>",fires_count,"</b> wildfires in US 
+  <br><br>Most active: ",fires_topstate,"<br><b>",
+  fires_topstatecount,"</b> fires<br><b>",
+  fires_topstateacres,"</b> acres burned<br><div>")
   )
 )
 
 caliheaderhtml <- tags$div(
   tag.map.title, HTML(paste(sep="",
-                            "<div class='headline'>Wildfire Tracker</div>
-  <div class='subheadline'>We're tracking ",count(top_calfires)," wildfires statewide. ",  
-                       #     The largest is the <a href='https://abcotvdata.github.io/wildfire_tracker/largest_calfire_map.html'>",
-                        #    top_calfires[1,1],"</a>, burning ",
-                        #    prettyNum(round(top_calfires[1,10],0),big.mark=",")," acres. 
+                            "<div class='headline'>CBS News Wildfire Tracker</div>
+  <div class='subheadline'>We're tracking ",count(top_calfires)," wildfires statewide. ",
                             "Click on a fire for live status details. The buttons below add or remove data about air quality, smoke and the fire risk forecast.<div>")
   )
 )
@@ -439,11 +379,11 @@ hawaiiheaderhtml <- tags$div(
 base_map <- leaflet(hotspots, options = leafletOptions(zoomControl = FALSE)) %>%
   setView(-116, 43.5, zoom = 5) %>% 
 #  addProviderTiles(providers$Esri.WorldTerrain) %>%
-  addProviderTiles(providers$CartoDB.Positron) %>%
+  addProviderTiles(providers$CartoDB.DarkMatter) %>%
 #  addProviderTiles(providers$Stamen.TonerLines) %>%
 #  addProviderTiles(providers$Stamen.TonerLabels) %>%
   addCircleMarkers(radius = 2.5,
-                   color = "#be0000",
+                   color = "orange",
                    weight = 1,
                    stroke = FALSE,
                    fillOpacity = 0.8,
@@ -476,10 +416,10 @@ base_map <- leaflet(hotspots, options = leafletOptions(zoomControl = FALSE)) %>%
                    stroke = FALSE,
                    fillOpacity = 0.8,
                    group="Fire forecast") %>%
-  addLegend(values = values(air_quality$gridcode), title = "Air Quality Index<br><a href='https://www.airnow.gov/aqi/aqi-basics/' target='blank'><small>What AQI ratings mean</a>", 
+  addLegend(values = values(air_quality$gridcode), title = "Live Air Quality Index", 
             group = "Air quality", 
             colors = c("#b1dbad", "#ffffb8", "#ffcc80","#ff8280","#957aa3","#a18f7f","#dde4f0"),
-            labels=c("Good", "Moderate", "Unhealthy/Sensitive Groups", "Unhealthy", "Very Unhealthy", "Hazardous","No AQ Data"),
+            labels=c("Good", "Moderate", "Unhealthy/Sensitive Groups", "Unhealthy", "Very Unhealthy", "Hazardous","No Data"),
             position = 'bottomright') %>%
   addLegend(values = values(usfs_forecast$fdc_adj), title = "Wildland Fire Danger Rating<br><a href='https://www.wfas.net/index.php/fire-danger-rating-fire-potential--danger-32/class-rating-fire-potential-danger-51?task=view' target='blank'><small>More detailed on these risk ratings</a>", 
             group = "Fire forecast", 
@@ -615,7 +555,7 @@ california_map <- base_map %>%
 ### SECTION 11. Script California map + variant(s). ###
 
 hawaii_map <- base_map %>%
-  addProviderTiles(providers$CartoDB.Positron) %>%
+  addProviderTiles(providers$CartoDB.DarkMatter) %>%
   addControl(position = "topleft", html = hawaiiheaderhtml, className="map-title") %>%
   setView(-156.4, 20.798, zoom = 10) %>%
   addEasyButtonBar(easyButton(icon = fire_button, title = fire_buttontitle,
@@ -668,28 +608,11 @@ hawaii_map <- base_map %>%
 
 # Create customized versions zoomed to our stations' regions of the state
 bayarea_map <- california_map %>% fitBounds(-123.5,36,-120.5,41)
-fresno_map <- california_map %>% fitBounds(-121.1052,36.1837,-118.4987,37.5551)
 socal_map <- california_map %>% fitBounds(-120.8358,32.5566,-114.5195,35.5286)
 
 ### SECTION 12. Write all leaflet maps to html. ###
-saveWidget(california_map, 'docs/california_map.html', title = "ABC Owned Television Stations California Wildfire Tracker")
-saveWidget(wildfire_map, 'docs/wildfire_map.html', title = "ABC Owned Television Stations and ABC News U.S. Wildfire Tracker")
-# saveWidget(largest_calfire_map, 'docs/largest_calfire_map.html', title = "ABC Owned Television Stations and ABC News U.S. Wildfire Tracker")
+#saveWidget(california_map, 'docs/california_fire_tracking_map.html', title = "CBS News California Wildfire Tracking Map")
+saveWidget(wildfire_map, 'docs/wildfire_tracking_map.html', title = "CBS News Wildfire Tracking Map")
 
-saveWidget(bayarea_map, 'docs/bayarea_map.html', title = "ABC7 Bay Area Wildfire Tracker")
-saveWidget(fresno_map, 'docs/fresno_map.html', title = "ABC30 Central Valley Wildfire Tracker")
-saveWidget(socal_map, 'docs/socal_map.html', title = "ABC7 Southern California Wildfire Tracker")
-
-saveWidget(hawaii_map, 'docs/hawaii_map.html', title = "ABC Owned Television Stations Hawaii Wildfire Tracker")
-
-#saveWidget(idaho_map, 'docs/idaho_map.html', title = "ABC Owned Television Stations and ABC News Idaho Wildfire Tracker", selfcontained = TRUE)
-#saveWidget(colorado_map, 'docs/colorado_map.html', title = "ABC Owned Television Stations and ABC News Colorado Wildfire Tracker", selfcontained = TRUE)
-#saveWidget(nevada_map, 'docs/nevada_map.html', title = "ABC Owned Television Stations and ABC News Nevada Wildfire Tracker", selfcontained = TRUE)
-#saveWidget(arizona_map, 'docs/arizona_map.html', title = "ABC Owned Television Stations and ABC News Arizona Wildfire Tracker", selfcontained = TRUE)
-#saveWidget(newmexico_map, 'docs/newmexico_map.html', title = "ABC Owned Television Stations and ABC News New Mexico Wildfire Tracker", selfcontained = TRUE)
-# saveWidget(oregon_map, 'docs/oregon_map.html', title = "ABC Owned Television Stations and ABC News Oregon Wildfire Tracker", selfcontained = TRUE)
-#saveWidget(washington_map, 'docs/washington_map.html', title = "ABC Owned Television Stations and ABC News Wyoming Wildfire Tracker", selfcontained = TRUE)
-#saveWidget(wyoming_map, 'docs/wyoming_map.html', title = "ABC Owned Television Stations and ABC News Wyoming Wildfire Tracker", selfcontained = TRUE)
-#saveWidget(utah_map, 'docs/utah_map.html', title = "ABC Owned Television Stations and ABC News Utah Wildfire Tracker", selfcontained = TRUE)
-#saveWidget(montana_map, 'docs/montana_map.html', title = "ABC Owned Television Stations and ABC News Montana Wildfire Tracker", selfcontained = TRUE)
-#saveWidget(texas_map, 'docs/texas_map.html', title = "ABC13 Texas Wildfire Tracker", selfcontained = TRUE)
+#saveWidget(bayarea_map, 'docs/bayarea_wildfire_tracking_map.html', title = "CBS News Bay Area Wildfire Tracking Map")
+#saveWidget(socal_map, 'docs/la_wildfire_tracking_map.html', title = "CBS News Los Angeles Area Wildfire Tracking Map")
