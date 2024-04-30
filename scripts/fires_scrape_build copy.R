@@ -257,11 +257,11 @@ fires <- st_as_sf(fires, coords = c("longitude", "latitude"),
 ### SECTION 7. Script popups, buttons and icons ###
 
 fireLabel <- paste(sep = "",
-                   paste("<font size='3'><b>",fires$name,"</font size></b><br><font size='2'>",fires$county," County<b>,",fires$state_name,"</b><br>"),
-                   paste("<b>",prettyNum(fires$acres_burned,big.mark=","),"</b> acres | Started ",ifelse(fires$days_burning<2,"about <b>1</b> day ago",paste(sep="","<b>",fires$days_burning,"</b> days ago<br>"))),
-                   paste("<b>",ifelse(is.na(fires$percent_contained),"</b>Percent contained not available",paste(sep="",fires$percent_contained,"</b>","% contained"))),
-                   paste("<br>"),
-                   paste("<i>Last update: ", paste(as.character(as.POSIXct(fires$updated, format = "%Y-%m-%d %H:%M"), format = "%b %d at %I:%M %p")),"</font size>")
+                   paste("<font size='3' font color=white><b>",toupper(fires$name),"</font size></b><br><font size='1'>",fires$county," County<b>,",fires$state_name,"</b><br><br>"),
+                   paste("<font size='2'><b>",prettyNum(fires$acres_burned,big.mark=","),"</b> acres | Started ",ifelse(fires$days_burning<2,"about <b>1</b> day ago",paste(sep="","<b>",fires$days_burning,"</b> days ago<br>"))),
+                   paste("<b>",ifelse(is.na(fires$percent_contained),"</b>Percent contained not reported",paste(sep="",fires$percent_contained,"</b>","% contained"))),
+                   paste("<br><br>"),
+                   paste("<font size='1'><i>Last updated ", format(as.POSIXct(fires$updated, format = "%Y-%m-%d %H:%M"), "%b %d at %I:%M"), "</font size>")
 )
 
 # Create temporary perimeter label
@@ -384,10 +384,8 @@ hawaiiheaderhtml <- tags$div(
 # New wildfire base map include fires, smoke and hotspots
 base_map <- leaflet(hotspots, options = leafletOptions(zoomControl = FALSE)) %>%
   setView(-116, 43.5, zoom = 5) %>% 
-#  addProviderTiles(providers$Esri.WorldTerrain) %>%
+#  addProviderTiles(providers$CartoDB.PositronOnlyLabels) %>%
   addProviderTiles(providers$CartoDB.DarkMatter) %>%
-#  addProviderTiles(providers$Stamen.TonerLines) %>%
-#  addProviderTiles(providers$Stamen.TonerLabels) %>%
   addCircleMarkers(radius = 2.5,
                    color = "orange",
                    weight = 1,
@@ -507,7 +505,6 @@ wildfire_map <- base_map %>%
 #utah_map <- wildfire_map %>% setView(-111.95, 39.41, zoom = 6)
 #newmexico_map <- wildfire_map %>% setView(-106.01, 34.3, zoom = 6)
 #texas_map <- wildfire_map %>% setView(-99, 31, zoom = 6)
-#wyoming_map <- wildfire_map %>% setView(-107.29, 43.07, zoom = 6)
 
 ### SECTION 11. Script California map + variant(s). ###
 
@@ -558,59 +555,6 @@ california_map <- base_map %>%
         document.getElementsByClassName('leaflet-control-layers')[0].style.display = 'none';
     }")
 
-### SECTION 11. Script California map + variant(s). ###
-
-hawaii_map <- base_map %>%
-  addProviderTiles(providers$CartoDB.DarkMatter) %>%
-  addControl(position = "topleft", html = hawaiiheaderhtml, className="map-title") %>%
-  setView(-156.4, 20.798, zoom = 10) %>%
-  addEasyButtonBar(easyButton(icon = fire_button, title = fire_buttontitle,
-                              onClick = JS("function(btn, map) {
-                     
-                             let layerControlElement = document.getElementsByClassName('leaflet-control-layers')[0];
-                             layerControlElement.getElementsByTagName('input')[0].click();
-
-                }")), 
-                   easyButton(icon = hotspot_button, title = hotspot_buttontitle,
-                              onClick = JS("function(btn, map) {
-
-                             let layerControlElement = document.getElementsByClassName('leaflet-control-layers')[0];
-                             layerControlElement.getElementsByTagName('input')[1].click();
-
-                }")),
-                   
-                   easyButton(icon = smoke_button, title = smoke_buttontitle,
-                              onClick = JS("function(btn, map) {
-                              
-                             let layerControlElement = document.getElementsByClassName('leaflet-control-layers')[0];
-                             layerControlElement.getElementsByTagName('input')[2].click();
-                              }")),
-                   
-                   easyButton(icon = aq_button, title = aq_buttontitle,
-                              onClick = JS("function(btn, map) {
-                              
-                             let layerControlElement = document.getElementsByClassName('leaflet-control-layers')[0];
-                             layerControlElement.getElementsByTagName('input')[3].click();
-                              }")),
-                   
-                   easyButton(icon = forecast_button, title = forecast_buttontitle,
-                              onClick = JS("function(btn, map) {
-                              
-                             let layerControlElement = document.getElementsByClassName('leaflet-control-layers')[0];
-                             layerControlElement.getElementsByTagName('input')[4].click();
-
-                }"))) %>% 
-  htmlwidgets::onRender("function(el, x) {
-        L.control.zoom({ position: 'topleft'}).addTo(this)
-    }") %>%
-  htmlwidgets::onRender("
-    function(el, x) {
-        document.getElementsByClassName('leaflet-control-layers')[0].style.display = 'none';
-    }")
-
-
-#largest_calfire_map <- california_map %>%
-#  setView(top_calfires[1,7], top_calfires[1,6], zoom = 10)
 
 # Create customized versions zoomed to our stations' regions of the state
 bayarea_map <- california_map %>% fitBounds(-123.5,36,-120.5,41)

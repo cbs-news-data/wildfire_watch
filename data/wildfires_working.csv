@@ -1,8 +1,8 @@
 fed_fire_id,name,state,county,started,updated,acres_burned,percent_contained,type,fire_behavior,fire_cause,latitude,longitude,source,days_burning,days_sinceupdate,location,info_url,state_name
-2024-COBNX-000183,Boggsvillle Fire,CO,Bent,2024-03-02T17:28:53Z,2024-03-06T22:38:59Z,1084,100,WF,Minimal,Human,37.815952,-103.266348,NFIS,59,54.8,NA,NA,Colorado
+2024-COBNX-000183,Boggsvillle Fire,CO,Bent,2024-03-02T17:28:53Z,2024-03-06T22:38:59Z,1084,100,WF,Minimal,Human,37.815952,-103.266348,NFIS,59,54.9,NA,NA,Colorado
 2024-MN3XS-000461,Nygard Fire,MN,Swift,2024-03-08T20:00:00Z,2024-04-29T16:05:42Z,30,NA,WF,NA,Human,45.195464,-96.065874,NFIS,52,1.1,NA,NA,Minnesota
 2024-MNFFR-000564,Townsend Rx Fire,MN,Otter Tail,2024-03-12T13:25:31Z,2024-04-29T18:47:46Z,NA,NA,RX,NA,Undetermined,46.255383,-96.066697,NFIS,49,1,NA,NA,Minnesota
-2024-MNCMR-000604,Sedge Meadows Rx Fire,MN,Morrison,2024-03-13T13:57:49Z,2024-04-29T22:54:11Z,32,NA,RX,NA,Undetermined,45.955556,-94.185,NFIS,48,0.8,NA,NA,Minnesota
+2024-MNCMR-000604,Sedge Meadows Rx Fire,MN,Morrison,2024-03-13T13:57:49Z,2024-04-29T22:54:11Z,32,NA,RX,NA,Undetermined,45.955556,-94.185,NFIS,48,0.9,NA,NA,Minnesota
 2024-MNLFR-000637,Litchfield E Rx Fire,MN,Meeker,2024-03-14T14:36:36Z,2024-04-29T19:09:24Z,NA,NA,RX,NA,Undetermined,45.06845,-94.51828,NFIS,47,1,NA,NA,Minnesota
 2024-MNBGR-000663,Unit 10 A/B/C Rx Fire,MN,Benton,2024-03-15T13:18:53Z,2024-04-30T14:28:23Z,NA,NA,RX,NA,Undetermined,45.779722,-93.771111,NFIS,46,0.2,NA,NA,Minnesota
 2024-MOMTF-000232,Wolf Hollow Rx Fire,MO,Wayne,2024-03-18T12:46:00Z,2024-03-18T23:34:58Z,618,NA,RX,NA,Undetermined,36.9404,-90.4341,NFIS,43,42.8,NA,NA,Missouri
@@ -37,7 +37,7 @@ fed_fire_id,name,state,county,started,updated,acres_burned,percent_contained,typ
 2024-NHNHS-200426-A,200426a London Fire,NH,Merrimack,2024-04-26T20:10:00Z,2024-04-28T15:07:27Z,0.2,NA,WF,NA,Human,NA,NA,NFIS,3,2.2,NA,NA,New Hampshire
 2024-NHNHS-130427-A,130427a Fire,NH,Carroll,2024-04-27T14:31:57Z,2024-04-28T14:58:26Z,20,NA,WF,NA,Undetermined,NA,NA,NFIS,3,2.2,NA,NA,New Hampshire
 2024-MAMAS-FD020048,Fd020048 Fire,MA,Plymouth,2024-04-27T18:18:23Z,2024-04-29T19:11:04Z,20.6,NA,WF,NA,Human,NA,NA,NFIS,3,1,NA,NA,Massachusetts
-2024-MAMAS-FD040016,Tucker Hill Fire,MA,Norfolk,2024-04-28T19:15:28Z,2024-04-28T20:26:45Z,6,NA,WF,NA,Human,NA,NA,NFIS,1,1.9,NA,NA,Massachusetts
+2024-MAMAS-FD040016,Tucker Hill Fire,MA,Norfolk,2024-04-28T19:15:28Z,2024-04-28T20:26:45Z,6,NA,WF,NA,Human,NA,NA,NFIS,2,2,NA,NA,Massachusetts
 2024-MEMES-24001860,Bad Brakes Fire Fire,ME,Washington,2024-04-29T21:45:00Z,2024-04-30T15:46:53Z,6.5,NA,WF,NA,Human,NA,NA,NFIS,0,0.1,NA,NA,Maine
 2024-GAOKR-001330,Branch Head Road Fire,GA,Charlton,2024-04-30T16:37:52Z,2024-04-30T18:48:01Z,0.25,NA,WF,NA,Undetermined,30.748283,-82.112533,NFIS,0,0,NA,NA,Georgia
 NA,Refuge Fire,CA,Fresno,2024-04-26T18:54:10Z,2024-04-27T07:52:48Z,475,100,Wildfire,NA,NA,36.730979,-120.360998,Cal Fire,4,3,"W Panoche Rd & Hwy 180, Mendota",http://incidents.fire.ca.gov/incidents/2024/4/26/refuge-fire/,California
