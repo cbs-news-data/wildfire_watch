@@ -13,10 +13,10 @@ fed_fire_id,name,state,county,started,updated,acres_burned,percent_contained,typ
 2024-CAKRN-023932,Road Fire,CA,Kern,2024-06-05T00:04:00Z,2024-06-06T20:28:06Z,1088,100,WF,Minimal,Undetermined,NA,NA,NFIS,12,11.1,NA,NA,California
 2024-AZCRA-000521,Sourdough Fire,AZ,La Paz,2024-06-05T15:09:00Z,2024-06-07T13:47:21Z,722,95,WF,Minimal,Human,33.66055,-114.507751,NFIS,12,10.4,NA,NA,Arizona
 2024-AZKNF-000431,Bravo Fire,AZ,Coconino,2024-06-06T14:42:00Z,2024-06-08T19:55:20Z,960,100,WF,Minimal,Undetermined,35.192143,-111.823145,NFIS,11,9.1,NA,NA,Arizona
-2024-NMGNF-000210,Antone Fire,NM,Catron,2024-06-07T22:20:56Z,2024-06-14T01:22:07Z,12395,60,WF,Minimal,Natural,34.031095,-108.357917,NFIS,9,3.9,NA,NA,New Mexico
+2024-NMGNF-000210,Antone Fire,NM,Catron,2024-06-07T22:20:56Z,2024-06-14T01:22:07Z,12395,60,WF,Minimal,Natural,34.031095,-108.357917,NFIS,10,3.9,NA,NA,New Mexico
 2024-AZFTA-000231,Bear Fire,AZ,Gila,2024-06-08T18:56:00Z,2024-06-14T03:22:56Z,447,81,WF,Minimal,Undetermined,33.934414,-110.522289,NFIS,9,3.8,NA,NA,Arizona
 2024-WASES-000173,Pioneer Fire,WA,Chelan,2024-06-08T19:48:00Z,2024-06-17T15:16:47Z,3811,0,WF,Moderate,Undetermined,48.199206,-120.546799,NFIS,9,0.3,NA,NA,Washington
-2024-AKMID-000119,Mcdonald Fire,AK,Fairbanks North Star,2024-06-08T21:11:00Z,2024-06-17T16:18:19Z,30590.9,0,WF,Active,Natural,64.40688,-147.21692,NFIS,9,0.2,NA,NA,Alaska
+2024-AKMID-000119,Mcdonald Fire,AK,Fairbanks North Star,2024-06-08T21:11:00Z,2024-06-17T16:18:19Z,30590.9,0,WF,Active,Natural,64.40688,-147.21692,NFIS,9,0.3,NA,NA,Alaska
 2024-AKUYD-000121,Owl Fire,AK,Yukon-Koyukuk,2024-06-08T22:59:45Z,2024-06-17T16:08:02Z,920,0,WF,Minimal,Natural,66.15,-142.17,NFIS,8,0.3,NA,NA,Alaska
 2024-WASPD-000183,Palisades Road Fire,WA,Douglas,2024-06-11T05:58:00Z,2024-06-13T01:07:51Z,693,99,WF,Minimal,Undetermined,47.275592,-120.012476,NFIS,6,4.9,NA,NA,Washington
 2024-COSJF-000269,Snow Ranch Fire,CO,Archuleta,2024-06-11T17:40:00Z,2024-06-15T22:04:33Z,2.5,89,WF,Minimal,Natural,37.253575,-107.220193,NFIS,6,2,NA,NA,Colorado
@@ -29,20 +29,20 @@ fed_fire_id,name,state,county,started,updated,acres_burned,percent_contained,typ
 2024-AKGAD-000135,Tututalak Fire,AK,Northwest Arctic,2024-06-13T22:45:00Z,2024-06-17T15:52:32Z,6930.9,0,WF,Active,Natural,67.915833,-162.112667,NFIS,3,0.3,NA,NA,Alaska
 2024-WAWFS-001303,Nisqually John Fire,WA,Whitman,2024-06-14T16:02:00Z,2024-06-16T04:52:07Z,1207,100,WF,Minimal,Undetermined,46.479138,-117.232284,NFIS,3,1.7,NA,NA,Washington
 2024-NMN5S-000364,Riverside Fire,NM,Eddy,2024-06-14T19:52:33Z,2024-06-14T22:07:48Z,39.7,NA,WF,NA,Human,32.841125,-104.330949,NFIS,3,3,NA,NA,New Mexico
-2024-AZASF-000264,Foote Fire,AZ,Greenlee,2024-06-14T20:17:55Z,2024-06-17T21:03:44Z,1158,0,WF,Moderate,Natural,33.698568,-109.350741,NFIS,3,0,NA,NA,Arizona
+2024-AZASF-000264,Foote Fire,AZ,Greenlee,2024-06-14T20:17:55Z,2024-06-17T21:03:44Z,1158,0,WF,Moderate,Natural,33.698568,-109.350741,NFIS,3,0.1,NA,NA,Arizona
 2024-AZPHD-000601,Ironwood Fire,AZ,Yavapai,2024-06-14T22:45:00Z,2024-06-15T01:14:40Z,229,NA,WF,NA,Human,34.3046,-112.126999,NFIS,2,2.9,NA,NA,Arizona
 2024-NMEMP-000234,Encerrito Fire,NM,Cibola,2024-06-15T18:41:00Z,2024-06-17T19:02:54Z,125,0,WF,Moderate,Undetermined,34.931138,-107.92064,NFIS,2,0.1,NA,NA,New Mexico
 2024-WASPD-000205,Beam Road Fire,WA,Yakima,2024-06-15T19:22:00Z,2024-06-17T18:03:49Z,8542,42,WF,Minimal,Human,46.43,-120.16,NFIS,2,0.2,NA,NA,Washington
 2024-CALAC-205253,Post Fire,CA,Los Angeles,2024-06-15T20:47:05Z,2024-06-17T21:37:37Z,14625,8,WF,Extreme,Undetermined,34.80285,-118.8776,NFIS,2,0,NA,NA,California
 2024-WAWWLN-000207,Neff Road Cmd Fire,WA,Walla Walla,2024-06-15T21:22:00Z,2024-06-16T23:18:29Z,250,NA,WF,NA,Undetermined,46.300438,-118.71033,NFIS,2,1,NA,NA,Washington
-2024-ORPRD-000244,0244 Rv Trout Creek Fire,OR,Wasco,2024-06-15T21:25:00Z,2024-06-16T23:32:29Z,725.33,60,WF,Minimal,Human,44.8493,-121.0084,NFIS,2,0.9,NA,NA,Oregon
+2024-ORPRD-000244,0244 Rv Trout Creek Fire,OR,Wasco,2024-06-15T21:25:00Z,2024-06-16T23:32:29Z,725.33,60,WF,Minimal,Human,44.8493,-121.0084,NFIS,2,1,NA,NA,Oregon
 2024-WAYAA-000031,Camas & Industrial Fire,WA,Yakima,2024-06-15T22:37:00Z,2024-06-17T17:11:22Z,NA,NA,WF,NA,NA,NA,NA,NFIS,1,0.2,NA,NA,Washington
 2024-UTCYD-004142,Marble Canyon Fire,UT,Grand,2024-06-15T22:55:00Z,2024-06-17T12:18:33Z,35,NA,WF,NA,Natural,39.046417,-109.04395,NFIS,1,0.4,NA,NA,Utah
-2024-AKUYD-000140,Snowy Fire,AK,Yukon-Koyukuk,2024-06-16T00:11:55Z,2024-06-17T16:16:26Z,80,NA,WF,NA,Natural,65.538,-143.042833,NFIS,1,0.2,NA,NA,Alaska
+2024-AKUYD-000140,Snowy Fire,AK,Yukon-Koyukuk,2024-06-16T00:11:55Z,2024-06-17T16:16:26Z,80,NA,WF,NA,Natural,65.538,-143.042833,NFIS,1,0.3,NA,NA,Alaska
 2024-AZTNF-000850,Riverside Fire,AZ,Maricopa,2024-06-16T19:17:52Z,2024-06-17T21:36:53Z,177,NA,WF,NA,Human,33.7695,-111.669,NFIS,1,0,NA,NA,Arizona
 2024-NVEIC-010095,Summit Fire,NV,Elko,2024-06-16T19:45:53Z,2024-06-16T21:35:05Z,0.1,NA,WF,NA,Undetermined,40.800948,-115.732427,NFIS,1,1,NA,NA,Nevada
 2024-CARRU-090378,Lisa Fire,CA,Riverside,2024-06-16T20:13:44Z,2024-06-17T04:52:41Z,890,25,WF,Active,Undetermined,33.919507,-117.103765,NFIS,1,0.7,NA,NA,California
-2024-NMMEA-000382,South Fork Fire,NM,Otero,2024-06-17T15:07:57Z,2024-06-17T21:51:39Z,200,NA,WF,NA,Undetermined,33.343147,-105.791419,NFIS,0,0,NA,NA,New Mexico
+2024-NMMEA-000382,South Fork Fire,NM,Otero,2024-06-17T15:07:57Z,2024-06-17T22:18:26Z,200,NA,WF,NA,Undetermined,33.343147,-105.791419,NFIS,0,0,NA,NA,New Mexico
 NA,Lost Fire,CA,Kern,2024-06-06T14:05:28Z,2024-06-11T19:05:30Z,3600,100,Wildfire,NA,NA,35.735279,-119.69294,Cal Fire,11,6,Lost Hills Road and Weiser Road,http://incidents.fire.ca.gov/incidents/2024/6/6/lost-fire/,California
 NA,Aquaduct 2 Fire,CA,San Diego,2024-06-08T15:48:50Z,2024-06-10T16:36:57Z,110,100,Wildfire,NA,NA,32.84445,-117.08492,Cal Fire,9,7,Aqueduct Road and San Clemente Canyon Freeway,http://incidents.fire.ca.gov/incidents/2024/6/8/aquaduct-2-fire/,California
 NA,Stoddard 3 Fire,CA,San Bernardino,2024-06-11T12:31:08Z,2024-06-14T18:21:55Z,472,100,Wildfire,NA,NA,34.72209,-117.16739,Cal Fire,6,3,"Stoddard Wells Road, South of Barstow",http://incidents.fire.ca.gov/incidents/2024/6/11/stoddard-3-fire/,California
@@ -66,4 +66,4 @@ NA,62 Fire,CA,Riverside,2024-06-16T17:04:14Z,2024-06-17T06:47:48Z,13,100,Wildfir
 NA,Tuscany Fire,CA,Riverside,2024-06-17T11:35:11Z,2024-06-17T14:43:17Z,126,0,Wildfire,NA,NA,33.847642,-116.569117,Cal Fire,0,0,"City View Drive, Palm Springs",http://incidents.fire.ca.gov/incidents/2024/6/17/tuscany-fire/,California
 NA,Slough Fire,CA,Riverside,2024-06-17T13:47:02Z,2024-06-17T13:49:28Z,33,NA,Wildfire,NA,NA,36.996139,-120.383187,Cal Fire,0,0,"Road 9, Chowchilla",http://incidents.fire.ca.gov/incidents/2024/6/17/slough-fire/,California
 NA,Railroad Fire,CA,Madera,2024-06-17T14:05:18Z,2024-06-17T14:40:07Z,15,NA,Wildfire,NA,NA,37.010829,-120.056215,Cal Fire,0,0,"Road 27, Madera",http://incidents.fire.ca.gov/incidents/2024/6/17/railroad-fire/,California
-NA,Sites Fire,CA,Colusa,2024-06-17T13:39:25Z,2024-06-17T14:41:26Z,50,NA,Wildfire,NA,NA,39.31646,-122.46934,Cal Fire,0,0,"Sites Lodoga Road, Lodoga",http://incidents.fire.ca.gov/incidents/2024/6/17/sites-fire/,California
+NA,Sites Fire,CA,Colusa,2024-06-17T13:39:25Z,2024-06-17T15:20:37Z,238,NA,Wildfire,NA,NA,39.31646,-122.46934,Cal Fire,0,0,"Sites Lodoga Road, Lodoga",http://incidents.fire.ca.gov/incidents/2024/6/17/sites-fire/,California
