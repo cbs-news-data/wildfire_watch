@@ -151,7 +151,9 @@ write_csv(fires,"data/wildfires_save.csv")
 fires <- fires %>% filter(!is.na(latitude) & !is.na(longitude))
 # Create flag for active vs. not for icons; 5-day cutoff
 fires$active <- if_else(fires$days_sinceupdate<5,"Yes","No")
-
+# filter out fires that are not active
+fires <- fires %>% filter(active=="Yes")
+# count number of fires we're tracking
 fires_count <- fires %>% st_drop_geometry() %>% count()
 
 # Properly project
@@ -286,7 +288,7 @@ headerhtml <- tags$div(
 # New wildfire base map include fires, smoke and hotspots
 wildfire_map <- leaflet(nfis_perimeters, options = leafletOptions(zoomControl = FALSE)) %>%
   addControl(position = "topleft", html = headerhtml, className="map-title") %>%
-  setView(-116, 43.5, zoom = 5) %>% 
+  setView(-116, 39, zoom = 5) %>% 
   addProviderTiles(providers$CartoDB.PositronOnlyLabels) %>%
   addProviderTiles(providers$CartoDB.DarkMatter) %>%
   addPolygons(data = nfis_perimeters, 
