@@ -288,7 +288,7 @@ headerhtml <- tags$div(
 # New wildfire base map include fires, smoke and hotspots
 wildfire_map <- leaflet(nfis_perimeters, options = leafletOptions(zoomControl = FALSE)) %>%
   addControl(position = "topleft", html = headerhtml, className="map-title") %>%
-  setView(-116, 39, zoom = 5) %>% 
+  setView(-115, 36, zoom = 5) %>% 
   addProviderTiles(providers$CartoDB.PositronOnlyLabels) %>%
   addProviderTiles(providers$CartoDB.DarkMatter) %>%
   addPolygons(data = nfis_perimeters, 
