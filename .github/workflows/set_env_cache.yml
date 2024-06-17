@@ -32,4 +32,8 @@ jobs:
 
       - name: Install R packages
         run: Rscript -e 'install.packages(c("stringr","janitor","readr","dplyr","sf","leaflet","htmlwidgets","leaflet.providers","leaflet.extras","htmltools"))'
-                  
+        
+        
+        
+        
+        
