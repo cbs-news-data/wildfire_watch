@@ -1,3 +1,3 @@
 # wildfire_tracker
 
-Beta version of CBS News Wildfire Tracker, tracking locations perimeters and basic data points of wildfires in the United States.
+CBS News Wildfire Tracker, tracking locations perimeters and basic data points of wildfires in the United States.
