@@ -241,7 +241,7 @@ background-color: #99a0a5 !important;
 headerhtml <- tags$div(
   tag.map.title, HTML(paste(sep="",
   "<div class='headline'>CBS News Wildfire Tracker</div>
-  <div class='subheadline'>Tracking <b>",fires_count,"</b> wildfires in US.<br><div>")
+  <div class='subheadline'>Tracking <b>",fires_count,"</b> wildfires in the US.<br><div>")
   )
 )
 
