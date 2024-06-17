@@ -21,7 +21,7 @@ jobs:
           key: ${{ runner.os }}-r-${{ hashFiles('**/DESCRIPTION') }}
           restore-keys: ${{ runner.os }}-r-
       - name: Rebuild fire data map
-        run: Rscript scripts/wildfires_map_build.R
+        run: Rscript scripts/wildfires_scrape_build.R
       - name: Commit results
         run: |
           git add -A
