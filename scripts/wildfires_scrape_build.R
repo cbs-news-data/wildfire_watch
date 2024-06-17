@@ -1,0 +1,276 @@
+library(dplyr)
+library(readr)
+library(stringr)
+library(leaflet)
+library(leaflet.extras)
+library(leaflet.providers)
+library(sf)
+library(htmlwidgets)
+library(htmltools)
+library(janitor)
+
+# Stripped-down version of a longer-term project
+# Focusing first here just on fire locations, perimeters and basic data points on each
+
+# Get live state and fed data
+# If file is not live, functions will not stop; latest live data will build map
+
+# Get active CALIFORNIA FIRES data from Calfire
+temp_file <- "data/temp.geojson"
+original_file <- "data/calfire_activefires.geojson"
+
+# Try downloading the file to a temporary file
+download_status <- try(download.file("https://www.fire.ca.gov/umbraco/api/IncidentApi/GeoJsonList?inactive=true", temp_file))
+
+# If download is successful, move the temporary file to replace the original file
+if (!inherits(download_status, "try-error")) {
+  file.rename(temp_file, original_file)
+}
+
+# Get active FEDERAL WILDFIRE PERIMETERS from NFIS for both perimeters and points
+try(download.file("https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson",
+                  "data/active_perimeters.geojson"))
+
+# saved function to convert the milliseconds from UTC 
+ms_to_date = function(ms, t0="1970-01-01", timezone) {
+  sec = ms / 1000
+  as.POSIXct(sec, origin=t0, tz=timezone)
+}
+
+# Read in federal fire perimeters and streamling cols
+nfis_perimeters <- st_read("data/active_perimeters.geojson") %>% 
+  select(attr_UniqueFireIdentifier, poly_IncidentName, attr_POOState, attr_POOCounty, 
+         attr_FireDiscoveryDateTime, poly_DateCurrent, attr_IncidentSize,attr_PercentContained,
+         attr_IncidentTypeCategory, attr_FireBehaviorGeneral, attr_FireCause,
+         attr_InitialLatitude,attr_InitialLongitude) %>% 
+  rename(fed_fire_id = attr_UniqueFireIdentifier, 
+         name = poly_IncidentName, 
+         state = attr_POOState,
+         county = attr_POOCounty,
+         started = attr_FireDiscoveryDateTime, 
+         updated = poly_DateCurrent, 
+         acres_burned = attr_IncidentSize,
+         percent_contained = attr_PercentContained,
+         type = attr_IncidentTypeCategory,
+         fire_behavior = attr_FireBehaviorGeneral, 
+         fire_cause = attr_FireCause,
+         latitude = attr_InitialLatitude,
+         longitude = attr_InitialLongitude)
+
+# Convert milliseconds to dates and 
+# clean numbers
+fed_fires <- nfis_perimeters %>% 
+  st_drop_geometry() %>%
+  mutate(source="NFIS") %>%
+  mutate_at(vars(started, updated), ms_to_date, t0 = "1970-01-01", timezone = "America/Los_Angeles") %>% 
+  mutate(days_burning = floor(difftime(Sys.time(), started, units = "days")), 
+         days_sinceupdate = round(difftime(Sys.time(), updated, units = "days"), 1)) %>% 
+  filter(acres_burned > 99 & days_sinceupdate < 120 | days_sinceupdate < 120)
+
+# Standardize fire name and state columns
+fed_fires <- fed_fires %>% 
+  mutate(name = str_to_title(name),
+         name = paste0(name, " Fire"),
+         name = gsub("  ", " ", name),
+         name = trimws(name),
+         state = gsub("US-", "", state))
+
+# SStrip to needed cols and filter to fires remaining in points file only
+nfis_perimeters <- nfis_perimeters %>% 
+  select(name, fed_fire_id, geometry) %>% 
+  filter(fed_fire_id %in% fed_fires$fed_fire_id)
+
+# Standardize fire name column
+nfis_perimeters$name <- str_to_title(nfis_perimeters$name)
+nfis_perimeters$name <- paste0(nfis_perimeters$name, " Fire")
+
+# Load California state geojson as sf
+calfire_activefires <- st_read("data/calfire_activefires.geojson")
+
+# Simplify, standardize version of California Fires from CalFire's active list
+try(
+  cal_fires <- calfire_activefires %>%
+  mutate(state="CA") %>%
+  select(1,25,7,8,15,14,13,4,3,9,10,17) %>%
+  st_drop_geometry() %>%
+  mutate(source="Cal Fire")
+)
+try(
+names(cal_fires) <- c("name", "state", "county", 
+                      "location", "type", "latitude", "longitude", 
+                      "started", "updated", "acres_burned", "percent_contained",
+                      "info_url","source")
+)
+
+# clean numeric fields
+try(
+cal_fires$acres_burned <- round(as.numeric(cal_fires$acres_burned),0)
+)
+try(
+cal_fires$percent_contained <- as.numeric(cal_fires$percent_contained)
+)
+# calculating fields for time passed elements in popups and for filtering old fires
+try(
+cal_fires$days_burning <- floor(difftime(Sys.Date(),cal_fires$started, units="days"))+1
+)
+try(
+cal_fires$days_sinceupdate <- floor(difftime(Sys.Date(),cal_fires$updated, units="days"))+1
+)
+# OPEN WORK: Verify and solve the time zones for the math for
+# both the California and federal files' time stamps
+try(
+cal_fires$name <- trimws(cal_fires$name)
+)
+# filter out small fires and old fires not updated for more than a week
+# except for leaving in very new fires
+try(
+  cal_fires <- cal_fires %>%
+  filter(acres_burned>99 & days_sinceupdate<8 |
+           days_sinceupdate<3)
+)
+
+# Merge and clean CA and national
+# Temporarily reduce California file
+try(
+  cal_fires_unique <- cal_fires %>%
+  filter(!cal_fires$name %in% fed_fires$name)
+)
+
+fires <- fed_fires
+try(fires <- bind_rows(fires,cal_fires_unique))
+try(rm(cal_fires_unique))
+# Add full state name
+states <- as.data.frame(cbind(state.abb,state.name)) %>% janitor::clean_names()
+fires <- left_join(fires,states,by=c("state"="state_abb"))
+
+# Save latest merged fire points file as csv
+write_csv(fires,"data/wildfires_save.csv")
+
+# Remove fires without lat longs so we can map
+# Manual validation = all tiny <1ac and all <10ac
+fires <- fires %>% filter(!is.na(latitude) & !is.na(longitude))
+# Create flag for active vs. not for icons; 5-day cutoff
+fires$active <- if_else(fires$days_sinceupdate<5,"Yes","No")
+
+fires_count <- fires %>% st_drop_geometry() %>% count()
+
+# Properly project
+fires <- st_as_sf(fires, coords = c("longitude", "latitude"), 
+                  crs = 4326)
+
+# Build popup labels, separate for fires and for perimeters
+
+fireLabel <- paste(sep = "",
+                   paste("<font size='3' font color=white><b>",toupper(fires$name),"</font size></b><br><font size='1'>",fires$county," County<b>,",fires$state_name,"</b><br><br>"),
+                   paste("<font size='2'><b>",prettyNum(fires$acres_burned,big.mark=","),"</b> acres | Started ",ifelse(fires$days_burning<2,"about <b>1</b> day ago<br>",paste(sep="","<b>",fires$days_burning,"</b> days ago<br>"))),
+                   paste("<b>",ifelse(is.na(fires$percent_contained),"</b>Percent contained not reported",paste(sep="",fires$percent_contained,"</b>","% contained"))),
+                   paste("<br><br>"),
+                   paste("<font size='1'><i>Last updated ", format(as.POSIXct(fires$updated, format = "%Y-%m-%d %H:%M"), "%b %d at %I:%M"), "</font size>")
+)
+
+# Create temporary perimeter label
+perimeterLabel <- paste(nfis_perimeters$name," current perimeter")
+
+# Create the fire icons
+fireIcons <- awesomeIcons(
+  icon = "fire",
+  iconColor = "red",
+  library = 'glyphicon',
+#  squareMarker = TRUE,
+  markerColor = "white")
+# options include ion-flame, ion-fireball, fa-fire
+
+
+# Styling 
+
+tag.map.title <- tags$style(HTML("
+  .leaflet-control.map-title {
+    left: 0.5%;
+    top: 0.8%;
+    text-align: left;
+    width: 90%;
+    border-radius: 4px 4px 4px 4px;
+  }
+  .leaflet-control.map-title .headline{
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    padding: 0px 5px;
+        width: 90%;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .leaflet-control.map-title .subheadline {
+    font-size: 14px;
+    color: yellow;
+    padding: 5px 30px 5px 10px;
+        width: 90%;
+    border-radius: 0px 0px 4px 4px;
+  }
+  .leaflet-control.map-title .subheadline a {
+    color: #BE0000;
+    font-weight: bold;
+  }
+  
+  .leaflet-popup-content-wrapper {
+padding: 5px;
+text-align: left;
+background-color: #99a0a5 !important;
+    border-radius: 0px 0px 0px 0px;
+}
+  
+  @media only screen and (max-width: 550px) {
+    .leaflet-control.map-title .headline {
+      font-size: 20px;
+    border-radius: 4px 4px 0px 0px;
+    }
+    .leaflet-control.map-title .subheadline {
+      font-size: 10px;
+    border-radius: 0px 0px 4px 4px;
+    }
+  @media only screen and (max-width: 420px) {
+    .leaflet-control.map-title .headline {
+      font-size: 18px;
+    border-radius: 4px 4px 0px 0px;
+    }
+    .leaflet-control.map-title .subheadline {
+      font-size: 9px;
+    border-radius: 0px 0px 4px 4px;
+    }
+"))
+
+headerhtml <- tags$div(
+  tag.map.title, HTML(paste(sep="",
+  "<div class='headline'>CBS News Wildfire Tracker</div>
+  <div class='subheadline'>Tracking <b>",fires_count,"</b> wildfires in US.<br><div>")
+  )
+)
+
+# New wildfire base map include fires, smoke and hotspots
+wildfire_map <- leaflet(nfis_perimeters, options = leafletOptions(zoomControl = FALSE)) %>%
+  addControl(position = "topleft", html = headerhtml, className="map-title") %>%
+  setView(-116, 43.5, zoom = 6) %>% 
+  addProviderTiles(providers$CartoDB.PositronOnlyLabels) %>%
+  addProviderTiles(providers$CartoDB.DarkMatter) %>%
+  addPolygons(data = nfis_perimeters, 
+              color = "orange",
+              popup = perimeterLabel,
+              weight = 1.5) %>%
+  addAwesomeMarkers(data = fires,
+                    popup = fireLabel,
+                    popupOptions = popupOptions(keepInView = T, 
+                                                autoPanPaddingTopLeft=c(100,120)),
+                    icon = fireIcons) %>%
+  addLayersControl(options = layersControlOptions(collapsed = FALSE),
+    position = 'topright') %>% 
+  htmlwidgets::onRender("function(el, x) {
+          L.control.zoom({ position: 'topleft'}).addTo(this)
+      }") %>%
+    htmlwidgets::onRender("
+      function(el, x) {
+          document.getElementsByClassName('leaflet-control-layers')[0].style.display = 'none';
+      }")
+# wildfire_map
+
+
+# Write to html
+saveWidget(wildfire_map, 'docs/cbs_wildfire_tracking_map.html', title = "CBS News Live Wildfire Tracking Map")
