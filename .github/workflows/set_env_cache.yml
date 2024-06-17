@@ -19,7 +19,7 @@ jobs:
       - name: Set up pandoc
         uses: r-lib/actions/setup-pandoc@v2
 
-      - name: Cache R packages
+      - name: Add cached R packages
         uses: actions/cache@v2
         with:
           path: ${{ env.R_LIBS_USER }}
