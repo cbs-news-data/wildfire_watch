@@ -257,7 +257,7 @@ fireIcons <- awesomeIcons(
   icon = "fire",
   iconColor = "red",
   library = 'glyphicon',
-  squareMarker = FALSE,
+#  squareMarker = TRUE,
   markerColor = "white")
 # options include ion-flame, ion-fireball, fa-fire
 
