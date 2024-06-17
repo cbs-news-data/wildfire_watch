@@ -254,7 +254,7 @@ wildfire_map <- leaflet(nfis_perimeters, options = leafletOptions(zoomControl = 
   addPolygons(data = nfis_perimeters, 
               color = "orange",
               popup = perimeterLabel,
-              weight = 1.5) %>%
+              weight = 2) %>%
   addAwesomeMarkers(data = fires,
                     popup = fireLabel,
                     popupOptions = popupOptions(keepInView = T, 
