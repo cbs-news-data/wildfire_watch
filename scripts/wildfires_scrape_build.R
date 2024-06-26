@@ -166,7 +166,7 @@ fireLabel <- paste(sep = "",
                    paste("<font size='2'><b>",prettyNum(fires$acres_burned,big.mark=","),"</b> acres | Started ",ifelse(fires$days_burning<2,"about <b>1</b> day ago<br>",paste(sep="","<b>",fires$days_burning,"</b> days ago<br>"))),
                    paste("<b>",ifelse(is.na(fires$percent_contained),"</b>Percent contained not reported",paste(sep="",fires$percent_contained,"</b>","% contained"))),
                    paste("<br><br>"),
-                   paste("<font size='1'><i>Last updated ", format(as.POSIXct(fires$updated, format = "%Y-%m-%d %H:%M"), "%b %d at %I:%M"), "</font size>")
+                   paste("<font size='1'><i>Last updated ", format(as.POSIXct(fires$updated, format = "%Y-%m-%d %H:%M"), "%b %d at %I:%M %p"), "</font size>")
 )
 
 # Create temporary perimeter label
@@ -279,7 +279,7 @@ headerhtml <- tags$div(tag.map.title, HTML(
       <h1>Wildfire Tracker</h1>
       <h3>There are currently <b>",
     fires_count,
-    "</b> wildfires in the U.S. Click or hover on an icon to see more information about each fire.<br></h3>
+    "</b> wildfires in the U.S. Click or hover on an icon to see more information about each fire.<br><br></h3>
     </div>
   </div>"
   ))
@@ -288,9 +288,9 @@ headerhtml <- tags$div(tag.map.title, HTML(
 # New wildfire base map include fires, smoke and hotspots
 wildfire_map <- leaflet(nfis_perimeters, options = leafletOptions(zoomControl = FALSE)) %>%
   addControl(position = "topleft", html = headerhtml, className="map-title") %>%
-  setView(-115, 36, zoom = 5) %>%
-  addProviderTiles(providers$CartoDB.PositronOnlyLabels) %>%
-  addProviderTiles(providers$CartoDB.DarkMatter) %>%
+  setView(-115, 40, zoom = 5) %>%
+  #  addProviderTiles(providers$CartoDB.Positron) %>%
+  addProviderTiles(providers$OpenStreetMap) %>%
   addPolygons(data = nfis_perimeters, 
               color = "#FD8724",
               popup = perimeterLabel,
