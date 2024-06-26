@@ -252,6 +252,13 @@ tag.map.title <- tags$style(HTML("
 
   .leaflet-popup-tip{
     background: #FAEDE9 !important;
+  }
+
+@media only screen and (max-width: 380px) {
+  .h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
 }
 
 "))
@@ -265,7 +272,7 @@ headerhtml <- tags$div(tag.map.title, HTML(
       <h1>Wildfire Tracker</h1>
       <h3>There are currently <b style='color: #A5091E'>",
     fires_count,
-    "</b> wildfires in the U.S. Click or hover on an icon to see more information about each fire.<br><br></h3>
+    "</b> wildfires in the U.S. Click or hover over an icon to see more information about each fire.<br><br></h3>
     </div>
   </div>"
   ))
