@@ -162,11 +162,11 @@ fires <- st_as_sf(fires, coords = c("longitude", "latitude"),
 # Build popup labels, separate for fires and for perimeters
 
 fireLabel <- paste(sep = "",
-                   paste("<font size='5' font color=#820415 style='font-family: \"PublicoHeadline\";'><b>",(fires$name),"</font size></b><br><font size='1' style='font-family: \"proxima-nova\", sans-serif;'>",fires$county," County<b>,",fires$state_name,"</b><br><br>"),
-                   paste("<font size='2'><b>",prettyNum(fires$acres_burned,big.mark=","),"</b> acres | Started ",ifelse(fires$days_burning<2,"about <b>1</b> day ago<br>",paste(sep="","<b>",fires$days_burning,"</b> days ago<br>"))),
+                   paste("<font size='5' font color=#820415 style='font-family: \"PublicoHeadline\";'><b>",(fires$name),"</font size></b><br><font size='2' style='font-family: \"proxima-nova\", sans-serif;'>",fires$county," County,",fires$state_name,"<br><br>"),
+                   paste("<font size='2'>Started ", ifelse(fires$days_burning < 2, "about <b>1</b> day ago<br>", paste("<b>", fires$days_burning, "</b> days ago<br>")), "<b>", prettyNum(fires$acres_burned, big.mark = ","), "</b> acres burned <br></font>"),
                    paste("<b>",ifelse(is.na(fires$percent_contained),"</b>Percent contained not reported",paste(sep="",fires$percent_contained,"</b>","% contained"))),
                    paste("<br><br>"),
-                   paste("<font size='1'><i>LAST UPDATED ", toupper(format(as.POSIXct(fires$updated, format = "%Y-%m-%d %H:%M"), "%b %d at %I:%M %p")), "</font size>")
+                   paste("<font size='1'><i>Last updated: ", format(as.POSIXct(fires$updated, format = "%Y-%m-%d %H:%M"), "%b %d at %I:%M %p"), "</i></font>")
 )
 
 # Create temporary perimeter label
@@ -228,13 +228,13 @@ tag.map.title <- tags$style(HTML("
   }
   
   .headline h3 {
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
     font-family: \"proxima-nova\", sans-serif;
   }
   
   .h1, .h2, .h3, h1, h2, h3 {
-    margin-top: 6px;
+    margin-top: 12px;
     margin-bottom: 0px;
 }
   
@@ -247,7 +247,7 @@ tag.map.title <- tags$style(HTML("
     padding: 5px;
     text-align: left;
     background-color: #FAEDE9 !important;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 5px;
   }
 
   .leaflet-popup-tip{
@@ -263,7 +263,7 @@ headerhtml <- tags$div(tag.map.title, HTML(
   <div class='header'>
     <div class='headline'>
       <h1>Wildfire Tracker</h1>
-      <h3>There are currently <b>",
+      <h3>There are currently <b style='color: #A5091E'>",
     fires_count,
     "</b> wildfires in the U.S. Click or hover on an icon to see more information about each fire.<br><br></h3>
     </div>
