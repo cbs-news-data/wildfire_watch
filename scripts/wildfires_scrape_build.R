@@ -206,7 +206,6 @@ tag.map.title <- tags$style(HTML("
     height: 100px;
     background: white;
     text-align: left;
-    margin-bottom: 20px;
   }
   
   .headline {
@@ -216,7 +215,6 @@ tag.map.title <- tags$style(HTML("
     transform: translate(-50%, -50%);
     color: black;
     width: 100%;
-    border-radius: 4px 4px 0px 0px;
     font-family: \"PublicoHeadline\";
     text-align: left;
   }
@@ -235,6 +233,11 @@ tag.map.title <- tags$style(HTML("
     font-family: \"proxima-nova\", sans-serif;
   }
   
+  .h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+  
 .subheadline a {
     color: #BE0000;
     font-weight: bold;
@@ -250,24 +253,7 @@ tag.map.title <- tags$style(HTML("
   .leaflet-popup-tip{
     background: #FAEDE9 !important;
 }
-  
-  @media only screen and (max-width: 550px) {
-    .headline h1 {
-      font-size: 35px;
-    }
-    .headline h3 {
-      font-size: 16px;
-      margin-top: 3px;
-    }
-  }
-  @media only screen and (max-width: 420px) {
-    .headline h1 {
-      font-size: 30px;
-    }
-    .headline h3 {
-      font-size: 14px;
-    }
-  }
+
 "))
 
 headerhtml <- tags$div(tag.map.title, HTML(
