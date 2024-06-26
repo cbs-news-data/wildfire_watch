@@ -15,7 +15,6 @@ library(janitor)
 # Get live state and fed data
 # If file is not live, functions will not stop; latest live data will build map
 
-# Get active CALIFORNIA FIRES data from Calfire
 temp_file <- "data/temp.geojson"
 original_file <- "data/calfire_activefires.geojson"
 
@@ -90,50 +89,50 @@ calfire_activefires <- st_read("data/calfire_activefires.geojson")
 # Simplify, standardize version of California Fires from CalFire's active list
 try(
   cal_fires <- calfire_activefires %>%
-  mutate(state="CA") %>%
-  select(1,25,7,8,15,14,13,4,3,9,10,17) %>%
-  st_drop_geometry() %>%
-  mutate(source="Cal Fire")
+    mutate(state="CA") %>%
+    select(1,25,7,8,15,14,13,4,3,9,10,17) %>%
+    st_drop_geometry() %>%
+    mutate(source="Cal Fire")
 )
 try(
-names(cal_fires) <- c("name", "state", "county", 
-                      "location", "type", "latitude", "longitude", 
-                      "started", "updated", "acres_burned", "percent_contained",
-                      "info_url","source")
+  names(cal_fires) <- c("name", "state", "county", 
+                        "location", "type", "latitude", "longitude", 
+                        "started", "updated", "acres_burned", "percent_contained",
+                        "info_url","source")
 )
 
 # clean numeric fields
 try(
-cal_fires$acres_burned <- round(as.numeric(cal_fires$acres_burned),0)
+  cal_fires$acres_burned <- round(as.numeric(cal_fires$acres_burned),0)
 )
 try(
-cal_fires$percent_contained <- as.numeric(cal_fires$percent_contained)
+  cal_fires$percent_contained <- as.numeric(cal_fires$percent_contained)
 )
 # calculating fields for time passed elements in popups and for filtering old fires
 try(
-cal_fires$days_burning <- floor(difftime(Sys.Date(),cal_fires$started, units="days"))+1
+  cal_fires$days_burning <- floor(difftime(Sys.Date(),cal_fires$started, units="days"))+1
 )
 try(
-cal_fires$days_sinceupdate <- floor(difftime(Sys.Date(),cal_fires$updated, units="days"))+1
+  cal_fires$days_sinceupdate <- floor(difftime(Sys.Date(),cal_fires$updated, units="days"))+1
 )
 # OPEN WORK: Verify and solve the time zones for the math for
 # both the California and federal files' time stamps
 try(
-cal_fires$name <- trimws(cal_fires$name)
+  cal_fires$name <- trimws(cal_fires$name)
 )
 # filter out small fires and old fires not updated for more than a week
 # except for leaving in very new fires
 try(
   cal_fires <- cal_fires %>%
-  filter(acres_burned>99 & days_sinceupdate<8 |
-           days_sinceupdate<3)
+    filter(acres_burned>99 & days_sinceupdate<8 |
+             days_sinceupdate<3)
 )
 
 # Merge and clean CA and national
 # Temporarily reduce California file
 try(
   cal_fires_unique <- cal_fires %>%
-  filter(!cal_fires$name %in% fed_fires$name)
+    filter(!cal_fires$name %in% fed_fires$name)
 )
 
 fires <- fed_fires
@@ -186,9 +185,9 @@ fireIcons <- awesomeIcons(
 
 tag.map.title <- tags$style(HTML("
 
-  @font-face {
-    font-family: PublicoHeadline;
-    src: url(fonts/PublicoHeadline-Bold.otf);
+ @font-face {
+    font-family: 'PublicoHeadline';
+    src: url('https://www.cbsnews.com/fly/bundles/cbsnewscontent/fonts/PublicoHeadline-Bold/PublicoHeadline-Bold.woff2') format('woff2');
   }
   
   .leaflet-top {
@@ -199,53 +198,44 @@ tag.map.title <- tags$style(HTML("
     text-align: center;
     margin: auto;
     width: 100%;
-    background-color: rgba(165, 9, 30, 0.6);
   }
   
-  .leaflet-control.map-title .header{
+.header{
     width: 100%;
     position: relative;
-    height: 150px;
-    
+    height: 100px;
+    background: white;
+    text-align: left;
+    margin-bottom: 20px;
   }
   
-  .leaflet-control.map-title .header img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.6;
-    
-  }
-  
-  
-  .leaflet-control.map-title .headline{
+  .headline {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    color: white;
-    padding: 0px 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
     width: 100%;
     border-radius: 4px 4px 0px 0px;
     font-family: \"PublicoHeadline\";
-    
+    text-align: left;
   }
   
-  .leaflet-control.map-title .headline h1{
+ .headline h1 {
     font-weight: bold;
-    font-size: 44px;
-    color: white;
-    padding: 0px 5px;
+    font-size: 32px;
+    color: black;
     width: 100%;
     font-family: \"PublicoHeadline\";
-    
   }
   
-  .leaflet-control.map-title .headline h3 {
+  .headline h3 {
     font-size: 18px;
     width: 100%;
     font-family: \"proxima-nova\", sans-serif;
   }
-  .leaflet-control.map-title .subheadline a {
+  
+.subheadline a {
     color: #BE0000;
     font-weight: bold;
   }
@@ -262,33 +252,43 @@ tag.map.title <- tags$style(HTML("
 }
   
   @media only screen and (max-width: 550px) {
-    .leaflet-control.map-title .headline h1{
+    .headline h1 {
       font-size: 35px;
     }
-    .leaflet-control.map-title .headline h3{
+    .headline h3 {
       font-size: 16px;
       margin-top: 3px;
     }
+  }
   @media only screen and (max-width: 420px) {
-    .leaflet-control.map-title .headline h1{
+    .headline h1 {
       font-size: 30px;
     }
-    .leaflet-control.map-title .headline h3{
+    .headline h3 {
       font-size: 14px;
     }
+  }
 "))
 
-headerhtml <- tags$div(
-  tag.map.title, HTML(paste(sep="",
-  "<head><meta name='viewport' content='width=device-width, initial-scale=1.0'><link rel=\"stylesheet\" href=\"https://use.typekit.net/vtp4rxj.css\"></head><div class='header'><img src='https://assets1.cbsnewsstatic.com/hub/i/2024/06/17/8f7db2a5-1d28-4048-a42d-98e81e856248/gettyimages-1371964628.jpg'><div class='headline'><h1>CBS News Wildfire Tracker</h1>
-  <h3>Tracking <b>",fires_count,"</b> wildfires in the U.S.<br></h3></div></div>")
-  )
+headerhtml <- tags$div(tag.map.title, HTML(
+  paste(
+    sep = "",
+    "<head><meta name='viewport' content='width=device-width, initial-scale=1.0'><link rel=\"stylesheet\" href=\"https://use.typekit.net/vtp4rxj.css\"></head>
+  <div class='header'>
+    <div class='headline'>
+      <h1>Wildfire Tracker</h1>
+      <h3>There are currently <b>",
+    fires_count,
+    "</b> wildfires in the U.S. Click or hover on an icon to see more information about each fire.<br></h3>
+    </div>
+  </div>"
+  ))
 )
 
 # New wildfire base map include fires, smoke and hotspots
 wildfire_map <- leaflet(nfis_perimeters, options = leafletOptions(zoomControl = FALSE)) %>%
   addControl(position = "topleft", html = headerhtml, className="map-title") %>%
-  setView(-115, 36, zoom = 5) %>% 
+  setView(-115, 36, zoom = 5) %>%
   addProviderTiles(providers$CartoDB.PositronOnlyLabels) %>%
   addProviderTiles(providers$CartoDB.DarkMatter) %>%
   addPolygons(data = nfis_perimeters, 
@@ -298,14 +298,14 @@ wildfire_map <- leaflet(nfis_perimeters, options = leafletOptions(zoomControl = 
   addAwesomeMarkers(data = fires,
                     popup = fireLabel,
                     popupOptions = popupOptions(keepInView = T, 
-                                                autoPanPaddingTopLeft=c(100,120)),
+                                                autoPanPaddingTopLeft = c(100, 120)),
                     icon = fireIcons) %>%
   addLayersControl(options = layersControlOptions(collapsed = FALSE),
-    position = 'topright') %>% 
+                   position = 'topright') %>%
   htmlwidgets::onRender("function(el, x) {
           L.control.zoom({ position: 'topleft'}).addTo(this)
       }") %>%
-    htmlwidgets::onRender("
+  htmlwidgets::onRender("
       function(el, x) {
           document.getElementsByClassName('leaflet-control-layers')[0].style.display = 'none';
       }")
