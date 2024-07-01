@@ -307,3 +307,16 @@ wildfire_map <- leaflet(nfis_perimeters, options = leafletOptions(zoomControl = 
 
 # Write to html
 saveWidget(wildfire_map, 'docs/cbs_wildfire_tracking_map.html', title = "CBS News Live Wildfire Tracking Map")
+
+
+#get updated date/time
+updated_datetime <- format(as.POSIXct(Sys.time()), format = "%B %d, %Y %I:%M %p %Z", tz = "America/Los_Angeles")
+
+updated_datetime_char <- as.character(updated_datetime)
+
+updated_datetime_pretty <- updated_datetime_char %>% 
+  str_replace_all(" 0", " ")
+
+updated_datetime_df <- data.frame(updated_datetime_pretty)
+
+write.csv(updated_datetime_df, "data/updated_datetime_df.csv", row.names = FALSE)
