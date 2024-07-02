@@ -145,6 +145,25 @@ fires <- left_join(fires,states,by=c("state"="state_abb"))
 # Save latest merged fire points file as csv
 write_csv(fires,"data/wildfires_save.csv")
 
+#export pretty table for datawrapper
+fires_fordatawrappertable <- fires %>% 
+  mutate(county_state = paste0(county, ", ", state)) %>% 
+  select(name, county_state, started, updated, acres_burned, percent_contained) %>% 
+  mutate(started = format(as.POSIXct(started), format = "%B %d, %Y %I:%M %p %Z", tz = "America/Los_Angeles"),
+         started = str_replace_all(as.character(started), " 0", " ")) %>% 
+  mutate(updated = format(as.POSIXct(updated), format = "%B %d, %Y %I:%M %p %Z", tz = "America/Los_Angeles"),
+         updated = str_replace_all(as.character(updated), " 0", " ")) %>% 
+  mutate(percent_contained = replace_na(as.character(percent_contained), "Not available")) %>% 
+  rename(Name = name, 
+         `Location` = county_state, 
+         Started = started, 
+         Updated = updated, 
+         `Acres burned` = acres_burned, 
+         `% contained` = percent_contained)
+  
+# Save pretty datawrapper file as csv
+write_csv(fires_fordatawrappertable,"data/wildfires_datawrapper_save.csv")  
+
 # Remove fires without lat longs so we can map
 # Manual validation = all tiny <1ac and all <10ac
 fires <- fires %>% filter(!is.na(latitude) & !is.na(longitude))
