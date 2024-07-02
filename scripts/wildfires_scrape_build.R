@@ -1,4 +1,3 @@
-library(tidyverse)
 library(dplyr)
 library(readr)
 library(stringr)
@@ -154,7 +153,8 @@ fires_fordatawrappertable <- fires %>%
          started = str_replace_all(as.character(started), " 0", " ")) %>% 
   mutate(updated = format(as.POSIXct(updated), format = "%B %d, %Y %I:%M %p %Z", tz = "America/Los_Angeles"),
          updated = str_replace_all(as.character(updated), " 0", " ")) %>% 
-  mutate(percent_contained = replace_na(as.character(percent_contained), "Not available")) %>% 
+  mutate(percent_contained = case_when(is.na(as.character(percent_contained)) == TRUE ~ "Not available",
+                                       TRUE ~ as.character(percent_contained))) %>% 
   rename(Name = name, 
          `Location` = county_state, 
          Started = started, 
