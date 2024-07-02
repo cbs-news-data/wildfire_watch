@@ -30,7 +30,7 @@ fed_fire_id,name,state,county,started,updated,acres_burned,percent_contained,typ
 2024-UTFIF-240112,Little Twist Fire,UT,Beaver,2024-06-13T20:00:00Z,2024-07-01T13:48:57Z,2663,25,WF,Moderate,Human,38.186027,-112.473681,NFIS,18,1.2,NA,NA,Utah
 2024-AKGAD-000131,Urgoon Fire,AK,Northwest Arctic,2024-06-13T20:07:00Z,2024-06-21T18:37:47Z,6082.6,0,WF,Moderate,Natural,67.781833,-162.4155,NFIS,18,11,NA,NA,Alaska
 2024-AKGAD-000135,Tututalak Fire,AK,Northwest Arctic,2024-06-13T22:45:00Z,2024-06-21T18:41:48Z,8533.5,0,WF,Moderate,Natural,67.915833,-162.112667,NFIS,18,11,NA,NA,Alaska
-2024-NMN5S-000364,Riverside Fire,NM,Eddy,2024-06-14T19:52:33Z,2024-06-14T22:07:48Z,39.7,NA,WF,NA,Human,32.841125,-104.330949,NFIS,17,17.8,NA,NA,New Mexico
+2024-NMN5S-000364,Riverside Fire,NM,Eddy,2024-06-14T19:52:33Z,2024-06-14T22:07:48Z,39.7,NA,WF,NA,Human,32.841125,-104.330949,NFIS,17,17.9,NA,NA,New Mexico
 2024-AZASF-000264,Foote Fire,AZ,Greenlee,2024-06-14T20:17:55Z,2024-06-28T00:04:08Z,4568,80,WF,Minimal,Natural,33.698568,-109.350741,NFIS,17,4.8,NA,NA,Arizona
 2024-NMEMP-000234,Encerrita Fire,NM,Cibola,2024-06-15T18:41:00Z,2024-06-25T11:38:16Z,2499,0,WF,Minimal,Natural,34.931138,-107.92064,NFIS,16,7.3,NA,NA,New Mexico
 2024-WASPD-000205,Beam Road Fire,WA,Yakima,2024-06-15T19:22:00Z,2024-06-17T18:03:49Z,8542,100,WF,Minimal,Human,46.43,-120.16,NFIS,16,15,NA,NA,Washington
@@ -231,5 +231,5 @@ NA,Kern Fire,CA,Kern,2024-07-01T14:33:00Z,2024-07-01T15:29:16Z,15,NA,Wildfire,NA
 NA,Mccain Fire,CA,San Diego,2024-07-01T15:34:44Z,2024-07-02T08:26:57Z,1000,5,Wildfire,NA,NA,32.660837,-116.231794,Cal Fire,1,0,I-8 WB at McCain Valley Road,http://incidents.fire.ca.gov/incidents/2024/7/1/mccain-fire/,California
 NA,Sunrise Fire,CA,Los Angeles,2024-07-01T14:29:58Z,2024-07-02T08:30:49Z,35,NA,Wildfire,NA,NA,34.432003,-117.834801,Cal Fire,1,0,"Big Pines Hwy, South East of Valyermo",http://incidents.fire.ca.gov/incidents/2024/7/1/sunrise-fire/,California
 NA,High Desert Fire,CA,Lassen,2024-07-01T18:59:26Z,2024-07-02T08:28:10Z,10,NA,Wildfire,NA,NA,40.408993,-120.52602,Cal Fire,1,0,"High Desert State Prison and Rice Canyon Road, Susanville",http://incidents.fire.ca.gov/incidents/2024/7/1/high-desert-fire/,California
-NA,Toll Fire,CA,Napa,2024-07-02T09:42:17Z,2024-07-02T11:18:30Z,41,0,Wildfire,NA,NA,38.634889,-122.591202,Cal Fire,0,0,"Old Lawley Toll Road, northeast of Calistoga",http://incidents.fire.ca.gov/incidents/2024/7/2/toll-fire/,California
-NA,Hanson Fire,CA,Tehama,2024-07-02T08:48:09Z,2024-07-02T11:27:30Z,25,NA,Wildfire,NA,NA,30,-7,Cal Fire,0,0,Unknown / TBD,http://incidents.fire.ca.gov/incidents/2024/7/2/hanson-fire/,California
+NA,Toll Fire,CA,Napa,2024-07-02T09:42:17Z,2024-07-02T15:18:30Z,41,0,Wildfire,NA,NA,38.634889,-122.591202,Cal Fire,0,0,"Old Lawley Toll Road, northeast of Calistoga",http://incidents.fire.ca.gov/incidents/2024/7/2/toll-fire/,California
+NA,Hanson Fire,CA,Tehama,2024-07-02T08:48:09Z,2024-07-02T15:27:30Z,25,NA,Wildfire,NA,NA,30,-7,Cal Fire,0,0,Unknown / TBD,http://incidents.fire.ca.gov/incidents/2024/7/2/hanson-fire/,California
