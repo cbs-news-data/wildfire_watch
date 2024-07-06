@@ -1,5 +1,4 @@
 Name,Location,Started,Updated,Acres burned,% contained
-Loc Mille Lacs Fire,"Mille Lacs, MN","March 9, 2024 12:59 PM PST","June 28, 2024 1:11 PM PDT",50,Not available
 Tal Bell Spring Fire,"Talladega, AL","March 28, 2024 1:26 PM PDT","April 1, 2024 6:39 AM PDT",902,100
 Twisted Arrow Fire,"Benson, ND","April 6, 2024 9:03 PM PDT","April 9, 2024 1:15 PM PDT",1365.3,100
 Delta Bison Range Rx Fire,"Southeast Fairbanks, AK","April 26, 2024 11:15 AM PDT","May 8, 2024 10:48 AM PDT",832.95,Not available
@@ -21,7 +20,7 @@ Road Fire,"Kern, CA","June 4, 2024 5:04 PM PDT","June 6, 2024 1:28 PM PDT",1088,
 Bravo Fire,"Coconino, AZ","June 6, 2024 7:42 AM PDT","June 30, 2024 2:30 PM PDT",960,100
 Fossil Fire,"Yukon-Koyukuk, AK","June 6, 2024 3:03 PM PDT","July 2, 2024 7:53 PM PDT",8,0
 Bear Fire,"Gila, AZ","June 8, 2024 11:56 AM PDT","June 13, 2024 8:22 PM PDT",447,80
-Pioneer Fire,"Chelan, WA","June 8, 2024 12:48 PM PDT","July 6, 2024 6:07 AM PDT",5464,14
+Pioneer Fire,"Chelan, WA","June 8, 2024 12:48 PM PDT","July 6, 2024 1:00 PM PDT",5464,14
 Mcdonald Fire,"Fairbanks North Star, AK","June 8, 2024 2:11 PM PDT","July 3, 2024 3:03 PM PDT",148823.2,0
 Owl Fire,"Yukon-Koyukuk, AK","June 8, 2024 3:59 PM PDT","July 3, 2024 5:16 PM PDT",16270,0
 Goldbug Fire,"Northwest Arctic, AK","June 12, 2024 1:08 PM PDT","June 21, 2024 11:33 AM PDT",7639.1,0
@@ -160,9 +159,10 @@ Cordero 1 Fire,"Malheur, OR","July 4, 2024 7:11 PM PDT","July 6, 2024 5:48 AM PD
 Opstead Fire Fire,"Washakie, WY","July 4, 2024 9:01 PM PDT","July 5, 2024 12:15 PM PDT",1.2,Not available
 Cordero 2 Fire,"Malheur, OR","July 4, 2024 9:55 PM PDT","July 6, 2024 5:48 AM PDT",0.1,Not available
 Memorial Fire,"Jackson, OR","July 4, 2024 10:23 PM PDT","July 5, 2024 9:48 AM PDT",70,Not available
-Lake Fire,"Santa Barbara, CA","July 5, 2024 3:48 PM PDT","July 6, 2024 9:27 AM PDT",4673,0
+Balsam Root Fire,"Chelan, WA","July 5, 2024 4:48 AM PDT","July 6, 2024 8:35 AM PDT",150,1
+Lake Fire,"Santa Barbara, CA","July 5, 2024 3:48 PM PDT","July 6, 2024 11:41 AM PDT",4673,0
 Rancho Fire,"Ventura, CA","July 5, 2024 5:47 PM PDT","July 5, 2024 7:04 PM PDT",NA,Not available
-Dayton Fire,"Lyon, NV","July 5, 2024 6:13 PM PDT","July 6, 2024 5:43 AM PDT",3.4,Not available
+Orr Creek Fire,"Chelan, WA","July 6, 2024 6:43 AM PDT","July 6, 2024 12:02 PM PDT",2,Not available
 Apache Fire,"Butte, CA","June 24, 2024 12:21 PM PDT","June 29, 2024 12:09 PM PDT",691,100
 Fresno June Lightning Complex,"Fresno, CA","June 24, 2024 8:01 AM PDT","July 4, 2024 10:48 AM PDT",10669,98
 Cotton Fire,"San Luis Obispo, CA","June 28, 2024 10:41 AM PDT","June 29, 2024 12:39 AM PDT",202,100
@@ -201,3 +201,4 @@ Hills Fire,"Riverside, CA","July 5, 2024 7:14 AM PDT","July 6, 2024 2:01 AM PDT"
 York Fire,"Kings, CA","July 5, 2024 6:19 AM PDT","July 5, 2024 8:21 AM PDT",60,100
 Plenty Fire,"Los Angeles, CA","July 5, 2024 10:22 AM PDT","July 6, 2024 3:04 AM PDT",77,80
 Vestal Fire,"Tehama, CA","July 5, 2024 10:27 AM PDT","July 5, 2024 2:54 PM PDT",19,Not available
+Pocket Fire,"Sonoma, CA","July 6, 2024 4:19 AM PDT","July 6, 2024 5:52 AM PDT",12,Not available
