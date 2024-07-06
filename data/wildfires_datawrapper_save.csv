@@ -132,7 +132,7 @@ Tustumena Lake Fire,"Kenai Peninsula, AK","June 29, 2024 3:58 PM PDT","July 1, 2
 Bear Fire,"Yukon-Koyukuk, AK","June 29, 2024 5:13 PM PDT","July 1, 2024 8:59 AM PDT",15,Not available
 Fork Fire,"Fairbanks North Star, AK","June 30, 2024 9:08 AM PDT","July 3, 2024 3:18 PM PDT",257,Not available
 Mogul Fire,"Southeast Fairbanks, AK","June 30, 2024 10:39 AM PDT","June 30, 2024 4:41 PM PDT",133,0
-Riley Fire,"Denali, AK","June 30, 2024 1:17 PM PDT","July 5, 2024 3:44 PM PDT",388,5
+Riley Fire,"Denali, AK","June 30, 2024 1:17 PM PDT","July 5, 2024 8:24 PM PDT",388,25
 Kichaiakaka Fire,"Northwest Arctic, AK","June 30, 2024 1:44 PM PDT","July 2, 2024 9:07 AM PDT",118,Not available
 Pingo Fire,"Southeast Fairbanks, AK","June 30, 2024 2:38 PM PDT","June 30, 2024 4:48 PM PDT",37,Not available
 National Fire,"Yukon-Koyukuk, AK","June 30, 2024 2:47 PM PDT","July 3, 2024 3:13 PM PDT",4528,0
@@ -142,7 +142,7 @@ Mccain 4 Fire,"San Diego, CA","July 1, 2024 3:34 PM PDT","July 3, 2024 4:22 PM P
 Hawk Fire,"Yukon-Koyukuk, AK","July 1, 2024 4:47 PM PDT","July 2, 2024 7:46 AM PDT",44,Not available
 Okotak Fire,"Northwest Arctic, AK","July 2, 2024 9:31 AM PDT","July 2, 2024 10:09 AM PDT",9.3,Not available
 Uluksian Fire,"Northwest Arctic, AK","July 2, 2024 9:35 AM PDT","July 2, 2024 10:09 AM PDT",51,Not available
-Thompson Fire,"Butte, CA","July 2, 2024 10:51 AM PDT","July 4, 2024 8:24 PM PDT",3789,55
+Thompson Fire,"Butte, CA","July 2, 2024 10:51 AM PDT","July 5, 2024 7:07 PM PDT",3789,55
 Beavertail Fire,"Mesa, CO","July 2, 2024 3:49 PM PDT","July 3, 2024 12:33 PM PDT",60.6,Not available
 Marksman Road Fire,"Grant, WA","July 2, 2024 6:27 PM PDT","July 4, 2024 10:21 AM PDT",325,Not available
 Rocky Butte - Wibaux Fire,"Wibaux, MT","July 3, 2024 9:45 AM PDT","July 3, 2024 9:56 AM PDT",0.6,Not available
@@ -150,8 +150,7 @@ Olive Fire,"Kern, CA","July 3, 2024 12:50 PM PDT","July 5, 2024 12:46 PM PDT",13
 Shelly Fire,"Siskiyou, CA","July 3, 2024 1:27 PM PDT","July 5, 2024 2:20 PM PDT",446,0
 Berry Fire,"Kern, CA","July 3, 2024 1:46 PM PDT","July 5, 2024 12:43 PM PDT",NA,Not available
 Sharp Fire,"Ventura, CA","July 3, 2024 1:48 PM PDT","July 3, 2024 5:49 PM PDT",NA,Not available
-Billy Creek Fire,"Nez Perce, ID","July 3, 2024 2:56 PM PDT","July 5, 2024 3:29 PM PDT",3500,10
-Keys Dike Fire,"Yakima, WA","July 3, 2024 10:29 PM PDT","July 5, 2024 3:33 PM PDT",20,Not available
+Billy Creek Fire,"Nez Perce, ID","July 3, 2024 2:56 PM PDT","July 5, 2024 3:29 PM PDT",3155,10
 Smoikiam Fire,"Grant, WA","July 4, 2024 3:29 AM PDT","July 4, 2024 1:49 PM PDT",0.25,Not available
 Music Fire,"Mohave, AZ","July 4, 2024 11:25 AM PDT","July 5, 2024 2:23 PM PDT",8.7,Not available
 Skull Fire,"Umatilla, OR","July 4, 2024 11:33 AM PDT","July 5, 2024 3:17 PM PDT",64.3,90
@@ -159,13 +158,12 @@ Fort Hall Assist 5 Fire,"Bingham, ID","July 4, 2024 11:35 AM PDT","July 5, 2024 
 Road 11 Fire,"Douglas, WA","July 4, 2024 2:05 PM PDT","July 5, 2024 12:08 AM PDT",800,50
 Spring Creek Fire,"Union, OR","July 4, 2024 3:48 PM PDT","July 5, 2024 10:08 AM PDT",4.1,Not available
 Inc 1434 Spot Fire,"Stevens, WA","July 4, 2024 6:01 PM PDT","July 5, 2024 10:36 AM PDT",10,Not available
-French Fire,"Mariposa, CA","July 4, 2024 6:02 PM PDT","July 5, 2024 12:44 PM PDT",908,20
+French Fire,"Mariposa, CA","July 4, 2024 6:02 PM PDT","July 5, 2024 7:04 PM PDT",908,20
 Fireweed Loop Fire,"Lewis and Clark, MT","July 4, 2024 6:34 PM PDT","July 4, 2024 7:56 PM PDT",5.9,Not available
 Opstead Fire Fire,"Washakie, WY","July 4, 2024 9:01 PM PDT","July 5, 2024 12:15 PM PDT",1.2,Not available
 Cerro Cosso Fire,"Kern, CA","July 4, 2024 10:07 PM PDT","July 5, 2024 12:43 PM PDT",0.1,Not available
 Memorial Fire,"Jackson, OR","July 4, 2024 10:23 PM PDT","July 5, 2024 9:48 AM PDT",70,Not available
 Offenhauser Fire,"Washoe, NV","July 5, 2024 2:27 AM PDT","July 5, 2024 12:47 PM PDT",14,Not available
-Cemetery Fire,"Stevens, WA","July 5, 2024 1:36 PM PDT","July 5, 2024 3:38 PM PDT",0.55,Not available
 Rancho Fire,"Ventura, CA","July 5, 2024 5:47 PM PDT","July 5, 2024 7:04 PM PDT",NA,Not available
 Apache Fire,"Butte, CA","June 24, 2024 12:21 PM PDT","June 29, 2024 12:09 PM PDT",691,100
 Fresno June Lightning Complex,"Fresno, CA","June 24, 2024 8:01 AM PDT","July 4, 2024 10:48 AM PDT",10669,98
@@ -201,8 +199,9 @@ Lumpkin Fire,"Butte, CA","July 4, 2024 2:15 PM PDT","July 5, 2024 6:53 AM PDT",8
 Rd 18.75 / Ave 24 Fire,"Madera, CA","July 4, 2024 3:57 PM PDT","July 5, 2024 12:41 AM PDT",10,Not available
 Storey Fire,"Madera, CA","July 4, 2024 3:33 PM PDT","July 5, 2024 12:41 AM PDT",10,100
 Paloma Fire,"Merced, CA","July 4, 2024 5:21 PM PDT","July 5, 2024 12:40 AM PDT",14,100
-Dersch Fire,"Shasta, CA","July 5, 2024 3:52 AM PDT","July 5, 2024 12:06 PM PDT",50,10
-Hills Fire,"Riverside, CA","July 5, 2024 7:14 AM PDT","July 5, 2024 11:57 AM PDT",70,25
+Dersch Fire,"Shasta, CA","July 5, 2024 3:52 AM PDT","July 5, 2024 2:00 PM PDT",50,10
+Hills Fire,"Riverside, CA","July 5, 2024 7:14 AM PDT","July 5, 2024 2:10 PM PDT",71,25
 York Fire,"Kings, CA","July 5, 2024 6:19 AM PDT","July 5, 2024 8:21 AM PDT",60,100
-Lake Fire,"Santa Barbara, CA","July 5, 2024 8:48 AM PDT","July 5, 2024 10:25 AM PDT",296,Not available
+Lake Fire,"Santa Barbara, CA","July 5, 2024 8:48 AM PDT","July 5, 2024 12:34 PM PDT",500,Not available
 Plenty Fire,"Los Angeles, CA","July 5, 2024 10:22 AM PDT","July 5, 2024 11:52 AM PDT",67,0
+Vestal Fire,"Tehama, CA","July 5, 2024 10:27 AM PDT","July 5, 2024 1:15 PM PDT",15,Not available
