@@ -89,7 +89,7 @@ Horsecreek Fire,"Lincoln, WY","July 1, 2024 9:52 AM PDT","July 9, 2024 12:56 PM 
 Olive Fire,"Kern, CA","July 3, 2024 12:50 PM PDT","July 5, 2024 12:46 PM PDT",1310,95
 Litchfield B Rx Fire,"Meeker, MN","May 12, 2024 7:55 AM PDT","July 9, 2024 10:06 AM PDT",NA,Not available
 Middle Mountain Fire,"Ferry, WA","July 4, 2024 4:45 PM PDT","July 8, 2024 11:19 AM PDT",14.2,80
-Lake Fire,"Santa Barbara, CA","July 5, 2024 3:48 PM PDT","July 9, 2024 3:06 PM PDT",18996,16
+Lake Fire,"Santa Barbara, CA","July 5, 2024 3:48 PM PDT","July 9, 2024 11:09 PM PDT",18996,16
 Fish Fire,"Northwest Arctic, AK","June 22, 2024 4:18 PM PDT","July 2, 2024 7:38 AM PDT",1441.2,0
 Twin Lakes South Rx Fire,"Big Stone, MN","May 14, 2024 6:23 AM PDT","July 8, 2024 2:01 PM PDT",166,Not available
 O Fallon Fire,"Prairie, MT","July 3, 2024 10:34 AM PDT","July 9, 2024 9:04 AM PDT",1.6,Not available
@@ -112,7 +112,7 @@ Skull Fire,"Umatilla, OR","July 4, 2024 11:33 AM PDT","July 5, 2024 3:17 PM PDT"
 Lofgren East Rx Fire,"Clay, MN","May 11, 2024 6:46 AM PDT","July 5, 2024 2:13 PM PDT",81,Not available
 Big Salmon Fork Fire,"Yukon-Koyukuk, AK","June 25, 2024 3:48 PM PDT","July 3, 2024 9:10 PM PDT",3133.2,Not available
 Sandy Lake Wpa Rx Fire,"Mahnomen, MN","May 4, 2024 8:19 AM PDT","July 5, 2024 1:52 PM PDT",149,Not available
-Vista Fire,"San Bernardino, CA","July 7, 2024 9:51 AM PDT","July 9, 2024 1:28 PM PDT",1295,0
+Vista Fire,"San Bernardino, CA","July 7, 2024 9:51 AM PDT","July 9, 2024 10:21 PM PDT",1295,0
 Basin Fire,"Fresno, CA","June 26, 2024 10:29 AM PDT","July 9, 2024 8:15 AM PDT",14020,85
 Hodzana River Fire,"Bethel, AK","June 25, 2024 6:38 PM PDT","July 2, 2024 1:24 AM PDT",1080.3,Not available
 Quinn Creek Fire,"Bethel, AK","June 26, 2024 9:54 AM PDT","June 29, 2024 6:43 PM PDT",3074.9,0
@@ -123,7 +123,7 @@ Downey Creek Fire,"Bethel, AK","June 18, 2024 12:22 AM PDT","June 23, 2024 7:04 
 Stony Brook Rx Fire,"Grant, MN","May 6, 2024 8:50 AM PDT","July 9, 2024 7:37 AM PDT",129,Not available
 Salmon Fire,"Yukon-Koyukuk, AK","June 29, 2024 2:56 PM PDT","July 3, 2024 4:24 PM PDT",5140,0
 Little Twist Fire,"Beaver, UT","June 13, 2024 1:00 PM PDT","July 9, 2024 11:11 AM PDT",5244,50
-Salt Creek Fire,"Jackson, OR","July 7, 2024 4:08 PM PDT","July 8, 2024 11:18 PM PDT",1700,2
+Salt Creek Fire,"Jackson, OR","July 7, 2024 4:08 PM PDT","July 8, 2024 11:18 PM PDT",3305,7
 Foraker Fire,"Denali, AK","June 21, 2024 2:58 PM PDT","July 9, 2024 10:24 AM PDT",5873,0
 Billy Creek Fire,"Nez Perce, ID","July 3, 2024 2:56 PM PDT","July 8, 2024 3:31 PM PDT",3185,63
 Meadows Rx Fire,"Wilkin, MN","May 14, 2024 5:31 AM PDT","July 5, 2024 2:55 PM PDT",1948,Not available
@@ -225,5 +225,5 @@ Caliente Fire,"Kern, CA","July 8, 2024 3:18 PM PDT","July 9, 2024 12:51 PM PDT",
 Teresa Fire,"Santa Clara, CA","July 9, 2024 5:33 AM PDT","July 9, 2024 11:44 AM PDT",36,80
 Cow Fire,"Tulare, CA","July 8, 2024 7:10 PM PDT","July 9, 2024 9:28 AM PDT",501,41
 Todd Fire,"Los Angeles, CA","July 9, 2024 8:59 AM PDT","July 9, 2024 9:05 AM PDT",35,Not available
-Breckenridge Fire,"Kern, CA","July 9, 2024 9:17 AM PDT","July 9, 2024 2:27 PM PDT",250,Not available
-Panoche Fire,"San Benito, CA","July 9, 2024 12:12 PM PDT","July 9, 2024 2:27 PM PDT",93,70
+Breckenridge Fire,"Kern, CA","July 9, 2024 9:17 AM PDT","July 9, 2024 2:37 PM PDT",400,Not available
+Panoche Fire,"San Benito, CA","July 9, 2024 12:12 PM PDT","July 9, 2024 2:51 PM PDT",93,100
