@@ -175,7 +175,7 @@ Maxwell Hill - Mccone Fire,"McCone, MT","July 6, 2024 6:41 PM PDT","July 7, 2024
 Vista Fire,"San Bernardino, CA","July 7, 2024 9:51 AM PDT","July 11, 2024 7:29 AM PDT",2700,0
 Wilder Fire,"Humboldt, NV","July 7, 2024 11:23 AM PDT","July 10, 2024 5:46 PM PDT",17271,80
 Deer Springs Fire,"Kane, UT","July 7, 2024 12:02 PM PDT","July 11, 2024 7:03 PM PDT",11680,30
-Salt Creek Fire,"Jackson, OR","July 7, 2024 4:08 PM PDT","July 11, 2024 1:08 PM PDT",3891,24
+Salt Creek Fire,"Jackson, OR","July 7, 2024 4:08 PM PDT","July 11, 2024 9:40 PM PDT",3891,24
 North Creek Fire,"White Pine, NV","July 7, 2024 4:25 PM PDT","July 8, 2024 6:51 PM PDT",1100,75
 Horse Fire,"Nye, NV","July 7, 2024 5:04 PM PDT","July 10, 2024 5:42 PM PDT",90,70
 Pius Fire,"Coconino, AZ","July 8, 2024 12:31 PM PDT","July 11, 2024 11:30 AM PDT",2010,28
@@ -186,11 +186,11 @@ Perry Tank Fire,"Yavapai, AZ","July 8, 2024 1:36 PM PDT","July 9, 2024 10:20 AM 
 Shoofly Fire,"Chelan, WA","July 8, 2024 2:11 PM PDT","July 11, 2024 9:01 PM PDT",101,0
 Beauty Creek - Mccone Fire,"McCone, MT","July 8, 2024 2:41 PM PDT","July 9, 2024 7:52 AM PDT",23.5,Not available
 Bogus Fire,"Siskiyou, CA","July 8, 2024 4:02 PM PDT","July 9, 2024 7:56 PM PDT",411,55
-Larch Creek Fire,"Wasco, OR","July 9, 2024 12:32 PM PDT","July 11, 2024 6:23 PM PDT",9135.47,0
+Larch Creek Fire,"Wasco, OR","July 9, 2024 12:32 PM PDT","July 11, 2024 10:37 PM PDT",10008,0
 Horse Gulch Fire,"Lewis and Clark, MT","July 9, 2024 12:32 PM PDT","July 11, 2024 12:11 PM PDT",7594,0
 Lonestar Fire,"Cochise, AZ","July 9, 2024 7:37 PM PDT","July 11, 2024 3:54 PM PDT",258,Not available
-Huntington Mutual Aid Fire,"Baker, OR","July 10, 2024 3:30 AM PDT","July 11, 2024 1:27 PM PDT",4504,0
-Falls Fire,"Harney, OR","July 10, 2024 7:55 AM PDT","July 11, 2024 11:43 AM PDT",250,0
+Huntington Mutual Aid Fire,"Baker, OR","July 10, 2024 3:30 AM PDT","July 11, 2024 1:27 PM PDT",2000,25
+Falls Fire,"Harney, OR","July 10, 2024 7:55 AM PDT","July 11, 2024 11:43 AM PDT",1200,0
 Road 422 - Dawson Fire,"Dawson, MT","July 10, 2024 11:06 AM PDT","July 11, 2024 8:54 AM PDT",19.6,Not available
 Baird Butte - Wibaux Fire,"Wibaux, MT","July 10, 2024 12:21 PM PDT","July 10, 2024 12:27 PM PDT",0.8,Not available
 Woodland Fire,"Los Angeles, CA","July 10, 2024 1:04 PM PDT","July 10, 2024 4:36 PM PDT",13.2,96
@@ -198,7 +198,7 @@ River Fire,"Malheur, OR","July 10, 2024 1:18 PM PDT","July 11, 2024 11:05 AM PDT
 Poppy Fire,"Los Angeles, CA","July 10, 2024 2:30 PM PDT","July 10, 2024 4:18 PM PDT",87,98
 Running Board - Fallon Fire,"Fallon, MT","July 10, 2024 3:15 PM PDT","July 11, 2024 9:30 AM PDT",35.3,Not available
 0381 Rv Juniper Fire,"Jefferson, OR","July 10, 2024 3:35 PM PDT","July 11, 2024 5:38 PM PDT",628.82,60
-Bonita Road Fire,"Malheur, OR","July 11, 2024 4:14 AM PDT","July 11, 2024 2:06 PM PDT",1867,Not available
+Bonita Road Fire,"Malheur, OR","July 11, 2024 4:14 AM PDT","July 11, 2024 2:06 PM PDT",1867,0
 Cow Valley Fire,"Malheur, OR","July 11, 2024 6:10 AM PDT","July 11, 2024 1:38 PM PDT",20000,0
 Haying - Garfield Fire,"Garfield, MT","July 11, 2024 11:57 AM PDT","July 11, 2024 12:02 PM PDT",18.7,Not available
 Fresno June Lightning Complex,"Fresno, CA","June 24, 2024 8:01 AM PDT","July 6, 2024 12:16 PM PDT",10616,100
@@ -221,5 +221,5 @@ Todd Fire,"Los Angeles, CA","July 9, 2024 8:59 AM PDT","July 10, 2024 10:29 AM P
 Ranch Fire,"Lassen, CA","July 10, 2024 11:20 AM PDT","July 10, 2024 11:48 PM PDT",21,Not available
 Point Fire,"Humboldt, CA","July 10, 2024 10:46 AM PDT","July 11, 2024 1:08 PM PDT",85,15
 Breckenridge Fire,"Kern, CA","July 9, 2024 9:17 AM PDT","July 10, 2024 12:36 PM PDT",277,100
-Railbridge Fire,"Butte, CA","July 11, 2024 8:44 AM PDT","July 11, 2024 11:14 AM PDT",130,15
+Railbridge Fire,"Butte, CA","July 11, 2024 8:44 AM PDT","July 11, 2024 4:10 PM PDT",130,15
 Carrizo 5 Fire,"San Diego, CA","July 11, 2024 4:34 AM PDT","July 11, 2024 10:32 AM PDT",10,Not available
