@@ -207,7 +207,7 @@ tag.map.title <- tags$style(HTML("
 
  @font-face {
     font-family: 'PublicoHeadline';
-    src: url('https://www.cbsnews.com/fly/bundles/cbsnewscontent/fonts/PublicoHeadline-Bold/PublicoHeadline-Bold.woff2') format('woff2');
+    src: url('https://www.cbsnews.com/fly/bundles/cbsnewscontent/fonts/PublicoHeadline-Black/PublicoHeadline-Black.woff2') format('woff2');
   }
   
   .leaflet-top {
@@ -289,7 +289,7 @@ headerhtml <- tags$div(tag.map.title, HTML(
     "<head><meta name='viewport' content='width=device-width, initial-scale=1.0'><link rel=\"stylesheet\" href=\"https://use.typekit.net/vtp4rxj.css\"></head>
   <div class='header'>
     <div class='headline'>
-      <h1>Wildfire Tracker</h1>
+      <h1>Tracking current wildfires</h1>
       <h3>There are currently <b style='color: #A5091E'>",
     fires_count,
     "</b> wildfires in the U.S. Click or hover over an icon to see more information about each fire.<br><br></h3>
@@ -299,7 +299,7 @@ headerhtml <- tags$div(tag.map.title, HTML(
 )
 
 # New wildfire base map include fires, smoke and hotspots
-wildfire_map <- leaflet(nfis_perimeters, options = leafletOptions(zoomControl = FALSE, minZoom = 5, maxZoom = 5)) %>%
+wildfire_map <- leaflet(nfis_perimeters, options = leafletOptions(zoomControl = TRUE, minZoom = 5, maxZoom = 5)) %>%
   addControl(position = "topleft", html = headerhtml, className="map-title") %>%
   setView(-115, 40, zoom = 5) %>%
   #  addProviderTiles(providers$CartoDB.Positron) %>%
