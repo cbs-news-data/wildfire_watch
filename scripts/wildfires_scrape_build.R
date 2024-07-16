@@ -289,7 +289,7 @@ headerhtml <- tags$div(tag.map.title, HTML(
     "<head><meta name='viewport' content='width=device-width, initial-scale=1.0'><link rel=\"stylesheet\" href=\"https://use.typekit.net/vtp4rxj.css\"></head>
   <div class='header'>
     <div class='headline'>
-      <h1>Tracking current wildfires</h1>
+      <h1>Tracking wildfires</h1>
       <h3>There are currently <b style='color: #A5091E'>",
     fires_count,
     "</b> wildfires in the U.S. Click or hover over an icon to see more information about each fire.<br><br></h3>
