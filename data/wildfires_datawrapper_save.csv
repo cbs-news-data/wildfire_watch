@@ -123,7 +123,6 @@ Horse Gulch Fire,"Lewis and Clark, MT","July 9, 2024 12:32 PM PDT","July 19, 202
 Yeso Fire,"Rio Arriba, NM","July 9, 2024 1:53 PM PDT","July 15, 2024 11:29 AM PDT",650,65
 Falls Fire,"Harney, OR","July 10, 2024 7:55 AM PDT","July 20, 2024 7:00 AM PDT",114674,10
 Buckhorn Fire,"Graham, AZ","July 10, 2024 12:23 PM PDT","July 19, 2024 4:02 AM PDT",1006,44
-Woodland Fire,"Los Angeles, CA","July 10, 2024 1:04 PM PDT","July 10, 2024 4:36 PM PDT",13.2,100
 Juniper Fire,"Oneida, ID","July 10, 2024 3:08 PM PDT","July 12, 2024 12:33 PM PDT",13,Not available
 0381 Rv Juniper Fire,"Jefferson, OR","July 10, 2024 3:35 PM PDT","July 11, 2024 5:38 PM PDT",628.82,100
 Watch Fire,"Gila, AZ","July 10, 2024 10:02 PM PDT","July 12, 2024 11:40 AM PDT",2162,100
@@ -157,7 +156,7 @@ Gulch Fire,"Mohave, AZ","July 13, 2024 3:14 PM PDT","July 18, 2024 3:55 PM PDT",
 Rim 3-6 Fire,"Lassen, CA","July 13, 2024 3:30 PM PDT","July 18, 2024 10:34 AM PDT",1025,75
 Horse 3-7 Fire,"Lassen, CA","July 13, 2024 3:34 PM PDT","July 18, 2024 10:34 AM PDT",42,Not available
 Lg18 6261 Fire,"Beaverhead, MT","July 13, 2024 4:12 PM PDT","July 13, 2024 7:32 PM PDT",63,Not available
-Lone Rock Fire,"Gilliam, OR","July 13, 2024 4:24 PM PDT","July 19, 2024 7:56 PM PDT",83922,40
+Lone Rock Fire,"Gilliam, OR","July 13, 2024 4:24 PM PDT","July 20, 2024 8:39 AM PDT",83922,40
 220 Fire,"Garfield, MT","July 13, 2024 4:45 PM PDT","July 16, 2024 7:08 AM PDT",6.7,Not available
 Oregon Trail Fire,"Natrona, WY","July 13, 2024 5:36 PM PDT","July 16, 2024 9:39 AM PDT",1540,100
 Woody Fire,"Garfield, MT","July 13, 2024 8:00 PM PDT","July 18, 2024 10:47 AM PDT",1,Not available
@@ -175,12 +174,11 @@ Don Fire,"Fresno, CA","July 16, 2024 9:53 AM PDT","July 18, 2024 10:04 AM PDT",1
 Coombs Canyon Fire,"Umatilla, OR","July 16, 2024 1:02 PM PDT","July 18, 2024 9:00 PM PDT",10,Not available
 Sunbanks Fire,"Grant, WA","July 16, 2024 2:24 PM PDT","July 17, 2024 8:53 AM PDT",100,Not available
 Big Water Fire,"Kane, UT","July 16, 2024 2:32 PM PDT","July 18, 2024 10:02 AM PDT",0.1,Not available
-Crooks Creek Fire,"Josephine, OR","July 16, 2024 3:41 PM PDT","July 17, 2024 11:52 AM PDT",0.1,Not available
-Trail Fire,"Douglas, OR","July 16, 2024 7:39 PM PDT","July 19, 2024 2:18 PM PDT",2000,0
+Trail Fire,"Douglas, OR","July 16, 2024 7:39 PM PDT","July 19, 2024 2:18 PM PDT",0.1,0
 Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","July 19, 2024 2:18 PM PDT",250,Not available
 Black Diamond - Wibaux Fire,"Wibaux, MT","July 17, 2024 5:50 AM PDT","July 18, 2024 10:56 AM PDT",0.1,Not available
 Little Stony Fire,"Douglas, OR","July 17, 2024 6:33 AM PDT","July 18, 2024 2:26 PM PDT",NA,Not available
-Durkee Fire,"Baker, OR","July 17, 2024 8:57 AM PDT","July 19, 2024 4:40 PM PDT",15577,0
+Durkee Fire,"Baker, OR","July 17, 2024 8:57 AM PDT","July 20, 2024 8:15 AM PDT",15577,0
 Ore Fire,"Lane, OR","July 17, 2024 9:55 AM PDT","July 18, 2024 11:09 PM PDT",440,0
 Watson Fire,"Douglas, OR","July 17, 2024 10:05 AM PDT","July 19, 2024 2:18 PM PDT",10,Not available
 Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","July 19, 2024 1:57 PM PDT",138,0
@@ -204,25 +202,27 @@ Swawilla I Fire,"Ferry, WA","July 17, 2024 9:30 PM PDT","July 19, 2024 12:35 PM 
 Owhi Flats Fire,"Okanogan, WA","July 17, 2024 11:12 PM PDT","July 19, 2024 12:04 PM PDT",84,0
 Pasture Fire,"Johnson, WY","July 18, 2024 7:57 AM PDT","July 18, 2024 2:52 PM PDT",2.8,Not available
 Mm 178 Fire,"Natrona, WY","July 18, 2024 11:57 AM PDT","July 18, 2024 2:15 PM PDT",12.4,Not available
-Monkey Creek Fire,"Morrow, OR","July 18, 2024 3:13 PM PDT","July 19, 2024 2:20 PM PDT",1400,15
+Monkey Creek Fire,"Morrow, OR","July 18, 2024 3:13 PM PDT","July 20, 2024 7:59 AM PDT",1400,15
 Hilltop Fire,"Yellowstone, MT","July 18, 2024 4:55 PM PDT","July 19, 2024 10:43 AM PDT",2.4,Not available
 Rocky Cliff Fire,"Yellowstone, MT","July 18, 2024 6:30 PM PDT","July 18, 2024 8:36 PM PDT",33,Not available
-Blacktail Canyon Fire,"Silver Bow, MT","July 19, 2024 1:37 PM PDT","July 19, 2024 9:19 PM PDT",150,0
+Seepay Fire,"Sanders, MT","July 19, 2024 5:15 AM PDT","July 20, 2024 8:37 AM PDT",2.5,Not available
+Blacktail Canyon Fire,"Silver Bow, MT","July 19, 2024 1:37 PM PDT","July 19, 2024 9:19 PM PDT",70,0
 Trep Fire,"Douglas, OR","July 19, 2024 1:50 PM PDT","July 19, 2024 5:28 PM PDT",20,Not available
+Bridge Creek Fire,"Ferry, WA","July 19, 2024 2:09 PM PDT","July 20, 2024 7:25 AM PDT",2,Not available
 Abbey Fire,"San Bernardino, CA","July 19, 2024 3:27 PM PDT","July 19, 2024 11:41 PM PDT",10,Not available
 State Fire,"Washoe, NV","July 19, 2024 6:19 PM PDT","July 19, 2024 8:59 PM PDT",0.1,Not available
 Basin Fire,"Fresno, CA","June 26, 2024 3:29 AM PDT","July 17, 2024 3:42 AM PDT",14023,95
 Sheering Fire,"Tuolumne, CA","June 24, 2024 12:19 PM PDT","July 19, 2024 1:46 AM PDT",528,100
 French Fire,"Mariposa, CA","July 4, 2024 11:33 AM PDT","July 19, 2024 7:00 AM PDT",908,100
 North Fire,"Modoc, CA","July 7, 2024 8:38 AM PDT","July 14, 2024 3:46 PM PDT",4685,100
-Royal Fire,"Placer, CA","July 7, 2024 9:09 AM PDT","July 17, 2024 9:12 AM PDT",215,95
+Royal Fire,"Placer, CA","July 7, 2024 9:09 AM PDT","July 20, 2024 1:56 AM PDT",215,95
 Bogus Fire,"Siskiyou, CA","July 8, 2024 9:02 AM PDT","July 15, 2024 3:36 PM PDT",411,100
 Cow 2 Fire,"Tulare, CA","July 8, 2024 7:10 PM PDT","July 17, 2024 11:43 PM PDT",509,100
 Railbridge Fire,"Butte, CA","July 11, 2024 8:44 AM PDT","July 13, 2024 3:28 PM PDT",130,100
 Athens Fire,"Placer, CA","July 12, 2024 6:49 AM PDT","July 13, 2024 3:26 PM PDT",260,100
 Pauba Fire,"Riverside, CA","July 12, 2024 6:31 AM PDT","July 14, 2024 3:56 PM PDT",101,100
 Hurricane Fire,"Kern, San Luis Obispo, CA","July 13, 2024 3:54 AM PDT","July 17, 2024 11:38 PM PDT",12703,100
-Soda Fire,"San Luis Obispo, CA","July 13, 2024 2:24 AM PDT","July 18, 2024 4:40 AM PDT",161,50
+Soda Fire,"San Luis Obispo, CA","July 13, 2024 2:24 AM PDT","July 20, 2024 1:56 AM PDT",161,50
 Horse Fire (Previously 3-7),"Lassen, CA","July 13, 2024 11:21 AM PDT","July 19, 2024 11:31 PM PDT",42,95
 Rim Fire,"Lassen, CA","July 13, 2024 8:31 AM PDT","July 19, 2024 11:31 PM PDT",1025,75
 Laura Fire,"Kern, CA","July 14, 2024 6:35 AM PDT","July 19, 2024 3:39 PM PDT",77,100
@@ -234,11 +234,11 @@ Point Fire,"Modoc, CA","July 15, 2024 11:26 AM PDT","July 17, 2024 11:44 PM PDT"
 Willow Fire,"Kern, CA","July 16, 2024 10:04 AM PDT","July 19, 2024 12:03 PM PDT",175,100
 Donomore Fire,"Siskiyou, CA","July 16, 2024 9:56 AM PDT","July 18, 2024 1:46 PM PDT",35,Not available
 Sloane Fire,"San Diego, CA","July 17, 2024 10:17 AM PDT","July 19, 2024 2:22 PM PDT",14,100
-Ducor 2 Fire,"Tulare, CA","July 18, 2024 10:35 AM PDT","July 19, 2024 1:29 PM PDT",142,Not available
+Ducor 2 Fire,"Tulare, CA","July 18, 2024 10:35 AM PDT","July 20, 2024 1:56 AM PDT",142,Not available
 Tire Fire,"Fresno, CA","July 18, 2024 11:52 AM PDT","July 19, 2024 1:46 AM PDT",16,100
 Dorado Fire,"Fresno, CA","July 18, 2024 2:38 PM PDT","July 19, 2024 1:27 PM PDT",43,Not available
 Panoche Fire,"San Benito, CA","July 19, 2024 4:46 AM PDT","July 19, 2024 3:41 PM PDT",37,100
 Liberty Fire,"San Joaquin, CA","July 19, 2024 7:27 AM PDT","July 19, 2024 11:29 PM PDT",104,50
 La Tuna Fire,"Los Angeles, CA","July 19, 2024 10:39 AM PDT","July 19, 2024 1:29 PM PDT",29,Not available
 Lehi Fire,"Placer, CA","July 19, 2024 11:18 AM PDT","July 19, 2024 11:31 AM PDT",9,Not available
-Lookout Fire,"Madera, CA","July 19, 2024 3:43 PM PDT","July 19, 2024 11:31 PM PDT",25,20
+Lookout Fire,"Madera, CA","July 19, 2024 3:43 PM PDT","July 20, 2024 1:15 AM PDT",25,20
