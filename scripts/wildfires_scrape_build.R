@@ -170,8 +170,8 @@ write_csv(fires_fordatawrappertable,"data/wildfires_datawrapper_save.csv")
 fires <- fires %>% filter(!is.na(latitude) & !is.na(longitude))
 # Create flag for active vs. not for icons; 5-day cutoff
 fires$active <- if_else(fires$days_sinceupdate<5,"Yes","No")
-# filter out fires that are not active
-fires <- fires %>% filter(active=="Yes")
+# filter out fires that are not active or smaller than 100 acres
+fires <- fires %>% filter(active=="Yes") %>% filter(acres_burned>99)
 # count number of fires we're tracking
 fires_count <- fires %>% st_drop_geometry() %>% count()
 
