@@ -92,7 +92,7 @@ try(
     mutate(state="CA") %>%
     select(1,25,7,8,15,14,13,4,3,9,10,17) %>%
     st_drop_geometry() %>%
-    mutate(source="Cal Fire")
+    mutate(source="CalFire")
 )
 try(
   names(cal_fires) <- c("name", "state", "county", 
@@ -292,7 +292,7 @@ headerhtml <- tags$div(tag.map.title, HTML(
       <h1>Current wildfires</h1>
       <h3>There are currently <b style='color: #A5091E'>",
     fires_count,
-    "</b> wildfires in the U.S. Click or hover over an icon to see more information about each fire.<br><br></h3>
+    "</b> wildfires of more than 100 acres in the U.S. Click or hover over an icon to see more information about each fire.<br><br></h3>
     </div>
   </div>"
   ))
