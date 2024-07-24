@@ -56,6 +56,12 @@ nfis_perimeters <- st_read("data/active_perimeters.geojson") %>%
          latitude = attr_InitialLatitude,
          longitude = attr_InitialLongitude)
 
+# Simplify the geometry
+# First, repair invalid geometries
+nfis_perimeters <- st_make_valid(nfis_perimeters)
+# Adjust dTolerance as needed. Smaller values = less simplification
+simplified_nfis_perimeters <- st_simplify(nfis_perimeters, dTolerance = 0.2)
+
 # Convert milliseconds to dates and 
 # clean numbers
 fed_fires <- nfis_perimeters %>% 
