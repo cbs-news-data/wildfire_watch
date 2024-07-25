@@ -150,7 +150,7 @@ Mckinley Creek Fire,"Lane, OR","July 17, 2024 8:40 AM PDT","July 24, 2024 7:29 A
 Durkee Fire,"Baker, OR","July 17, 2024 8:57 AM PDT","July 24, 2024 4:02 PM PDT",268492,0
 Ore Fire,"Lane, OR","July 17, 2024 9:55 AM PDT","July 24, 2024 4:21 AM PDT",860,2
 Watson Fire,"Douglas, OR","July 17, 2024 10:05 AM PDT","July 24, 2024 4:16 PM PDT",144,0
-Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","July 23, 2024 5:05 PM PDT",292,0
+Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","July 25, 2024 2:31 AM PDT",292,0
 Salmon 33 Fire,"Lane, OR","July 17, 2024 10:36 AM PDT","July 24, 2024 4:37 AM PDT",118,Not available
 Brodie Fire,"Douglas, OR","July 17, 2024 11:32 AM PDT","July 24, 2024 4:16 PM PDT",95,0
 Chalk Fire,"Lane, OR","July 17, 2024 11:36 AM PDT","July 24, 2024 7:29 AM PDT",2427,0
@@ -192,7 +192,7 @@ Loafer Fire,"Douglas, OR","July 18, 2024 12:22 PM PDT","July 24, 2024 4:16 PM PD
 Trap Fire,"Douglas, OR","July 18, 2024 2:29 PM PDT","July 24, 2024 7:35 PM PDT",2,0
 Mineral Fire,"Lane, OR","July 18, 2024 2:59 PM PDT","July 24, 2024 2:28 PM PDT",482,0
 Campwood Fire,"Douglas, OR","July 18, 2024 3:12 PM PDT","July 24, 2024 4:16 PM PDT",0.1,0
-Monkey Creek Fire,"Morrow, OR","July 18, 2024 3:13 PM PDT","July 24, 2024 10:23 PM PDT",45944,0
+Monkey Creek Fire,"Morrow, OR","July 18, 2024 3:13 PM PDT","July 25, 2024 2:01 AM PDT",45944,0
 Deep Creek Fire,"Big Horn, MT","July 18, 2024 3:53 PM PDT","July 24, 2024 5:04 PM PDT",9.81,Not available
 Pincer Two Fire,"Skagit, WA","July 18, 2024 4:09 PM PDT","July 24, 2024 10:28 AM PDT",60,0
 Rocky Cliff Fire,"Yellowstone, MT","July 18, 2024 6:30 PM PDT","July 18, 2024 8:36 PM PDT",33,Not available
@@ -202,7 +202,7 @@ Kekaha Fire Fire,"Kauai, HI","July 19, 2024 12:30 AM PDT","July 20, 2024 12:02 P
 116 Fire,"Weston, WY","July 19, 2024 8:09 AM PDT","July 22, 2024 1:00 PM PDT",9,Not available
 New 12 Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","July 24, 2024 8:00 PM PDT",3763.5,3
 Reynolds Butte Fire,"Douglas, OR","July 19, 2024 11:21 AM PDT","July 24, 2024 4:30 AM PDT",85,Not available
-0465 Cr Jackpine Fire,"Deschutes, OR","July 19, 2024 12:35 PM PDT","July 22, 2024 5:04 PM PDT",180,80
+0465 Cr Jackpine Fire,"Deschutes, OR","July 19, 2024 12:35 PM PDT","July 25, 2024 2:24 AM PDT",180,80
 Blacktail Canyon Fire,"Silver Bow, MT","July 19, 2024 1:37 PM PDT","July 23, 2024 4:17 PM PDT",79,0
 Trep Fire,"Douglas, OR","July 19, 2024 1:50 PM PDT","July 24, 2024 4:16 PM PDT",101,0
 Patrick Fire,"La Paz, AZ","July 19, 2024 2:24 PM PDT","July 24, 2024 5:31 PM PDT",55.3,Not available
@@ -221,7 +221,7 @@ Coffeepot Fire,"Lane, OR","July 21, 2024 3:57 AM PDT","July 24, 2024 7:29 AM PDT
 Esmond Creek Fire,"Douglas, OR","July 21, 2024 7:36 AM PDT","July 22, 2024 12:35 PM PDT",3.9,Not available
 Davin Road Fire,"Franklin, WA","July 21, 2024 8:40 AM PDT","July 22, 2024 8:52 PM PDT",1782,Not available
 Thompson Creek Fire,"Douglas, OR","July 21, 2024 12:22 PM PDT","July 23, 2024 4:18 PM PDT",NA,Not available
-Courtrock Fire,"Grant, OR","July 21, 2024 2:54 PM PDT","July 24, 2024 12:44 PM PDT",5170,0
+Courtrock Fire,"Grant, OR","July 21, 2024 2:54 PM PDT","July 25, 2024 2:41 AM PDT",5170,0
 Texas Fire,"Rio Blanco, CO","July 21, 2024 3:09 PM PDT","July 24, 2024 12:24 PM PDT",18,Not available
 Wonder Bale Fire,"Ziebach, SD","July 21, 2024 4:18 PM PDT","July 22, 2024 12:46 PM PDT",NA,Not available
 Raven Creek Fire,"Weston, WY","July 21, 2024 4:58 PM PDT","July 22, 2024 1:34 PM PDT",13.08,Not available
@@ -296,7 +296,7 @@ Beaver Fire,"San Benito, CA","July 23, 2024 9:09 AM PDT","July 24, 2024 8:37 AM 
 Acres Fire,"Madera, CA","July 23, 2024 2:09 PM PDT","July 24, 2024 7:18 AM PDT",10,100
 Bullion Fire,"Mariposa, CA","July 24, 2024 7:04 AM PDT","July 24, 2024 3:28 PM PDT",50,100
 Scales Fire,"Tehama, CA","July 24, 2024 7:20 AM PDT","July 24, 2024 8:55 AM PDT",30,20
-Park Fire,"Butte, CA","July 24, 2024 7:52 AM PDT","July 24, 2024 4:28 PM PDT",6465,3
+Park Fire,"Butte, CA","July 24, 2024 7:52 AM PDT","July 24, 2024 7:59 PM PDT",45549,3
 Horse Fire,"Modoc, CA","July 24, 2024 6:43 AM PDT","July 24, 2024 9:37 AM PDT",13,Not available
 R-6 Fire,"Lassen, CA","July 23, 2024 1:18 PM PDT","July 24, 2024 9:45 AM PDT",10,Not available
 Pentz Fire,"Butte, CA","July 24, 2024 12:33 PM PDT","July 24, 2024 1:31 PM PDT",40,0
