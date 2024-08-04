@@ -62,7 +62,7 @@ Black Fire,"Maricopa, AZ","July 11, 2024 9:23 PM PDT","July 20, 2024 2:37 PM PDT
 Deadman Fire,"Rosebud, MT","July 12, 2024 2:00 AM PDT","July 19, 2024 8:43 PM PDT",19982,100
 Mcghee Fire,"Rosebud, MT","July 12, 2024 12:21 PM PDT","July 19, 2024 8:43 PM PDT",19223,100
 Speirs Fire,"Daggett, UT","July 13, 2024 11:33 AM PDT","July 22, 2024 7:49 PM PDT",715,97
-Lone Rock Fire,"Gilliam, OR","July 13, 2024 4:24 PM PDT","August 1, 2024 4:49 AM PDT",137222,83
+Lone Rock Fire,"Gilliam, OR","July 13, 2024 4:24 PM PDT","August 4, 2024 4:19 AM PDT",137222,83
 Prairie Fire,"Rosebud, MT","July 12, 2024 1:32 PM PDT","July 18, 2024 4:31 AM PDT",6540,100
 Miller Peak Fire,"Missoula, MT","July 14, 2024 3:38 PM PDT","July 27, 2024 12:54 PM PDT",2724,65
 White Fire,"Kern, CA","July 13, 2024 11:09 AM PDT","July 21, 2024 11:03 AM PDT",5563,98
@@ -86,7 +86,7 @@ Wickiup Fire,"Deschutes, OR","July 17, 2024 1:04 PM PDT","July 27, 2024 5:29 AM 
 Snake Fire,"Umatilla, OR","July 17, 2024 4:00 PM PDT","July 22, 2024 2:49 PM PDT",13557,100
 Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","August 3, 2024 11:27 AM PDT",2341,9
 Boneyard Fire,"Grant, OR","July 17, 2024 3:42 PM PDT","July 24, 2024 12:43 PM PDT",49716,100
-Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","August 3, 2024 3:39 AM PDT",480,0
+Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","August 4, 2024 4:18 AM PDT",480,0
 Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 3, 2024 5:12 AM PDT",2142.3,10
 Watson Fire,"Douglas, OR","July 17, 2024 10:05 AM PDT","August 1, 2024 7:03 AM PDT",236.7,50
 Monkey Creek Fire,"Morrow, OR","July 18, 2024 3:13 PM PDT","August 3, 2024 2:55 PM PDT",113902,32
@@ -108,7 +108,7 @@ Lost Bucket Fire,"Lane, OR","July 17, 2024 2:25 PM PDT","August 3, 2024 4:52 AM 
 Horse Heaven Creek Fire,"Lane, OR","July 17, 2024 3:28 PM PDT","August 3, 2024 9:55 AM PDT",680,Not available
 Trail Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 3, 2024 5:16 AM PDT",6133.5,11
 Whisky Creek Fire,"Hood River, OR","July 20, 2024 11:01 AM PDT","August 3, 2024 9:33 PM PDT",1003,0
-Courtrock Fire,"Grant, OR","July 21, 2024 2:54 PM PDT","August 3, 2024 4:09 AM PDT",20013,57
+Courtrock Fire,"Grant, OR","July 21, 2024 2:54 PM PDT","August 4, 2024 4:19 AM PDT",20013,57
 Reynolds Butte Fire,"Douglas, OR","July 19, 2024 11:21 AM PDT","August 3, 2024 9:55 AM PDT",276,Not available
 No Man Fire,"Lane, OR","July 18, 2024 12:09 PM PDT","August 3, 2024 9:55 AM PDT",896,Not available
 Fuller Lake Fire,"Douglas, OR","July 17, 2024 7:06 AM PDT","August 3, 2024 9:55 AM PDT",117,Not available
@@ -160,7 +160,7 @@ Owen Creek Fire,"Albany, WY","July 24, 2024 1:14 PM PDT","July 25, 2024 7:40 AM 
 Campwood Fire,"Douglas, OR","July 23, 2024 6:41 PM PDT","August 3, 2024 5:12 AM PDT",20,25
 Trap Fire,"Douglas, OR","July 18, 2024 2:29 PM PDT","July 31, 2024 8:24 AM PDT",16,0
 Thin Fire,"Douglas, OR","July 24, 2024 3:15 PM PDT","August 3, 2024 5:12 AM PDT",0.6,95
-Retreat Fire,"Yakima, WA","July 23, 2024 3:46 PM PDT","August 3, 2024 4:32 PM PDT",40803,40
+Retreat Fire,"Yakima, WA","July 23, 2024 3:46 PM PDT","August 4, 2024 4:10 AM PDT",40803,40
 Grove 2 Fire,"San Diego, CA","July 24, 2024 1:12 PM PDT","July 25, 2024 7:49 PM PDT",863,100
 Sheep Fire,"Douglas, OR","July 23, 2024 6:51 PM PDT","August 3, 2024 5:12 AM PDT",0.3,95
 Stockade Canyon Fire,"Washoe, NV","July 23, 2024 7:15 PM PDT","August 2, 2024 4:48 PM PDT",18630,32
@@ -181,7 +181,7 @@ Parasol Fire,"Grant, OR","July 24, 2024 8:37 PM PDT","August 1, 2024 8:49 AM PDT
 Thunder Fire,"Lemhi, ID","July 24, 2024 6:55 PM PDT","July 27, 2024 5:57 AM PDT",2474,50
 Badger Fire,"Sheridan, WY","July 24, 2024 1:25 PM PDT","July 26, 2024 2:33 PM PDT",8028,100
 Pencil Fire,"Modoc, CA","July 22, 2024 2:16 PM PDT","July 26, 2024 1:55 PM PDT",396,100
-Limepoint Fire,"Adams, ID","July 24, 2024 5:21 PM PDT","August 3, 2024 4:55 AM PDT",22377,5
+Limepoint Fire,"Adams, ID","July 24, 2024 5:21 PM PDT","August 4, 2024 4:07 AM PDT",22377,5
 Sand Stone Fire,"Maricopa, AZ","July 25, 2024 6:04 PM PDT","July 31, 2024 2:30 PM PDT",27390,78
 Mill Pocket Fire,"Sanders, MT","July 25, 2024 11:03 AM PDT","July 27, 2024 11:47 AM PDT",173,100
 Haymaker Fire,"Lake, MT","July 24, 2024 9:00 PM PDT","August 1, 2024 9:00 AM PDT",47,25
