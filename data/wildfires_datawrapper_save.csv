@@ -190,7 +190,7 @@ Summit Fire,"Graham, AZ","July 26, 2024 3:49 PM PDT","July 28, 2024 1:06 PM PDT"
 Gwen Fire,"Nez Perce, ID","July 24, 2024 6:02 PM PDT","August 1, 2024 8:37 PM PDT",28820,90
 Chrome Fire,"Gila, AZ","July 26, 2024 4:12 PM PDT","July 27, 2024 4:26 PM PDT",80,Not available
 Grouse Fire,"Beaverhead, MT","July 25, 2024 4:10 PM PDT","August 6, 2024 6:05 PM PDT",3500,5
-Boulder Fire,"Valley, ID","July 24, 2024 5:27 PM PDT","August 6, 2024 3:38 AM PDT",965,6
+Boulder Fire,"Valley, ID","July 24, 2024 5:27 PM PDT","August 6, 2024 9:54 PM PDT",965,6
 Bulltrout Fire,"Boise, ID","July 25, 2024 5:06 PM PDT","August 5, 2024 3:46 PM PDT",271,65
 Brushy Fire,"Graham, AZ","July 27, 2024 4:29 PM PDT","July 30, 2024 10:27 AM PDT",8284,100
 Cliff Mountain Fire,"Adams, ID","July 25, 2024 12:12 PM PDT","August 2, 2024 5:11 AM PDT",1108,20
@@ -203,7 +203,7 @@ Mountain View Fire,"Wallowa, OR","July 26, 2024 11:27 AM PDT","August 1, 2024 7:
 Charlie Brown Fire,"Wallowa, OR","July 25, 2024 11:39 AM PDT","July 30, 2024 1:08 PM PDT",69,Not available
 Big Canyon Fire,"Wallowa, OR","July 26, 2024 12:45 PM PDT","August 5, 2024 7:23 AM PDT",288,Not available
 Poison Creek Fire,"Grant, OR","July 25, 2024 3:04 PM PDT","August 6, 2024 5:50 PM PDT",1060,75
-Wapiti Fire,"Boise, ID","July 24, 2024 7:58 PM PDT","August 6, 2024 7:23 AM PDT",448,0
+Wapiti Fire,"Boise, ID","July 24, 2024 7:58 PM PDT","August 6, 2024 9:52 PM PDT",448,0
 Sischu Fire,"Yukon-Koyukuk, AK","July 25, 2024 4:51 PM PDT","July 30, 2024 10:39 AM PDT",176.5,Not available
 Johnson Fire,"Ravalli, MT","July 25, 2024 4:24 PM PDT","August 5, 2024 1:51 PM PDT",270,0
 Devils Gulch Fire,"Wallowa, OR","July 25, 2024 9:04 PM PDT","July 29, 2024 6:03 PM PDT",48,Not available
@@ -275,6 +275,7 @@ Wally Fire,"Gila, AZ","August 4, 2024 4:53 PM PDT","August 6, 2024 6:18 PM PDT",
 Craven Road Fire,"Jackson, SD","August 6, 2024 2:30 PM PDT","August 6, 2024 7:24 PM PDT",75,Not available
 Williams Mine Fire,"Skamania, WA","August 5, 2024 12:03 PM PDT","August 6, 2024 7:46 PM PDT",2712,0
 Dry Fork Fire,"Rich, UT","August 6, 2024 11:33 AM PDT","August 6, 2024 8:43 PM PDT",1140,0
+Wolf Fork Fire,"Columbia, WA","August 5, 2024 2:08 PM PDT","August 6, 2024 10:20 PM PDT",50,0
 Coast Fire,"Monterey, CA","June 17, 2024 6:41 AM PDT","August 6, 2024 2:02 AM PDT",15,5
 Little Fire,"Fresno, CA","July 3, 2024 8:47 AM PDT","August 6, 2024 1:57 AM PDT",11,100
 Sonora Fire,"San Bernardino, CA","July 4, 2024 1:10 PM PDT","August 6, 2024 2:01 AM PDT",10,Not available
