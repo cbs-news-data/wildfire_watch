@@ -51,7 +51,7 @@ Cougar Creek Fire,"Asotin, WA","July 15, 2024 6:30 PM PDT","August 10, 2024 8:47
 Hill Fire,"Humboldt, CA","July 15, 2024 5:40 PM PDT","July 29, 2024 9:09 PM PDT",7224,98
 Durkee Fire,"Baker, OR","July 17, 2024 8:57 AM PDT","August 4, 2024 3:29 PM PDT",294265,97
 Trail Fire,"Douglas, OR","July 16, 2024 7:39 PM PDT","August 11, 2024 7:30 PM PDT",843.73,48
-Ore Fire,"Lane, OR","July 17, 2024 9:55 AM PDT","August 11, 2024 5:34 AM PDT",2576,20
+Ore Fire,"Lane, OR","July 17, 2024 9:55 AM PDT","August 11, 2024 9:17 PM PDT",2576,20
 Middle Fork Fire,"Klamath, OR","July 17, 2024 2:55 PM PDT","August 11, 2024 3:32 AM PDT",4718,0
 Sentinel Fire,"Fresno, CA","July 14, 2024 9:10 AM PDT","August 8, 2024 11:52 AM PDT",261,90
 Nf Owens Fire,"Umatilla, OR","July 17, 2024 3:27 PM PDT","August 10, 2024 2:20 AM PDT",4484,90
@@ -62,7 +62,7 @@ Lemolo Fire,"Douglas, OR","July 17, 2024 2:46 PM PDT","August 11, 2024 7:30 PM P
 Easy Fire,"Skagit, WA","July 17, 2024 7:55 PM PDT","August 11, 2024 2:09 PM PDT",2130,0
 Wickiup Fire,"Deschutes, OR","July 17, 2024 1:04 PM PDT","August 11, 2024 3:24 AM PDT",168,100
 Snake Fire,"Umatilla, OR","July 17, 2024 4:00 PM PDT","July 22, 2024 2:49 PM PDT",13557,100
-Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","August 11, 2024 7:58 AM PDT",20987,11
+Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","August 11, 2024 7:58 AM PDT",21658,13
 Boneyard Fire,"Grant, OR","July 17, 2024 3:42 PM PDT","July 24, 2024 12:43 PM PDT",49716,100
 Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","August 11, 2024 3:25 AM PDT",585,0
 Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 11, 2024 7:14 AM PDT",2220.83,51
@@ -74,7 +74,7 @@ Clark 900 Fire,"Lane, OR","July 18, 2024 8:23 AM PDT","July 26, 2024 8:55 PM PDT
 Clearwater Fire,"Douglas, OR","July 16, 2024 8:23 PM PDT","August 6, 2024 7:51 AM PDT",0.65,100
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","August 3, 2024 2:09 PM PDT",24.31,0
 Garwood Fire,"Douglas, OR","July 17, 2024 2:54 PM PDT","August 11, 2024 7:07 AM PDT",6.07,100
-Pyramid Fire,"Linn, OR","July 17, 2024 12:26 PM PDT","August 11, 2024 7:50 AM PDT",1324,64
+Pyramid Fire,"Linn, OR","July 17, 2024 12:26 PM PDT","August 11, 2024 9:17 PM PDT",1324,64
 0465 Cr Jackpine Fire,"Deschutes, OR","July 19, 2024 12:35 PM PDT","July 25, 2024 2:24 AM PDT",180,100
 Ooya Fire,"Douglas, OR","July 17, 2024 1:18 PM PDT","August 11, 2024 7:12 AM PDT",345.3,0
 Ettrain Fire,"Southeast Fairbanks, AK","July 3, 2024 12:05 PM PDT","August 6, 2024 2:21 PM PDT",167.98,Not available
@@ -232,7 +232,7 @@ Warm Springs Fire,"Box Elder, UT","August 8, 2024 12:55 PM PDT","August 8, 2024 
 Farrow Fire,"Idaho, ID","August 5, 2024 7:00 PM PDT","August 9, 2024 4:43 PM PDT",393,0
 Cal Fire,"Kern, CA","August 9, 2024 1:38 PM PDT","August 9, 2024 5:06 PM PDT",0.1,Not available
 Dove Creek Fire,"Box Elder, UT","August 9, 2024 1:42 PM PDT","August 9, 2024 7:47 PM PDT",594,100
-Boise Fire,"Humboldt, CA","August 9, 2024 8:50 AM PDT","August 11, 2024 7:27 PM PDT",1621,0
+Boise Fire,"Humboldt, CA","August 9, 2024 8:50 AM PDT","August 11, 2024 10:38 PM PDT",1621,0
 Peters Fire,"Gila, AZ","August 9, 2024 6:50 PM PDT","August 10, 2024 7:01 AM PDT",80.46,Not available
 Hunsley Hill Fire,"Essex, MA","July 19, 2024 12:54 PM PDT","August 10, 2024 8:12 AM PDT",0.6,Not available
 Ruby Fire,"Whatcom, WA","August 9, 2024 7:20 AM PDT","August 11, 2024 4:58 PM PDT",1000,0
@@ -241,7 +241,7 @@ Goat Fire,"Valley, ID","August 5, 2024 4:37 PM PDT","August 11, 2024 2:54 AM PDT
 Flat Fire,"Boise, ID","August 5, 2024 7:29 PM PDT","August 10, 2024 8:05 PM PDT",1010,0
 Merna Butte Fire,"Sublette, WY","August 9, 2024 10:45 PM PDT","August 11, 2024 7:47 PM PDT",77,0
 Black Canyon Fire,"Meagher, MT","August 10, 2024 12:36 PM PDT","August 11, 2024 6:46 PM PDT",351,0
-Dixon Fire,"Douglas, OR","August 10, 2024 2:43 PM PDT","August 11, 2024 12:31 PM PDT",1395,0
+Dixon Fire,"Douglas, OR","August 10, 2024 2:43 PM PDT","August 11, 2024 9:35 PM PDT",1395,0
 Barks Fire,"Mohave, AZ","August 10, 2024 6:03 PM PDT","August 11, 2024 11:49 AM PDT",16,Not available
 East Browns Meadow Fire,"Flathead, MT","August 10, 2024 3:01 PM PDT","August 11, 2024 9:55 AM PDT",3,Not available
 Valley Fire,"Sanders, MT","August 10, 2024 7:31 PM PDT","August 11, 2024 5:43 PM PDT",NA,Not available
@@ -256,4 +256,4 @@ Mack Fire,"Riverside, CA","August 10, 2024 5:26 AM PDT","August 10, 2024 2:23 PM
 Lower Fire,"Shasta, CA","August 10, 2024 8:55 AM PDT","August 11, 2024 12:22 PM PDT",110,70
 Blue Fire,"Kern, CA","August 10, 2024 11:25 AM PDT","August 11, 2024 10:51 AM PDT",430,35
 Mission Fire,"Riverside, CA","August 10, 2024 9:40 AM PDT","August 10, 2024 2:23 PM PDT",11,100
-Meiss Fire,"Sacramento, CA","August 11, 2024 6:40 AM PDT","August 11, 2024 12:51 PM PDT",108,Not available
+Meiss Fire,"Sacramento, CA","August 11, 2024 6:40 AM PDT","August 11, 2024 3:11 PM PDT",108,Not available
