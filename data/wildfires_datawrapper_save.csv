@@ -32,7 +32,7 @@ Crooks Creek Fire,"Josephine, OR","July 16, 2024 3:41 PM PDT","July 17, 2024 11:
 Little Bates Fire,"Converse, WY","July 11, 2024 8:01 PM PDT","July 17, 2024 1:10 PM PDT",260.13,Not available
 Durkee Fire,"Baker, OR","July 17, 2024 8:57 AM PDT","August 4, 2024 3:29 PM PDT",294265,99
 Trail Fire,"Douglas, OR","July 16, 2024 7:39 PM PDT","August 21, 2024 7:55 AM PDT",841.73,77
-Ore Fire,"Lane, OR","July 17, 2024 9:55 AM PDT","August 21, 2024 7:13 PM PDT",3143,14
+Ore Fire,"Lane, OR","July 17, 2024 9:55 AM PDT","August 21, 2024 7:13 PM PDT",3147,16
 Middle Fork Fire,"Klamath, OR","July 17, 2024 2:55 PM PDT","August 21, 2024 7:55 AM PDT",5244,0
 Sentinel Fire,"Fresno, CA","July 14, 2024 9:10 AM PDT","August 8, 2024 11:52 AM PDT",261,90
 Nf Owens Fire,"Umatilla, OR","July 17, 2024 3:27 PM PDT","August 10, 2024 2:20 AM PDT",4484,90
@@ -149,7 +149,7 @@ Anderson Fire,"Boise, ID","August 5, 2024 3:16 PM PDT","August 12, 2024 4:04 AM 
 Morrison Fire,"Tuolumne, CA","August 4, 2024 10:46 AM PDT","August 10, 2024 8:30 AM PDT",31,0
 Farrow Fire,"Idaho, ID","August 5, 2024 7:00 PM PDT","August 9, 2024 4:43 PM PDT",727,0
 Dove Creek Fire,"Box Elder, UT","August 9, 2024 1:42 PM PDT","August 9, 2024 7:47 PM PDT",594,100
-Boise Fire,"Humboldt, CA","August 9, 2024 8:50 AM PDT","August 21, 2024 3:14 PM PDT",12645,16
+Boise Fire,"Humboldt, CA","August 9, 2024 8:50 AM PDT","August 21, 2024 10:53 PM PDT",12645,16
 Ruby Fire,"Whatcom, WA","August 9, 2024 7:20 AM PDT","August 21, 2024 5:10 AM PDT",921,0
 Wolf Creek Fire,"Valley, ID","August 5, 2024 4:37 PM PDT","August 21, 2024 7:25 PM PDT",1718,0
 Flat Fire,"Boise, ID","August 5, 2024 7:29 PM PDT","August 21, 2024 8:19 PM PDT",3668,28
@@ -222,4 +222,4 @@ Amaral Fire,"Solano, CA","August 21, 2024 2:46 AM PDT","August 21, 2024 1:28 PM 
 Turner Fire,"Merced, CA","August 21, 2024 6:44 AM PDT","August 21, 2024 10:32 AM PDT",15,100
 Canyon Fire,"Los Angeles, CA","August 21, 2024 10:25 AM PDT","August 21, 2024 11:14 AM PDT",15,Not available
 Turner,"Merced, CA","August 21, 2024 11:14 AM PDT","August 21, 2024 11:24 AM PDT",15,50
-Ace Fire,"Calaveras, CA","August 21, 2024 9:42 AM PDT","August 21, 2024 11:31 AM PDT",16,75
+Ace Fire,"Calaveras, CA","August 21, 2024 9:42 AM PDT","August 21, 2024 2:50 PM PDT",16,100
