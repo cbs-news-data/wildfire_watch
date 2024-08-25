@@ -38,7 +38,7 @@ Easy Fire,"Skagit, WA","July 17, 2024 7:55 PM PDT","August 23, 2024 5:24 AM PDT"
 Snake Fire,"Umatilla, OR","July 17, 2024 4:00 PM PDT","July 22, 2024 2:49 PM PDT",13557,100
 Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","August 21, 2024 8:35 PM PDT",25265,93
 Boneyard Fire,"Grant, OR","July 17, 2024 3:42 PM PDT","July 24, 2024 12:43 PM PDT",49716,100
-Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","August 22, 2024 4:09 AM PDT",753,0
+Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","August 25, 2024 4:53 AM PDT",753,0
 Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 24, 2024 6:58 PM PDT",3989.74,45
 Monkey Creek Fire,"Morrow, OR","July 18, 2024 3:13 PM PDT","August 15, 2024 12:46 PM PDT",115269,48
 Trep Fire,"Douglas, OR","July 19, 2024 1:50 PM PDT","August 22, 2024 9:21 AM PDT",545.89,100
@@ -100,7 +100,7 @@ Toolbox Fire,"Douglas, OR","July 28, 2024 1:45 PM PDT","August 22, 2024 5:09 AM 
 Mountain View Fire,"Wallowa, OR","July 26, 2024 11:27 AM PDT","August 1, 2024 7:31 PM PDT",318,Not available
 Big Canyon Fire,"Wallowa, OR","July 26, 2024 12:45 PM PDT","August 5, 2024 7:23 AM PDT",288,Not available
 Poison Creek Fire,"Grant, OR","July 25, 2024 3:04 PM PDT","August 22, 2024 1:35 PM PDT",1060,100
-Wapiti Fire,"Boise, ID","July 24, 2024 7:58 PM PDT","August 24, 2024 4:12 PM PDT",57746,0
+Wapiti Fire,"Boise, ID","July 24, 2024 7:58 PM PDT","August 25, 2024 3:41 AM PDT",57746,0
 Johnson Fire,"Ravalli, MT","July 25, 2024 4:24 PM PDT","August 9, 2024 1:36 PM PDT",370,0
 Bearskin Fire,"Valley, ID","July 29, 2024 11:40 AM PDT","July 30, 2024 3:51 PM PDT",12,0
 Deer Fire,"Custer, ID","July 25, 2024 1:03 PM PDT","July 30, 2024 4:45 PM PDT",54,60
@@ -136,10 +136,9 @@ Element Fire,"Mohave, AZ","August 6, 2024 6:38 PM PDT","August 9, 2024 9:38 AM P
 Dollar Fire,"Valley, ID","August 5, 2024 5:57 PM PDT","August 23, 2024 1:47 AM PDT",2665,0
 Snag Fire,"Valley, ID","August 5, 2024 4:22 PM PDT","August 23, 2024 7:45 AM PDT",25235,3
 Warner Peak Fire,"Lake, OR","August 5, 2024 5:05 PM PDT","August 18, 2024 3:43 PM PDT",65866,100
-Nellie Fire,"Boise, ID","August 6, 2024 8:35 AM PDT","August 24, 2024 11:54 PM PDT",32990,5
+Nellie Fire,"Boise, ID","August 6, 2024 8:35 AM PDT","August 25, 2024 4:23 AM PDT",32990,5
 Paddock Fire,"Washington, ID","August 5, 2024 6:56 PM PDT","August 16, 2024 7:28 PM PDT",187185,100
 Elkhorn Ridge Fire,"Idaho, ID","August 6, 2024 5:41 PM PDT","August 22, 2024 10:57 AM PDT",2585,0
-Bulldog Fire,"Boise, ID","August 5, 2024 4:02 PM PDT","August 23, 2024 2:24 PM PDT",6652,20
 Anderson Fire,"Boise, ID","August 5, 2024 3:16 PM PDT","August 12, 2024 4:04 AM PDT",1877,100
 Three Forks Fire,"Grand, UT","August 6, 2024 12:16 PM PDT","August 8, 2024 12:43 PM PDT",7.1,0
 Morrison Fire,"Tuolumne, CA","August 4, 2024 10:46 AM PDT","August 10, 2024 8:30 AM PDT",31,0
@@ -165,7 +164,7 @@ Square Lake Fire,"Idaho, ID","August 10, 2024 7:34 PM PDT","August 18, 2024 10:5
 2620 Road Fire,"Jefferson, WA","August 14, 2024 5:06 PM PDT","August 24, 2024 3:26 PM PDT",403,73
 Veg/Jc/61a Fire,"Riverside, CA","August 13, 2024 3:04 PM PDT","August 16, 2024 8:14 AM PDT",0.01,Not available
 Cracker Jack Complex Fire,"Idaho, ID","August 12, 2024 12:49 PM PDT","August 22, 2024 2:12 PM PDT",750.3,0
-Fish Creek Fire,"Teton, WY","August 16, 2024 12:52 PM PDT","August 24, 2024 8:15 AM PDT",10300,0
+Fish Creek Fire,"Teton, WY","August 16, 2024 12:52 PM PDT","August 25, 2024 3:46 AM PDT",10300,0
 Boulder Peak Fire,"Ravalli, MT","July 30, 2024 6:33 AM PDT","August 20, 2024 6:10 PM PDT",110,0
 Twin Knobs Fire,"Douglas, OR","August 17, 2024 1:18 PM PDT","August 22, 2024 5:09 AM PDT",0.42,100
 0675 Ochoco Fire,"Jefferson, OR","August 18, 2024 1:44 PM PDT","August 19, 2024 10:50 AM PDT",590,100
@@ -192,7 +191,7 @@ Iron Peak Fire,"Iron, UT","August 21, 2024 11:36 AM PDT","August 22, 2024 6:53 P
 Lmuma Creek Fire,"Kittitas, WA","August 22, 2024 4:18 PM PDT","August 23, 2024 10:47 AM PDT",2.11,Not available
 Remington Fire,"Sheridan, WY","August 22, 2024 7:07 AM PDT","August 24, 2024 5:52 PM PDT",184127,0
 Chalky Point Fire,"Rosebud, MT","August 22, 2024 1:17 PM PDT","August 24, 2024 1:16 PM PDT",1400,40
-Sharrott Creek Fire,"Ravalli, MT","August 23, 2024 2:47 PM PDT","August 24, 2024 12:42 PM PDT",1012,0
+Sharrott Creek Fire,"Ravalli, MT","August 23, 2024 2:47 PM PDT","August 25, 2024 4:23 AM PDT",1012,0
 Constitution Fire,"Campbell, WY","August 21, 2024 4:41 PM PDT","August 24, 2024 5:37 PM PDT",12080,28
 Mcelwain Fire,"Powell, MT","August 23, 2024 11:42 AM PDT","August 24, 2024 12:18 PM PDT",176,0
 Hoodoo Fire,"Powell, MT","August 23, 2024 12:10 PM PDT","August 24, 2024 10:14 AM PDT",3,Not available
