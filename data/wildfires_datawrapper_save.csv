@@ -82,7 +82,7 @@ Retreat Fire,"Yakima, WA","July 23, 2024 3:46 PM PDT","August 8, 2024 11:30 AM P
 Sheep Fire,"Douglas, OR","July 23, 2024 6:51 PM PDT","August 22, 2024 5:09 AM PDT",0.33,100
 Ritter Fire,"Harney, OR","July 23, 2024 10:40 PM PDT","August 22, 2024 1:36 PM PDT",461,100
 Park Fire,"Butte, CA","July 24, 2024 2:52 PM PDT","August 24, 2024 11:56 AM PDT",429603,79
-Wolf Creek Fire,"Adams, ID","July 24, 2024 5:51 PM PDT","August 22, 2024 7:46 PM PDT",1154,95
+Wolf Creek Fire,"Adams, ID","July 24, 2024 5:51 PM PDT","August 25, 2024 11:41 PM PDT",1154,95
 Mowich Fire,"Douglas, OR","July 25, 2024 4:16 PM PDT","August 22, 2024 5:08 AM PDT",0.36,100
 Birds Fire,"Douglas, OR","July 25, 2024 4:09 PM PDT","August 22, 2024 5:08 AM PDT",0.13,100
 Bullpup Fire,"Lane, OR","July 19, 2024 1:55 PM PDT","July 26, 2024 4:25 AM PDT",5898,47
@@ -128,7 +128,7 @@ Williams Mine Fire,"Skamania, WA","August 5, 2024 12:03 PM PDT","August 24, 2024
 Sandstone Fire,"Clackamas, OR","August 5, 2024 2:59 PM PDT","August 20, 2024 4:40 AM PDT",702,37
 Ladue River Fire,"Southeast Fairbanks, AK","July 22, 2024 5:27 PM PDT","August 21, 2024 9:14 AM PDT",17529.9,Not available
 Element Fire,"Mohave, AZ","August 6, 2024 6:38 PM PDT","August 9, 2024 9:38 AM PDT",5364,100
-Dollar Fire,"Valley, ID","August 5, 2024 5:57 PM PDT","August 25, 2024 7:44 PM PDT",2665,0
+Dollar Fire,"Valley, ID","August 5, 2024 5:57 PM PDT","August 26, 2024 12:36 AM PDT",2665,0
 Snag Fire,"Valley, ID","August 5, 2024 4:22 PM PDT","August 25, 2024 8:08 PM PDT",25235,3
 Warner Peak Fire,"Lake, OR","August 5, 2024 5:05 PM PDT","August 18, 2024 3:43 PM PDT",65866,100
 Nellie Fire,"Boise, ID","August 6, 2024 8:35 AM PDT","August 25, 2024 4:23 AM PDT",37909,5
@@ -208,6 +208,6 @@ Chevelle Fire,"Tulare, CA","August 22, 2024 11:57 PM PDT","August 24, 2024 1:23 
 Refugio Fire,"Santa Barbara, CA","August 22, 2024 5:40 PM PDT","August 25, 2024 5:12 AM PDT",86,85
 Motor Fire,"Los Angeles, CA","August 23, 2024 3:50 AM PDT","August 24, 2024 7:10 AM PDT",11,Not available
 Benito Fire,"Fresno, CA","August 24, 2024 6:33 AM PDT","August 24, 2024 7:17 AM PDT",17,Not available
-Summit Fire,"San Bernardino, CA","August 24, 2024 8:59 AM PDT","August 25, 2024 12:34 PM PDT",76,100
+Summit Fire,"San Bernardino, CA","August 24, 2024 8:59 AM PDT","August 25, 2024 4:48 PM PDT",76,100
 Wild Wash Fire,"San Bernardino, CA","August 24, 2024 5:13 AM PDT","August 25, 2024 5:37 AM PDT",23,Not available
 Solar Fire,"Merced, CA","August 25, 2024 8:49 AM PDT","August 25, 2024 11:21 AM PDT",22,Not available
