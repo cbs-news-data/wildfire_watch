@@ -45,7 +45,7 @@ Trep Fire,"Douglas, OR","July 19, 2024 1:50 PM PDT","August 22, 2024 9:21 AM PDT
 Clearwater Fire,"Douglas, OR","July 16, 2024 8:23 PM PDT","August 22, 2024 5:08 AM PDT",0.65,100
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","August 3, 2024 2:09 PM PDT",24.3,0
 Garwood Fire,"Douglas, OR","July 17, 2024 2:54 PM PDT","August 22, 2024 11:17 AM PDT",6.06,100
-Pyramid Fire,"Linn, OR","July 17, 2024 12:26 PM PDT","August 20, 2024 9:23 AM PDT",1312,88
+Pyramid Fire,"Linn, OR","July 17, 2024 12:26 PM PDT","August 20, 2024 9:23 AM PDT",1312,98
 Ooya Fire,"Douglas, OR","July 17, 2024 1:18 PM PDT","August 22, 2024 6:51 AM PDT",373.88,100
 Potter Fire,"Douglas, OR","July 16, 2024 8:44 PM PDT","August 25, 2024 5:45 AM PDT",3416.39,15
 Horse Heaven Creek Fire,"Lane, OR","July 17, 2024 3:28 PM PDT","August 25, 2024 6:29 AM PDT",2295,64
@@ -142,7 +142,7 @@ Farrow Fire,"Idaho, ID","August 5, 2024 7:00 PM PDT","August 9, 2024 4:43 PM PDT
 Dove Creek Fire,"Box Elder, UT","August 9, 2024 1:42 PM PDT","August 9, 2024 7:47 PM PDT",594,100
 Boise Fire,"Humboldt, CA","August 9, 2024 8:50 AM PDT","August 25, 2024 8:40 PM PDT",12893,37
 Ruby Fire,"Whatcom, WA","August 9, 2024 7:20 AM PDT","August 23, 2024 5:41 AM PDT",955,0
-Goat Fire,"Valley, ID","August 5, 2024 4:37 PM PDT","August 25, 2024 7:45 PM PDT",1963,0
+Goat Fire,"Valley, ID","August 5, 2024 4:37 PM PDT","August 25, 2024 10:19 PM PDT",1963,0
 Flat Fire,"Boise, ID","August 5, 2024 7:29 PM PDT","August 25, 2024 4:17 PM PDT",3734,61
 Merna Butte Fire,"Sublette, WY","August 9, 2024 10:45 PM PDT","August 15, 2024 10:04 AM PDT",153,80
 Black Canyon Fire,"Meagher, MT","August 10, 2024 12:36 PM PDT","August 19, 2024 4:46 PM PDT",233,100
@@ -194,7 +194,6 @@ Polecat Fire,"Petroleum, MT","August 23, 2024 2:33 PM PDT","August 25, 2024 10:1
 Tenaja Fire,"Riverside, CA","August 25, 2024 11:48 AM PDT","August 25, 2024 1:47 PM PDT",0.1,Not available
 Anderson Fire,"Washington, UT","August 24, 2024 7:09 PM PDT","August 25, 2024 1:58 PM PDT",474.39,20
 Elephant Rock Fire,"Davis, UT","August 23, 2024 6:38 PM PDT","August 25, 2024 2:03 PM PDT",0.25,Not available
-Big Hill Fire,"Lawrence, SD","August 25, 2024 1:47 PM PDT","August 25, 2024 6:24 PM PDT",1,Not available
 Fish Fire,"Douglas, OR","August 23, 2024 11:16 AM PDT","August 25, 2024 9:11 PM PDT",0.5,0
 Shelly Fire,"Siskiyou, CA","July 3, 2024 6:35 AM PDT","August 22, 2024 7:48 AM PDT",15520,100
 2024 SQF Lightning Complex,"Kern, Tulare, CA","July 13, 2024 5:34 AM PDT","August 25, 2024 3:47 AM PDT",32801,85
