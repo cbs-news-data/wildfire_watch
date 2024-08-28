@@ -1,5 +1,6 @@
 Name,Location,Started,Updated,Acres burned,% contained
 Pioneer Fire,"Chelan, WA","June 8, 2024 12:48 PM PDT","August 25, 2024 6:09 AM PDT",38735,23
+Palisades Road Fire,"Douglas, WA","June 10, 2024 10:58 PM PDT","June 12, 2024 6:07 PM PDT",693,99
 South Fork Fire,"Otero, NM","June 17, 2024 8:07 AM PDT","July 6, 2024 9:37 AM PDT",17569,99
 Salt Fire,"Otero, NM","June 17, 2024 1:20 PM PDT","July 6, 2024 9:32 AM PDT",7939,100
 American Fire,"Yukon-Koyukuk, AK","June 25, 2024 8:22 PM PDT","August 19, 2024 2:07 PM PDT",4724.72,0
@@ -29,7 +30,7 @@ Swawilla I Fire,"Ferry, WA","July 17, 2024 9:30 PM PDT","August 8, 2024 7:01 AM 
 Deer Fire,"Yavapai, AZ","July 17, 2024 2:52 PM PDT","August 6, 2024 12:49 PM PDT",378,100
 Easy Fire,"Skagit, WA","July 17, 2024 7:55 PM PDT","August 23, 2024 5:24 AM PDT",2130,39
 Snake Fire,"Umatilla, OR","July 17, 2024 4:00 PM PDT","July 22, 2024 2:49 PM PDT",13557,100
-Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","August 25, 2024 11:56 AM PDT",25267,93
+Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","August 28, 2024 9:16 AM PDT",25267,93
 Boneyard Fire,"Grant, OR","July 17, 2024 3:42 PM PDT","July 24, 2024 12:43 PM PDT",49716,100
 Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","August 28, 2024 4:33 AM PDT",755,0
 Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 27, 2024 7:34 AM PDT",3989.74,56
@@ -96,7 +97,7 @@ Johnson Fire,"Ravalli, MT","July 25, 2024 4:24 PM PDT","August 26, 2024 2:55 PM 
 Bearskin Fire,"Valley, ID","July 29, 2024 11:40 AM PDT","July 30, 2024 3:51 PM PDT",12,0
 Deer Fire,"Custer, ID","July 25, 2024 1:03 PM PDT","July 30, 2024 4:45 PM PDT",54,60
 Broom Canyon Fire,"Nye, NV","July 29, 2024 8:00 PM PDT","August 26, 2024 1:08 PM PDT",6146,15
-Wye Fire,"Idaho, ID","July 25, 2024 10:01 AM PDT","August 26, 2024 3:28 PM PDT",6726,0
+Wye Fire,"Idaho, ID","July 25, 2024 10:01 AM PDT","August 26, 2024 3:28 PM PDT",7341,0
 Railroad Fire,"Ravalli, MT","July 25, 2024 7:59 AM PDT","August 27, 2024 4:03 PM PDT",96,1
 Anchor Fire,"Idaho, ID","July 28, 2024 11:49 AM PDT","August 2, 2024 3:56 AM PDT",339,1
 Ace Butte Fire,"Idaho, ID","July 24, 2024 5:44 PM PDT","August 2, 2024 3:56 AM PDT",81,0
@@ -171,8 +172,8 @@ Constitution Fire,"Campbell, WY","August 21, 2024 4:41 PM PDT","August 27, 2024 
 Mcelwain Fire,"Powell, MT","August 23, 2024 11:42 AM PDT","August 27, 2024 6:48 PM PDT",176,5
 Big Hollow Fire,"Beaverhead, MT","August 23, 2024 12:58 PM PDT","August 24, 2024 11:44 AM PDT",3415,40
 Boulter Fire,"Tooele, UT","August 24, 2024 12:30 PM PDT","August 27, 2024 10:40 AM PDT",2243,75
-River Bottom Fire,"Roosevelt, MT","August 21, 2024 12:59 PM PDT","August 25, 2024 9:32 AM PDT",240,60
-Tenaja Fire,"Riverside, CA","August 25, 2024 11:48 AM PDT","August 25, 2024 1:47 PM PDT",0.1,Not available
+River Bottom Fire,"Roosevelt, MT","August 21, 2024 12:59 PM PDT","August 25, 2024 9:32 AM PDT",240,100
+Tenaja Fire,"Riverside, CA","August 25, 2024 11:48 AM PDT","August 25, 2024 1:47 PM PDT",130,Not available
 Fish Fire,"Douglas, OR","August 23, 2024 11:16 AM PDT","August 27, 2024 7:34 AM PDT",0.5,0
 Cash Fire,"Winston, AL","August 25, 2024 10:47 AM PDT","August 26, 2024 5:50 AM PDT",0.1,Not available
 Kern Fire,"Garfield, MT","August 25, 2024 12:41 PM PDT","August 26, 2024 7:56 AM PDT",20,Not available
