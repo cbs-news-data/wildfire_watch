@@ -27,7 +27,7 @@ Cougar Creek Fire,"Asotin, WA","July 15, 2024 6:30 PM PDT","August 13, 2024 10:5
 Sunbanks Fire,"Grant, WA","July 16, 2024 2:24 PM PDT","July 17, 2024 8:53 AM PDT",100,Not available
 Durkee Fire,"Baker, OR","July 17, 2024 8:57 AM PDT","August 4, 2024 3:29 PM PDT",294265,99
 Trail Fire,"Douglas, OR","July 16, 2024 7:39 PM PDT","August 28, 2024 9:44 AM PDT",841.73,100
-Ore Fire,"Lane, OR","July 17, 2024 9:55 AM PDT","August 28, 2024 6:03 AM PDT",3150,28
+Ore Fire,"Lane, OR","July 17, 2024 9:55 AM PDT","August 28, 2024 6:03 AM PDT",3152,28
 Middle Fork Fire,"Klamath, OR","July 17, 2024 2:55 PM PDT","August 28, 2024 9:43 AM PDT",5280,37
 Sentinel Fire,"Fresno, CA","July 24, 2024 9:10 AM PDT","August 8, 2024 11:52 AM PDT",261,90
 Nf Owens Fire,"Umatilla, OR","July 17, 2024 3:27 PM PDT","August 10, 2024 2:20 AM PDT",4484,90
@@ -35,7 +35,7 @@ Oil Dry Fire,"Lake, OR","July 3, 2024 5:51 PM PDT","July 18, 2024 11:10 AM PDT",
 Deer Fire,"Yavapai, AZ","July 17, 2024 2:52 PM PDT","August 6, 2024 12:49 PM PDT",378,100
 Easy Fire,"Skagit, WA","July 17, 2024 7:55 PM PDT","August 23, 2024 5:24 AM PDT",2130,39
 Snake Fire,"Umatilla, OR","July 17, 2024 4:00 PM PDT","July 22, 2024 2:49 PM PDT",13557,100
-Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","August 28, 2024 7:23 PM PDT",25267,93
+Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","August 28, 2024 8:11 PM PDT",25267,93
 Boneyard Fire,"Grant, OR","July 17, 2024 3:42 PM PDT","July 24, 2024 12:43 PM PDT",49716,100
 Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","August 28, 2024 4:33 AM PDT",755,0
 Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 28, 2024 9:44 AM PDT",3989.74,65
@@ -54,7 +54,7 @@ Courtrock Fire,"Grant, OR","July 21, 2024 2:54 PM PDT","August 8, 2024 3:08 PM P
 Reynolds Butte Fire,"Douglas, OR","July 19, 2024 11:21 AM PDT","August 28, 2024 6:56 AM PDT",334,100
 No Man Fire,"Lane, OR","July 18, 2024 12:09 PM PDT","August 28, 2024 6:56 AM PDT",2076,28
 Fuller Lake Fire,"Douglas, OR","July 17, 2024 7:06 AM PDT","August 28, 2024 6:24 AM PDT",418,5
-Bullpup Fire,"Douglas, OR","July 17, 2024 1:43 PM PDT","August 28, 2024 6:56 AM PDT",476,17
+Bullpup Fire,"Douglas, OR","July 17, 2024 1:43 PM PDT","August 28, 2024 7:57 PM PDT",476,17
 Salmon 33 Fire,"Lane, OR","July 17, 2024 10:36 AM PDT","August 28, 2024 6:56 AM PDT",275,100
 Telephone Fire,"Harney, OR","July 22, 2024 12:19 PM PDT","August 22, 2024 1:36 PM PDT",54005,100
 Chalk Fire,"Lane, OR","July 17, 2024 11:36 AM PDT","August 28, 2024 6:02 AM PDT",5696,66
@@ -182,7 +182,7 @@ Odum Fire,"Clay, AL","August 26, 2024 2:02 PM PDT","August 26, 2024 5:04 PM PDT"
 Coyote Fire,"Baker, OR","July 22, 2024 10:17 PM PDT","August 27, 2024 8:34 AM PDT",22180,100
 Flint Gap Fire,"Blount, TN","August 26, 2024 1:17 PM PDT","August 27, 2024 1:07 PM PDT",10,Not available
 Post Oak Rd Fire,"Pushmataha, OK","August 26, 2024 1:30 PM PDT","August 27, 2024 1:26 PM PDT",28,Not available
-Olsen Creek Fire,"Stevens, WA","August 24, 2024 1:47 PM PDT","August 27, 2024 2:03 PM PDT",3.4,Not available
+Olson Creek Fire,"Stevens, WA","August 24, 2024 1:47 PM PDT","August 28, 2024 10:39 AM PDT",3.4,Not available
 Rocky Ridge - Dawson Fire,"Dawson, MT","August 25, 2024 5:00 PM PDT","August 27, 2024 2:16 PM PDT",37.2,Not available
 Daly Fire,"Ravalli, MT","August 18, 2024 1:37 PM PDT","August 27, 2024 4:09 PM PDT",65,1
 Arboretum Fire,"Yakima, WA","July 10, 2024 8:10 PM PDT","August 28, 2024 6:39 AM PDT",10,Not available
@@ -199,5 +199,5 @@ Florin Fire,"Sacramento, CA","August 26, 2024 5:49 AM PDT","August 27, 2024 6:52
 Excelsior Fire,"Sacramento, CA","August 26, 2024 2:14 PM PDT","August 27, 2024 1:34 AM PDT",38,100
 Weller Fire,"Kern, CA","August 27, 2024 8:48 AM PDT","August 27, 2024 11:08 AM PDT",78,100
 Keys Fire,"San Diego, CA","August 28, 2024 7:38 AM PDT","August 28, 2024 10:00 AM PDT",18,70
-Gulch Fire,"Sonoma, CA","August 28, 2024 10:15 AM PDT","August 28, 2024 10:31 AM PDT",10,Not available
-Silver Fire,"Calaveras, CA","August 28, 2024 9:25 AM PDT","August 28, 2024 12:17 PM PDT",12,3
+Gulch Fire,"Sonoma, CA","August 28, 2024 10:15 AM PDT","August 28, 2024 12:43 PM PDT",20,40
+Silver Fire,"Calaveras, CA","August 28, 2024 9:25 AM PDT","August 28, 2024 2:12 PM PDT",12,3
