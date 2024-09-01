@@ -50,7 +50,7 @@ Ooya Fire,"Douglas, OR","July 17, 2024 1:18 PM PDT","August 30, 2024 5:30 AM PDT
 Potter Fire,"Douglas, OR","July 16, 2024 8:44 PM PDT","August 30, 2024 5:31 AM PDT",3427.66,38
 Horse Heaven Creek Fire,"Lane, OR","July 17, 2024 3:28 PM PDT","August 31, 2024 7:28 AM PDT",2298,64
 Maple Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 16, 2024 9:26 AM PDT",11137.92,78
-Whisky Creek Fire,"Hood River, OR","July 20, 2024 11:01 AM PDT","August 30, 2024 6:33 AM PDT",2085,24
+Whisky Creek Fire,"Hood River, OR","July 20, 2024 11:01 AM PDT","August 30, 2024 6:33 AM PDT",2085,25
 Courtrock Fire,"Grant, OR","July 21, 2024 2:54 PM PDT","August 8, 2024 3:08 PM PDT",20019,100
 Reynolds Butte Fire,"Douglas, OR","July 19, 2024 11:21 AM PDT","August 31, 2024 7:28 AM PDT",334,100
 No Man Fire,"Lane, OR","July 18, 2024 12:09 PM PDT","August 31, 2024 7:28 AM PDT",2076,28
@@ -74,11 +74,11 @@ Sinnott Fire,"Southeast Fairbanks, AK","July 21, 2024 10:38 PM PDT","August 19, 
 Slate Fire,"Linn, OR","July 23, 2024 3:03 PM PDT","August 10, 2024 7:32 AM PDT",69.4,100
 Crazy Creek Fire,"Crook, OR","July 22, 2024 11:07 AM PDT","August 20, 2024 8:10 PM PDT",86968,93
 West Crooked Fire,"Idaho, ID","July 5, 2024 3:32 PM PDT","August 29, 2024 1:51 PM PDT",142,0
-Borel Fire,"Kern, CA","July 24, 2024 12:59 PM PDT","August 6, 2024 8:56 PM PDT",15,95
+Borel Fire,"Kern, CA","July 24, 2024 12:59 PM PDT","August 6, 2024 8:56 PM PDT",59288,95
 Thin Fire,"Douglas, OR","July 24, 2024 3:15 PM PDT","August 30, 2024 5:30 AM PDT",0.63,100
 Retreat Fire,"Yakima, WA","July 23, 2024 3:46 PM PDT","August 8, 2024 11:30 AM PDT",45601,95
 Sheep Fire,"Douglas, OR","July 23, 2024 6:51 PM PDT","August 30, 2024 5:30 AM PDT",0.33,100
-Park Fire,"Butte, CA","July 24, 2024 2:52 PM PDT","August 24, 2024 11:56 AM PDT",429603,95
+Park Fire,"Butte, CA","July 24, 2024 2:52 PM PDT","August 24, 2024 11:56 AM PDT",429603,96
 Wolf Creek Fire,"Adams, ID","July 24, 2024 5:51 PM PDT","August 25, 2024 11:41 PM PDT",1154,95
 Mowich Fire,"Douglas, OR","July 25, 2024 4:16 PM PDT","August 30, 2024 5:30 AM PDT",0.36,100
 Birds Fire,"Douglas, OR","July 25, 2024 4:09 PM PDT","August 30, 2024 5:30 AM PDT",0.13,100
@@ -133,7 +133,7 @@ Anderson Fire,"Boise, ID","August 5, 2024 3:16 PM PDT","August 12, 2024 4:04 AM 
 Morrison Fire,"Tuolumne, CA","August 4, 2024 10:46 AM PDT","August 10, 2024 8:30 AM PDT",31,100
 Echo Fire,"Mariposa, CA","August 3, 2024 9:59 AM PDT","August 10, 2024 8:30 AM PDT",11.5,0
 Farrow Fire,"Idaho, ID","August 5, 2024 7:00 PM PDT","August 29, 2024 7:11 AM PDT",484,0
-Boise Fire,"Humboldt, CA","August 9, 2024 8:50 AM PDT","August 30, 2024 8:01 PM PDT",12910,59
+Boise Fire,"Humboldt, CA","August 9, 2024 8:50 AM PDT","August 30, 2024 8:01 PM PDT",12911,65
 Ruby Fire,"Whatcom, WA","August 9, 2024 7:20 AM PDT","August 31, 2024 5:20 AM PDT",959,0
 Goat Fire,"Valley, ID","August 5, 2024 4:37 PM PDT","August 31, 2024 1:45 PM PDT",2708,0
 Flat Fire,"Boise, ID","August 5, 2024 7:29 PM PDT","August 26, 2024 4:54 AM PDT",3734,90
@@ -187,11 +187,14 @@ Fy- 24 Op1 08 Fire,"Vieques, PR","August 27, 2024 6:00 AM PDT","August 30, 2024 
 South Harrison Fire,"Spokane, WA","August 31, 2024 1:42 PM PDT","August 31, 2024 2:52 PM PDT",0.5,Not available
 Euclid Fire,"Spokane, WA","August 31, 2024 2:37 PM PDT","August 31, 2024 3:43 PM PDT",0.5,Not available
 West Jensen Fire,"Spokane, WA","August 31, 2024 2:41 PM PDT","August 31, 2024 5:21 PM PDT",0.5,Not available
+Thorpe Fire,"Spokane, WA","August 31, 2024 3:42 PM PDT","August 31, 2024 5:30 PM PDT",53,Not available
 2024 SQF Lightning Complex,"Kern, Tulare, CA","July 13, 2024 5:34 AM PDT","August 30, 2024 1:31 AM PDT",33026,95
 Keys Fire,"San Diego, CA","August 28, 2024 7:38 AM PDT","August 30, 2024 2:48 PM PDT",18,100
 Gulch Fire,"Sonoma, CA","August 28, 2024 10:15 AM PDT","August 30, 2024 12:12 AM PDT",19,100
 Silver Fire,"Calaveras, CA","August 28, 2024 9:25 AM PDT","August 31, 2024 1:46 AM PDT",12,100
 Two Fire,"Sonoma, CA","August 29, 2024 8:34 AM PDT","August 30, 2024 2:49 PM PDT",33,100
 Vasco Fire,"Alameda, CA","August 29, 2024 10:28 AM PDT","August 31, 2024 2:21 AM PDT",16,95
-High Fire,"Tehama, CA","August 31, 2024 7:41 AM PDT","August 31, 2024 9:04 AM PDT",31,Not available
-Minton Fire,"Riverside, CA","August 31, 2024 9:03 AM PDT","August 31, 2024 10:10 AM PDT",22,Not available
+High Fire,"Tehama, CA","August 31, 2024 7:41 AM PDT","August 31, 2024 11:24 AM PDT",31,40
+Minton Fire,"Riverside, CA","August 31, 2024 9:03 AM PDT","August 31, 2024 12:07 PM PDT",22,Not available
+Bichota Fire,"Los Angeles, CA","August 31, 2024 9:59 AM PDT","August 31, 2024 10:51 AM PDT",25,Not available
+Union Fire,"San Luis Obispo, CA","August 31, 2024 9:15 AM PDT","August 31, 2024 11:17 AM PDT",11,Not available
