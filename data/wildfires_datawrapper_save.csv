@@ -39,9 +39,9 @@ Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","August 31, 2024 5:37 AM PDT"
 Boneyard Fire,"Grant, OR","July 17, 2024 3:42 PM PDT","July 24, 2024 12:43 PM PDT",49716,100
 Owhi Flats Fire,"Okanogan, WA","July 17, 2024 11:12 PM PDT","July 19, 2024 12:04 PM PDT",84,100
 Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","August 31, 2024 5:16 AM PDT",784,0
-Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 31, 2024 10:07 AM PDT",3972.96,65
+Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 31, 2024 10:07 AM PDT",3976.07,65
 Monkey Creek Fire,"Morrow, OR","July 18, 2024 3:13 PM PDT","August 15, 2024 12:46 PM PDT",115269,48
-Trep Fire,"Douglas, OR","July 19, 2024 1:50 PM PDT","August 30, 2024 5:31 AM PDT",542.9,100
+Trep Fire,"Douglas, OR","July 19, 2024 1:50 PM PDT","August 30, 2024 5:31 AM PDT",542.42,100
 Clearwater Fire,"Douglas, OR","July 16, 2024 8:23 PM PDT","August 30, 2024 5:30 AM PDT",0.65,100
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","August 3, 2024 2:09 PM PDT",24.3,85
 Garwood Fire,"Douglas, OR","July 17, 2024 2:54 PM PDT","August 30, 2024 5:30 AM PDT",5.95,100
@@ -49,7 +49,7 @@ Pyramid Fire,"Linn, OR","July 17, 2024 12:26 PM PDT","August 29, 2024 7:43 PM PD
 Ooya Fire,"Douglas, OR","July 17, 2024 1:18 PM PDT","August 30, 2024 5:30 AM PDT",372.67,100
 Potter Fire,"Douglas, OR","July 16, 2024 8:44 PM PDT","August 30, 2024 5:31 AM PDT",3427.66,38
 Horse Heaven Creek Fire,"Lane, OR","July 17, 2024 3:28 PM PDT","August 31, 2024 7:28 AM PDT",2298,64
-Maple Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 16, 2024 9:26 AM PDT",11137.92,78
+Maple Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 16, 2024 9:26 AM PDT",11141.32,78
 Whisky Creek Fire,"Hood River, OR","July 20, 2024 11:01 AM PDT","August 30, 2024 6:33 AM PDT",2085,25
 Courtrock Fire,"Grant, OR","July 21, 2024 2:54 PM PDT","August 8, 2024 3:08 PM PDT",20019,100
 Reynolds Butte Fire,"Douglas, OR","July 19, 2024 11:21 AM PDT","August 31, 2024 7:28 AM PDT",334,100
@@ -125,10 +125,10 @@ Ladue River Fire,"Southeast Fairbanks, AK","July 22, 2024 5:27 PM PDT","August 2
 Dollar Fire,"Valley, ID","August 5, 2024 5:57 PM PDT","August 31, 2024 1:45 PM PDT",3419,0
 Snag Fire,"Valley, ID","August 5, 2024 4:22 PM PDT","August 31, 2024 4:08 AM PDT",30046,3
 Warner Peak Fire,"Lake, OR","August 5, 2024 5:05 PM PDT","August 18, 2024 3:43 PM PDT",65866,100
-Nellie Fire,"Boise, ID","August 6, 2024 8:35 AM PDT","August 31, 2024 3:15 AM PDT",44759,8
+Nellie Fire,"Boise, ID","August 6, 2024 8:35 AM PDT","August 31, 2024 7:38 PM PDT",44759,8
 Paddock Fire,"Washington, ID","August 5, 2024 6:56 PM PDT","August 16, 2024 7:28 PM PDT",187185,100
 Elkhorn Ridge Fire,"Idaho, ID","August 6, 2024 5:41 PM PDT","August 22, 2024 10:57 AM PDT",3120,0
-Bulldog Fire,"Boise, ID","August 5, 2024 4:02 PM PDT","August 31, 2024 4:04 AM PDT",7697,26
+Middle Fork Complex Fire,"Boise, ID","August 5, 2024 4:02 PM PDT","August 31, 2024 6:55 PM PDT",7697,26
 Anderson Fire,"Boise, ID","August 5, 2024 3:16 PM PDT","August 12, 2024 4:04 AM PDT",1877,100
 Morrison Fire,"Tuolumne, CA","August 4, 2024 10:46 AM PDT","August 10, 2024 8:30 AM PDT",31,100
 Echo Fire,"Mariposa, CA","August 3, 2024 9:59 AM PDT","August 10, 2024 8:30 AM PDT",11.5,0
@@ -185,8 +185,7 @@ Ivanpah Fire,"San Bernardino, CA","July 12, 2024 3:19 PM PDT","August 29, 2024 1
 Halfway Fire,"Idaho, ID","August 25, 2024 2:09 PM PDT","August 31, 2024 4:32 AM PDT",0.1,Not available
 Fy- 24 Op1 08 Fire,"Vieques, PR","August 27, 2024 6:00 AM PDT","August 30, 2024 10:16 AM PDT",NA,Not available
 South Harrison Fire,"Spokane, WA","August 31, 2024 1:42 PM PDT","August 31, 2024 2:52 PM PDT",0.5,Not available
-Euclid Fire,"Spokane, WA","August 31, 2024 2:37 PM PDT","August 31, 2024 3:43 PM PDT",0.5,Not available
-West Jensen Fire,"Spokane, WA","August 31, 2024 2:41 PM PDT","August 31, 2024 5:21 PM PDT",0.5,Not available
+Euclid Fire,"Spokane, WA","August 31, 2024 2:37 PM PDT","August 31, 2024 3:43 PM PDT",2,Not available
 Thorpe Fire,"Spokane, WA","August 31, 2024 3:42 PM PDT","August 31, 2024 5:30 PM PDT",53,Not available
 2024 SQF Lightning Complex,"Kern, Tulare, CA","July 13, 2024 5:34 AM PDT","August 30, 2024 1:31 AM PDT",33026,95
 Keys Fire,"San Diego, CA","August 28, 2024 7:38 AM PDT","August 30, 2024 2:48 PM PDT",18,100
