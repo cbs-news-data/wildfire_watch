@@ -123,12 +123,12 @@ Anderson Fire,"Boise, ID","August 5, 2024 3:16 PM PDT","August 12, 2024 4:04 AM 
 Morrison Fire,"Tuolumne, CA","August 4, 2024 10:46 AM PDT","August 10, 2024 8:30 AM PDT",31,100
 Echo Fire,"Mariposa, CA","August 3, 2024 9:59 AM PDT","August 10, 2024 8:30 AM PDT",11.5,0
 Farrow Fire,"Idaho, ID","August 5, 2024 7:00 PM PDT","August 29, 2024 7:11 AM PDT",484,0
-Boise Fire,"Humboldt, CA","August 9, 2024 8:50 AM PDT","September 1, 2024 9:08 PM PDT",12911,65
+Boise Fire,"Humboldt, CA","August 9, 2024 8:50 AM PDT","September 2, 2024 8:26 AM PDT",12911,65
 Ruby Fire,"Whatcom, WA","August 9, 2024 7:20 AM PDT","August 31, 2024 5:20 AM PDT",959,0
 Goat Fire,"Valley, ID","August 5, 2024 4:37 PM PDT","September 2, 2024 4:47 AM PDT",2964,0
 Flat Fire,"Boise, ID","August 5, 2024 7:29 PM PDT","August 26, 2024 4:54 AM PDT",3734,95
 Black Canyon Fire,"Meagher, MT","August 10, 2024 12:36 PM PDT","August 19, 2024 4:46 PM PDT",233,100
-Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 1, 2024 11:52 PM PDT",10759,13
+Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 2, 2024 1:17 PM PDT",10759,13
 Square Lake Fire,"Idaho, ID","August 10, 2024 7:34 PM PDT","August 18, 2024 10:54 AM PDT",1346,Not available
 2620 Road Fire,"Jefferson, WA","August 14, 2024 5:06 PM PDT","August 26, 2024 6:15 AM PDT",398,100
 Cracker Jack Complex Fire,"Idaho, ID","August 12, 2024 12:49 PM PDT","September 1, 2024 12:54 PM PDT",0.1,0
@@ -136,7 +136,7 @@ Fish Creek Fire,"Teton, WY","August 16, 2024 12:52 PM PDT","September 2, 2024 2:
 Boulder Peak Fire,"Ravalli, MT","July 30, 2024 6:33 AM PDT","August 27, 2024 10:06 AM PDT",110,0
 Twin Knobs Fire,"Douglas, OR","August 17, 2024 1:18 PM PDT","August 30, 2024 5:31 AM PDT",0.42,100
 0675 Ochoco Fire,"Jefferson, OR","August 18, 2024 1:44 PM PDT","August 19, 2024 10:50 AM PDT",590,100
-Ratio Mountain Fire,"Jefferson, MT","August 18, 2024 3:44 PM PDT","September 1, 2024 5:21 AM PDT",1058,22
+Ratio Mountain Fire,"Jefferson, MT","August 18, 2024 3:44 PM PDT","September 1, 2024 5:21 AM PDT",1158,22
 Boulder Creek Fire,"Union, OR","August 18, 2024 12:51 PM PDT","August 20, 2024 9:52 PM PDT",115,50
 Stayman Fire,"Chelan, WA","August 20, 2024 1:55 PM PDT","August 21, 2024 4:30 PM PDT",3118,95
 Loop Fire,"Douglas, OR","August 18, 2024 6:06 PM PDT","August 30, 2024 5:31 AM PDT",1.72,100
@@ -172,12 +172,13 @@ Halfway Fire,"Idaho, ID","August 25, 2024 2:09 PM PDT","September 2, 2024 4:30 A
 South Harrison Fire,"Spokane, WA","August 31, 2024 1:42 PM PDT","August 31, 2024 2:52 PM PDT",0.5,Not available
 Thorpe Fire,"Spokane, WA","August 31, 2024 3:42 PM PDT","August 31, 2024 5:30 PM PDT",53,Not available
 Log Fire,"Idaho, ID","July 31, 2024 2:03 PM PDT","September 2, 2024 4:30 AM PDT",0.25,Not available
-Silver Spoon Fire,"Campbell, WY","September 1, 2024 9:14 AM PDT","September 1, 2024 12:52 PM PDT",1000,0
+Silver Spoon Fire,"Campbell, WY","September 1, 2024 9:14 AM PDT","September 2, 2024 11:26 AM PDT",1000,0
 Cottonwood Fire Fire,"Wheeler, OR","August 31, 2024 11:05 AM PDT","September 1, 2024 8:46 PM PDT",13.2,Not available
-Copperfield Fire,"Klamath, OR","September 1, 2024 2:53 PM PDT","September 2, 2024 11:06 AM PDT",2500,Not available
+Copperfield Fire,"Klamath, OR","September 1, 2024 2:53 PM PDT","September 2, 2024 11:06 AM PDT",3241,Not available
 Cellar 2 Fire,"Yavapai, AZ","August 30, 2024 12:32 PM PDT","September 2, 2024 9:27 AM PDT",175,Not available
 Long Gulch Fire,"Yavapai, AZ","August 31, 2024 10:21 AM PDT","September 2, 2024 9:59 AM PDT",1100,0
 Corn Fire,"Yavapai, AZ","August 30, 2024 2:58 PM PDT","September 2, 2024 9:58 AM PDT",70,Not available
+0766 Shoe Fly Fire,"Wheeler, OR","September 2, 2024 4:22 AM PDT","September 2, 2024 11:35 AM PDT",300,Not available
 2024 SQF Lightning Complex,"Kern, Tulare, CA","July 13, 2024 5:34 AM PDT","September 1, 2024 1:04 AM PDT",33026,95
 Silver Fire,"Calaveras, CA","August 28, 2024 9:25 AM PDT","August 31, 2024 1:46 AM PDT",12,100
 Vasco Fire,"Alameda, CA","August 29, 2024 10:28 AM PDT","September 2, 2024 12:29 AM PDT",16,100
@@ -186,6 +187,6 @@ Minton Fire,"Riverside, CA","August 31, 2024 9:03 AM PDT","September 1, 2024 6:4
 Bichota Fire,"Los Angeles, CA","August 31, 2024 9:59 AM PDT","September 1, 2024 12:57 AM PDT",25,Not available
 Union Fire,"San Luis Obispo, CA","August 31, 2024 9:15 AM PDT","September 2, 2024 12:30 AM PDT",11,100
 Armstrong Fire,"Contra Costa, CA","August 31, 2024 4:45 PM PDT","September 2, 2024 12:29 AM PDT",20,95
-Record Fire,"Riverside, CA","September 1, 2024 7:23 AM PDT","September 2, 2024 2:23 AM PDT",650,15
+Record Fire,"Riverside, CA","September 1, 2024 7:23 AM PDT","September 2, 2024 5:27 AM PDT",517,15
 Robert Fire,"Solano, CA","September 1, 2024 6:03 AM PDT","September 2, 2024 12:27 AM PDT",48,90
 Argyle Fire,"Monterey, CA","September 1, 2024 3:05 PM PDT","September 2, 2024 12:27 AM PDT",100,40
