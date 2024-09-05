@@ -123,7 +123,7 @@ Red Mountain Fire,"Whatcom, WA","August 9, 2024 7:20 AM PDT","September 4, 2024 
 Goat Fire,"Valley, ID","August 5, 2024 4:37 PM PDT","September 4, 2024 4:42 AM PDT",3952,0
 Flat Fire,"Boise, ID","August 5, 2024 7:29 PM PDT","August 26, 2024 4:54 AM PDT",3734,100
 Black Canyon Fire,"Meagher, MT","August 10, 2024 12:36 PM PDT","August 19, 2024 4:46 PM PDT",233,100
-Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 4, 2024 3:42 PM PDT",12843,23
+Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 4, 2024 11:13 PM PDT",12843,23
 Square Lake Fire,"Idaho, ID","August 10, 2024 7:34 PM PDT","August 18, 2024 10:54 AM PDT",1346,Not available
 2620 Road Fire,"Jefferson, WA","August 14, 2024 5:06 PM PDT","August 26, 2024 6:15 AM PDT",398,100
 Fish Creek Fire,"Teton, WY","August 16, 2024 12:52 PM PDT","September 4, 2024 2:48 AM PDT",17912,59
@@ -163,7 +163,7 @@ Copperfield Fire,"Klamath, OR","September 1, 2024 2:53 PM PDT","September 4, 202
 Cellar Ii Fire,"Yavapai, AZ","August 30, 2024 12:32 PM PDT","September 3, 2024 5:19 PM PDT",175,Not available
 Long Gulch Fire,"Yavapai, AZ","August 31, 2024 10:21 AM PDT","September 2, 2024 9:59 AM PDT",1100,50
 Corn Fire,"Yavapai, AZ","August 30, 2024 2:58 PM PDT","September 2, 2024 9:58 AM PDT",70,Not available
-Shoe Fly Fire,"Wheeler, OR","September 2, 2024 4:22 AM PDT","September 4, 2024 7:08 AM PDT",8000,1
+Shoe Fly Fire,"Wheeler, OR","September 2, 2024 4:22 AM PDT","September 4, 2024 7:08 AM PDT",20699,5
 Record Fire,"Riverside, CA","September 1, 2024 2:22 PM PDT","September 2, 2024 5:38 PM PDT",517,78
 Bull Fire,"Gila, AZ","September 2, 2024 12:16 AM PDT","September 2, 2024 8:45 PM PDT",95,Not available
 Niles Point Fire,"St. Louis, MN","September 2, 2024 2:43 PM PDT","September 3, 2024 2:11 PM PDT",0.1,Not available
@@ -184,19 +184,19 @@ Jones Fire,"Malheur, OR","September 2, 2024 5:00 AM PDT","September 4, 2024 12:3
 Black Eagle Fire,"Lemhi, ID","August 5, 2024 5:35 PM PDT","September 4, 2024 12:27 PM PDT",1922,0
 Red Rock Fire,"Lemhi, ID","September 2, 2024 2:45 PM PDT","September 4, 2024 2:23 PM PDT",166,0
 Sheep Fire,"Elmore, ID","September 2, 2024 7:15 PM PDT","September 4, 2024 2:34 PM PDT",220,0
-Boone Fire,"Fresno, CA","September 3, 2024 12:10 PM PDT","September 4, 2024 3:11 PM PDT",6550,5
+Boone Fire,"Fresno, CA","September 3, 2024 12:10 PM PDT","September 4, 2024 10:54 PM PDT",12200,5
 Cleopatra Fire,"Moffat, CO","September 3, 2024 2:52 PM PDT","September 4, 2024 4:12 PM PDT",2.69,Not available
 Two Cabin Fire,"Grant, OR","September 3, 2024 1:41 PM PDT","September 4, 2024 4:24 PM PDT",225,3
 Riverside Fire,"Teton, WY","September 4, 2024 11:43 AM PDT","September 4, 2024 5:57 PM PDT",NA,Not available
 2024 SQF Lightning Complex,"Kern, Tulare, CA","July 13, 2024 5:34 AM PDT","September 1, 2024 1:04 AM PDT",33026,95
 High Fire,"Tehama, CA","August 31, 2024 7:41 AM PDT","September 4, 2024 1:14 AM PDT",45,100
-Armstrong Fire,"Contra Costa, CA","August 31, 2024 4:45 PM PDT","September 4, 2024 1:56 AM PDT",20,100
+Armstrong Fire,"Contra Costa, CA","August 31, 2024 4:45 PM PDT","September 4, 2024 2:44 PM PDT",20,100
 Robert Fire,"Solano, CA","September 1, 2024 6:03 AM PDT","September 4, 2024 1:15 AM PDT",48,100
-Argyle Fire,"Monterey, CA","September 1, 2024 3:05 PM PDT","September 4, 2024 11:57 AM PDT",91,100
-Centerville Fire,"Butte, CA","September 2, 2024 8:47 AM PDT","September 4, 2024 11:56 AM PDT",59,100
-Gabriel Fire,"Los Angeles, CA","September 2, 2024 9:58 AM PDT","September 4, 2024 1:32 AM PDT",40,100
+Argyle Fire,"Monterey, CA","September 1, 2024 3:05 PM PDT","September 4, 2024 2:43 PM PDT",91,100
+Centerville Fire,"Butte, CA","September 2, 2024 8:47 AM PDT","September 4, 2024 2:43 PM PDT",59,100
+Gabriel Fire,"Los Angeles, CA","September 2, 2024 9:58 AM PDT","September 4, 2024 2:44 PM PDT",40,100
 Hawk Fire,"San Luis Obispo, CA","September 3, 2024 3:18 AM PDT","September 4, 2024 8:51 AM PDT",14,100
 Backus Fire,"Kern, CA","September 3, 2024 8:20 AM PDT","September 3, 2024 8:25 AM PDT",10,Not available
 Chimineas Fire,"San Luis Obispo, CA","September 4, 2024 2:23 AM PDT","September 4, 2024 11:58 AM PDT",1200,90
 Chapman Fire,"Riverside, CA","September 4, 2024 5:56 AM PDT","September 4, 2024 10:27 AM PDT",18,5
-Post Fire,"Riverside, CA","September 4, 2024 8:55 AM PDT","September 4, 2024 1:46 PM PDT",120,0
+Post Fire,"Riverside, CA","September 4, 2024 8:55 AM PDT","September 4, 2024 4:07 PM PDT",130,20
