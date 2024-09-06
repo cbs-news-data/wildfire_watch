@@ -40,7 +40,7 @@ Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 31, 2024 10:07
 Monkey Creek Fire,"Morrow, OR","July 18, 2024 3:13 PM PDT","August 15, 2024 12:46 PM PDT",115269,48
 Trep Fire,"Douglas, OR","July 19, 2024 1:50 PM PDT","August 30, 2024 5:31 AM PDT",542.42,100
 Clearwater Fire,"Douglas, OR","July 16, 2024 8:23 PM PDT","August 30, 2024 5:30 AM PDT",0.65,100
-Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","August 3, 2024 2:09 PM PDT",0.25,50
+Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","August 3, 2024 2:09 PM PDT",75.5,50
 Garwood Fire,"Douglas, OR","July 17, 2024 2:54 PM PDT","August 30, 2024 5:30 AM PDT",5.95,100
 Pyramid Fire,"Linn, OR","July 17, 2024 12:26 PM PDT","August 29, 2024 7:43 PM PDT",1312,98
 Ooya Fire,"Douglas, OR","July 17, 2024 1:18 PM PDT","August 30, 2024 5:30 AM PDT",372.67,100
@@ -80,7 +80,6 @@ Bullpup Fire,"Lane, OR","July 19, 2024 1:55 PM PDT","July 26, 2024 4:25 AM PDT",
 Whiskey Mountain Fire,"Harney, OR","July 24, 2024 3:48 PM PDT","August 22, 2024 1:35 PM PDT",4345,100
 Parasol Fire,"Grant, OR","July 24, 2024 8:37 PM PDT","August 22, 2024 1:35 PM PDT",485,100
 Limepoint Fire,"Adams, ID","July 24, 2024 5:21 PM PDT","September 4, 2024 3:16 AM PDT",32998,95
-Sand Stone Fire,"Maricopa, AZ","July 25, 2024 6:04 PM PDT","July 31, 2024 2:30 PM PDT",27390,100
 Muir Creek Fire,"Flathead, MT","July 23, 2024 8:48 PM PDT","July 30, 2024 9:22 AM PDT",30,0
 Dominion Point Fire,"Shoshone, ID","July 25, 2024 3:46 PM PDT","July 31, 2024 7:21 PM PDT",275,0
 East Fork Fire,"Shoshone, ID","July 25, 2024 5:03 AM PDT","July 31, 2024 7:21 PM PDT",25,100
@@ -114,9 +113,9 @@ Williams Mine Fire,"Skamania, WA","August 5, 2024 12:03 PM PDT","September 6, 20
 Sandstone Fire,"Clackamas, OR","August 5, 2024 2:59 PM PDT","August 28, 2024 4:15 AM PDT",702,75
 Ladue River Fire,"Southeast Fairbanks, AK","July 22, 2024 5:27 PM PDT","September 3, 2024 1:13 PM PDT",19981.7,Not available
 Dollar Fire,"Valley, ID","August 5, 2024 5:57 PM PDT","September 6, 2024 4:05 AM PDT",4170,8
-Snag Fire,"Valley, ID","August 5, 2024 4:22 PM PDT","September 6, 2024 6:56 AM PDT",32478,13
+Snag Fire,"Valley, ID","August 5, 2024 4:22 PM PDT","September 6, 2024 11:10 AM PDT",32478,13
 Warner Peak Fire,"Lake, OR","August 5, 2024 5:05 PM PDT","August 18, 2024 3:43 PM PDT",65866,100
-Nellie Fire,"Boise, ID","August 6, 2024 8:35 AM PDT","September 6, 2024 8:11 AM PDT",46861,0
+Nellie Fire,"Boise, ID","August 6, 2024 8:35 AM PDT","September 6, 2024 10:36 AM PDT",46861,0
 Elkhorn Ridge Fire,"Idaho, ID","August 6, 2024 5:41 PM PDT","August 22, 2024 10:57 AM PDT",3140,0
 Bulldog Fire,"Boise, ID","August 5, 2024 4:02 PM PDT","September 6, 2024 3:26 AM PDT",9098,0
 Anderson Fire,"Boise, ID","August 5, 2024 3:16 PM PDT","August 12, 2024 4:04 AM PDT",1877,100
@@ -183,28 +182,30 @@ Gold Fire,"Malheur, OR","September 3, 2024 2:00 PM PDT","September 4, 2024 12:08
 Jones Fire,"Malheur, OR","September 2, 2024 5:00 AM PDT","September 4, 2024 12:34 PM PDT",7105,80
 Black Eagle Fire,"Lemhi, ID","August 5, 2024 5:35 PM PDT","September 6, 2024 5:33 AM PDT",1949,0
 Red Rock Fire,"Lemhi, ID","September 2, 2024 2:45 PM PDT","September 6, 2024 5:33 AM PDT",189,0
-Sheep Fire,"Elmore, ID","September 2, 2024 7:15 PM PDT","September 6, 2024 4:04 AM PDT",377,5
+Sheep Fire,"Elmore, ID","September 2, 2024 7:15 PM PDT","September 6, 2024 4:04 AM PDT",610,5
 Boone Fire,"Fresno, CA","September 3, 2024 12:10 PM PDT","September 5, 2024 7:47 PM PDT",17328,5
-Cleopatra Fire,"Moffat, CO","September 3, 2024 2:52 PM PDT","September 4, 2024 4:12 PM PDT",2.69,Not available
-Two Cabin Fire,"Grant, OR","September 3, 2024 1:41 PM PDT","September 5, 2024 9:24 PM PDT",251,5
+Cleopatra Fire,"Moffat, CO","September 3, 2024 2:52 PM PDT","September 4, 2024 4:12 PM PDT",3,Not available
+Two Cabin Fire,"Grant, OR","September 3, 2024 1:41 PM PDT","September 6, 2024 8:47 AM PDT",200,5
 Riverside Fire,"Teton, WY","September 4, 2024 11:43 AM PDT","September 4, 2024 5:57 PM PDT",NA,Not available
 Fd060018 Fire,"Middlesex, MA","September 2, 2024 10:30 PM PDT","September 5, 2024 3:59 AM PDT",1.5,Not available
 Crimson Fire,"Idaho, ID","August 7, 2024 3:46 PM PDT","September 5, 2024 4:09 AM PDT",200,0
 Goat Creek Fire,"Idaho, ID","August 21, 2024 3:27 PM PDT","September 5, 2024 4:09 AM PDT",250,0
 Lonesome Fire,"Idaho, ID","August 19, 2024 2:00 PM PDT","September 5, 2024 4:09 AM PDT",250,0
-Chapman Fire,"Riverside, CA","September 4, 2024 12:56 PM PDT","September 5, 2024 8:11 AM PDT",18.2,Not available
 Rocky 3 Fire,"Elko, NV","September 2, 2024 6:36 PM PDT","September 5, 2024 8:24 AM PDT",19,Not available
 Lake Mountain Fire,"Elko, NV","September 2, 2024 5:57 PM PDT","September 5, 2024 8:22 AM PDT",403,50
 Rocky Fire,"Elko, NV","September 2, 2024 6:30 PM PDT","September 5, 2024 8:25 AM PDT",333,100
 Vanity Fire,"Custer, ID","September 3, 2024 6:28 AM PDT","September 5, 2024 8:37 AM PDT",114,0
 Huckleberry Ridge Fire,"Lewis, WA","September 4, 2024 3:47 PM PDT","September 6, 2024 7:22 AM PDT",150,0
 Preacher Fire,"Gila, AZ","August 29, 2024 7:01 AM PDT","September 5, 2024 10:11 PM PDT",0.1,0
-Milepost 98 Fire,"Douglas, OR","September 5, 2024 5:13 PM PDT","September 5, 2024 11:29 PM PDT",45,Not available
+Milepost 98 Fire,"Douglas, OR","September 5, 2024 5:13 PM PDT","September 6, 2024 10:52 AM PDT",45,Not available
 Devils Knob Fire,"Douglas, OR","September 5, 2024 1:58 PM PDT","September 5, 2024 11:44 PM PDT",350,0
-Kinzua Fire,"Wheeler, OR","September 5, 2024 4:43 PM PDT","September 6, 2024 6:13 AM PDT",96,Not available
-Canyon Fire,"Morrow, OR","September 5, 2024 1:27 PM PDT","September 6, 2024 6:50 AM PDT",190,Not available
-Holmes Fire,"Wheeler, OR","September 4, 2024 3:18 PM PDT","September 6, 2024 7:41 AM PDT",20,Not available
+Kinzua Fire,"Wheeler, OR","September 5, 2024 4:43 PM PDT","September 6, 2024 8:47 AM PDT",96,Not available
+Canyon Fire,"Morrow, OR","September 5, 2024 1:27 PM PDT","September 6, 2024 8:47 AM PDT",190,Not available
+Holmes Fire,"Wheeler, OR","September 4, 2024 3:18 PM PDT","September 6, 2024 8:47 AM PDT",20,Not available
 Mile Marker 104 Fire,"Sanders, MT","September 4, 2024 4:15 PM PDT","September 6, 2024 8:44 AM PDT",400,0
+0827 Studhorse Fire,"Jefferson, OR","September 4, 2024 5:46 PM PDT","September 6, 2024 9:55 AM PDT",39,Not available
+Thatcher Hill Fire,"Franklin, ID","September 5, 2024 1:51 PM PDT","September 6, 2024 10:58 AM PDT",91,Not available
+Deans Creek Road Fire,"Douglas, OR","September 4, 2024 5:06 PM PDT","September 6, 2024 11:06 AM PDT",NA,Not available
 2024 SQF Lightning Complex,"Kern, Tulare, CA","July 13, 2024 5:34 AM PDT","September 1, 2024 1:04 AM PDT",33026,95
 High Fire,"Tehama, CA","August 31, 2024 7:41 AM PDT","September 4, 2024 1:14 AM PDT",45,100
 Armstrong Fire,"Contra Costa, CA","August 31, 2024 4:45 PM PDT","September 4, 2024 2:44 PM PDT",20,100
@@ -215,8 +216,9 @@ Centerville Fire,"Butte, CA","September 2, 2024 8:47 AM PDT","September 4, 2024 
 Gabriel Fire,"Los Angeles, CA","September 2, 2024 9:58 AM PDT","September 4, 2024 2:44 PM PDT",40,100
 Hawk Fire,"San Luis Obispo, CA","September 3, 2024 3:18 AM PDT","September 4, 2024 8:51 AM PDT",14,100
 Chimineas Fire,"San Luis Obispo, CA","September 4, 2024 2:23 AM PDT","September 4, 2024 11:58 AM PDT",1200,90
+Chapman Fire,"Riverside, CA","September 4, 2024 5:56 AM PDT","September 5, 2024 4:39 PM PDT",18,100
 Post Fire,"Riverside, CA","September 4, 2024 8:55 AM PDT","September 5, 2024 4:42 PM PDT",264,100
 Midway Rd Fire,"Merced, CA","September 5, 2024 8:37 AM PDT","September 5, 2024 11:56 AM PDT",11,Not available
-Dorado Fire,"Fresno, CA","September 5, 2024 10:01 AM PDT","September 5, 2024 11:17 PM PDT",501,75
+Dorado Fire,"Fresno, CA","September 5, 2024 10:01 AM PDT","September 6, 2024 4:22 AM PDT",502,75
 Palmer Fire,"Fresno, CA","September 5, 2024 10:55 AM PDT","September 5, 2024 11:17 PM PDT",20,100
-Line Fire,"San Bernardino, CA","September 5, 2024 11:33 AM PDT","September 6, 2024 12:24 AM PDT",505,0
+Line Fire,"San Bernardino, CA","September 5, 2024 11:33 AM PDT","September 6, 2024 3:59 AM PDT",750,0
