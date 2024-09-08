@@ -14,13 +14,13 @@ Chalky Point Fire,"Rosebud, MT","August 22, 2024 1:17 PM PDT","August 27, 2024 1
 Firestone Fire,"Deschutes, OR","September 6, 2024 7:23 PM PDT","September 7, 2024 7:04 PM PDT",5000,Not available
 Clearwater Fire,"Park, WY","July 19, 2024 3:30 PM PDT","August 16, 2024 2:26 PM PDT",1966,91
 Twin Knobs Fire,"Douglas, OR","August 17, 2024 1:18 PM PDT","August 30, 2024 5:31 AM PDT",0.42,100
-Milepost 98 Fire,"Douglas, OR","September 5, 2024 5:13 PM PDT","September 6, 2024 10:13 PM PDT",120,Not available
+Milepost 98 Fire,"Douglas, OR","September 5, 2024 5:13 PM PDT","September 7, 2024 10:29 PM PDT",120,Not available
 Poison Creek Fire,"Grant, OR","July 25, 2024 3:04 PM PDT","August 22, 2024 1:35 PM PDT",1060,100
 Elkhorn Ridge Fire,"Idaho, ID","August 6, 2024 5:41 PM PDT","August 22, 2024 10:57 AM PDT",3140,0
 Elephant Fire,"Douglas, OR","July 23, 2024 11:36 AM PDT","August 30, 2024 5:30 AM PDT",0.74,100
-Rail Ridge Fire,"Grant, OR","September 2, 2024 3:05 AM PDT","September 7, 2024 9:17 PM PDT",121923,7
+Rail Ridge Fire,"Grant, OR","September 2, 2024 3:05 AM PDT","September 7, 2024 9:40 PM PDT",121923,7
 Sulphur Three Fire,"Snohomish, WA","July 18, 2024 7:49 AM PDT","August 8, 2024 6:24 PM PDT",0.1,0
-Whisky Creek Fire,"Hood River, OR","July 20, 2024 11:01 AM PDT","September 7, 2024 1:39 PM PDT",2692,25
+Whisky Creek Fire,"Hood River, OR","July 20, 2024 11:01 AM PDT","September 7, 2024 9:09 PM PDT",2692,25
 Grizzly Fire,"Denali, AK","June 25, 2024 3:12 PM PDT","September 3, 2024 12:34 PM PDT",38806.52,0
 Park Fire,"Butte, CA","July 24, 2024 2:52 PM PDT","August 24, 2024 11:56 AM PDT",429603,99
 Toolbox Fire,"Douglas, OR","July 28, 2024 1:45 PM PDT","August 30, 2024 5:30 AM PDT",0.11,100
@@ -55,7 +55,7 @@ Sulphur Four Fire,"Snohomish, WA","July 18, 2024 3:49 PM PDT","August 8, 2024 6:
 First Thunder Fire,"Pennington, SD","September 2, 2024 5:15 PM PDT","September 3, 2024 3:12 PM PDT",157,90
 Fish Fire,"Douglas, OR","August 23, 2024 11:16 AM PDT","August 30, 2024 5:31 AM PDT",0.12,100
 Cleopatra Fire,"Moffat, CO","September 3, 2024 2:52 PM PDT","September 4, 2024 4:12 PM PDT",6.7,Not available
-Line Fire,"San Bernardino, CA","September 5, 2024 6:00 PM PDT","September 7, 2024 2:23 PM PDT",7122,0
+Line Fire,"San Bernardino, CA","September 5, 2024 6:00 PM PDT","September 7, 2024 10:59 PM PDT",7122,0
 Echo Fire,"Mariposa, CA","August 3, 2024 9:59 AM PDT","August 10, 2024 8:30 AM PDT",17,0
 Silver King Fire,"Piute, UT","July 5, 2024 12:11 PM PDT","July 25, 2024 1:30 PM PDT",18222,88
 Cougar Creek Fire,"Asotin, WA","July 15, 2024 6:30 PM PDT","August 13, 2024 10:53 AM PDT",24091,100
@@ -164,6 +164,7 @@ Burnt Creek Fire,"Valley, ID","August 19, 2024 6:40 AM PDT","September 5, 2024 9
 Broom Canyon Fire,"Nye, NV","July 29, 2024 8:00 PM PDT","August 31, 2024 5:33 AM PDT",8225,15
 Middle Ridge Fire,"Snohomish, WA","July 28, 2024 12:21 PM PDT","August 8, 2024 6:07 PM PDT",0.1,0
 Barber Fire,"Converse, WY","August 21, 2024 1:56 PM PDT","August 21, 2024 7:18 PM PDT",1419.04,100
+Shoe Fly Fire,"Wheeler, OR","September 2, 2024 4:22 AM PDT","September 7, 2024 9:22 PM PDT",25142,19
 Railroad Fire,"Ravalli, MT","July 25, 2024 7:59 AM PDT","September 7, 2024 4:20 AM PDT",437,3
 Chalk Fire,"Lane, OR","July 17, 2024 11:36 AM PDT","September 7, 2024 9:30 AM PDT",5926,86
 Owhi Flats Fire,"Okanogan, WA","July 17, 2024 11:12 PM PDT","July 19, 2024 12:04 PM PDT",84,100
@@ -215,5 +216,6 @@ Pine Fire,"Mendocino, CA","September 6, 2024 5:14 AM PDT","September 7, 2024 11:
 Cove Fire,"Riverside, CA","September 6, 2024 7:24 AM PDT","September 7, 2024 10:12 AM PDT",15,100
 Canary Fire,"San Diego, CA","September 6, 2024 10:06 AM PDT","September 7, 2024 5:38 AM PDT",25,100
 Church 2 Fire,"San Diego, CA","September 7, 2024 4:41 AM PDT","September 7, 2024 9:22 AM PDT",45,25
-Roblar Fire,"San Diego, CA","September 7, 2024 7:03 AM PDT","September 7, 2024 1:24 PM PDT",500,0
+Roblar Fire,"San Diego, CA","September 7, 2024 7:03 AM PDT","September 7, 2024 2:59 PM PDT",856,0
 Mill Creek 4 Fire,"Humboldt, CA","September 7, 2024 9:12 AM PDT","September 7, 2024 1:24 PM PDT",15,Not available
+Cotton Fire,"Fresno, CA","September 7, 2024 2:22 PM PDT","September 7, 2024 3:31 PM PDT",50,Not available
