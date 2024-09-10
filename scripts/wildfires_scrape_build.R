@@ -149,8 +149,8 @@ states <- as.data.frame(cbind(state.abb,state.name)) %>% janitor::clean_names()
 fires <- left_join(fires,states,by=c("state"="state_abb"))
 
 # manually add lat long to Airport Fire in Orange County
-fires$latitude <- ifelse(name=="Airport Fire", 33.665728, fires$latitude)
-fires$longitude <- ifelse(name=="Airport Fire", -117.567802, fires$longitude)
+fires$latitude <- ifelse(fires$name=="Airport Fire", 33.665728, fires$latitude)
+fires$longitude <- ifelse(fires$name=="Airport Fire", -117.567802, fires$longitude)
 
 
 # Save latest merged fire points file as csv
