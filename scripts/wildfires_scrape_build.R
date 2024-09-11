@@ -143,7 +143,7 @@ try(
 
 fires <- fed_fires
 try(fires <- bind_rows(fires,cal_fires_unique))
-try(rm(cal_fires_unique))
+# try(rm(cal_fires_unique))
 # Add full state name
 states <- as.data.frame(cbind(state.abb,state.name)) %>% janitor::clean_names()
 fires <- left_join(fires,states,by=c("state"="state_abb"))
