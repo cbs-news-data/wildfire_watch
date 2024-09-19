@@ -83,7 +83,7 @@ Bulldog Fire,"Boise, ID","August 5, 2024 4:02 PM PDT","September 15, 2024 11:16 
 Anderson Fire,"Boise, ID","August 5, 2024 3:16 PM PDT","August 12, 2024 4:04 AM PDT",1877,100
 Echo Fire,"Mariposa, CA","August 3, 2024 9:59 AM PDT","September 10, 2024 5:53 PM PDT",24.8,0
 Farrow Fire,"Idaho, ID","August 5, 2024 7:00 PM PDT","September 13, 2024 7:14 AM PDT",1388,0
-Boise Fire,"Humboldt, CA","August 9, 2024 8:50 AM PDT","September 4, 2024 4:32 PM PDT",12929,91
+Boise Fire,"Humboldt, CA","August 9, 2024 8:50 AM PDT","September 4, 2024 4:32 PM PDT",12929,96
 Ruby Fire,"Whatcom, WA","August 9, 2024 7:20 AM PDT","September 15, 2024 9:57 AM PDT",1300,0
 Goat Fire,"Valley, ID","August 5, 2024 4:37 PM PDT","September 15, 2024 1:40 AM PDT",26456,0
 Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 18, 2024 5:30 AM PDT",14099,87
@@ -145,9 +145,9 @@ Kinzua Fire,"Wheeler, OR","September 5, 2024 4:43 PM PDT","September 17, 2024 1:
 Canyon Fire,"Morrow, OR","September 5, 2024 1:27 PM PDT","September 17, 2024 1:48 PM PDT",192,0
 Mcdermott Fire,"Granite, MT","August 26, 2024 9:42 AM PDT","September 12, 2024 11:45 AM PDT",427,0
 Copper Fire,"Valley, ID","September 2, 2024 3:35 PM PDT","September 13, 2024 7:24 AM PDT",2121,0
-Service Fire,"Wheeler, OR","September 6, 2024 4:49 PM PDT","September 18, 2024 2:43 PM PDT",23905,0
+Service Fire,"Wheeler, OR","September 6, 2024 4:49 PM PDT","September 18, 2024 7:05 PM PDT",23905,0
 Twin Knobs 2 Fire,"Douglas, OR","September 6, 2024 2:13 PM PDT","September 6, 2024 8:16 PM PDT",0.26,100
-Line Fire,"San Bernardino, CA","September 5, 2024 6:00 PM PDT","September 18, 2024 8:09 AM PDT",39181,50
+Line Fire,"San Bernardino, CA","September 5, 2024 6:00 PM PDT","September 18, 2024 5:59 PM PDT",39181,51
 Battery Fire,"Oglala Lakota, SD","September 3, 2024 5:00 PM PDT","September 15, 2024 7:14 AM PDT",132.1,Not available
 Blewett Fire,"Kittitas, WA","September 4, 2024 2:23 PM PDT","September 7, 2024 2:51 PM PDT",15,100
 Linton Creek Fire,"Lane, OR","September 6, 2024 9:13 PM PDT","September 16, 2024 8:57 AM PDT",1301,0
@@ -167,14 +167,14 @@ Surprise Fire,"Idaho, ID","August 22, 2024 8:56 AM PDT","September 15, 2024 6:13
 Boulder Creek Fire,"Lane, OR","September 7, 2024 11:02 AM PDT","September 18, 2024 7:30 AM PDT",511,0
 Coxey Hole Fire,"Valley, ID","September 2, 2024 3:42 PM PDT","September 10, 2024 7:12 AM PDT",195,0
 Cotton Fire,"Idaho, ID","September 6, 2024 9:41 AM PDT","September 10, 2024 7:23 AM PDT",104,0
-Swauk Creek Fire,"Kittitas, WA","September 8, 2024 3:54 PM PDT","September 17, 2024 4:38 PM PDT",369,48
+Swauk Creek Fire,"Kittitas, WA","September 8, 2024 3:54 PM PDT","September 18, 2024 5:35 PM PDT",369,48
 Hiyu Fire,"Lane, OR","September 6, 2024 5:51 PM PDT","September 14, 2024 5:45 AM PDT",69,Not available
 Young Grasshopper Fire,"Lane, OR","September 6, 2024 5:14 PM PDT","September 15, 2024 5:13 AM PDT",1245,10
 Logan Fire,"Valley, ID","September 8, 2024 10:07 PM PDT","September 15, 2024 9:22 AM PDT",292,80
 Profile Fire,"Valley, ID","September 9, 2024 8:48 AM PDT","September 10, 2024 7:51 AM PDT",20,80
 Roblar Fire,"San Diego, CA","September 7, 2024 2:03 PM PDT","September 9, 2024 4:40 PM PDT",950,100
-Buck Creek Fire,"Lake, OR","September 7, 2024 8:59 AM PDT","September 18, 2024 2:11 PM PDT",5647,38
-Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","September 18, 2024 1:27 PM PDT",0.1,37
+Buck Creek Fire,"Lake, OR","September 7, 2024 8:59 AM PDT","September 18, 2024 7:02 PM PDT",5647,38
+Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","September 18, 2024 7:32 PM PDT",54795,41
 Airport Fire,"Orange, CA","September 9, 2024 1:00 PM PDT","September 17, 2024 6:07 AM PDT",23519,39
 374 Mr Fire,"Lane, OR","September 7, 2024 11:21 AM PDT","September 17, 2024 9:23 AM PDT",58,0
 Wilkerson Fire,"Idaho, ID","September 5, 2024 7:56 AM PDT","September 10, 2024 9:29 AM PDT",250,1
@@ -198,7 +198,7 @@ Poison Spider Fire,"Natrona, WY","September 11, 2024 2:29 PM PDT","September 11,
 Siphon Fire,"Pinal, AZ","September 10, 2024 12:59 PM PDT","September 15, 2024 12:28 PM PDT",15527,65
 Short Draw Fire,"Campbell, WY","September 11, 2024 12:57 PM PDT","September 18, 2024 7:57 AM PDT",34557,92
 Solomon Fire,"Harney, OR","September 2, 2024 3:27 PM PDT","September 12, 2024 12:59 PM PDT",2600,100
-La Bonte Fire,"Converse, WY","September 12, 2024 12:58 PM PDT","September 18, 2024 7:02 AM PDT",3484,63
+La Bonte Fire,"Converse, WY","September 12, 2024 12:58 PM PDT","September 18, 2024 7:02 AM PDT",3484,55
 Tschuddi Fire,"Rio Blanco, CO","September 11, 2024 4:50 PM PDT","September 16, 2024 6:39 AM PDT",506,20
 Round Top Fire,"Lane, OR","September 7, 2024 12:18 PM PDT","September 17, 2024 9:23 AM PDT",0.1,100
 Power Dam Road Fire,"Mellette, SD","September 12, 2024 11:30 AM PDT","September 14, 2024 11:46 AM PDT",15320,75
@@ -213,7 +213,7 @@ Sunday - Dawson Fire,"Dawson, MT","September 15, 2024 1:00 PM PDT","September 16
 Remington Fire,"Dawson, MT","September 11, 2024 6:00 PM PDT","September 16, 2024 8:36 AM PDT",0.4,Not available
 Pack Trail Fire,"Teton, WY","September 15, 2024 1:52 PM PDT","September 17, 2024 12:40 PM PDT",18.5,Not available
 Lewis Peak Fire,"Weber, UT","September 15, 2024 5:31 PM PDT","September 16, 2024 11:15 AM PDT",0.1,Not available
-Makaopuhi Fire,"Hawaii, HI","September 16, 2024 2:23 PM PDT","September 18, 2024 12:13 AM PDT",0.01,Not available
+Makaopuhi Fire,"Hawaii, HI","September 16, 2024 2:23 PM PDT","September 18, 2024 5:50 PM PDT",0.01,Not available
 Oak Draw Fire,"Custer, SD","September 16, 2024 9:56 AM PDT","September 16, 2024 6:30 PM PDT",3.5,Not available
 Pearl Fire,"Larimer, CO","September 16, 2024 10:17 AM PDT","September 18, 2024 3:53 PM PDT",129,5
 Biddle 116 - Powder River Fire,"Powder River, MT","September 16, 2024 9:40 PM PDT","September 17, 2024 5:21 PM PDT",20,Not available
