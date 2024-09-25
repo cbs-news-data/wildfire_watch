@@ -7,7 +7,7 @@ East Toklat Fire,"Denali, AK","June 26, 2024 6:24 PM PDT","September 10, 2024 2:
 Lost Chicken Hill Fire,"Southeast Fairbanks, AK","June 27, 2024 3:21 PM PDT","September 19, 2024 9:33 AM PDT",1157.2,Not available
 Silver King Fire,"Piute, UT","July 5, 2024 12:11 PM PDT","July 25, 2024 1:30 PM PDT",18222,100
 Shoofly Fire,"Chelan, WA","July 8, 2024 2:11 PM PDT","July 15, 2024 6:24 PM PDT",104,93
-Lone Rock Fire,"Gilliam, OR","July 13, 2024 4:24 PM PDT","September 21, 2024 11:04 PM PDT",137222,100
+Lone Rock Fire,"Gilliam, OR","July 13, 2024 4:24 PM PDT","September 24, 2024 8:16 PM PDT",137222,100
 Long Fire,"Tulare, CA","July 15, 2024 2:30 PM PDT","August 17, 2024 12:27 PM PDT",9204,100
 Ore Fire,"Lane, OR","July 17, 2024 9:55 AM PDT","September 24, 2024 6:27 AM PDT",3484,80
 Middle Fork Fire,"Klamath, OR","July 17, 2024 2:55 PM PDT","September 8, 2024 9:01 PM PDT",5286,72
@@ -30,10 +30,10 @@ No Man Fire,"Lane, OR","July 18, 2024 12:09 PM PDT","September 24, 2024 6:45 AM 
 Fuller Lake Fire,"Douglas, OR","July 17, 2024 7:06 AM PDT","September 24, 2024 6:46 AM PDT",3815,0
 Salmon 33 Fire,"Lane, OR","July 17, 2024 10:36 AM PDT","September 19, 2024 6:16 AM PDT",275,100
 Chalk Fire,"Lane, OR","July 17, 2024 11:36 AM PDT","September 23, 2024 6:13 AM PDT",5999,100
-Moss Mountain Fire,"Lane, OR","July 17, 2024 12:52 PM PDT","September 24, 2024 5:00 AM PDT",2189,10
+Moss Mountain Fire,"Lane, OR","July 17, 2024 12:52 PM PDT","September 24, 2024 5:00 AM PDT",2182,10
 Coffee Pot Fire,"Lane, OR","July 21, 2024 3:57 AM PDT","September 22, 2024 5:29 AM PDT",6203,100
 Mckinley Creek Fire,"Lane, OR","July 17, 2024 8:40 AM PDT","September 11, 2024 11:49 AM PDT",24,100
-208 Mf Fire,"Lane, OR","July 17, 2024 11:59 AM PDT","September 23, 2024 6:05 AM PDT",8976,4
+208 Mf Fire,"Lane, OR","July 17, 2024 11:59 AM PDT","September 23, 2024 6:05 AM PDT",8975,4
 Tire Mountain Fire,"Lane, OR","July 17, 2024 11:51 AM PDT","September 11, 2024 11:49 AM PDT",23,100
 Clearwater Fire,"Park, WY","July 19, 2024 3:30 PM PDT","August 16, 2024 2:26 PM PDT",1966,93
 Elephant Fire,"Douglas, OR","July 23, 2024 11:36 AM PDT","August 30, 2024 5:30 AM PDT",0.74,100
@@ -105,7 +105,7 @@ Log Fire,"Idaho, ID","July 31, 2024 2:03 PM PDT","September 15, 2024 6:14 AM PDT
 Copperfield Fire,"Klamath, OR","September 1, 2024 2:53 PM PDT","September 5, 2024 9:00 PM PDT",3822,100
 Cellar Ii Fire,"Yavapai, AZ","August 28, 2024 12:32 PM PDT","September 5, 2024 7:35 PM PDT",327,100
 Shoe Fly Fire,"Wheeler, OR","September 2, 2024 4:22 AM PDT","September 14, 2024 7:55 AM PDT",26817,100
-Rail Ridge Fire,"Grant, OR","September 2, 2024 3:05 AM PDT","September 24, 2024 2:16 PM PDT",162944,59
+Rail Ridge Fire,"Grant, OR","September 2, 2024 3:05 AM PDT","September 24, 2024 7:53 PM PDT",164158,61
 West Fire,"Gila, AZ","August 28, 2024 6:11 PM PDT","September 24, 2024 3:33 PM PDT",14985,51
 Chimney Fire,"Camas, ID","September 2, 2024 11:57 AM PDT","September 14, 2024 10:16 PM PDT",6521,80
 Wiley Flat Fire,"Crook, OR","September 2, 2024 8:03 AM PDT","September 22, 2024 9:05 PM PDT",30186,94
@@ -207,8 +207,8 @@ Birch Fire,"Valley, ID","August 17, 2024 10:00 AM PDT","September 23, 2024 12:13
 Garden Fire,"Lemhi, ID","September 8, 2024 6:36 PM PDT","September 23, 2024 12:46 PM PDT",250,0
 Greyhound Fire,"Custer, ID","August 11, 2024 10:42 AM PDT","September 23, 2024 12:54 PM PDT",84.5,0
 Cougar Fire,"Lemhi, ID","September 9, 2024 1:32 PM PDT","September 23, 2024 1:04 PM PDT",12,0
-Bottom Creek Fire,"Douglas, OR","September 17, 2024 8:05 PM PDT","September 24, 2024 8:37 AM PDT",300,0
+Bottom Creek Fire,"Douglas, OR","September 17, 2024 8:05 PM PDT","September 24, 2024 8:37 AM PDT",232,5
 Game Farm Fire,"Ocean, NJ","September 15, 2024 11:37 AM PDT","September 24, 2024 5:27 AM PDT",1.3,Not available
 Firework Fire,"Ziebach, SD","September 23, 2024 5:11 PM PDT","September 24, 2024 9:22 AM PDT",NA,Not available
 Saturn 7 Fire,"San Diego, CA","July 19, 2024 10:48 AM PDT","July 31, 2024 5:10 PM PDT",0.1,Not available
-Antonio Fire,"Sonoma, CA","September 23, 2024 6:16 AM PDT","September 24, 2024 12:34 PM PDT",11,100
+Antonio Fire,"Sonoma, CA","September 23, 2024 6:16 AM PDT","September 24, 2024 1:58 PM PDT",11,100
