@@ -1,13 +1,12 @@
 Name,Location,Started,Updated,Acres burned,% contained
 Pioneer Fire,"Chelan, WA","June 8, 2024 12:48 PM PDT","September 6, 2024 6:30 PM PDT",38730,23
-South Fork Fire,"Otero, NM","June 17, 2024 8:07 AM PDT","July 6, 2024 9:37 AM PDT",17569,100
 Wilber Fire,"Yukon-Koyukuk, AK","June 29, 2024 2:52 PM PDT","September 17, 2024 10:33 AM PDT",435.87,0
 East Toklat Fire,"Denali, AK","June 26, 2024 6:24 PM PDT","September 10, 2024 2:55 PM PDT",29611.8,Not available
 Lost Chicken Hill Fire,"Southeast Fairbanks, AK","June 27, 2024 3:21 PM PDT","September 19, 2024 9:33 AM PDT",1157.2,Not available
 Silver King Fire,"Piute, UT","July 5, 2024 12:11 PM PDT","July 25, 2024 1:30 PM PDT",18222,100
 Shoofly Fire,"Chelan, WA","July 8, 2024 2:11 PM PDT","July 15, 2024 6:24 PM PDT",104,93
 Long Fire,"Tulare, CA","July 15, 2024 2:30 PM PDT","August 17, 2024 12:27 PM PDT",9204,100
-Ore Fire,"Lane, OR","July 17, 2024 9:55 AM PDT","September 24, 2024 6:27 AM PDT",3479,100
+Ore Fire,"Lane, OR","July 17, 2024 9:55 AM PDT","September 23, 2024 11:30 AM PDT",3479,100
 Middle Fork Fire,"Klamath, OR","July 17, 2024 2:55 PM PDT","September 8, 2024 9:01 PM PDT",5286,72
 Sentinel Fire,"Fresno, CA","July 14, 2024 9:10 AM PDT","August 8, 2024 11:52 AM PDT",282,90
 Easy Fire,"Skagit, WA","July 17, 2024 7:55 PM PDT","August 23, 2024 5:24 AM PDT",2130,43
@@ -27,10 +26,11 @@ Reynolds Butte Fire,"Douglas, OR","July 19, 2024 11:21 AM PDT","September 23, 20
 No Man Fire,"Lane, OR","July 18, 2024 12:09 PM PDT","September 25, 2024 4:52 AM PDT",2092,44
 Fuller Lake Fire,"Douglas, OR","July 17, 2024 7:06 AM PDT","September 25, 2024 5:05 AM PDT",3868,0
 Salmon 33 Fire,"Lane, OR","July 17, 2024 10:36 AM PDT","September 19, 2024 6:16 AM PDT",275,100
-Chalk Fire,"Lane, OR","July 17, 2024 11:36 AM PDT","September 23, 2024 6:13 AM PDT",5999,100
-Moss Mountain Fire,"Lane, OR","July 17, 2024 12:52 PM PDT","September 25, 2024 4:48 AM PDT",2186,10
+Chalk Fire,"Lane, OR","July 17, 2024 11:36 AM PDT","September 27, 2024 5:51 AM PDT",5999,100
+Moss Mountain Fire,"Lane, OR","July 17, 2024 12:52 PM PDT","September 27, 2024 5:20 AM PDT",2186,10
 Coffee Pot Fire,"Lane, OR","July 21, 2024 3:57 AM PDT","September 22, 2024 5:29 AM PDT",6203,100
 Mckinley Creek Fire,"Lane, OR","July 17, 2024 8:40 AM PDT","September 11, 2024 11:49 AM PDT",24,100
+208 Mf Fire,"Lane, OR","July 17, 2024 11:59 AM PDT","September 27, 2024 5:34 AM PDT",9045,4
 Tire Mountain Fire,"Lane, OR","July 17, 2024 11:51 AM PDT","September 11, 2024 11:49 AM PDT",23,100
 Clearwater Fire,"Park, WY","July 19, 2024 3:30 PM PDT","August 16, 2024 2:26 PM PDT",1966,93
 Elephant Fire,"Douglas, OR","July 23, 2024 11:36 AM PDT","August 30, 2024 5:30 AM PDT",0.74,100
@@ -86,7 +86,6 @@ Loop Fire,"Douglas, OR","August 18, 2024 6:06 PM PDT","August 30, 2024 5:31 AM P
 Prospect Fire,"Idaho, ID","August 12, 2024 8:06 AM PDT","September 10, 2024 9:18 AM PDT",2934,0
 Remington Fire,"Sheridan, WY","August 22, 2024 7:07 AM PDT","September 18, 2024 2:41 PM PDT",196368,100
 Sharrott Creek Fire,"Ravalli, MT","August 23, 2024 2:47 PM PDT","September 19, 2024 7:43 AM PDT",3204,86
-Constitution Fire,"Campbell, WY","August 21, 2024 4:41 PM PDT","September 1, 2024 5:19 PM PDT",24630,95
 Mcelwain Fire,"Powell, MT","August 23, 2024 11:42 AM PDT","August 29, 2024 11:53 AM PDT",116,100
 Tenaja Fire,"Riverside, CA","August 25, 2024 11:48 AM PDT","August 25, 2024 1:47 PM PDT",130,Not available
 Fish Fire,"Douglas, OR","August 23, 2024 11:16 AM PDT","August 30, 2024 5:31 AM PDT",0.12,100
@@ -186,8 +185,6 @@ Birch Fire,"Valley, ID","August 17, 2024 10:00 AM PDT","September 26, 2024 2:08 
 Garden Fire,"Lemhi, ID","September 8, 2024 6:36 PM PDT","September 23, 2024 12:46 PM PDT",380,0
 Greyhound Fire,"Custer, ID","August 11, 2024 10:42 AM PDT","September 23, 2024 12:54 PM PDT",84.5,0
 Bottom Creek Fire,"Douglas, OR","September 17, 2024 8:05 PM PDT","September 24, 2024 8:37 AM PDT",232,15
-Game Farm Fire,"Ocean, NJ","September 15, 2024 11:37 AM PDT","September 24, 2024 5:27 AM PDT",1.3,Not available
-Firework Fire,"Ziebach, SD","September 23, 2024 5:11 PM PDT","September 24, 2024 9:22 AM PDT",NA,Not available
 Saturn 7 Fire,"San Diego, CA","July 19, 2024 10:48 AM PDT","July 31, 2024 5:10 PM PDT",0.1,Not available
 Chapel Site Group 1 Fire,"Alger, MI","September 21, 2024 11:40 AM PDT","September 25, 2024 7:02 AM PDT",NA,Not available
 Titanium Fire,"Glacier, MT","June 20, 2024 12:50 PM PDT","June 20, 2024 1:02 PM PDT",NA,Not available
