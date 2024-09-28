@@ -95,8 +95,8 @@ Rail Ridge Fire,"Grant, OR","September 2, 2024 3:05 AM PDT","September 28, 2024 
 West Fire,"Gila, AZ","August 28, 2024 6:11 PM PDT","September 27, 2024 11:04 AM PDT",15074,65
 Chimney Fire,"Camas, ID","September 2, 2024 11:57 AM PDT","September 14, 2024 10:16 PM PDT",6522,80
 Wiley Flat Fire,"Crook, OR","September 2, 2024 8:03 AM PDT","September 25, 2024 11:09 AM PDT",30186,94
-Black Eagle Fire,"Lemhi, ID","August 5, 2024 5:35 PM PDT","September 28, 2024 7:59 AM PDT",6825,8
-Red Rock Fire,"Lemhi, ID","September 2, 2024 2:45 PM PDT","September 28, 2024 7:59 AM PDT",3208,73
+Black Eagle Fire,"Lemhi, ID","August 5, 2024 5:35 PM PDT","September 28, 2024 1:14 PM PDT",6825,8
+Red Rock Fire,"Lemhi, ID","September 2, 2024 2:45 PM PDT","September 28, 2024 1:14 PM PDT",3208,73
 Boone Fire,"Fresno, CA","September 3, 2024 12:10 PM PDT","September 11, 2024 11:24 AM PDT",17600,100
 Cleopatra Fire,"Moffat, CO","September 3, 2024 2:49 PM PDT","September 4, 2024 4:12 PM PDT",7.5,100
 Two Cabin Fire,"Grant, OR","September 3, 2024 1:41 PM PDT","September 21, 2024 12:36 AM PDT",253,100
@@ -120,7 +120,6 @@ Line Fire,"San Bernardino, CA","September 5, 2024 6:00 PM PDT","September 26, 20
 Firestone Fire,"Deschutes, OR","September 6, 2024 7:23 PM PDT","September 26, 2024 7:07 PM PDT",9462,90
 Flat Top Fire,"Lake, OR","September 6, 2024 6:57 PM PDT","September 27, 2024 10:10 AM PDT",36362,91
 Davis Fire,"Washoe, NV","September 7, 2024 2:19 PM PDT","September 17, 2024 5:33 PM PDT",5824,100
-0913 Nw Fire,"Deschutes, OR","September 7, 2024 5:16 PM PDT","September 27, 2024 1:17 PM PDT",11225,75
 Backside Fire,"Deschutes, OR","September 7, 2024 8:19 AM PDT","September 23, 2024 10:43 AM PDT",83,90
 Bowman Well Fire,"Lake, OR","September 6, 2024 7:50 PM PDT","September 11, 2024 12:28 PM PDT",2853,97
 Twin Butte 2 Fire,"Idaho, ID","August 17, 2024 9:27 AM PDT","September 15, 2024 6:11 AM PDT",33,0
@@ -175,15 +174,13 @@ Birch Fire,"Valley, ID","August 17, 2024 10:00 AM PDT","September 26, 2024 2:08 
 Garden Fire,"Lemhi, ID","September 8, 2024 6:36 PM PDT","September 23, 2024 12:46 PM PDT",380,0
 Greyhound Fire,"Custer, ID","August 11, 2024 10:42 AM PDT","September 23, 2024 12:54 PM PDT",84.5,0
 Bottom Creek Fire,"Douglas, OR","September 17, 2024 8:05 PM PDT","September 27, 2024 8:59 PM PDT",232,20
-Titanium Fire,"Glacier, MT","June 20, 2024 12:50 PM PDT","June 20, 2024 1:02 PM PDT",NA,Not available
 Fork Ridge Fire,"Polk, TN","September 12, 2024 4:31 PM PDT","September 25, 2024 2:34 PM PDT",60,Not available
 Brigade Fire,"Coconino, AZ","September 21, 2024 10:45 AM PDT","September 26, 2024 8:45 PM PDT",1812,0
 Passiac 2 Fire,"Sheridan, WY","September 23, 2024 6:13 PM PDT","September 26, 2024 8:48 AM PDT",356,100
 Goosmus Fire,"Ferry, WA","September 25, 2024 2:47 PM PDT","September 28, 2024 12:03 PM PDT",1724,0
-Lincoln Fire Fire,"Mellette, SD","September 26, 2024 12:14 PM PDT","September 26, 2024 4:09 PM PDT",800,75
+Lincoln Fire Fire,"Mellette, SD","September 26, 2024 12:14 PM PDT","September 26, 2024 4:09 PM PDT",800,90
 Cheyenne River Fire,"Converse, WY","September 26, 2024 11:08 AM PDT","September 26, 2024 5:12 PM PDT",0.1,Not available
 Elk Fire,"Sheridan, WY","September 27, 2024 7:36 AM PDT","September 28, 2024 8:49 AM PDT",466,0
-NA Fire,"Stevens, WA","September 25, 2024 10:30 PM PDT","September 28, 2024 11:35 AM PDT",0.9,Not available
 Park Fire,"Butte, Tehama, CA","July 24, 2024 7:52 AM PDT","September 27, 2024 12:12 AM PDT",429603,100
 Rancho Fire,"San Luis Obispo, CA","August 20, 2024 5:38 AM PDT","September 27, 2024 8:50 AM PDT",9,100
 Park Fire,"Riverside, CA","August 25, 2024 10:11 AM PDT","September 27, 2024 12:13 AM PDT",16,100
@@ -192,4 +189,3 @@ Meiss Fire,"Sacramento, CA","September 27, 2024 7:48 AM PDT","September 27, 2024
 Pinnacles Fire,"San Benito, CA","September 27, 2024 7:13 AM PDT","September 27, 2024 11:41 AM PDT",17,50
 86 Fire,"Riverside, CA","September 27, 2024 10:26 AM PDT","September 28, 2024 5:11 AM PDT",38,Not available
 Chase Fire,"Kern, CA","September 27, 2024 2:10 PM PDT","September 28, 2024 1:26 AM PDT",35,50
-Ash Fire,"Lassen, CA","September 26, 2024 11:54 AM PDT","September 28, 2024 5:49 AM PDT",398,Not available
