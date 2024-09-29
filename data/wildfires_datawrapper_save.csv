@@ -14,7 +14,7 @@ Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","September 29, 2024 4:54 AM 
 Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 31, 2024 10:07 AM PDT",3976.07,74
 Clark 900 Fire,"Lane, OR","July 18, 2024 8:23 AM PDT","July 26, 2024 8:55 PM PDT",3747,0
 Clearwater Fire,"Douglas, OR","July 16, 2024 8:23 PM PDT","August 30, 2024 5:30 AM PDT",0.65,100
-Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","September 15, 2024 8:44 AM PDT",864,60
+Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","September 15, 2024 8:44 AM PDT",1061,60
 Garwood Fire,"Douglas, OR","July 17, 2024 2:54 PM PDT","August 30, 2024 5:30 AM PDT",5.95,100
 Potter Fire,"Douglas, OR","July 16, 2024 8:44 PM PDT","September 13, 2024 7:45 PM PDT",3427.66,98
 Horse Heaven Creek Fire,"Lane, OR","July 17, 2024 3:28 PM PDT","September 29, 2024 6:07 AM PDT",2775,56
@@ -55,6 +55,11 @@ Railroad Fire,"Ravalli, MT","July 25, 2024 7:59 AM PDT","September 19, 2024 7:59
 Anchor Fire,"Idaho, ID","July 28, 2024 11:49 AM PDT","September 10, 2024 4:19 AM PDT",1811,50
 Ace Butte Fire,"Idaho, ID","July 24, 2024 5:44 PM PDT","September 10, 2024 4:19 AM PDT",1862,49
 Miners Fire,"Snohomish, WA","July 17, 2024 6:39 PM PDT","August 5, 2024 8:25 AM PDT",1098,0
+Dolly Creek Fire,"Snohomish, WA","July 18, 2024 7:57 AM PDT","August 8, 2024 6:24 PM PDT",0.1,0
+Middle Ridge Fire,"Snohomish, WA","July 28, 2024 12:21 PM PDT","August 8, 2024 6:07 PM PDT",0.1,0
+Plummer Mountain Fire,"Snohomish, WA","July 20, 2024 6:23 PM PDT","August 5, 2024 8:25 AM PDT",0.1,0
+Sulphur Three Fire,"Snohomish, WA","July 18, 2024 7:49 AM PDT","August 8, 2024 6:24 PM PDT",0.1,0
+Sulphur Four Fire,"Snohomish, WA","July 18, 2024 3:49 PM PDT","August 8, 2024 6:24 PM PDT",0.1,0
 Williams Mine Fire,"Skamania, WA","August 5, 2024 12:03 PM PDT","September 16, 2024 11:58 AM PDT",13092,37
 Sandstone Fire,"Clackamas, OR","August 5, 2024 2:59 PM PDT","August 28, 2024 4:15 AM PDT",702,95
 Dollar Fire,"Valley, ID","August 5, 2024 5:57 PM PDT","September 15, 2024 2:07 AM PDT",4360,0
@@ -176,7 +181,7 @@ Passiac 2 Fire,"Sheridan, WY","September 23, 2024 6:13 PM PDT","September 26, 20
 Goosmus Fire,"Ferry, WA","September 25, 2024 2:47 PM PDT","September 29, 2024 1:02 PM PDT",1726,0
 Lincoln Fire Fire,"Mellette, SD","September 26, 2024 12:14 PM PDT","September 26, 2024 4:09 PM PDT",800,90
 Cheyenne River Fire,"Converse, WY","September 26, 2024 11:08 AM PDT","September 26, 2024 5:12 PM PDT",0.1,Not available
-Elk Fire,"Sheridan, WY","September 27, 2024 7:36 AM PDT","September 29, 2024 10:19 AM PDT",466,0
+Elk Fire,"Sheridan, WY","September 27, 2024 7:36 AM PDT","September 29, 2024 1:38 PM PDT",466,0
 Courter Fire,"Morrow, OR","September 28, 2024 2:14 PM PDT","September 29, 2024 11:12 AM PDT",2.17,Not available
 Park Fire,"Butte, Tehama, CA","July 24, 2024 7:52 AM PDT","September 27, 2024 12:12 AM PDT",429603,100
 Rancho Fire,"San Luis Obispo, CA","August 20, 2024 5:38 AM PDT","September 27, 2024 8:50 AM PDT",9,100
@@ -187,4 +192,4 @@ Pinnacles Fire,"San Benito, CA","September 27, 2024 7:13 AM PDT","September 27, 
 86 Fire,"Riverside, CA","September 27, 2024 10:26 AM PDT","September 28, 2024 10:10 AM PDT",38,Not available
 Chase Fire,"Kern, CA","September 27, 2024 2:10 PM PDT","September 28, 2024 1:26 AM PDT",35,50
 Cindy Fire,"Los Angeles, CA","September 28, 2024 11:12 AM PDT","September 28, 2024 11:16 AM PDT",13,Not available
-Ridge Fire,"Santa Barbara, CA","September 29, 2024 1:30 AM PDT","September 29, 2024 5:53 AM PDT",17,0
+Ridge Fire,"Santa Barbara, CA","September 29, 2024 1:30 AM PDT","September 29, 2024 7:44 AM PDT",17,0
