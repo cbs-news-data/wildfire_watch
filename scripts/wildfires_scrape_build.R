@@ -59,6 +59,8 @@ nfis_perimeters <- st_read("data/active_perimeters.geojson") %>%
 # Simplify the geometry
 # First, repair invalid geometries
 nfis_perimeters <- st_make_valid(nfis_perimeters)
+# Remove any records in nfis_perimeters with fewer than 100 acres_burned
+nfis_perimeters <- nfis_perimeters %>% filter(acres_burned > 99)
 # Adjust dTolerance as needed. Smaller values = less simplification
 simplified_nfis_perimeters <- st_simplify(nfis_perimeters, dTolerance = 0.2)
 
