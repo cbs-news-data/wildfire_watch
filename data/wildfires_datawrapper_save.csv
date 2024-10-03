@@ -1,5 +1,5 @@
 Name,Location,Started,Updated,Acres burned,% contained
-Pioneer Fire,"Chelan, WA","June 8, 2024 12:48 PM PDT","September 6, 2024 6:30 PM PDT",38730,23
+Pioneer Fire,"Chelan, WA","June 8, 2024 12:48 PM PDT","September 6, 2024 6:30 PM PDT",38730,100
 Fresno June Lightning Complex Fire,"Fresno, CA","June 25, 2024 9:18 AM PDT","June 29, 2024 3:41 PM PDT",272,100
 Fresno June Lightning Complex Fire,"Fresno, CA","June 24, 2024 3:00 PM PDT","June 29, 2024 3:41 PM PDT",6743,100
 East Toklat Fire,"Denali, AK","June 26, 2024 6:24 PM PDT","September 10, 2024 2:55 PM PDT",29611.8,Not available
@@ -93,7 +93,7 @@ Line Fire,"San Bernardino, CA","September 5, 2024 6:00 PM PDT","October 3, 2024 
 Firestone Fire,"Deschutes, OR","September 6, 2024 7:23 PM PDT","October 3, 2024 10:56 AM PDT",9462,90
 Flat Top Fire,"Lake, OR","September 6, 2024 6:57 PM PDT","October 3, 2024 10:56 AM PDT",36362,91
 Davis Fire,"Washoe, NV","September 7, 2024 2:19 PM PDT","September 17, 2024 5:33 PM PDT",5824,100
-Lucky Butte Fire,"Deschutes, OR","September 7, 2024 5:16 PM PDT","October 3, 2024 11:11 AM PDT",11433.46,75
+0913 Nw Fire,"Deschutes, OR","September 7, 2024 5:16 PM PDT","October 3, 2024 11:46 AM PDT",11433.46,75
 Surprise Fire,"Idaho, ID","August 22, 2024 8:56 AM PDT","September 15, 2024 6:13 AM PDT",792,50
 Boulder Creek Fire,"Lane, OR","September 7, 2024 11:02 AM PDT","September 28, 2024 9:02 AM PDT",523,81
 Coxey Hole Fire,"Valley, ID","September 2, 2024 3:42 PM PDT","September 20, 2024 9:29 PM PDT",194,0
@@ -133,6 +133,7 @@ Commissary Fire,"Bonneville, ID","September 3, 2024 9:41 PM PDT","October 3, 202
 Bingham Fire,"Linn, OR","September 30, 2024 6:25 PM PDT","October 2, 2024 6:26 AM PDT",150,0
 Tiger Creek Fire,"Umatilla, OR","October 1, 2024 3:20 PM PDT","October 3, 2024 9:25 AM PDT",383,5
 Sheep Creek Fire,"Jefferson, MT","September 22, 2024 10:51 AM PDT","October 2, 2024 5:43 PM PDT",400,38
+Rosie Fire,"Owyhee, ID","September 30, 2024 1:22 PM PDT","October 3, 2024 11:37 AM PDT",2512.7,0
 Park Fire,"Butte, Tehama, CA","July 24, 2024 7:52 AM PDT","October 1, 2024 2:07 AM PDT",429603,100
 Pinnacles Fire,"San Benito, CA","September 27, 2024 7:13 AM PDT","October 3, 2024 2:38 AM PDT",17,100
 Ridge Fire,"Santa Barbara, CA","September 29, 2024 1:30 AM PDT","October 3, 2024 2:13 AM PDT",17,100
@@ -142,3 +143,4 @@ Lago Fire,"Los Angeles, CA","October 1, 2024 7:19 PM PDT","October 3, 2024 2:15 
 Peak Fire,"Tuolumne, CA","October 2, 2024 5:04 AM PDT","October 3, 2024 1:55 AM PDT",25,10
 Bear Fire,"Humboldt, CA","October 2, 2024 7:01 AM PDT","October 3, 2024 2:10 AM PDT",18,95
 Dino Fire,"Santa Clara, CA","October 2, 2024 10:11 AM PDT","October 3, 2024 1:41 AM PDT",30,60
+Pumpkin Prairie Fire,"Humboldt, CA","October 2, 2024 10:00 AM PDT","October 3, 2024 5:46 AM PDT",44,Not available
