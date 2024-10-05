@@ -16,12 +16,12 @@ Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","October 5, 2024 5:17 AM PDT
 Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 31, 2024 10:07 AM PDT",3976.07,74
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","October 3, 2024 3:51 PM PDT",1346,60
 Potter Fire,"Douglas, OR","July 16, 2024 8:44 PM PDT","September 13, 2024 7:45 PM PDT",3427.66,98
-Horse Heaven Creek Fire,"Lane, OR","July 17, 2024 3:28 PM PDT","October 4, 2024 7:09 PM PDT",2862,60
+Horse Heaven Creek Fire,"Lane, OR","July 17, 2024 3:28 PM PDT","October 5, 2024 6:10 AM PDT",2862,60
 Maple Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 16, 2024 9:26 AM PDT",11141.58,90
 Whisky Creek Fire,"Hood River, OR","July 20, 2024 11:01 AM PDT","September 27, 2024 4:42 PM PDT",3239,25
 Reynolds Butte Fire,"Douglas, OR","July 19, 2024 11:21 AM PDT","September 23, 2024 6:03 AM PDT",334,100
-No Man Fire,"Lane, OR","July 18, 2024 12:09 PM PDT","October 4, 2024 6:18 AM PDT",2095,44
-Fuller Lake Fire,"Douglas, OR","July 17, 2024 7:06 AM PDT","October 4, 2024 8:26 PM PDT",4265,0
+No Man Fire,"Lane, OR","July 18, 2024 12:09 PM PDT","October 5, 2024 6:14 AM PDT",2095,44
+Fuller Lake Fire,"Douglas, OR","July 17, 2024 7:06 AM PDT","October 5, 2024 6:47 AM PDT",4265,0
 Salmon 33 Fire,"Lane, OR","July 17, 2024 10:36 AM PDT","September 19, 2024 6:16 AM PDT",275,100
 Chalk Fire,"Lane, OR","July 17, 2024 11:36 AM PDT","October 4, 2024 5:13 AM PDT",6010,100
 Moss Mountain Fire,"Lane, OR","July 17, 2024 12:52 PM PDT","October 4, 2024 5:13 AM PDT",2346,10
@@ -31,7 +31,7 @@ Clearwater Fire,"Park, WY","July 19, 2024 3:30 PM PDT","August 16, 2024 2:26 PM 
 Pincer Two Fire,"Skagit, WA","July 18, 2024 4:09 PM PDT","August 30, 2024 7:17 AM PDT",211,0
 Crazy Creek Fire,"Crook, OR","July 22, 2024 11:07 AM PDT","September 8, 2024 11:20 AM PDT",86968,100
 West Crooked Fire,"Idaho, ID","July 5, 2024 3:32 PM PDT","August 29, 2024 1:51 PM PDT",142,0
-Bullpup Fire,"Lane, OR","July 19, 2024 1:55 PM PDT","October 4, 2024 6:27 AM PDT",10404,35
+Bullpup Fire,"Lane, OR","July 19, 2024 1:55 PM PDT","October 5, 2024 6:19 AM PDT",10404,35
 Dominion Point Fire,"Shoshone, ID","July 25, 2024 3:46 PM PDT","July 31, 2024 7:21 PM PDT",275,0
 Junction Fire,"Shoshone, ID","July 25, 2024 9:46 AM PDT","August 2, 2024 8:48 PM PDT",130,100
 Grouse Fire,"Beaverhead, MT","July 25, 2024 4:10 PM PDT","September 6, 2024 5:03 AM PDT",6009,50
@@ -130,16 +130,17 @@ Passiac 2 Fire,"Sheridan, WY","September 23, 2024 6:13 PM PDT","September 26, 20
 Goosmus Fire,"Ferry, WA","September 25, 2024 2:47 PM PDT","October 2, 2024 6:17 PM PDT",1738,100
 Lincoln Fire Fire,"Mellette, SD","September 26, 2024 12:14 PM PDT","September 26, 2024 4:09 PM PDT",800,100
 Elk Fire,"Sheridan, WY","September 27, 2024 7:36 AM PDT","October 5, 2024 4:58 AM PDT",53436,0
-Yellow Lake Fire,"Wasatch, UT","September 28, 2024 2:27 PM PDT","October 4, 2024 4:43 AM PDT",2593,10
+Yellow Lake Fire,"Wasatch, UT","September 28, 2024 2:27 PM PDT","October 5, 2024 6:06 AM PDT",2593,10
 Flat Creek Fire,"Garfield, MT","September 30, 2024 2:22 PM PDT","October 1, 2024 9:24 AM PDT",178,Not available
 Commissary Fire,"Bonneville, ID","September 3, 2024 9:41 PM PDT","October 3, 2024 9:58 AM PDT",4943,0
 Bingham Fire,"Linn, OR","September 30, 2024 6:25 PM PDT","October 4, 2024 5:40 AM PDT",183,0
 Tiger Creek Fire,"Umatilla, OR","October 1, 2024 3:20 PM PDT","October 4, 2024 12:14 PM PDT",475,5
 Sheep Creek Fire,"Jefferson, MT","September 22, 2024 10:51 AM PDT","October 2, 2024 5:43 PM PDT",316,38
 Rosie Fire,"Owyhee, ID","September 30, 2024 1:22 PM PDT","October 3, 2024 11:37 AM PDT",4873,0
-Felicia Fire,"Ventura, CA","October 3, 2024 12:45 PM PDT","October 4, 2024 5:10 PM PDT",348,50
+Felicia Fire,"Ventura, CA","October 3, 2024 12:45 PM PDT","October 4, 2024 5:10 PM PDT",348,70
 Valley Fire,"Ada, ID","October 4, 2024 2:29 AM PDT","October 4, 2024 8:38 PM PDT",7871,0
 Glenhaven Fire,"Lake, CA","October 4, 2024 11:37 AM PDT","October 4, 2024 6:29 PM PDT",403,20
+Kyle Fire,"Oglala Lakota, SD","October 4, 2024 11:18 PM PDT","October 5, 2024 7:18 AM PDT",100,Not available
 Park Fire,"Butte, Tehama, CA","July 24, 2024 7:52 AM PDT","October 1, 2024 2:07 AM PDT",429603,100
 Pinnacles Fire,"San Benito, CA","September 27, 2024 7:13 AM PDT","October 3, 2024 2:38 AM PDT",17,100
 Ridge Fire,"Santa Barbara, CA","September 29, 2024 1:30 AM PDT","October 3, 2024 2:13 AM PDT",17,100
