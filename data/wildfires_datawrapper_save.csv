@@ -74,7 +74,7 @@ Rail Ridge Fire,"Grant, OR","September 2, 2024 3:05 AM PDT","October 7, 2024 6:3
 West Fire,"Gila, AZ","August 28, 2024 6:11 PM PDT","September 27, 2024 11:04 AM PDT",15074,80
 Chimney Fire,"Camas, ID","September 2, 2024 11:57 AM PDT","September 14, 2024 10:16 PM PDT",6522,80
 Wiley Flat Fire,"Crook, OR","September 2, 2024 8:03 AM PDT","September 25, 2024 11:09 AM PDT",30186,98
-Black Eagle Fire,"Lemhi, ID","August 5, 2024 5:35 PM PDT","October 6, 2024 9:25 AM PDT",8147,5
+Black Eagle Fire,"Lemhi, ID","August 5, 2024 5:35 PM PDT","October 7, 2024 7:24 AM PDT",8147,5
 Red Rock Fire,"Lemhi, ID","September 2, 2024 2:45 PM PDT","October 6, 2024 9:06 AM PDT",45957,18
 Two Cabin Fire,"Grant, OR","September 3, 2024 1:41 PM PDT","September 21, 2024 12:36 AM PDT",253,100
 Crimson Fire,"Idaho, ID","August 7, 2024 3:46 PM PDT","September 15, 2024 6:11 AM PDT",723,0
@@ -114,7 +114,7 @@ Tschuddi Fire,"Rio Blanco, CO","September 11, 2024 4:50 PM PDT","September 26, 2
 Power Dam Road Fire,"Mellette, SD","September 12, 2024 11:30 AM PDT","September 14, 2024 11:46 AM PDT",15320,100
 Middle Fork Complex Fire,"Boise, ID","August 8, 2024 3:30 PM PDT","September 15, 2024 11:15 AM PDT",61493,90
 Elizabeth Fire,"Summit, UT","September 14, 2024 10:34 AM PDT","September 23, 2024 6:27 AM PDT",105,60
-Pack Trail Fire,"Teton, WY","September 15, 2024 1:52 PM PDT","October 7, 2024 5:16 AM PDT",54487,60
+Pack Trail Fire,"Teton, WY","September 15, 2024 1:52 PM PDT","October 7, 2024 7:47 AM PDT",54487,60
 Bronco Fire,"Sioux, NE","September 18, 2024 11:06 AM PDT","September 20, 2024 10:21 AM PDT",1069,100
 Livingston Draw Fire,"Johnson, WY","September 17, 2024 3:55 PM PDT","September 19, 2024 6:28 PM PDT",1400,100
 Birch Fire,"Valley, ID","August 17, 2024 10:00 AM PDT","September 26, 2024 2:08 PM PDT",13274,0
@@ -134,6 +134,7 @@ Sheep Creek Fire,"Jefferson, MT","September 22, 2024 10:51 AM PDT","October 6, 2
 Rosie Fire,"Owyhee, ID","September 30, 2024 1:22 PM PDT","October 5, 2024 2:40 PM PDT",4919,0
 Felicia Fire,"Ventura, CA","October 3, 2024 12:45 PM PDT","October 4, 2024 5:10 PM PDT",367,100
 Valley Fire,"Ada, ID","October 4, 2024 2:29 AM PDT","October 7, 2024 6:34 AM PDT",9412,50
+Glenhaven Fire,"Lake, CA","October 4, 2024 11:37 AM PDT","October 5, 2024 5:56 PM PDT",417,51
 Kyle Fire,"Oglala Lakota, SD","October 4, 2024 11:18 PM PDT","October 5, 2024 7:18 AM PDT",299.74,Not available
 Peak Fire,"Tuolumne, CA","October 2, 2024 12:04 PM PDT","October 6, 2024 9:54 PM PDT",410,27
 West Oquirrh Mountain Fire,"Tooele, UT","October 5, 2024 11:14 AM PDT","October 7, 2024 5:23 AM PDT",281,Not available
@@ -141,13 +142,12 @@ Whitlow Fire,"Pinal, AZ","October 5, 2024 9:35 AM PDT","October 6, 2024 1:01 PM 
 Owl Landing 24 Fire,"Liberty, FL","October 4, 2024 7:45 PM PDT","October 7, 2024 5:27 AM PDT",258.3,Not available
 Park Fire,"Butte, Tehama, CA","July 24, 2024 7:52 AM PDT","October 1, 2024 2:07 AM PDT",429603,100
 Soda Fire,"San Luis Obispo, CA","September 30, 2024 6:00 AM PDT","September 30, 2024 1:59 PM PDT",633,100
-Dino Fire,"Santa Clara, CA","October 2, 2024 10:11 AM PDT","October 6, 2024 12:05 PM PDT",20,95
-Glenhaven Fire,"Lake, CA","October 4, 2024 4:37 AM PDT","October 6, 2024 11:49 PM PDT",417,51
+Dino Fire,"Santa Clara, CA","October 2, 2024 10:11 AM PDT","October 7, 2024 1:45 AM PDT",20,95
 Central 2 Fire,"Fresno, CA","October 4, 2024 12:11 PM PDT","October 4, 2024 10:15 PM PDT",15,100
 Wolf Fire,"Fresno, CA","October 4, 2024 2:46 PM PDT","October 4, 2024 10:22 PM PDT",22,100
 Dutch Fire,"Nevada, CA","October 5, 2024 8:32 AM PDT","October 6, 2024 12:08 PM PDT",28,40
 Two Mile Fire,"Colusa, CA","October 3, 2024 9:01 AM PDT","October 6, 2024 3:11 AM PDT",10,100
 Tuledad Fire,"Lassen, CA","October 6, 2024 5:36 AM PDT","October 7, 2024 12:20 AM PDT",450,50
-Hambone Fire,"Siskiyou, CA","October 6, 2024 6:39 AM PDT","October 6, 2024 2:33 PM PDT",15,10
-Verjeles Fire,"Yuba, CA","October 6, 2024 9:45 AM PDT","October 6, 2024 11:03 AM PDT",12,Not available
-Wood Fire,"Humboldt, CA","October 6, 2024 12:57 PM PDT","October 7, 2024 12:06 AM PDT",25,25
+Hambone Fire,"Siskiyou, CA","October 6, 2024 6:39 AM PDT","October 7, 2024 1:46 AM PDT",15,25
+Verjeles Fire,"Yuba, CA","October 6, 2024 9:45 AM PDT","October 7, 2024 1:57 AM PDT",12,100
+Wood Fire,"Humboldt, CA","October 6, 2024 12:57 PM PDT","October 7, 2024 1:57 AM PDT",25,25
