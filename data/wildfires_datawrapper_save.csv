@@ -104,7 +104,7 @@ Buck Creek Fire,"Lake, OR","September 7, 2024 8:59 AM PDT","September 26, 2024 4
 Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","September 23, 2024 7:20 PM PDT",54878,99
 Airport Fire,"Orange, CA","September 9, 2024 1:00 PM PDT","September 17, 2024 6:07 AM PDT",23526,100
 Wilkerson Fire,"Idaho, ID","September 5, 2024 7:56 AM PDT","September 10, 2024 9:29 AM PDT",616,1
-Frog Fire,"Custer, ID","September 7, 2024 1:23 PM PDT","October 6, 2024 5:41 AM PDT",3114,77
+Frog Fire,"Custer, ID","September 7, 2024 1:23 PM PDT","October 6, 2024 8:44 PM PDT",3114,77
 0913 Nw Fire,"Deschutes, OR","September 8, 2024 1:30 PM PDT","October 6, 2024 3:40 PM PDT",207,90
 Lucky Butte Fire,"Deschutes, OR","September 7, 2024 1:13 PM PDT","October 4, 2024 10:34 AM PDT",292,90
 Sage Hen Fire,"Harney, OR","September 2, 2024 5:20 PM PDT","September 13, 2024 11:27 AM PDT",6250,100
@@ -129,13 +129,13 @@ Yellow Lake Fire,"Wasatch, UT","September 28, 2024 2:27 PM PDT","October 6, 2024
 Flat Creek Fire,"Garfield, MT","September 30, 2024 2:22 PM PDT","October 1, 2024 9:24 AM PDT",178,Not available
 Commissary Fire,"Bonneville, ID","September 3, 2024 9:41 PM PDT","October 6, 2024 7:12 PM PDT",4943,0
 Bingham Fire,"Linn, OR","September 30, 2024 6:25 PM PDT","October 6, 2024 2:14 PM PDT",183,23
-Tiger Creek Fire,"Umatilla, OR","October 1, 2024 3:20 PM PDT","October 6, 2024 2:04 PM PDT",611,7
+Tiger Creek Fire,"Umatilla, OR","October 1, 2024 3:20 PM PDT","October 6, 2024 9:12 PM PDT",611,7
 Sheep Creek Fire,"Jefferson, MT","September 22, 2024 10:51 AM PDT","October 6, 2024 4:23 AM PDT",400,38
 Rosie Fire,"Owyhee, ID","September 30, 2024 1:22 PM PDT","October 5, 2024 2:40 PM PDT",4919,0
 Felicia Fire,"Ventura, CA","October 3, 2024 12:45 PM PDT","October 4, 2024 5:10 PM PDT",367,90
 Valley Fire,"Ada, ID","October 4, 2024 2:29 AM PDT","October 4, 2024 8:38 PM PDT",9412,50
 Kyle Fire,"Oglala Lakota, SD","October 4, 2024 11:18 PM PDT","October 5, 2024 7:18 AM PDT",299.74,Not available
-Peak Fire,"Tuolumne, CA","October 2, 2024 12:04 PM PDT","October 6, 2024 4:23 PM PDT",344,27
+Peak Fire,"Tuolumne, CA","October 2, 2024 12:04 PM PDT","October 6, 2024 4:23 PM PDT",410,27
 West Oquirrh Mountain Fire,"Tooele, UT","October 5, 2024 11:14 AM PDT","October 6, 2024 5:24 PM PDT",281,Not available
 Whitlow Fire,"Pinal, AZ","October 5, 2024 9:35 AM PDT","October 6, 2024 1:01 PM PDT",160,Not available
 Park Fire,"Butte, Tehama, CA","July 24, 2024 7:52 AM PDT","October 1, 2024 2:07 AM PDT",429603,100
@@ -147,5 +147,6 @@ Wolf Fire,"Fresno, CA","October 4, 2024 2:46 PM PDT","October 4, 2024 10:22 PM P
 Dutch Fire,"Nevada, CA","October 5, 2024 8:32 AM PDT","October 6, 2024 12:08 PM PDT",28,40
 Two Mile Fire,"Colusa, CA","October 3, 2024 9:01 AM PDT","October 6, 2024 3:11 AM PDT",10,100
 Tuledad Fire,"Lassen, CA","October 6, 2024 5:36 AM PDT","October 6, 2024 12:06 PM PDT",421,50
-Hambone Fire,"Siskiyou, CA","October 6, 2024 6:39 AM PDT","October 6, 2024 10:43 AM PDT",12,5
+Hambone Fire,"Siskiyou, CA","October 6, 2024 6:39 AM PDT","October 6, 2024 2:15 PM PDT",15,10
 Verjeles Fire,"Yuba, CA","October 6, 2024 9:45 AM PDT","October 6, 2024 11:03 AM PDT",12,Not available
+Wood Fire,"Humboldt, CA","October 6, 2024 12:57 PM PDT","October 6, 2024 2:28 PM PDT",20,Not available
