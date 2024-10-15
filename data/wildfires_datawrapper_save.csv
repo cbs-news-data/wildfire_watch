@@ -5,7 +5,7 @@ Sunbanks Fire,"Grant, WA","July 16, 2024 2:24 PM PDT","September 2, 2024 5:32 PM
 Middle Fork Fire,"Klamath, OR","July 17, 2024 2:55 PM PDT","September 30, 2024 6:33 AM PDT",5286,94
 Sentinel Fire,"Fresno, CA","July 14, 2024 9:10 AM PDT","August 8, 2024 11:52 AM PDT",282,99
 Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","September 29, 2024 6:08 AM PDT",25951,99
-Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","October 9, 2024 10:47 AM PDT",3053,15
+Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","October 9, 2024 10:47 AM PDT",3060,15
 Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 31, 2024 10:07 AM PDT",3976.07,74
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","October 14, 2024 7:09 PM PDT",4752,60
 Potter Fire,"Douglas, OR","July 16, 2024 8:44 PM PDT","September 13, 2024 7:45 PM PDT",3427.66,98
@@ -57,7 +57,7 @@ Halfway Fire,"Idaho, ID","August 25, 2024 2:09 PM PDT","September 15, 2024 6:14 
 Rail Ridge Fire,"Grant, OR","September 2, 2024 3:05 AM PDT","October 15, 2024 12:01 PM PDT",175060,89
 West Fire,"Gila, AZ","August 28, 2024 6:11 PM PDT","September 27, 2024 11:04 AM PDT",15074,80
 Wiley Flat Fire,"Crook, OR","September 2, 2024 8:03 AM PDT","October 13, 2024 4:06 PM PDT",30186,100
-Red Rock Fire,"Lemhi, ID","September 2, 2024 2:45 PM PDT","October 15, 2024 4:33 AM PDT",74131,19
+Red Rock Fire,"Lemhi, ID","September 2, 2024 2:45 PM PDT","October 15, 2024 2:16 PM PDT",74131,19
 Crimson Fire,"Idaho, ID","August 7, 2024 3:46 PM PDT","September 15, 2024 6:11 AM PDT",200,0
 Goat Creek Fire,"Idaho, ID","August 21, 2024 3:27 PM PDT","September 15, 2024 6:11 AM PDT",250,0
 Lonesome Fire,"Idaho, ID","August 19, 2024 2:00 PM PDT","September 15, 2024 6:11 AM PDT",250,0
@@ -102,19 +102,19 @@ Commissary Fire,"Bonneville, ID","September 3, 2024 9:41 PM PDT","October 12, 20
 Bingham Fire,"Linn, OR","September 30, 2024 6:25 PM PDT","October 6, 2024 2:14 PM PDT",199,95
 Tiger Creek Fire,"Umatilla, OR","October 1, 2024 3:20 PM PDT","October 15, 2024 5:42 AM PDT",534,83
 Sheep Creek Fire,"Jefferson, MT","September 22, 2024 10:51 AM PDT","October 11, 2024 5:37 PM PDT",576,40
-Rosie Fire,"Owyhee, ID","September 30, 2024 1:22 PM PDT","October 15, 2024 7:19 AM PDT",5628.2,35
+Rosie Fire,"Owyhee, ID","September 30, 2024 1:22 PM PDT","October 15, 2024 7:19 AM PDT",5628.2,50
 Felicia Fire,"Ventura, CA","October 3, 2024 12:45 PM PDT","October 4, 2024 5:10 PM PDT",367,100
-Bear Fire,"Wallowa, OR","September 9, 2024 4:05 PM PDT","October 15, 2024 1:19 PM PDT",126,Not available
+Bear Fire,"Wallowa, OR","September 9, 2024 4:05 PM PDT","October 15, 2024 1:22 PM PDT",126,Not available
 Owl Landing 24 Fire,"Liberty, FL","October 4, 2024 7:45 PM PDT","October 7, 2024 5:27 AM PDT",1070,80
 Bear Den Fire,"McKenzie, ND","October 5, 2024 4:00 AM PDT","October 7, 2024 10:20 AM PDT",15660,20
 Castle Ridge Fire,"Elko, NV","October 6, 2024 2:45 PM PDT","October 11, 2024 7:32 PM PDT",25885,92
 Elkhorn Fire,"McKenzie, ND","October 5, 2024 4:24 PM PDT","October 15, 2024 9:53 AM PDT",28434,50
 Pine Fire,"Deschutes, OR","October 7, 2024 3:59 PM PDT","October 13, 2024 4:49 PM PDT",6537,98
 Posta 3 Fire,"San Diego, CA","October 7, 2024 2:35 PM PDT","October 8, 2024 6:29 PM PDT",413,100
-Shoe Fire,"Shasta, CA","October 9, 2024 1:18 PM PDT","October 14, 2024 9:15 PM PDT",3420,7
-Cherry Creek Road Fire,"Juab, UT","October 13, 2024 1:06 PM PDT","October 15, 2024 5:22 AM PDT",718,20
+Shoe Fire,"Shasta, CA","October 9, 2024 1:18 PM PDT","October 15, 2024 3:17 PM PDT",3420,7
+Cherry Creek Road Fire,"Juab, UT","October 13, 2024 1:06 PM PDT","October 15, 2024 5:22 AM PDT",718,50
 Verdure Creek Fire,"San Juan, UT","October 13, 2024 7:52 AM PDT","October 15, 2024 5:24 AM PDT",157,0
-Nevada Lake Fire,"Powell, MT","October 14, 2024 3:17 PM PDT","October 15, 2024 10:27 AM PDT",207,Not available
+Nevada Lake Fire,"Powell, MT","October 14, 2024 3:17 PM PDT","October 15, 2024 10:27 AM PDT",207,0
 Peak Fire,"Tuolumne, CA","October 2, 2024 5:04 AM PDT","October 14, 2024 2:21 PM PDT",316,100
 Glenhaven Fire,"Lake, CA","October 4, 2024 4:37 AM PDT","October 9, 2024 2:55 PM PDT",417,100
 Tuledad Fire,"Lassen, CA","October 6, 2024 5:36 AM PDT","October 9, 2024 1:44 AM PDT",420,100
