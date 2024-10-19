@@ -29,15 +29,15 @@ Railroad Fire,"Ravalli, MT","July 25, 2024 7:59 AM PDT","October 16, 2024 4:18 A
 Miners Fire,"Snohomish, WA","July 17, 2024 6:39 PM PDT","August 5, 2024 8:25 AM PDT",1098,0
 Williams Mine Fire,"Skamania, WA","August 5, 2024 12:03 PM PDT","September 16, 2024 11:58 AM PDT",13092,41
 Dollar Fire,"Valley, ID","August 5, 2024 5:57 PM PDT","September 15, 2024 2:07 AM PDT",4360,100
-Snag Fire,"Valley, ID","August 5, 2024 4:22 PM PDT","October 16, 2024 4:10 AM PDT",33438,90
+Snag Fire,"Valley, ID","August 5, 2024 4:22 PM PDT","October 19, 2024 4:10 AM PDT",33438,90
 Salmon Creek Fire,"Okanogan, WA","August 5, 2024 11:21 AM PDT","August 7, 2024 10:51 AM PDT",831,100
-Nellie Fire,"Boise, ID","August 6, 2024 8:35 AM PDT","October 15, 2024 4:03 AM PDT",48196,90
+Nellie Fire,"Boise, ID","August 6, 2024 8:35 AM PDT","October 19, 2024 4:10 AM PDT",48196,90
 Elkhorn Ridge Fire,"Idaho, ID","August 6, 2024 5:41 PM PDT","September 10, 2024 9:14 AM PDT",3140,0
-Bulldog Fire,"Boise, ID","August 5, 2024 4:02 PM PDT","October 16, 2024 1:00 PM PDT",11423,90
+Bulldog Fire,"Boise, ID","August 5, 2024 4:02 PM PDT","October 19, 2024 4:10 AM PDT",11423,90
 Anderson Fire,"Boise, ID","August 5, 2024 3:16 PM PDT","August 12, 2024 4:04 AM PDT",1877,100
 Farrow Fire,"Idaho, ID","August 5, 2024 7:00 PM PDT","October 17, 2024 8:56 AM PDT",3325,0
 Ruby Fire,"Whatcom, WA","August 9, 2024 7:20 AM PDT","September 19, 2024 7:16 AM PDT",1336,0
-Goat Fire,"Valley, ID","August 5, 2024 4:37 PM PDT","October 16, 2024 5:53 AM PDT",36654,51
+Goat Fire,"Valley, ID","August 5, 2024 4:37 PM PDT","October 19, 2024 4:13 AM PDT",36654,51
 Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 18, 2024 5:30 AM PDT",14104,93
 Ratio Mountain Fire,"Jefferson, MT","August 18, 2024 3:44 PM PDT","October 6, 2024 4:23 AM PDT",2340,90
 Prospect Fire,"Idaho, ID","August 12, 2024 8:06 AM PDT","September 10, 2024 9:18 AM PDT",2934,0
@@ -69,7 +69,7 @@ Boulder Creek Fire,"Lane, OR","September 7, 2024 11:02 AM PDT","September 28, 20
 Coxey Hole Fire,"Valley, ID","September 2, 2024 3:42 PM PDT","September 20, 2024 9:29 PM PDT",194,0
 Cotton Fire,"Idaho, ID","September 6, 2024 9:41 AM PDT","September 21, 2024 4:46 PM PDT",104,0
 Swauk Creek Fire,"Kittitas, WA","September 8, 2024 3:54 PM PDT","September 20, 2024 4:52 PM PDT",348,100
-Logan Fire,"Valley, ID","September 8, 2024 10:07 PM PDT","October 16, 2024 3:54 AM PDT",15638,10
+Logan Fire,"Valley, ID","September 8, 2024 10:07 PM PDT","October 19, 2024 3:48 AM PDT",15638,10
 Buck Creek Fire,"Lake, OR","September 7, 2024 8:59 AM PDT","September 26, 2024 4:20 AM PDT",5758,100
 Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","September 23, 2024 7:20 PM PDT",54878,99
 Airport Fire,"Orange, CA","September 9, 2024 1:00 PM PDT","September 17, 2024 6:07 AM PDT",23526,100
@@ -82,7 +82,7 @@ La Bonte Fire,"Converse, WY","September 12, 2024 12:58 PM PDT","September 21, 20
 Tschuddi Fire,"Rio Blanco, CO","September 11, 2024 4:50 PM PDT","September 26, 2024 12:29 PM PDT",549,90
 Middle Fork Complex Fire,"Boise, ID","August 8, 2024 3:30 PM PDT","September 15, 2024 11:15 AM PDT",61496,90
 Elizabeth Fire,"Summit, UT","September 14, 2024 10:34 AM PDT","September 23, 2024 6:27 AM PDT",112,60
-Pack Trail Fire,"Teton, WY","September 15, 2024 1:52 PM PDT","October 18, 2024 6:11 PM PDT",89186,62
+Pack Trail Fire,"Teton, WY","September 15, 2024 1:52 PM PDT","October 19, 2024 3:24 AM PDT",89186,62
 Palisades Road Fire,"Douglas, WA","June 10, 2024 10:58 PM PDT","October 10, 2024 10:40 AM PDT",693,Not available
 Birch Fire,"Valley, ID","August 17, 2024 10:00 AM PDT","September 26, 2024 2:08 PM PDT",22995,0
 Garden Fire,"Lemhi, ID","September 8, 2024 6:36 PM PDT","October 19, 2024 1:56 AM PDT",10716,2
@@ -116,4 +116,4 @@ Maria Fire,"San Luis Obispo, CA","October 17, 2024 9:30 AM PDT","October 17, 202
 Hay Fire,"Solano, CA","October 18, 2024 6:03 AM PDT","October 18, 2024 11:53 AM PDT",869,70
 Keller Fire,"Alameda, CA","October 18, 2024 7:25 AM PDT","October 18, 2024 11:53 AM PDT",15,35
 Mission Fire,"Riverside, CA","October 18, 2024 9:03 AM PDT","October 18, 2024 1:13 PM PDT",17,40
-Lost Fire,"Fresno, CA","October 18, 2024 7:14 PM PDT","October 18, 2024 8:24 PM PDT",15,Not available
+Lost Fire,"Fresno, CA","October 18, 2024 7:14 PM PDT","October 18, 2024 8:59 PM PDT",13,Not available
