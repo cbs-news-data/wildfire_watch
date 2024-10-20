@@ -2,16 +2,16 @@ Name,Location,Started,Updated,Acres burned,% contained
 Sunbanks Fire,"Grant, WA","July 16, 2024 2:24 PM PDT","September 2, 2024 5:32 PM PDT",100,Not available
 Middle Fork Fire,"Klamath, OR","July 17, 2024 2:55 PM PDT","September 30, 2024 6:33 AM PDT",5286,94
 Sentinel Fire,"Fresno, CA","July 14, 2024 9:10 AM PDT","August 8, 2024 11:52 AM PDT",282,99
-Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","September 29, 2024 6:08 AM PDT",25951,99
+Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","October 20, 2024 5:32 AM PDT",25951,99
 Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","October 9, 2024 10:47 AM PDT",3060,30
 Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 31, 2024 10:07 AM PDT",3976.07,74
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","October 14, 2024 7:09 PM PDT",5833,60
 Potter Fire,"Douglas, OR","July 16, 2024 8:44 PM PDT","September 13, 2024 7:45 PM PDT",3427.66,98
-Horse Heaven Creek Fire,"Lane, OR","July 17, 2024 3:28 PM PDT","October 18, 2024 6:26 PM PDT",3194,66
+Horse Heaven Creek Fire,"Lane, OR","July 17, 2024 3:28 PM PDT","October 20, 2024 6:14 AM PDT",3194,66
 Maple Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 16, 2024 9:26 AM PDT",11141.58,91
 Whisky Creek Fire,"Hood River, OR","July 20, 2024 11:01 AM PDT","September 27, 2024 4:42 PM PDT",3239,24
-No Man Fire,"Lane, OR","July 18, 2024 12:09 PM PDT","October 18, 2024 6:17 AM PDT",2148,79
-Fuller Lake Fire,"Douglas, OR","July 17, 2024 7:06 AM PDT","October 18, 2024 5:42 AM PDT",6287,0
+No Man Fire,"Lane, OR","July 18, 2024 12:09 PM PDT","October 20, 2024 6:14 AM PDT",2148,79
+Fuller Lake Fire,"Douglas, OR","July 17, 2024 7:06 AM PDT","October 20, 2024 6:01 AM PDT",6287,0
 Davin Road Fire,"Franklin, WA","July 21, 2024 8:40 AM PDT","July 22, 2024 8:52 PM PDT",1782,Not available
 Chalk Fire,"Lane, OR","July 17, 2024 11:36 AM PDT","October 12, 2024 4:54 AM PDT",6015,100
 Coffee Pot Fire,"Lane, OR","July 21, 2024 3:57 AM PDT","October 6, 2024 6:11 AM PDT",6203,100
@@ -108,12 +108,12 @@ Midnight Fire,"Oglala Lakota, SD","October 16, 2024 8:29 PM PDT","October 17, 20
 Evergreen Forest Fire,"Pine, MN","October 17, 2024 1:59 PM PDT","October 19, 2024 9:37 AM PDT",167,5
 Miller Island Fire,"Klickitat, WA","October 16, 2024 3:52 PM PDT","October 19, 2024 10:55 AM PDT",400,40
 Top Of The World Fire,"Klickitat, WA","October 14, 2024 4:47 PM PDT","October 19, 2024 3:08 PM PDT",171,80
-Dove Fire,"Kern, CA","October 19, 2024 12:59 PM PDT","October 19, 2024 5:03 PM PDT",1000,0
+Dove Fire,"Kern, CA","October 19, 2024 12:59 PM PDT","October 19, 2024 5:03 PM PDT",1000,10
 Peak Fire,"Tuolumne, CA","October 2, 2024 5:04 AM PDT","October 14, 2024 2:21 PM PDT",316,100
 Piney Fire,"Monterey, CA","October 8, 2024 9:09 AM PDT","October 14, 2024 2:21 PM PDT",225,100
 Jack Fire,"Riverside, CA","October 13, 2024 9:30 AM PDT","October 16, 2024 12:00 AM PDT",260,100
 Hay Fire,"Solano, CA","October 18, 2024 6:03 AM PDT","October 18, 2024 11:53 AM PDT",869,70
-Keller Fire,"Alameda, CA","October 18, 2024 7:25 AM PDT","October 19, 2024 11:32 AM PDT",15,60
+Keller Fire,"Alameda, CA","October 18, 2024 7:25 AM PDT","October 19, 2024 11:36 PM PDT",15,70
 Mission Fire,"Riverside, CA","October 18, 2024 9:03 AM PDT","October 19, 2024 11:40 AM PDT",17,100
 Lost Fire,"Fresno, CA","October 18, 2024 7:14 PM PDT","October 19, 2024 11:44 AM PDT",13,100
 Gilardi Fire,"San Luis Obispo, CA","October 19, 2024 5:24 AM PDT","October 19, 2024 11:44 AM PDT",50,100
