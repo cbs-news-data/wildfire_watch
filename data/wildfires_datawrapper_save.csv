@@ -18,7 +18,6 @@ Moss Mountain Fire,"Lane, OR","July 17, 2024 12:52 PM PDT","October 22, 2024 8:4
 Coffee Pot Fire,"Lane, OR","July 21, 2024 3:57 AM PDT","October 6, 2024 6:11 AM PDT",6203,100
 208 Mf Fire,"Lane, OR","July 17, 2024 11:59 AM PDT","October 22, 2024 8:42 AM PDT",11262,4
 Clearwater Fire,"Park, WY","July 19, 2024 3:30 PM PDT","August 16, 2024 2:26 PM PDT",1966,93
-Retreat Fire,"Yakima, WA","July 23, 2024 3:46 PM PDT","August 8, 2024 11:30 AM PDT",45601,95
 Bullpup Fire,"Lane, OR","July 19, 2024 1:55 PM PDT","October 18, 2024 5:42 AM PDT",12917,65
 Parasol Fire,"Grant, OR","July 24, 2024 8:37 PM PDT","August 22, 2024 1:35 PM PDT",485,100
 Dominion Point Fire,"Shoshone, ID","July 25, 2024 3:46 PM PDT","July 31, 2024 7:21 PM PDT",275,0
@@ -44,6 +43,7 @@ Goat Fire,"Valley, ID","August 5, 2024 4:37 PM PDT","October 19, 2024 4:13 AM PD
 Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 18, 2024 5:30 AM PDT",14104,93
 Square Lake Fire,"Idaho, ID","August 10, 2024 7:34 PM PDT","August 18, 2024 10:54 AM PDT",5240,Not available
 Cracker Jack Complex Fire,"Idaho, ID","August 12, 2024 12:49 PM PDT","September 10, 2024 4:40 PM PDT",5240.3,0
+Brown Fire,"Pima, AZ","July 11, 2024 4:06 PM PDT","October 23, 2024 12:51 PM PDT",1422,Not available
 Ratio Mountain Fire,"Jefferson, MT","August 18, 2024 3:44 PM PDT","October 6, 2024 4:23 AM PDT",2340,90
 Prospect Fire,"Idaho, ID","August 12, 2024 8:06 AM PDT","September 10, 2024 9:18 AM PDT",2934,0
 Sharrott Creek Fire,"Ravalli, MT","August 23, 2024 2:47 PM PDT","October 8, 2024 2:01 PM PDT",3253,87
@@ -102,7 +102,7 @@ Bear Den Fire,"McKenzie, ND","October 5, 2024 4:00 AM PDT","October 7, 2024 10:2
 Pine Fire,"Deschutes, OR","October 7, 2024 3:59 PM PDT","October 13, 2024 4:49 PM PDT",6537,98
 Shoe Fire,"Shasta, CA","October 9, 2024 1:18 PM PDT","October 22, 2024 9:20 PM PDT",5127,38
 Verdure Creek Fire,"San Juan, UT","October 13, 2024 7:52 AM PDT","October 15, 2024 5:24 AM PDT",157,70
-Nevada Lake Fire,"Powell, MT","October 14, 2024 3:17 PM PDT","October 15, 2024 10:27 AM PDT",208,95
+Nevada Lake Fire,"Powell, MT","October 14, 2024 3:17 PM PDT","October 15, 2024 10:27 AM PDT",190,95
 Bierema Road Fire,"Mellette, SD","October 16, 2024 1:22 PM PDT","October 16, 2024 5:29 PM PDT",103,Not available
 Limestone Fire,"Gila, AZ","October 12, 2024 2:31 PM PDT","October 17, 2024 8:29 AM PDT",125,Not available
 Midnight Fire,"Oglala Lakota, SD","October 16, 2024 8:29 PM PDT","October 17, 2024 11:03 AM PDT",732,75
