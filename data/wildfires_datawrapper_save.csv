@@ -9,7 +9,7 @@ Clearwater Fire,"Park, WY","July 19, 2024 3:30 PM PDT","August 16, 2024 2:26 PM 
 0465 Cr Jackpine Fire,"Deschutes, OR","July 19, 2024 12:35 PM PDT","July 25, 2024 2:24 AM PDT",180,100
 Commissary Fire,"Bonneville, ID","September 3, 2024 9:41 PM PDT","October 12, 2024 6:05 PM PDT",6885,70
 Sharrott Creek Fire,"Ravalli, MT","August 23, 2024 2:47 PM PDT","October 8, 2024 2:01 PM PDT",3253,87
-Summit Lake Fire,"Baraga, MI","October 18, 2024 2:17 PM PDT","October 24, 2024 5:22 PM PDT",304,15
+Summit Lake Fire,"Baraga, MI","October 18, 2024 2:17 PM PDT","October 26, 2024 6:55 AM PDT",304,15
 Elkhorn Ridge Fire,"Idaho, ID","August 6, 2024 5:41 PM PDT","September 10, 2024 9:14 AM PDT",3140,0
 Birch Fire,"Valley, ID","August 17, 2024 10:00 AM PDT","September 26, 2024 2:08 PM PDT",23403,0
 Rail Ridge Fire,"Grant, OR","September 2, 2024 3:05 AM PDT","October 25, 2024 8:04 AM PDT",176661,92
@@ -30,7 +30,7 @@ Flat Creek Fire,"Garfield, MT","September 30, 2024 2:22 PM PDT","October 1, 2024
 Wye Fire,"Idaho, ID","July 25, 2024 10:01 AM PDT","September 15, 2024 6:15 AM PDT",13137,0
 Grouse Fire,"Beaverhead, MT","July 25, 2024 4:10 PM PDT","October 11, 2024 2:18 PM PDT",6228,60
 Limestone Fire,"Gila, AZ","October 12, 2024 2:31 PM PDT","October 17, 2024 8:29 AM PDT",125,Not available
-Shoe Fire,"Shasta, CA","October 9, 2024 1:18 PM PDT","October 25, 2024 1:25 AM PDT",5127,52
+Shoe Fire,"Shasta, CA","October 9, 2024 1:18 PM PDT","October 26, 2024 7:16 AM PDT",5127,52
 Roblar Fire,"San Diego, CA","September 7, 2024 2:03 PM PDT","September 9, 2024 4:40 PM PDT",950,100
 Logan Fire,"Valley, ID","September 8, 2024 10:07 PM PDT","October 19, 2024 3:48 AM PDT",15673,10
 Line Fire,"San Bernardino, CA","September 5, 2024 6:00 PM PDT","October 10, 2024 6:42 PM PDT",43978,98
@@ -44,7 +44,7 @@ Prospect Fire,"Idaho, ID","August 12, 2024 8:06 AM PDT","September 10, 2024 9:18
 Owl Landing 24 Fire,"Liberty, FL","October 4, 2024 7:45 PM PDT","October 7, 2024 5:27 AM PDT",1070,80
 Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 18, 2024 5:30 AM PDT",14104,93
 Monument Fire,"Idaho, ID","August 19, 2024 4:34 PM PDT","September 15, 2024 6:14 AM PDT",750,0
-Rush Fire,"Comanche, OK","October 24, 2024 1:17 PM PDT","October 25, 2024 3:29 PM PDT",4458,0
+Rush Fire,"Comanche, OK","October 24, 2024 1:17 PM PDT","October 26, 2024 6:12 AM PDT",4458,0
 Lava Fire,"Gem, ID","September 2, 2024 10:20 PM PDT","October 19, 2024 6:27 AM PDT",97585,100
 Brown Fire,"Pima, AZ","July 11, 2024 4:06 PM PDT","October 23, 2024 12:51 PM PDT",1422,Not available
 Magruder Ridge Fire,"Idaho, ID","August 19, 2024 3:34 PM PDT","September 14, 2024 2:14 PM PDT",3586,0
@@ -65,7 +65,7 @@ Ruby Fire,"Whatcom, WA","August 9, 2024 7:20 AM PDT","September 19, 2024 7:16 AM
 Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","September 23, 2024 7:20 PM PDT",56030,99
 Ratio Mountain Fire,"Jefferson, MT","August 18, 2024 3:44 PM PDT","October 6, 2024 4:23 AM PDT",2466,92
 Potter Fire,"Douglas, OR","July 16, 2024 8:44 PM PDT","September 13, 2024 7:45 PM PDT",3427.66,98
-Yellow Lake Fire,"Wasatch, UT","September 28, 2024 2:27 PM PDT","October 19, 2024 7:30 AM PDT",33041,45
+Yellow Lake Fire,"Wasatch, UT","September 28, 2024 2:27 PM PDT","October 26, 2024 6:41 AM PDT",33041,45
 Nellie Fire,"Boise, ID","August 6, 2024 8:35 AM PDT","October 19, 2024 4:10 AM PDT",48196,90
 Pine Fire,"Deschutes, OR","October 7, 2024 3:59 PM PDT","October 13, 2024 4:49 PM PDT",6537,100
 Miller Island Fire,"Klickitat, WA","October 16, 2024 3:52 PM PDT","October 19, 2024 10:55 AM PDT",100,80
@@ -100,4 +100,4 @@ Lonesome Fire,"Idaho, ID","August 19, 2024 2:00 PM PDT","September 15, 2024 6:11
 Hay Fire,"Solano, CA","October 18, 2024 6:03 AM PDT","October 22, 2024 12:12 AM PDT",869,100
 Coalinga Fire,"Fresno, CA","October 24, 2024 12:15 AM PDT","October 24, 2024 4:43 AM PDT",5,95
 Golden Fire,"Riverside, CA","October 24, 2024 5:04 AM PDT","October 25, 2024 3:04 PM PDT",40,100
-Riverview Fire,"Santa Barbara, CA","October 24, 2024 9:05 AM PDT","October 25, 2024 10:51 AM PDT",64,90
+Riverview Fire,"Santa Barbara, CA","October 24, 2024 9:05 AM PDT","October 25, 2024 11:43 PM PDT",64,100
