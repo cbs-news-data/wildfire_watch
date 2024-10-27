@@ -43,14 +43,14 @@ Prospect Fire,"Idaho, ID","August 12, 2024 8:06 AM PDT","September 10, 2024 9:18
 Owl Landing 24 Fire,"Liberty, FL","October 4, 2024 7:45 PM PDT","October 7, 2024 5:27 AM PDT",1070,80
 Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 18, 2024 5:30 AM PDT",14104,93
 Monument Fire,"Idaho, ID","August 19, 2024 4:34 PM PDT","September 15, 2024 6:14 AM PDT",750,0
-Rush Fire,"Comanche, OK","October 24, 2024 1:17 PM PDT","October 27, 2024 7:31 AM PDT",10119,0
+Rush Fire,"Comanche, OK","October 24, 2024 1:17 PM PDT","October 27, 2024 1:21 PM PDT",10119,0
 Lava Fire,"Gem, ID","September 2, 2024 10:20 PM PDT","October 19, 2024 6:27 AM PDT",97585,100
 Brown Fire,"Pima, AZ","July 11, 2024 4:06 PM PDT","October 23, 2024 12:51 PM PDT",1422,Not available
 Magruder Ridge Fire,"Idaho, ID","August 19, 2024 3:34 PM PDT","September 14, 2024 2:14 PM PDT",3586,0
 Elizabeth Fire,"Summit, UT","September 14, 2024 10:34 AM PDT","September 23, 2024 6:27 AM PDT",112,60
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","October 25, 2024 8:03 AM PDT",6303,65
 Snag Fire,"Valley, ID","August 5, 2024 4:22 PM PDT","October 19, 2024 4:10 AM PDT",33438,94
-Midnight Fire,"Oglala Lakota, SD","October 16, 2024 8:29 PM PDT","October 17, 2024 11:03 AM PDT",732,89
+Midnight Fire,"Oglala Lakota, SD","October 16, 2024 8:29 PM PDT","October 17, 2024 11:03 AM PDT",732,95
 Tschuddi Fire,"Rio Blanco, CO","September 11, 2024 4:50 PM PDT","September 26, 2024 12:29 PM PDT",549,90
 Parasol Fire,"Grant, OR","July 24, 2024 8:37 PM PDT","August 22, 2024 1:35 PM PDT",485,100
 Williams Mine Fire,"Skamania, WA","August 5, 2024 12:03 PM PDT","September 16, 2024 11:58 AM PDT",13092,41
@@ -63,7 +63,7 @@ Ruby Fire,"Whatcom, WA","August 9, 2024 7:20 AM PDT","September 19, 2024 7:16 AM
 Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","September 23, 2024 7:20 PM PDT",56030,99
 Ratio Mountain Fire,"Jefferson, MT","August 18, 2024 3:44 PM PDT","October 6, 2024 4:23 AM PDT",2466,92
 Potter Fire,"Douglas, OR","July 16, 2024 8:44 PM PDT","September 13, 2024 7:45 PM PDT",3427.66,98
-Yellow Lake Fire,"Wasatch, UT","September 28, 2024 2:27 PM PDT","October 26, 2024 6:41 AM PDT",33045,47
+Yellow Lake Fire,"Wasatch, UT","September 28, 2024 2:27 PM PDT","October 26, 2024 6:41 AM PDT",33045,51
 Nellie Fire,"Boise, ID","August 6, 2024 8:35 AM PDT","October 19, 2024 4:10 AM PDT",48196,90
 Pine Fire,"Deschutes, OR","October 7, 2024 3:59 PM PDT","October 13, 2024 4:49 PM PDT",6537,100
 Miller Island Fire,"Klickitat, WA","October 16, 2024 3:52 PM PDT","October 19, 2024 10:55 AM PDT",100,80
@@ -82,7 +82,6 @@ Pine Bench Fire,"Douglas, OR","July 16, 2024 8:48 PM PDT","August 31, 2024 10:07
 Red Rock Fire,"Lemhi, ID","September 2, 2024 2:45 PM PDT","October 25, 2024 5:53 AM PDT",79260,88
 Bear Fire,"Wallowa, OR","September 9, 2024 4:05 PM PDT","October 15, 2024 1:22 PM PDT",126,Not available
 Goat Creek Fire,"Idaho, ID","August 21, 2024 3:27 PM PDT","September 15, 2024 6:11 AM PDT",867,0
-Pintail Fire,"Mohave, AZ","October 21, 2024 1:01 AM PDT","October 21, 2024 10:00 AM PDT",296,Not available
 Eagle Butte Fire,"Blaine, MT","October 20, 2024 9:00 PM PDT","October 22, 2024 7:31 PM PDT",600,100
 Johnson Fire,"Ravalli, MT","July 25, 2024 4:24 PM PDT","October 16, 2024 5:01 AM PDT",8438,65
 Maple Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 16, 2024 9:26 AM PDT",11141.58,91
