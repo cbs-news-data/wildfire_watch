@@ -1,7 +1,7 @@
 Name,Location,Started,Updated,Acres burned,% contained
 208 Mf Fire,"Lane, OR","July 17, 2024 11:59 AM PDT","October 22, 2024 8:42 AM PDT",11262,4
 Tiger Creek Fire,"Umatilla, OR","October 1, 2024 3:20 PM PDT","October 15, 2024 5:42 AM PDT",534,89
-Elk Fire,"Sheridan, WY","September 27, 2024 7:36 AM PDT","October 25, 2024 5:35 PM PDT",96955,73
+Elk Fire,"Sheridan, WY","September 27, 2024 7:36 AM PDT","October 26, 2024 5:25 PM PDT",96955,73
 Young Grasshopper Fire,"Lane, OR","September 6, 2024 5:14 PM PDT","October 22, 2024 8:44 AM PDT",5313,98
 Anderson Fire,"Boise, ID","August 5, 2024 3:16 PM PDT","August 12, 2024 4:04 AM PDT",1877,100
 Hiyu Fire,"Lane, OR","September 6, 2024 5:51 PM PDT","October 22, 2024 8:44 AM PDT",293,Not available
@@ -63,7 +63,7 @@ Ruby Fire,"Whatcom, WA","August 9, 2024 7:20 AM PDT","September 19, 2024 7:16 AM
 Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","September 23, 2024 7:20 PM PDT",56030,99
 Ratio Mountain Fire,"Jefferson, MT","August 18, 2024 3:44 PM PDT","October 6, 2024 4:23 AM PDT",2466,92
 Potter Fire,"Douglas, OR","July 16, 2024 8:44 PM PDT","September 13, 2024 7:45 PM PDT",3427.66,98
-Yellow Lake Fire,"Wasatch, UT","September 28, 2024 2:27 PM PDT","October 26, 2024 6:41 AM PDT",33041,45
+Yellow Lake Fire,"Wasatch, UT","September 28, 2024 2:27 PM PDT","October 26, 2024 6:41 AM PDT",33045,47
 Nellie Fire,"Boise, ID","August 6, 2024 8:35 AM PDT","October 19, 2024 4:10 AM PDT",48196,90
 Pine Fire,"Deschutes, OR","October 7, 2024 3:59 PM PDT","October 13, 2024 4:49 PM PDT",6537,100
 Miller Island Fire,"Klickitat, WA","October 16, 2024 3:52 PM PDT","October 19, 2024 10:55 AM PDT",100,80
@@ -99,3 +99,4 @@ Dove Fire,"Kern, CA","October 19, 2024 5:59 AM PDT","October 26, 2024 12:33 AM P
 Golden Fire,"Riverside, CA","October 24, 2024 5:04 AM PDT","October 25, 2024 3:04 PM PDT",40,100
 Riverview Fire,"Santa Barbara, CA","October 24, 2024 9:05 AM PDT","October 26, 2024 12:34 AM PDT",64,100
 Lost Fire,"Fresno, CA","October 26, 2024 5:48 AM PDT","October 26, 2024 8:25 AM PDT",15,Not available
+Alray Fire,"San Bernardino, CA","October 26, 2024 10:56 AM PDT","October 26, 2024 12:34 PM PDT",16,Not available
