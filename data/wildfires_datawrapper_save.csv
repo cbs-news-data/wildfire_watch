@@ -53,7 +53,6 @@ Little Lava Fire,"Deschutes, OR","September 7, 2024 5:16 PM PDT","October 18, 20
 Surprise Fire,"Idaho, ID","August 22, 2024 8:56 AM PDT","September 15, 2024 6:13 AM PDT",860,100
 Boulder Creek Fire,"Lane, OR","September 7, 2024 11:02 AM PDT","September 28, 2024 9:02 AM PDT",523,84
 Hiyu Fire,"Lane, OR","September 6, 2024 5:51 PM PDT","October 22, 2024 8:44 AM PDT",293,Not available
-Young Grasshopper Fire,"Lane, OR","September 6, 2024 5:14 PM PDT","October 22, 2024 8:44 AM PDT",5313,98
 Logan Fire,"Valley, ID","September 8, 2024 10:07 PM PDT","October 19, 2024 3:48 AM PDT",15673,50
 Roblar Fire,"San Diego, CA","September 7, 2024 2:03 PM PDT","September 9, 2024 4:40 PM PDT",950,100
 Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","October 30, 2024 1:00 PM PDT",56030,99
@@ -71,7 +70,7 @@ Tiger Creek Fire,"Umatilla, OR","October 1, 2024 3:20 PM PDT","October 15, 2024 
 Sheep Creek Fire,"Jefferson, MT","September 22, 2024 10:51 AM PDT","October 30, 2024 2:56 PM PDT",778,54
 Pine Fire,"Deschutes, OR","October 7, 2024 3:59 PM PDT","October 13, 2024 4:49 PM PDT",6537,100
 Posta 3 Fire,"San Diego, CA","October 7, 2024 2:35 PM PDT","October 8, 2024 6:29 PM PDT",413,100
-Shoe Fire,"Shasta, CA","October 9, 2024 1:18 PM PDT","October 27, 2024 12:23 AM PDT",5124,97
+Shoe Fire,"Shasta, CA","October 9, 2024 1:18 PM PDT","October 27, 2024 12:23 AM PDT",5124,98
 Midnight Fire,"Oglala Lakota, SD","October 16, 2024 8:29 PM PDT","October 17, 2024 11:03 AM PDT",732,100
 Evergreen Forest Fire,"Pine, MN","October 17, 2024 1:59 PM PDT","October 19, 2024 9:37 AM PDT",167,100
 Summit Lake Fire,"Baraga, MI","October 18, 2024 2:17 PM PDT","November 2, 2024 7:51 AM PDT",328,42
@@ -82,9 +81,10 @@ Hay Stack Butte Fire,"Dunn, ND","October 5, 2024 5:09 AM PDT","October 28, 2024 
 Hawthorne Drive Fire,"Hartford, CT","October 21, 2024 2:44 PM PDT","November 3, 2024 5:27 PM PST",127,50
 Blue Front Fire,"Lincoln, NM","October 28, 2024 7:17 AM PDT","November 1, 2024 5:12 AM PDT",323,52
 Fales Creek Fire,"Ravalli, MT","September 9, 2024 3:17 PM PDT","October 31, 2024 3:17 PM PDT",100,100
-Red - Goblin Fire,"Clay, KY","October 31, 2024 2:11 PM PDT","November 2, 2024 7:04 PM PDT",150,50
-Hudson Fire,"Bastrop, TX","November 3, 2024 11:26 AM PST","November 4, 2024 6:49 AM PST",400,30
-Gap Fire,"Northampton, PA","November 4, 2024 8:53 AM PST","November 4, 2024 9:26 AM PST",150,Not available
+Red - Goblin Fire,"Clay, KY","October 31, 2024 2:11 PM PDT","November 2, 2024 7:04 PM PDT",250,50
+Hudson Fire,"Bastrop, TX","November 3, 2024 11:26 AM PST","November 4, 2024 6:49 AM PST",400,40
+Gap Fire,"Northampton, PA","November 2, 2024 10:38 AM PDT","November 4, 2024 9:36 AM PST",150,0
+Windy Fire,"Gila, AZ","November 2, 2024 1:43 PM PDT","November 4, 2024 12:11 PM PST",100,Not available
 Campbell Fire,"Tulare, CA","October 27, 2024 8:19 PM PDT","October 30, 2024 1:35 PM PDT",524,100
 Montezuma Fire,"San Diego, CA","October 31, 2024 7:26 AM PDT","November 3, 2024 1:53 AM PDT",37,90
 Gaylord Fire,"Tehama, CA","November 3, 2024 7:33 AM PST","November 3, 2024 11:57 PM PST",47,97
