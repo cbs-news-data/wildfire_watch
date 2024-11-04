@@ -1,7 +1,6 @@
 Name,Location,Started,Updated,Acres burned,% contained
 Edwards Central Rx Fire,"Stevens, MN","May 16, 2024 10:40 AM PDT","July 8, 2024 1:40 PM PDT",114,Not available
 Twin Lakes South Rx Fire,"Big Stone, MN","May 14, 2024 6:23 AM PDT","July 8, 2024 2:01 PM PDT",166,Not available
-Middle Fork Fire,"Klamath, OR","July 17, 2024 2:55 PM PDT","September 30, 2024 6:33 AM PDT",5286,98
 Sentinel Fire,"Fresno, CA","July 14, 2024 9:10 AM PDT","August 8, 2024 11:52 AM PDT",282,99
 Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","October 20, 2024 5:32 AM PDT",25951,99
 Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","October 9, 2024 10:47 AM PDT",3060,30
@@ -76,14 +75,14 @@ Evergreen Forest Fire,"Pine, MN","October 17, 2024 1:59 PM PDT","October 19, 202
 Summit Lake Fire,"Baraga, MI","October 18, 2024 2:17 PM PDT","November 2, 2024 7:51 AM PDT",328,42
 Eagle Butte Fire,"Blaine, MT","October 20, 2024 9:00 PM PDT","October 22, 2024 7:31 PM PDT",600,100
 Rush Fire,"Comanche, OK","October 24, 2024 1:17 PM PDT","October 31, 2024 2:07 PM PDT",12488,87
-Fd05090 Fire,"Essex, MA","October 26, 2024 4:00 PM PDT","October 28, 2024 1:40 PM PDT",140,50
+Fd05090 Fire,"Essex, MA","October 26, 2024 4:00 PM PDT","October 28, 2024 1:40 PM PDT",140,75
 Hay Stack Butte Fire,"Dunn, ND","October 5, 2024 5:09 AM PDT","October 28, 2024 1:53 PM PDT",100,Not available
 Hawthorne Drive Fire,"Hartford, CT","October 21, 2024 2:44 PM PDT","November 3, 2024 5:27 PM PST",127,50
 Blue Front Fire,"Lincoln, NM","October 28, 2024 7:17 AM PDT","November 1, 2024 5:12 AM PDT",323,52
 Fales Creek Fire,"Ravalli, MT","September 9, 2024 3:17 PM PDT","October 31, 2024 3:17 PM PDT",100,100
 Red - Goblin Fire,"Clay, KY","October 31, 2024 2:11 PM PDT","November 2, 2024 7:04 PM PDT",250,50
-Hudson Fire,"Bastrop, TX","November 3, 2024 11:26 AM PST","November 4, 2024 6:49 AM PST",400,40
-Gap Fire,"Northampton, PA","November 2, 2024 10:38 AM PDT","November 4, 2024 9:36 AM PST",150,0
+Hudson Fire,"Bastrop, TX","November 3, 2024 11:26 AM PST","November 4, 2024 6:49 AM PST",400,50
+Gap Fire,"Northampton, PA","November 2, 2024 10:38 AM PDT","November 4, 2024 12:53 PM PST",150,0
 Windy Fire,"Gila, AZ","November 2, 2024 1:43 PM PDT","November 4, 2024 12:11 PM PST",100,Not available
 Campbell Fire,"Tulare, CA","October 27, 2024 8:19 PM PDT","October 30, 2024 1:35 PM PDT",524,100
 Montezuma Fire,"San Diego, CA","October 31, 2024 7:26 AM PDT","November 3, 2024 1:53 AM PDT",37,90
