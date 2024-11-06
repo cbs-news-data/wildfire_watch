@@ -16,7 +16,7 @@ Clearwater Fire,"Park, WY","July 19, 2024 3:30 PM PDT","August 16, 2024 2:26 PM 
 Pincer Two Fire,"Skagit, WA","July 18, 2024 4:09 PM PDT","August 30, 2024 7:17 AM PDT",211,0
 Bullpup Fire,"Lane, OR","July 19, 2024 1:55 PM PDT","October 18, 2024 5:42 AM PDT",12917,65
 Wapiti Fire,"Boise, ID","July 24, 2024 7:58 PM PDT","October 22, 2024 4:39 AM PDT",129063,100
-Johnson Fire,"Ravalli, MT","July 25, 2024 4:24 PM PDT","October 16, 2024 5:01 AM PDT",8438,65
+Johnson Fire,"Ravalli, MT","July 25, 2024 4:24 PM PDT","October 16, 2024 5:01 AM PDT",8438,100
 Broom Canyon Fire,"Nye, NV","July 29, 2024 8:00 PM PDT","October 9, 2024 1:20 PM PDT",8232,15
 Wye Fire,"Idaho, ID","July 25, 2024 10:01 AM PDT","September 15, 2024 6:15 AM PDT",13137,0
 Railroad Fire,"Ravalli, MT","July 25, 2024 7:59 AM PDT","October 16, 2024 4:18 AM PDT",1583,0
@@ -49,6 +49,7 @@ Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","October 30, 2024 
 Wilkerson Fire,"Idaho, ID","September 5, 2024 7:56 AM PDT","October 25, 2024 1:07 PM PDT",616,100
 0913 Nw Fire,"Deschutes, OR","September 8, 2024 1:30 PM PDT","October 9, 2024 7:10 AM PDT",248,90
 0892 Lucky Butte Fire,"Deschutes, OR","September 7, 2024 1:13 PM PDT","October 15, 2024 9:59 AM PDT",548,90
+Cliff Mountain Fire,"Adams, ID","July 25, 2024 12:12 PM PDT","September 11, 2024 12:35 PM PDT",1108,100
 Middle Fork Complex Fire,"Boise, ID","August 8, 2024 3:30 PM PDT","September 15, 2024 11:15 AM PDT",61496,100
 Pack Trail Fire,"Teton, WY","September 15, 2024 1:52 PM PDT","October 27, 2024 3:47 AM PDT",89930,95
 Livingston Draw Fire,"Johnson, WY","September 17, 2024 3:55 PM PDT","September 19, 2024 6:28 PM PDT",1400,100
@@ -71,11 +72,13 @@ Hay Stack Butte Fire,"Dunn, ND","October 5, 2024 5:09 AM PDT","October 28, 2024 
 Hawthorne Drive Fire,"Hartford, CT","October 21, 2024 2:44 PM PDT","November 3, 2024 5:27 PM PST",127,65
 Blue Front Fire,"Lincoln, NM","October 28, 2024 7:17 AM PDT","November 1, 2024 5:12 AM PDT",323,75
 Fales Creek Fire,"Ravalli, MT","September 9, 2024 3:17 PM PDT","October 31, 2024 3:17 PM PDT",100,100
-Hudson Fire,"Bastrop, TX","November 3, 2024 11:26 AM PST","November 5, 2024 12:33 PM PST",400,85
+Hudson Fire,"Bastrop, TX","November 3, 2024 11:26 AM PST","November 5, 2024 12:33 PM PST",400,90
 Gap Fire,"Northampton, PA","November 2, 2024 10:38 AM PDT","November 4, 2024 2:42 PM PST",577,20
 Windy Fire,"Gila, AZ","November 2, 2024 1:43 PM PDT","November 4, 2024 12:11 PM PST",100,Not available
 Blue Mountain Fire,"Northampton, PA","November 2, 2024 11:39 AM PDT","November 5, 2024 5:34 PM PST",577,Not available
+Highland Fire,"Fayette, WV","November 5, 2024 1:00 PM PST","November 6, 2024 7:19 AM PST",114,Not available
 Campbell Fire,"Tulare, CA","October 27, 2024 8:19 PM PDT","October 30, 2024 1:35 PM PDT",524,100
 Montezuma Fire,"San Diego, CA","October 31, 2024 7:26 AM PDT","November 4, 2024 6:45 AM PST",37,100
 Gaylord Fire,"Tehama, CA","November 3, 2024 7:33 AM PST","November 4, 2024 11:23 PM PST",47,Not available
 Wolf Fire,"Riverside, CA","November 4, 2024 7:41 AM PST","November 5, 2024 10:56 AM PST",25,95
+Sweagert Flat Rx 11/7 Fire,"Modoc, CA","November 5, 2024 10:33 PM PST","November 5, 2024 11:34 PM PST",14,Not available
