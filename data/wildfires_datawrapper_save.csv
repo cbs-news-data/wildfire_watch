@@ -19,7 +19,7 @@ Wapiti Fire,"Boise, ID","July 24, 2024 7:58 PM PDT","October 22, 2024 4:39 AM PD
 Johnson Fire,"Ravalli, MT","July 25, 2024 4:24 PM PDT","October 16, 2024 5:01 AM PDT",8438,100
 Broom Canyon Fire,"Nye, NV","July 29, 2024 8:00 PM PDT","October 9, 2024 1:20 PM PDT",8232,15
 Wye Fire,"Idaho, ID","July 25, 2024 10:01 AM PDT","September 15, 2024 6:15 AM PDT",13137,0
-Railroad Fire,"Ravalli, MT","July 25, 2024 7:59 AM PDT","October 16, 2024 4:18 AM PDT",1583,0
+Railroad Fire,"Ravalli, MT","July 25, 2024 7:59 AM PDT","October 16, 2024 4:18 AM PDT",1583,100
 Miners Fire,"Snohomish, WA","July 17, 2024 6:39 PM PDT","August 5, 2024 8:25 AM PDT",1098,0
 Williams Mine Fire,"Skamania, WA","August 5, 2024 12:03 PM PDT","September 16, 2024 11:58 AM PDT",13092,100
 Elkhorn Ridge Fire,"Idaho, ID","August 6, 2024 5:41 PM PDT","October 25, 2024 1:25 PM PDT",3375,100
@@ -31,7 +31,7 @@ Sharrott Creek Fire,"Ravalli, MT","August 23, 2024 2:47 PM PDT","October 8, 2024
 Monument Fire,"Idaho, ID","August 19, 2024 4:34 PM PDT","September 15, 2024 6:14 AM PDT",750,0
 Np Rx - High Noon Stewardship Fire,"Pend Oreille, WA","April 15, 2024 12:00 PM PDT","August 27, 2024 7:41 AM PDT",779,Not available
 Np Rx - Timber Mountain Ts Fire,"Pend Oreille, WA","October 10, 2024 12:00 PM PDT","August 27, 2024 8:17 AM PDT",339,Not available
-Daly Fire,"Ravalli, MT","August 18, 2024 1:37 PM PDT","November 1, 2024 4:19 AM PDT",11387,56
+Daly Fire,"Ravalli, MT","August 18, 2024 1:37 PM PDT","November 1, 2024 4:19 AM PDT",11387,100
 Magruder Ridge Fire,"Idaho, ID","August 19, 2024 3:34 PM PDT","October 29, 2024 3:35 PM PDT",3778,100
 Halfway Fire,"Idaho, ID","August 25, 2024 2:09 PM PDT","September 15, 2024 6:14 AM PDT",1502,0
 Rail Ridge Fire,"Grant, OR","September 2, 2024 3:05 AM PDT","October 25, 2024 8:04 AM PDT",176661,100
@@ -52,7 +52,7 @@ Cliff Mountain Fire,"Adams, ID","July 25, 2024 12:12 PM PDT","September 11, 2024
 Middle Fork Complex Fire,"Boise, ID","August 8, 2024 3:30 PM PDT","September 15, 2024 11:15 AM PDT",61496,100
 Pack Trail Fire,"Teton, WY","September 15, 2024 1:52 PM PDT","October 27, 2024 3:47 AM PDT",89930,95
 Livingston Draw Fire,"Johnson, WY","September 17, 2024 3:55 PM PDT","September 19, 2024 6:28 PM PDT",1400,100
-Elk Fire,"Sheridan, WY","September 27, 2024 7:36 AM PDT","October 27, 2024 9:55 AM PDT",98352,89
+Elk Fire,"Sheridan, WY","September 27, 2024 7:36 AM PDT","October 27, 2024 9:55 AM PDT",98352,97
 Yellow Lake Fire,"Wasatch, UT","September 28, 2024 2:27 PM PDT","October 26, 2024 6:41 AM PDT",33045,100
 Flat Creek Fire,"Garfield, MT","September 30, 2024 2:22 PM PDT","October 1, 2024 9:24 AM PDT",178,Not available
 Commissary Fire,"Bonneville, ID","September 3, 2024 9:41 PM PDT","October 12, 2024 6:05 PM PDT",6885,85
@@ -71,16 +71,15 @@ Hay Stack Butte Fire,"Dunn, ND","October 5, 2024 5:09 AM PDT","October 28, 2024 
 Hawthorne Drive Fire,"Hartford, CT","October 21, 2024 2:44 PM PDT","November 3, 2024 5:27 PM PST",127,65
 Blue Front Fire,"Lincoln, NM","October 28, 2024 7:17 AM PDT","November 1, 2024 5:12 AM PDT",323,75
 Fales Creek Fire,"Ravalli, MT","September 9, 2024 3:17 PM PDT","October 31, 2024 3:17 PM PDT",100,100
-Hudson Fire,"Bastrop, TX","November 3, 2024 11:26 AM PST","November 5, 2024 12:33 PM PST",400,90
-Gap Fire,"Northampton, PA","November 2, 2024 10:38 AM PDT","November 4, 2024 2:42 PM PST",577,20
+Hudson Fire,"Bastrop, TX","November 3, 2024 11:26 AM PST","November 5, 2024 12:33 PM PST",400,95
+Gap Fire,"Northampton, PA","November 2, 2024 10:38 AM PDT","November 4, 2024 2:42 PM PST",577,58
 Windy Fire,"Gila, AZ","November 2, 2024 1:43 PM PDT","November 4, 2024 12:11 PM PST",100,Not available
 Blue Mountain Fire,"Northampton, PA","November 2, 2024 11:39 AM PDT","November 5, 2024 5:34 PM PST",577,Not available
 Highland Fire,"Fayette, WV","November 5, 2024 1:00 PM PST","November 6, 2024 7:19 AM PST",114,Not available
-Campbell Fire,"Tulare, CA","October 27, 2024 8:19 PM PDT","October 30, 2024 1:35 PM PDT",524,100
-Montezuma Fire,"San Diego, CA","October 31, 2024 7:26 AM PDT","November 4, 2024 6:45 AM PST",37,100
 Gaylord Fire,"Tehama, CA","November 3, 2024 7:33 AM PST","November 4, 2024 11:23 PM PST",47,Not available
 Wolf Fire,"Riverside, CA","November 4, 2024 7:41 AM PST","November 6, 2024 1:46 AM PST",25,95
 Lake Fire,"Trinity, CA","November 5, 2024 5:16 AM PST","November 6, 2024 3:09 AM PST",44,Not available
-Mountain Fire,"Ventura, CA","November 6, 2024 1:41 AM PST","November 6, 2024 3:09 AM PST",1000,0
+Mountain Fire,"Ventura, CA","November 6, 2024 12:51 AM PST","November 6, 2024 8:31 AM PST",10458,0
 Broad Fire,"Los Angeles, CA","November 6, 2024 2:09 AM PST","November 6, 2024 2:51 AM PST",50,Not available
-Valley Fire,"Shasta, CA","November 6, 2024 3:31 AM PST","November 6, 2024 3:38 AM PST",7,Not available
+Valley Fire,"Shasta, CA","November 6, 2024 3:31 AM PST","November 6, 2024 8:22 AM PST",11,70
+Lemon Fire,"Tulare, CA","November 6, 2024 4:28 AM PST","November 6, 2024 7:50 AM PST",40,100
