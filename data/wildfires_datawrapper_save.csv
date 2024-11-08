@@ -2,7 +2,6 @@ Name,Location,Started,Updated,Acres burned,% contained
 Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","October 20, 2024 5:32 AM PDT",25951,99
 Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","October 9, 2024 10:47 AM PDT",3060,30
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","November 2, 2024 11:39 AM PDT",10325,65
-Horse Heaven Creek Fire,"Lane, OR","July 17, 2024 3:28 PM PDT","October 20, 2024 6:16 AM PDT",3198,66
 Maple Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 16, 2024 9:26 AM PDT",11141.58,91
 Whisky Creek Fire,"Hood River, OR","July 20, 2024 11:01 AM PDT","September 27, 2024 4:42 PM PDT",3239,100
 No Man Fire,"Lane, OR","July 18, 2024 12:09 PM PDT","October 20, 2024 6:17 AM PDT",2148,79
@@ -46,9 +45,8 @@ Posta 3 Fire,"San Diego, CA","October 7, 2024 2:35 PM PDT","November 8, 2024 5:5
 Shoe Fire,"Shasta, CA","October 9, 2024 1:18 PM PDT","October 27, 2024 12:23 AM PDT",5124,99
 Midnight Fire,"Oglala Lakota, SD","October 16, 2024 8:29 PM PDT","October 17, 2024 11:03 AM PDT",732,100
 Evergreen Forest Fire,"Pine, MN","October 17, 2024 1:59 PM PDT","October 19, 2024 9:37 AM PDT",167,100
-Summit Lake Fire,"Baraga, MI","October 18, 2024 2:17 PM PDT","November 2, 2024 7:51 AM PDT",328,42
+Summit Lake Fire,"Baraga, MI","October 18, 2024 2:17 PM PDT","November 2, 2024 7:51 AM PDT",328,90
 Eagle Butte Fire,"Blaine, MT","October 20, 2024 9:00 PM PDT","October 22, 2024 7:31 PM PDT",600,100
-Rush Fire,"Comanche, OK","October 24, 2024 1:17 PM PDT","October 31, 2024 2:07 PM PDT",12488,90
 Fd05090 Fire,"Essex, MA","October 26, 2024 4:00 PM PDT","October 28, 2024 1:40 PM PDT",140,75
 Hay Stack Butte Fire,"Dunn, ND","October 5, 2024 5:09 AM PDT","October 28, 2024 1:53 PM PDT",100,Not available
 Hawthorne Drive Fire,"Hartford, CT","October 21, 2024 2:44 PM PDT","November 3, 2024 5:27 PM PST",127,84
