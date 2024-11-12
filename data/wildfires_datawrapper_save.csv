@@ -1,6 +1,6 @@
 Name,Location,Started,Updated,Acres burned,% contained
 Lane 1 Fire,"Lane, OR","July 17, 2024 3:10 PM PDT","October 20, 2024 5:32 AM PDT",25951,99
-Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","October 9, 2024 10:47 AM PDT",3060,30
+Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","October 9, 2024 10:47 AM PDT",3060,100
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","November 11, 2024 9:19 AM PST",12145,75
 Maple Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 16, 2024 9:26 AM PDT",11141.58,91
 Whisky Creek Fire,"Hood River, OR","July 20, 2024 11:01 AM PDT","September 27, 2024 4:42 PM PDT",3239,100
@@ -34,6 +34,7 @@ Wilkerson Fire,"Idaho, ID","September 5, 2024 7:56 AM PDT","October 25, 2024 1:0
 0892 Lucky Butte Fire,"Deschutes, OR","September 7, 2024 1:13 PM PDT","October 15, 2024 9:59 AM PDT",548,90
 Cliff Mountain Fire,"Adams, ID","July 25, 2024 12:12 PM PDT","September 11, 2024 12:35 PM PDT",1108,100
 Pack Trail Fire,"Teton, WY","September 15, 2024 1:52 PM PDT","October 27, 2024 3:47 AM PDT",89930,95
+Bronco Fire,"Sioux, NE","September 18, 2024 11:06 AM PDT","September 20, 2024 10:21 AM PDT",1069,100
 Livingston Draw Fire,"Johnson, WY","September 17, 2024 3:55 PM PDT","September 19, 2024 6:28 PM PDT",1400,100
 Elk Fire,"Sheridan, WY","September 27, 2024 7:36 AM PDT","October 27, 2024 9:55 AM PDT",98352,97
 Yellow Lake Fire,"Wasatch, UT","September 28, 2024 2:27 PM PDT","October 26, 2024 6:41 AM PDT",33045,100
