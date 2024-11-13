@@ -1,4 +1,5 @@
 Name,Location,Started,Updated,Acres burned,% contained
+Prairie Fire,"Rosebud, MT","July 12, 2024 1:32 PM PDT","July 18, 2024 4:31 AM PDT",6540,100
 Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","October 9, 2024 10:47 AM PDT",3060,100
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","November 11, 2024 9:19 AM PST",12145,75
 Maple Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 16, 2024 9:26 AM PDT",11141.58,91
@@ -29,7 +30,6 @@ Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","October 30, 2024 
 Wilkerson Fire,"Idaho, ID","September 5, 2024 7:56 AM PDT","October 25, 2024 1:07 PM PDT",616,100
 0913 Nw Fire,"Deschutes, OR","September 8, 2024 1:30 PM PDT","October 9, 2024 7:10 AM PDT",248,90
 0892 Lucky Butte Fire,"Deschutes, OR","September 7, 2024 1:13 PM PDT","October 15, 2024 9:59 AM PDT",548,90
-Cliff Mountain Fire,"Adams, ID","July 25, 2024 12:12 PM PDT","September 11, 2024 12:35 PM PDT",1108,100
 Pack Trail Fire,"Teton, WY","September 15, 2024 1:52 PM PDT","October 27, 2024 3:47 AM PDT",89930,95
 Bronco Fire,"Sioux, NE","September 18, 2024 11:06 AM PDT","September 20, 2024 10:21 AM PDT",1069,100
 Livingston Draw Fire,"Johnson, WY","September 17, 2024 3:55 PM PDT","September 19, 2024 6:28 PM PDT",1400,100
@@ -47,9 +47,9 @@ Fales Creek Fire,"Ravalli, MT","September 9, 2024 3:17 PM PDT","October 31, 2024
 Windy Fire,"Gila, AZ","November 2, 2024 1:43 PM PDT","November 4, 2024 12:11 PM PST",100,Not available
 Blue Mountain Fire,"Northampton, PA","November 2, 2024 11:39 AM PDT","November 5, 2024 5:34 PM PST",577,Not available
 Highland Fire,"Fayette, WV","November 5, 2024 1:00 PM PST","November 9, 2024 4:20 PM PST",210,90
-Mountain Fire,"Ventura, CA","November 6, 2024 9:00 AM PST","November 12, 2024 5:21 PM PST",20630,54
+Mountain Fire,"Ventura, CA","November 6, 2024 9:00 AM PST","November 12, 2024 5:21 PM PST",20630,60
 Santa Lucia Fire,"Santa Barbara, CA","November 7, 2024 8:06 AM PST","November 7, 2024 2:32 PM PST",150,Not available
-Mount Gilead Fire,"Essex, MA","November 8, 2024 2:48 PM PST","November 10, 2024 1:01 PM PST",309,0
+Mount Gilead Fire,"Essex, MA","November 8, 2024 2:48 PM PST","November 10, 2024 1:01 PM PST",427,20
 Middleton Pond Fire,"Essex, MA","October 27, 2024 8:00 AM PDT","November 10, 2024 1:24 PM PST",243,60
 Fd05097 Fire,"Essex, MA","October 29, 2024 11:33 AM PDT","November 10, 2024 7:13 PM PST",128,0
 Ganner Fire,"Berks, PA","November 9, 2024 7:37 PM PST","November 11, 2024 1:01 PM PST",120,40
@@ -66,4 +66,4 @@ Gaylord Fire,"Tehama, CA","November 3, 2024 7:33 AM PST","November 12, 2024 5:56
 Lake Fire,"Trinity, CA","November 5, 2024 5:16 AM PST","November 12, 2024 6:54 AM PST",44,100
 Frenchman Fire,"Los Angeles, CA","November 7, 2024 4:41 AM PST","November 10, 2024 10:45 PM PST",94,100
 Waucoba Fire,"Inyo, CA","November 11, 2024 1:54 AM PST","November 11, 2024 12:49 PM PST",10,Not available
-Bull Fire,"Kings, CA","November 12, 2024 6:36 AM PST","November 12, 2024 8:40 AM PST",11,Not available
+Bull Fire,"Kings, CA","November 12, 2024 6:36 AM PST","November 12, 2024 10:02 PM PST",11,100

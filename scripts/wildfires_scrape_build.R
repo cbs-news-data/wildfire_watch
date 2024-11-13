@@ -8,6 +8,7 @@ library(sf)
 library(htmlwidgets)
 library(htmltools)
 library(janitor)
+library(lubridate)
 
 # Stripped-down version of a longer-term project
 # Focusing first here just on fire locations, perimeters and basic data points on each
@@ -27,14 +28,19 @@ if (!inherits(download_status, "try-error")) {
 }
 
 # Get active FEDERAL WILDFIRE PERIMETERS from NFIS for both perimeters and points
-try(download.file("https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson",
+try(download.file("https://stg-arcgisazurecdataprod3.az.arcgis.com/exportfiles-2532-182272/WFIGS_Interagency_Perimeters_Current_-2078219868963267088.geojson?sv=2018-03-28&sr=b&sig=zsgucf%2FdBtaFv%2BVO58iWkKVXOCdAxWZfvWa6wUQrGvc%3D&se=2024-11-13T21%3A01%3A11Z&sp=r",
+#https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson",
                   "data/active_perimeters.geojson"))
+# do same above with this new url https://stg-arcgisazurecdataprod3.az.arcgis.com/exportfiles-2532-182272/WFIGS_Interagency_Perimeters_Current_-2078219868963267088.geojson?sv=2018-03-28&sr=b&sig=zsgucf%2FdBtaFv%2BVO58iWkKVXOCdAxWZfvWa6wUQrGvc%3D&se=2024-11-13T21%3A01%3A11Z&sp=r
+
+
+
 
 # saved function to convert the milliseconds from UTC 
-ms_to_date = function(ms, t0="1970-01-01", timezone) {
-  sec = ms / 1000
-  as.POSIXct(sec, origin=t0, tz=timezone)
-}
+#ms_to_date = function(ms, t0="1970-01-01", timezone) {
+#  sec = ms / 1000
+#  as.POSIXct(sec, origin=t0, tz=timezone)
+#}
 
 # Read in federal fire perimeters and streamling cols
 nfis_perimeters <- st_read("data/active_perimeters.geojson") %>% 
@@ -46,8 +52,8 @@ nfis_perimeters <- st_read("data/active_perimeters.geojson") %>%
          name = poly_IncidentName, 
          state = attr_POOState,
          county = attr_POOCounty,
-         started = attr_FireDiscoveryDateTime, 
-         updated = poly_DateCurrent, 
+ #        started = attr_FireDiscoveryDateTime, 
+#         updated = poly_DateCurrent, 
          acres_burned = attr_IncidentSize,
          percent_contained = attr_PercentContained,
          type = attr_IncidentTypeCategory,
@@ -55,6 +61,12 @@ nfis_perimeters <- st_read("data/active_perimeters.geojson") %>%
          fire_cause = attr_FireCause,
          latitude = attr_InitialLatitude,
          longitude = attr_InitialLongitude)
+
+nfis_perimeters <- nfis_perimeters %>% 
+  mutate(
+    started = with_tz(dmy_hms(attr_FireDiscoveryDateTime, tz = "GMT"), tzone = "America/New_York"),
+    updated = with_tz(dmy_hms(poly_DateCurrent, tz = "GMT"), tzone = "America/New_York")
+  )
 
 # Simplify the geometry
 # First, repair invalid geometries
@@ -64,12 +76,11 @@ nfis_perimeters <- nfis_perimeters %>% filter(acres_burned > 99)
 # Adjust dTolerance as needed. Smaller values = less simplification
 simplified_nfis_perimeters <- st_simplify(nfis_perimeters, dTolerance = 0.2)
 
-# Convert milliseconds to dates and 
-# clean numbers
+# clean numbers into fed_fires file
 fed_fires <- nfis_perimeters %>% 
   st_drop_geometry() %>%
   mutate(source="NFIS") %>%
-  mutate_at(vars(started, updated), ms_to_date, t0 = "1970-01-01", timezone = "America/Los_Angeles") %>% 
+#  mutate_at(vars(started, updated), ms_to_date, t0 = "1970-01-01", timezone = "America/Los_Angeles") %>% 
   mutate(days_burning = floor(difftime(Sys.time(), started, units = "days")), 
          days_sinceupdate = round(difftime(Sys.time(), updated, units = "days"), 1)) %>% 
   filter(acres_burned > 99 & days_sinceupdate < 120 | days_sinceupdate < 120)
@@ -151,8 +162,8 @@ states <- as.data.frame(cbind(state.abb,state.name)) %>% janitor::clean_names()
 fires <- left_join(fires,states,by=c("state"="state_abb"))
 
 # manually add lat long to Airport Fire in Orange County
-fires$latitude <- ifelse(fires$name=="Airport Fire", 33.665728, fires$latitude)
-fires$longitude <- ifelse(fires$name=="Airport Fire", -117.567802, fires$longitude)
+#fires$latitude <- ifelse(fires$name=="Airport Fire", 33.665728, fires$latitude)
+#fires$longitude <- ifelse(fires$name=="Airport Fire", -117.567802, fires$longitude)
 
 
 # Save latest merged fire points file as csv
@@ -181,8 +192,8 @@ write_csv(fires_fordatawrappertable,"data/wildfires_datawrapper_save.csv")
 # Remove fires without lat longs so we can map
 # Manual validation = all tiny <1ac and all <10ac
 fires <- fires %>% filter(!is.na(latitude) & !is.na(longitude))
-# Create flag for active vs. not for icons; 5-day cutoff
-fires$active <- if_else(fires$days_sinceupdate<5,"Yes","No")
+# Create flag for active vs. not for icons; 8-day cutoff
+fires$active <- if_else(fires$days_sinceupdate<8,"Yes","No")
 # filter out fires that are not active or smaller than 100 acres
 fires <- fires %>% filter(active=="Yes") %>% filter(acres_burned>99)
 # count number of fires we're tracking
