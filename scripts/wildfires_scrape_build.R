@@ -28,19 +28,20 @@ if (!inherits(download_status, "try-error")) {
 }
 
 # Get active FEDERAL WILDFIRE PERIMETERS from NFIS for both perimeters and points
-try(download.file("https://stg-arcgisazurecdataprod3.az.arcgis.com/exportfiles-2532-182272/WFIGS_Interagency_Perimeters_Current_-2078219868963267088.geojson?sv=2018-03-28&sr=b&sig=zsgucf%2FdBtaFv%2BVO58iWkKVXOCdAxWZfvWa6wUQrGvc%3D&se=2024-11-13T21%3A01%3A11Z&sp=r",
-#https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson",
+#try(download.file("https://stg-arcgisazurecdataprod3.az.arcgis.com/exportfiles-2532-182272/WFIGS_Interagency_Perimeters_Current_-2078219868963267088.geojson?sv=2018-03-28&sr=b&sig=zsgucf%2FdBtaFv%2BVO58iWkKVXOCdAxWZfvWa6wUQrGvc%3D&se=2024-11-13T21%3A01%3A11Z&sp=r",
+#                  "data/active_perimeters.geojson"))
+try(download.file("https://services3.arcgis.com/T4QMspbfLg3qTGWY/ArcGIS/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?where=0%3D0&objectIds=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&relationParam=&returnGeodetic=false&outFields=*&returnGeometry=true&returnCentroid=false&returnEnvelope=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&defaultSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&collation=&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnTrueCurves=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pgeojson&token=3NKHt6i2urmWtqOuugvr9Y-ZqCBqtQEj2R65ehxgf2Sy6gAeh4a42CJGeDGkzWeONsO5HFvYDdqVb1kHEreKaV5c4eAVEmklbMfCljmpxjxLPhyTJ5aLWiMOFtkUaU3w6C4u9SZ4Qh-IPpQJfoMUYBg6CVWCJb1CAOZffuQtO0AoqJSKn5gZ9LdPyiHuS49I",
                   "data/active_perimeters.geojson"))
-# do same above with this new url https://stg-arcgisazurecdataprod3.az.arcgis.com/exportfiles-2532-182272/WFIGS_Interagency_Perimeters_Current_-2078219868963267088.geojson?sv=2018-03-28&sr=b&sig=zsgucf%2FdBtaFv%2BVO58iWkKVXOCdAxWZfvWa6wUQrGvc%3D&se=2024-11-13T21%3A01%3A11Z&sp=r
+
 
 
 
 
 # saved function to convert the milliseconds from UTC 
-#ms_to_date = function(ms, t0="1970-01-01", timezone) {
-#  sec = ms / 1000
-#  as.POSIXct(sec, origin=t0, tz=timezone)
-#}
+ms_to_date = function(ms, t0="1970-01-01", timezone) {
+  sec = ms / 1000
+  as.POSIXct(sec, origin=t0, tz=timezone)
+}
 
 # Read in federal fire perimeters and streamling cols
 nfis_perimeters <- st_read("data/active_perimeters.geojson") %>% 
@@ -52,8 +53,8 @@ nfis_perimeters <- st_read("data/active_perimeters.geojson") %>%
          name = poly_IncidentName, 
          state = attr_POOState,
          county = attr_POOCounty,
- #        started = attr_FireDiscoveryDateTime, 
-#         updated = poly_DateCurrent, 
+         started = attr_FireDiscoveryDateTime, 
+         updated = poly_DateCurrent, 
          acres_burned = attr_IncidentSize,
          percent_contained = attr_PercentContained,
          type = attr_IncidentTypeCategory,
@@ -62,11 +63,11 @@ nfis_perimeters <- st_read("data/active_perimeters.geojson") %>%
          latitude = attr_InitialLatitude,
          longitude = attr_InitialLongitude)
 
-nfis_perimeters <- nfis_perimeters %>% 
-  mutate(
-    started = with_tz(dmy_hms(attr_FireDiscoveryDateTime, tz = "GMT"), tzone = "America/New_York"),
-    updated = with_tz(dmy_hms(poly_DateCurrent, tz = "GMT"), tzone = "America/New_York")
-  )
+#nfis_perimeters <- nfis_perimeters %>% 
+#  mutate(
+#    started = with_tz(dmy_hms(attr_FireDiscoveryDateTime, tz = "GMT"), tzone = "America/New_York"),
+#    updated = with_tz(dmy_hms(poly_DateCurrent, tz = "GMT"), tzone = "America/New_York")
+#  )
 
 # Simplify the geometry
 # First, repair invalid geometries
@@ -80,7 +81,7 @@ simplified_nfis_perimeters <- st_simplify(nfis_perimeters, dTolerance = 0.2)
 fed_fires <- nfis_perimeters %>% 
   st_drop_geometry() %>%
   mutate(source="NFIS") %>%
-#  mutate_at(vars(started, updated), ms_to_date, t0 = "1970-01-01", timezone = "America/Los_Angeles") %>% 
+  mutate_at(vars(started, updated), ms_to_date, t0 = "1970-01-01", timezone = "America/New_York") %>% 
   mutate(days_burning = floor(difftime(Sys.time(), started, units = "days")), 
          days_sinceupdate = round(difftime(Sys.time(), updated, units = "days"), 1)) %>% 
   filter(acres_burned > 99 & days_sinceupdate < 120 | days_sinceupdate < 120)
