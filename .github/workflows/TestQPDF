@@ -1,0 +1,17 @@
+name: Test QPDF Installation
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - name: Check Homebrew path
+        run: which brew
+        
+      - name: Check if qpdf exists
+        run: brew list | grep qpdf || echo "qpdf not found"
+        
+      - name: Try direct qpdf install
+        run: |
+          brew update
+          brew install qpdf --verbose
