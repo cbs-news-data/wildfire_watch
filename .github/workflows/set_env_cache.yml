@@ -31,4 +31,4 @@ jobs:
           brew install gdal udunits
 
       - name: Install R packages
-        run: Rscript -e 'install.packages(c("tidyverse","stringr","janitor","readr","dplyr","sf","leaflet","htmlwidgets","leaflet.providers","leaflet.extras","lubridate","htmltools"))'
+        run: Rscript -e 'install.packages(c("tidyverse","stringr","janitor","sf","leaflet","htmlwidgets","leaflet.providers","leaflet.extras","lubridate","htmltools"))'
