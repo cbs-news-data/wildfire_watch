@@ -1,7 +1,6 @@
 Name,Location,Started,Updated,Acres burned,% contained
 Red Fire,"Klamath, OR","July 17, 2024 10:35 AM PDT","October 9, 2024 10:47 AM PDT",3060,100
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","November 13, 2024 1:44 PM PST",12543,100
-Maple Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 16, 2024 9:26 AM PDT",11141.58,91
 Clearwater Fire,"Park, WY","July 19, 2024 3:30 PM PDT","August 16, 2024 2:26 PM PDT",1966,93
 Broom Canyon Fire,"Nye, NV","July 29, 2024 8:00 PM PDT","October 9, 2024 1:20 PM PDT",8232,15
 Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 18, 2024 5:30 AM PDT",14104,93
@@ -18,7 +17,6 @@ Bronco Fire,"Sioux, NE","September 18, 2024 11:06 AM PDT","September 20, 2024 10
 Passiac 2 Fire,"Sheridan, WY","September 23, 2024 6:13 PM PDT","September 26, 2024 8:48 AM PDT",356,100
 Elk Fire,"Sheridan, WY","September 27, 2024 7:36 AM PDT","October 27, 2024 9:55 AM PDT",98352,100
 Bear Den Fire,"McKenzie, ND","October 5, 2024 4:00 AM PDT","October 7, 2024 10:20 AM PDT",13500,100
-Posta 3 Fire,"San Diego, CA","October 7, 2024 2:35 PM PDT","November 8, 2024 5:50 AM PST",413,100
 Shoe Fire,"Shasta, CA","October 9, 2024 1:18 PM PDT","October 27, 2024 12:23 AM PDT",5124,100
 Fd05090 Fire,"Essex, MA","October 26, 2024 4:00 PM PDT","October 28, 2024 1:40 PM PDT",141,60
 Hawthorne Drive Fire,"Hartford, CT","October 21, 2024 2:44 PM PDT","November 3, 2024 5:27 PM PST",127,95
@@ -31,9 +29,10 @@ Ganner Fire,"Berks, PA","November 9, 2024 7:37 PM PST","November 11, 2024 1:01 P
 Williams Draw Fire,"Campbell, WY","August 8, 2024 11:57 AM PDT","November 19, 2024 6:59 AM PST",150,Not available
 Mountain Fire,"Ventura, CA","November 6, 2024 9:00 AM PST","November 19, 2024 3:17 PM PST",19904,Not available
 Felicia Fire,"Ventura, CA","October 3, 2024 12:45 PM PDT","November 19, 2024 2:49 PM PST",367,100
-Brauns Fire,"Calaveras, CA","November 20, 2024 5:45 AM PST","November 21, 2024 8:32 AM PST",50,100
-Millar Fire,"San Diego, CA","November 20, 2024 5:48 AM PST","November 21, 2024 8:21 AM PST",11,80
+Brauns Fire,"Calaveras, CA","November 20, 2024 5:45 AM PST","November 21, 2024 11:14 PM PST",50,100
+Millar Fire,"San Diego, CA","November 20, 2024 5:48 AM PST","November 22, 2024 5:38 AM PST",11,90
 Hidden Valley Fire,"Riverside, CA","November 20, 2024 8:43 AM PST","November 21, 2024 7:33 AM PST",46,Not available
-Duck Fire,"San Joaquin, CA","November 21, 2024 3:00 AM PST","November 21, 2024 8:27 AM PST",73,50
-Michigan Fire,"Amador, CA","November 21, 2024 5:40 AM PST","November 21, 2024 9:31 AM PST",24,Not available
-Broadway Fire,"Monterey, CA","November 21, 2024 6:20 AM PST","November 21, 2024 10:07 AM PST",57,Not available
+Duck Fire,"San Joaquin, CA","November 21, 2024 3:00 AM PST","November 22, 2024 12:13 PM PST",73,100
+Michigan Fire,"Amador, CA","November 21, 2024 5:40 AM PST","November 22, 2024 5:41 AM PST",24,100
+Broadway Fire,"Monterey, CA","November 21, 2024 6:20 AM PST","November 22, 2024 11:53 AM PST",57,100
+Canal Fire,"Madera, CA","November 22, 2024 5:35 AM PST","November 22, 2024 12:12 PM PST",34,100
