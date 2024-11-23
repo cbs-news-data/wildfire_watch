@@ -13,9 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install OpenSSL
-        run: brew install openssl@3
-
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
 
