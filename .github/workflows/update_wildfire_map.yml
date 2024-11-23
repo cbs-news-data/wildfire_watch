@@ -8,7 +8,7 @@ name: Wildfire data map rebuild
 jobs:
   render:
     name: Get fire data
-    runs-on: macos-latest
+    runs-on: macos-13
     steps:
       - uses: actions/checkout@v4
       - uses: r-lib/actions/setup-r@v2
