@@ -7,42 +7,30 @@ on:
   
 jobs:
   setup:
-    runs-on: macos-12
+    runs-on: macos-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: 'release'
-          install-r: true
-          remove-openmp-macos: true
-          http-user-agent: default
-          use-public-rspm: false
-          Ncpus: 1
 
       - name: Set up pandoc
         uses: r-lib/actions/setup-pandoc@v2
-
-      - name: Cache Homebrew packages
-        uses: actions/cache@v3
-        with:
-          path: /usr/local/Homebrew
-          key: ${{ runner.os }}-brew-${{ hashFiles('**/Brewfile') }}-${{ runner.arch }}
-          restore-keys: ${{ runner.os }}-brew-
-
-      - name: Install system dependencies
-        run: |
-          brew install gdal udunits
 
       - name: Add cached R packages
         uses: actions/cache@v3
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-r-${{ hashFiles('**/DESCRIPTION') }}-${{ runner.arch }}
+          key: ${{ runner.os }}-r-${{ hashFiles('**/DESCRIPTION') }}
           restore-keys: ${{ runner.os }}-r-
 
+      - name: Install system dependencies
+        run: |
+          brew install gdal udunits
+
       - name: Install R packages
-        run: Rscript -e 'install.packages(c("tidyverse","stringr","janitor","sf","leaflet","htmlwidgets","leaflet.providers","leaflet.extras","lubridate","htmltools"))'
+        run: Rscript -e 'install.packages(c("tidyverse","stringr","janitor","readr","dplyr","sf","leaflet","htmlwidgets","leaflet.providers","leaflet.extras","htmltools"))'
+
+        
