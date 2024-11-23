@@ -12,6 +12,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+          install-r: true
+          remove-openmp-macos: true
+          http-user-agent: default
+          use-public-rspm: false
+          Ncpus: 1
+
       - name: Restore cached Homebrew packages
         uses: actions/cache@v3
         with:
