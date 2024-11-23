@@ -26,14 +26,14 @@ jobs:
         uses: actions/cache@v3
         with:
           path: /usr/local/Homebrew
-          key: ${{ runner.os }}-brew-${{ hashFiles('**/Brewfile') }}
+          key: ${{ runner.os }}-brew-${{ hashFiles('**/Brewfile') }}-${{ runner.arch }}
           restore-keys: ${{ runner.os }}-brew-
 
       - name: Restore cached R packages
         uses: actions/cache@v3
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-r-${{ hashFiles('**/DESCRIPTION') }}
+          key: ${{ runner.os }}-r-${{ hashFiles('**/DESCRIPTION') }}-${{ runner.arch }}
           restore-keys: ${{ runner.os }}-r-
 
       - name: Rebuild fire data map
