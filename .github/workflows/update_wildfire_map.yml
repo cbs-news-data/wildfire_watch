@@ -14,29 +14,22 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Unlink conflicting pkg-config
-      run: |
-        brew unlink pkg-config@0.29.2
-
     - name: Install system dependencies
       run: |
         brew install gdal
         brew install udunits
-        brew install qpdf
         brew install pandoc
 
     - name: Set up R
       uses: r-lib/actions/setup-r@v2
 
-    - name: Restore R environment
+    - name: Install R packages
       run: |
-        mkdir -p ~/.cache/R/renv  # Ensure the directory exists
-        Rscript -e 'install.packages("renv")'
-        Rscript -e 'renv::restore()'
+        Rscript -e 'install.packages(c("stringr", "leaflet", "leaflet.extras", "leaflet.providers", "sf", "htmlwidgets", "htmltools", "janitor", "lubridate"))'
 
     - name: Run R script
       run: |
-        Rscript scripts/WILDFIRES_SCRAPE_BUILD.R  # Adjusted path to the script
+        Rscript scripts/wildfires_scrape_build.R  # Specific path to script in scripts folder
 
     - name: Commit and push changes
       run: |
