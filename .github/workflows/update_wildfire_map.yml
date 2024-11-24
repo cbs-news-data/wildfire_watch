@@ -1,4 +1,4 @@
-name: Use Cached Environment
+name: Update wildfire map
 
 on: [push, pull_request]
 
