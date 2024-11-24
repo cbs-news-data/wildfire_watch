@@ -22,7 +22,7 @@ jobs:
 
     - name: Run R script
       run: |
-        Rscript WILDFIRES_SCRAPE_BUILD.R
+        Rscript wildfires_scrape_build.R
 
     - name: Commit and push changes
       run: |
