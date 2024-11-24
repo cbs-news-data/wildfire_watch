@@ -28,7 +28,7 @@ jobs:
         run: tar -czf r_libs_user.tar.gz ${{ env.R_LIBS_USER }}
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: r-env
           path: r_libs_user.tar.gz
