@@ -13,6 +13,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
+    - name: Unlink conflicting pkg-config
+      run: |
+        brew unlink pkg-config@0.29.2
+
     - name: Install system dependencies
       run: |
         brew install gdal
