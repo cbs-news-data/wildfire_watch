@@ -1,3 +1,4 @@
+library(dplyr)
 library(stringr)
 library(leaflet)
 library(leaflet.extras)

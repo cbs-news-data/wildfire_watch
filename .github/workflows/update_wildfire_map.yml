@@ -2,7 +2,7 @@ name: Update R Wildfire Map
 
 on:
   schedule:
-    - cron: '15 * * * *'  # Runs every hour
+    - cron: '15 * * * *'  # Runs at 15 minutes past every hour
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
@@ -29,7 +29,7 @@ jobs:
 
     - name: Install R packages
       run: |
-        Rscript -e 'install.packages(c("stringr", "leaflet", "leaflet.extras", "leaflet.providers", "sf", "htmlwidgets", "htmltools", "janitor", "lubridate"))'
+        Rscript -e 'install.packages(c("dplyr", "stringr", "leaflet", "leaflet.extras", "leaflet.providers", "sf", "htmlwidgets", "htmltools", "janitor", "lubridate"))'
 
     - name: Run R script
       run: |
