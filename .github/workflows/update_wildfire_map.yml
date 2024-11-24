@@ -1,37 +1,35 @@
-name: Update wildfire map
+name: Update R Wildfire Map
 
-on:   
-  workflow_dispatch:  # Allows the workflow to be triggered manually
+on:
   schedule:
-    - cron: '0 */2 * * *'  # Runs the workflow every two hours
+    - cron: '0 * * * *'  # Runs every hour
+  workflow_dispatch:  # Allows manual trigger
 
 jobs:
-  use-cached-env:
-    runs-on: ubuntu-latest
+  run-script:
+    runs-on: macos-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: r-env
-          path: .
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v2
 
-      - name: Extract artifact
-        run: tar -xzf r_libs_user.tar.gz
+    - name: Install R packages
+      run: |
+        Rscript -e 'install.packages(c("stringr", "leaflet", "leaflet.extras", "leaflet.providers", "sf", "htmlwidgets", "htmltools", "janitor", "lubridate", "dplyr", "readr"))'
 
-      - name: Set up R
-        uses: r-lib/actions/setup-r@v2
+    - name: Run R script
+      run: |
+        Rscript WILDFIRES_SCRAPE_BUILD.R
 
-      - name: Set up pandoc
-        uses: r-lib/actions/setup-pandoc@v2
-
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y gdal-bin libgdal-dev udunits-bin libudunits2-dev
-
-      - name: Use R packages
-        run: Rscript -e 'library(tidyverse); library(sf); ...'  # Your R code here
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add .
+        git commit -m 'Update data and map'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
