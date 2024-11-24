@@ -1,6 +1,9 @@
 name: Update wildfire map
 
-on: [push, pull_request]
+on:   
+  workflow_dispatch:  # Allows the workflow to be triggered manually
+  schedule:
+    - cron: '0 */2 * * *'  # Runs the workflow every two hours
 
 jobs:
   use-cached-env:
