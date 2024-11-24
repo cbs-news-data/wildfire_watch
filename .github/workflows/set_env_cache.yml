@@ -8,6 +8,7 @@ on:
 jobs:
   cache-packages:
     runs-on: macos-latest
+    timeout-minutes: 120  # Increase the timeout to 2 hours
 
     steps:
     - name: Checkout repository
