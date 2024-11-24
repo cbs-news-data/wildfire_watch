@@ -2,7 +2,7 @@ name: Update R Wildfire Map
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every hour
+    - cron: '15 * * * *'  # Runs every hour
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
@@ -13,6 +13,10 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+
+    - name: Unlink conflicting pkg-config
+      run: |
+        brew unlink pkg-config@0.29.2
 
     - name: Install system dependencies
       run: |
@@ -29,7 +33,7 @@ jobs:
 
     - name: Run R script
       run: |
-        Rscript scripts/wildfires_scrape_build.R  # Specific path to script in scripts folder
+        Rscript scripts/wildfires_scrape_build.R  # Adjusted path to the script
 
     - name: Commit and push changes
       run: |
