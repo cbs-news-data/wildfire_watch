@@ -1,12 +1,12 @@
-name: Update R Wildfire Map
+name: Cache R Packages Monthly
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every hour
+    - cron: '0 0 1 * *'  # Runs at midnight on the first day of every month
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
-  run-script:
+  cache-packages:
     runs-on: macos-latest
 
     steps:
@@ -16,20 +16,14 @@ jobs:
     - name: Set up R
       uses: r-lib/actions/setup-r@v2
 
+    - name: Cache R packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.R
+        key: ${{ runner.os }}-R-${{ hashFiles('**/DESCRIPTION') }}
+        restore-keys: |
+          ${{ runner.os }}-R-
+
     - name: Install R packages
       run: |
         Rscript -e 'install.packages(c("stringr", "leaflet", "leaflet.extras", "leaflet.providers", "sf", "htmlwidgets", "htmltools", "janitor", "lubridate", "dplyr", "readr"))'
-
-    - name: Run R script
-      run: |
-        Rscript WILDFIRES_SCRAPE_BUILD.R
-
-    - name: Commit and push changes
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add .
-        git commit -m 'Update data and map'
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
