@@ -37,5 +37,6 @@ jobs:
 
     - name: Restore R environment
       run: |
+        mkdir -p ~/.cache/R/renv  # Ensure the directory exists
         Rscript -e 'install.packages("renv")'
         Rscript -e 'renv::restore()'
