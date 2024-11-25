@@ -2,7 +2,7 @@ name: Update R Wildfire Map
 
 on:
   schedule:
-    - cron: '15 * * * *'  # Runs at 15 minutes past every hour
+    - cron: '15 */4 * * *'  # Runs at 15 minutes past every hour
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
