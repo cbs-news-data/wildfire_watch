@@ -19,7 +19,7 @@ jobs:
     # This step unlinks the conflicting pkg-config package to avoid conflicts with pkgconf.
     - name: Unlink conflicting pkg-config
       run: |
-        brew unlink pkg-config@0.29.2
+        brew unlink pkg-config
 
     # Step 3: Install system dependencies
     # This step installs necessary system libraries and tools using Homebrew.
