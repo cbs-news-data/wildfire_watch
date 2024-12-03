@@ -2,7 +2,7 @@ Name,Location,Started,Updated,Acres burned,% contained
 Vista Fire,"San Bernardino, CA","July 7, 2024 9:51 AM PDT","September 16, 2024 9:31 AM PDT",2936,100
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","November 13, 2024 1:44 PM PST",12543,100
 Clearwater Fire,"Park, WY","July 19, 2024 3:30 PM PDT","August 16, 2024 2:26 PM PDT",1966,93
-Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 18, 2024 5:30 AM PDT",14104,93
+Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 18, 2024 5:30 AM PDT",14104,99
 Line Fire,"San Bernardino, CA","September 5, 2024 6:00 PM PDT","October 10, 2024 6:42 PM PDT",43978,99
 Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","October 30, 2024 1:00 PM PDT",56030,99
 Pack Trail Fire,"Teton, WY","August 16, 2024 1:52 PM PDT","October 27, 2024 3:47 AM PDT",89930,95
@@ -21,4 +21,4 @@ Horseshoe Fire,"Inyo, CA","October 30, 2024 11:27 AM PDT","November 27, 2024 10:
 Fd120021 Fire,"Berkshire, MA","November 18, 2024 5:30 PM PST","November 25, 2024 8:16 AM PST",1676,100
 Kdf - Confluence 2 Fire,"Leslie, KY","October 28, 2024 11:17 AM PDT","December 2, 2024 9:04 AM PST",675,Not available
 Canyon Crest Fire,"Riverside, San Bernardino, CA","November 28, 2024 12:04 PM PST","December 1, 2024 12:59 PM PST",254,100
-Derrick Fire,"Fresno, CA","December 2, 2024 6:00 AM PST","December 2, 2024 7:54 AM PST",70,Not available
+Derrick Fire,"Fresno, CA","December 2, 2024 6:00 AM PST","December 2, 2024 9:02 AM PST",74,Not available
