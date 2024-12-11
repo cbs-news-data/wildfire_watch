@@ -1,5 +1,7 @@
 Name,Location,Started,Updated,Acres burned,% contained
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","November 13, 2024 1:44 PM PST",12543,100
+Maple Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 16, 2024 9:26 AM PDT",11141.58,91
+Bullpup Fire,"Lane, OR","July 19, 2024 1:55 PM PDT","October 18, 2024 5:42 AM PDT",12917,100
 Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 18, 2024 5:30 AM PDT",14104,99
 Line Fire,"San Bernardino, CA","September 5, 2024 6:00 PM PDT","October 10, 2024 6:42 PM PDT",43978,99
 Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","October 30, 2024 1:00 PM PDT",56030,99
@@ -18,7 +20,6 @@ Kdf - Confluence 2 Fire,"Leslie, KY","October 28, 2024 11:17 AM PDT","December 2
 Westover Afrb Rx Fire,"Hampden, MA","October 22, 2024 6:00 AM PDT","December 3, 2024 11:20 AM PST",119.37,Not available
 Thomas Road Fire,"Essex, MA","November 17, 2024 5:50 PM PST","December 6, 2024 12:13 PM PST",494,Not available
 Buck Creek Fire,"McDowell, NC","December 5, 2024 6:45 AM PST","December 8, 2024 6:13 PM PST",518,100
-Big Levels Fire,"Augusta, VA","December 2, 2024 6:31 AM PST","December 8, 2024 4:41 PM PST",1965,10
 NA Fire,"Custer, MT","December 8, 2024 1:32 PM PST","December 9, 2024 11:49 AM PST",851.9,Not available
 Franklin Fire,"Los Angeles, CA","December 9, 2024 10:50 PM PST","December 10, 2024 10:57 AM PST",850,0
-Border 79 Fire,"San Diego, CA","December 10, 2024 2:52 AM PST","December 10, 2024 4:01 AM PST",24,0
+Border 79 Fire,"San Diego, CA","December 10, 2024 2:52 AM PST","December 10, 2024 7:46 AM PST",24,50
