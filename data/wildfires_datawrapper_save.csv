@@ -1,4 +1,5 @@
 Name,Location,Started,Updated,Acres burned,% contained
+Easy Fire,"Skagit, WA","July 17, 2024 7:55 PM PDT","August 23, 2024 5:24 AM PDT",2130,100
 Happy Fire,"Fresno, CA","July 16, 2024 9:18 AM PDT","November 13, 2024 1:44 PM PST",12543,100
 Maple Fire,"Douglas, OR","July 19, 2024 8:45 AM PDT","August 16, 2024 9:26 AM PDT",11141.58,91
 Chalk Fire,"Lane, OR","July 17, 2024 11:36 AM PDT","October 12, 2024 4:54 AM PDT",6015,100
@@ -10,6 +11,7 @@ Coffee Pot Fire,"Tulare, CA","August 3, 2024 8:05 AM PDT","September 18, 2024 5:
 Line Fire,"San Bernardino, CA","September 5, 2024 6:00 PM PDT","October 10, 2024 6:42 PM PDT",43978,99
 Boulder Creek Fire,"Lane, OR","September 7, 2024 11:02 AM PDT","September 28, 2024 9:02 AM PDT",523,84
 Young Grasshopper Fire,"Lane, OR","September 6, 2024 5:14 PM PDT","October 22, 2024 8:44 AM PDT",5313,98
+Bridge Fire,"Los Angeles, CA","September 8, 2024 2:12 PM PDT","October 30, 2024 1:00 PM PDT",56030,99
 Fd05090 Fire,"Essex, MA","October 26, 2024 4:00 PM PDT","October 28, 2024 1:40 PM PDT",141,100
 Shoofly Fire,"Chelan, WA","July 8, 2024 2:11 PM PDT","December 2, 2024 3:55 PM PST",103.72,Not available
 Highland Fire,"Fayette, WV","November 5, 2024 1:00 PM PST","November 9, 2024 4:20 PM PST",210,90
@@ -24,7 +26,7 @@ Kdf - Confluence 2 Fire,"Leslie, KY","October 28, 2024 11:17 AM PDT","December 2
 Westover Afrb Rx Fire,"Hampden, MA","October 22, 2024 6:00 AM PDT","December 3, 2024 11:20 AM PST",119.37,Not available
 Thomas Road Fire,"Essex, MA","November 17, 2024 5:50 PM PST","December 6, 2024 12:13 PM PST",494,Not available
 Buck Creek Fire,"McDowell, NC","December 5, 2024 6:45 AM PST","December 8, 2024 6:13 PM PST",518,100
-Big Levels Fire,"Augusta, VA","December 2, 2024 6:31 AM PST","December 11, 2024 9:53 AM PST",1700,25
+Big Levels Fire,"Augusta, VA","December 2, 2024 6:31 AM PST","December 12, 2024 4:27 PM PST",1627,34
 NA Fire,"Custer, MT","December 8, 2024 1:32 PM PST","December 9, 2024 11:49 AM PST",851.9,Not available
-Franklin Fire,"Los Angeles, CA","December 9, 2024 10:50 PM PST","December 11, 2024 8:02 PM PST",4037,7
+Franklin Fire,"Los Angeles, CA","December 9, 2024 10:50 PM PST","December 12, 2024 2:49 PM PST",4037,7
 Rogers Fire,"San Bernardino, CA","December 10, 2024 12:06 PM PST","December 11, 2024 12:16 PM PST",10,100
