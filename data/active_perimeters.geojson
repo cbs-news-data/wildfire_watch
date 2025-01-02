@@ -60405,7 +60405,7 @@
         "poly_Source" : "2024 NIFS", 
         "attr_SourceOID" : 33042852, 
         "attr_ABCDMisc" : null, 
-        "attr_ADSPermissionState" : "ICS209", 
+        "attr_ADSPermissionState" : "DEFAULT", 
         "attr_CalculatedAcres" : 181200.4014, 
         "attr_ContainmentDateTime" : null, 
         "attr_ControlDateTime" : null, 
@@ -60459,7 +60459,7 @@
         "attr_IsTrespass" : null, 
         "attr_IsUnifiedCommand" : 0, 
         "attr_LocalIncidentIdentifier" : "001636", 
-        "attr_ModifiedBySystem" : "ics209", 
+        "attr_ModifiedBySystem" : "wildcade", 
         "attr_PercentContained" : 100, 
         "attr_PercentPerimToBeContained" : 100, 
         "attr_POOCity" : null, 
@@ -60493,7 +60493,7 @@
         "attr_OrganizationalAssessment" : "Type 3 Team", 
         "attr_StratDecisionPublishDate" : 1734650003000, 
         "attr_CreatedOnDateTime_dt" : 1734296153663, 
-        "attr_ModifiedOnDateTime_dt" : 1735676813343, 
+        "attr_ModifiedOnDateTime_dt" : 1735845328910, 
         "attr_Source" : "IRWIN", 
         "attr_ActiveFireCandidate" : 1, 
         "attr_IsCpxChild" : 0, 
@@ -61653,6 +61653,324 @@
         "GlobalID" : "00fabb89-afe3-47a7-946c-65d45bcbf2af", 
         "Shape__Area" : 1.032089198815811E-05, 
         "Shape__Length" : 0.03594774375750226, 
+        "attr_IncidentComplexityLevel" : null
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 36084, 
+      "geometry" : 
+      {
+        "type" : "MultiPolygon", 
+        "coordinates" : 
+        [
+          [
+            [
+              [-114.675753344996, 32.7355769238891], 
+              [-114.675862004315, 32.7355940232765], 
+              [-114.677985070081, 32.7357810153559], 
+              [-114.679386384432, 32.7363908530564], 
+              [-114.680754991123, 32.7371099171413], 
+              [-114.682042817711, 32.7378325041764], 
+              [-114.682769117296, 32.7381318234389], 
+              [-114.683104928211, 32.7381817471621], 
+              [-114.683061892621, 32.7382862808646], 
+              [-114.682639511961, 32.738295560603], 
+              [-114.681911423829, 32.7379637275562], 
+              [-114.6807702535, 32.7372731234666], 
+              [-114.679324886666, 32.7365441913855], 
+              [-114.678092748439, 32.7359450590941], 
+              [-114.676413449525, 32.7358256841754], 
+              [-114.675733089783, 32.7358685303736], 
+              [-114.674902265825, 32.735968348591], 
+              [-114.673986218695, 32.7362660404322], 
+              [-114.67331852969, 32.7364089444343], 
+              [-114.670879029671, 32.7360374591415], 
+              [-114.670134508658, 32.7356098728317], 
+              [-114.670892613096, 32.735882215733], 
+              [-114.673670620773, 32.7362983944358], 
+              [-114.674548566758, 32.7359114513594], 
+              [-114.675753344996, 32.7355769238891]
+            ]
+          ], 
+          [
+            [
+              [-114.664949213649, 32.7354610410524], 
+              [-114.664976804505, 32.7354627986744], 
+              [-114.664597254619, 32.7369189267939], 
+              [-114.664338787752, 32.736921428682], 
+              [-114.66492162998, 32.7354690856113], 
+              [-114.664949213649, 32.7354610410524]
+            ]
+          ], 
+          [
+            [
+              [-114.667619555544, 32.734831407357], 
+              [-114.666834027337, 32.734925492894], 
+              [-114.66675160152, 32.7349353654089], 
+              [-114.666868947547, 32.734901140686], 
+              [-114.666900008595, 32.7348920812428], 
+              [-114.666926993088, 32.7348724601285], 
+              [-114.667619555544, 32.734831407357]
+            ]
+          ], 
+          [
+            [
+              [-114.66773647577, 32.7348174037089], 
+              [-114.667801890191, 32.7348205993398], 
+              [-114.667619555544, 32.734831407357], 
+              [-114.66773647577, 32.7348174037089]
+            ]
+          ], 
+          [
+            [
+              [-114.667950166111, 32.7348118096543], 
+              [-114.668001075435, 32.7348303298046], 
+              [-114.667801890191, 32.7348205993398], 
+              [-114.667950166111, 32.7348118096543]
+            ]
+          ], 
+          [
+            [
+              [-114.667908804083, 32.7347967632101], 
+              [-114.66773647577, 32.7348174037089], 
+              [-114.667567575429, 32.7348091520438], 
+              [-114.667908804083, 32.7347967632101]
+            ]
+          ], 
+          [
+            [
+              [-114.667913554374, 32.7347965909226], 
+              [-114.667954973895, 32.7348115247754], 
+              [-114.667950166111, 32.7348118096543], 
+              [-114.667908804083, 32.7347967632101], 
+              [-114.667913554374, 32.7347965909226]
+            ]
+          ], 
+          [
+            [
+              [-114.667048909743, 32.7347838136844], 
+              [-114.667567575429, 32.7348091520438], 
+              [-114.666984971254, 32.7348303041126], 
+              [-114.667048909743, 32.7347838136844]
+            ]
+          ], 
+          [
+            [
+              [-114.668670561969, 32.7347691065211], 
+              [-114.670892613096, 32.735882215733], 
+              [-114.668001075435, 32.7348303298046], 
+              [-114.668008077803, 32.7348306721126], 
+              [-114.667954973895, 32.7348115247754], 
+              [-114.668670561969, 32.7347691065211]
+            ]
+          ], 
+          [
+            [
+              [-114.666894736382, 32.7347690770509], 
+              [-114.667052156255, 32.7347733751729], 
+              [-114.667062864173, 32.7347736676085], 
+              [-114.667048909743, 32.7347838136844], 
+              [-114.667037954788, 32.7347832786862], 
+              [-114.666879737212, 32.7347755491703], 
+              [-114.666894736382, 32.7347690770509]
+            ]
+          ], 
+          [
+            [
+              [-114.666560425655, 32.734759949586], 
+              [-114.666879737212, 32.7347755491703], 
+              [-114.666416276594, 32.7349755279819], 
+              [-114.66675160152, 32.7349353654089], 
+              [-114.664949213649, 32.7354610410524], 
+              [-114.663503778543, 32.7353689449311], 
+              [-114.663470964882, 32.7353597419634], 
+              [-114.663545799935, 32.7353466255226], 
+              [-114.663639020807, 32.7353700776389], 
+              [-114.666560425655, 32.734759949586]
+            ]
+          ], 
+          [
+            [
+              [-114.66732378883, 32.7345839440117], 
+              [-114.668670561969, 32.7347691065211], 
+              [-114.667913554374, 32.7347965909226], 
+              [-114.66732378883, 32.7345839440117]
+            ]
+          ], 
+          [
+            [
+              [-114.66732378883, 32.7345839440117], 
+              [-114.667908804083, 32.7347967632101], 
+              [-114.667062864173, 32.7347736676085], 
+              [-114.66732378883, 32.7345839440117]
+            ]
+          ], 
+          [
+            [
+              [-114.66732378883, 32.7345839440117], 
+              [-114.666894736382, 32.7347690770509], 
+              [-114.666560425655, 32.734759949586], 
+              [-114.66732378883, 32.7345839440117]
+            ]
+          ], 
+          [
+            [
+              [-114.650436856572, 32.7334017853892], 
+              [-114.652143800241, 32.7337174658902], 
+              [-114.655300976918, 32.7336267470415], 
+              [-114.657486029133, 32.733495718281], 
+              [-114.659088235528, 32.7338934172571], 
+              [-114.660699178937, 32.7345823639498], 
+              [-114.662019634133, 32.7349527006809], 
+              [-114.661975233103, 32.73495151205], 
+              [-114.662365155835, 32.7350496061569], 
+              [-114.663470964882, 32.7353597419634], 
+              [-114.662944564702, 32.735327368728], 
+              [-114.660673015504, 32.7347666000388], 
+              [-114.658418458839, 32.7339669605727], 
+              [-114.655967561893, 32.7337150863286], 
+              [-114.653667906207, 32.7338933273341], 
+              [-114.651783223672, 32.733799274712], 
+              [-114.650325328035, 32.7335614280228], 
+              [-114.650436856572, 32.7334017853892]
+            ]
+          ], 
+          [
+            [
+              [-114.662019634133, 32.7349527006809], 
+              [-114.662194705002, 32.7349573902186], 
+              [-114.66224432704, 32.735011254899], 
+              [-114.662517359191, 32.7350432625171], 
+              [-114.663127712324, 32.7351285060368], 
+              [-114.664052576418, 32.7351950676967], 
+              [-114.664480293969, 32.7351828391131], 
+              [-114.663545799935, 32.7353466255226], 
+              [-114.662365155835, 32.7350496061569], 
+              [-114.662019634133, 32.7349527006809]
+            ]
+          ]
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 36084, 
+        "poly_SourceOID" : 65458, 
+        "poly_IncidentName" : "Levee", 
+        "poly_FeatureCategory" : "Wildfire Daily Fire Perimeter", 
+        "poly_MapMethod" : "Auto-generated for InFORM", 
+        "poly_GISAcres" : 16.7, 
+        "poly_DeleteThis" : "No", 
+        "poly_FeatureAccess" : "Public", 
+        "poly_FeatureStatus" : "Approved", 
+        "poly_IsVisible" : "Yes", 
+        "poly_CreateDate" : 1735037678111, 
+        "poly_DateCurrent" : 1735257453489, 
+        "poly_PolygonDateTime" : 1735052113310, 
+        "poly_IRWINID" : "{A4F1278C-EBAA-4E98-B8F3-78A63C275D1F}", 
+        "poly_FORID" : null, 
+        "poly_Acres_AutoCalc" : 16.739770874961017, 
+        "poly_SourceGlobalID" : "{777F500D-A00C-4AD1-A319-402C9DF89A82}", 
+        "poly_Source" : "2024 NIFS", 
+        "attr_SourceOID" : 33043892, 
+        "attr_ABCDMisc" : null, 
+        "attr_ADSPermissionState" : "DEFAULT", 
+        "attr_CalculatedAcres" : null, 
+        "attr_ContainmentDateTime" : null, 
+        "attr_ControlDateTime" : null, 
+        "attr_CreatedBySystem" : "wildcade", 
+        "attr_IncidentSize" : 17, 
+        "attr_DiscoveryAcres" : 0.01, 
+        "attr_DispatchCenterID" : "AZPDC", 
+        "attr_EstimatedCostToDate" : null, 
+        "attr_FinalAcres" : null, 
+        "attr_FFReportApprovedByTitle" : null, 
+        "attr_FFReportApprovedByUnit" : null, 
+        "attr_FFReportApprovedDate" : null, 
+        "attr_FireBehaviorGeneral" : null, 
+        "attr_FireBehaviorGeneral1" : null, 
+        "attr_FireBehaviorGeneral2" : null, 
+        "attr_FireBehaviorGeneral3" : null, 
+        "attr_FireCause" : "Human", 
+        "attr_FireCauseGeneral" : null, 
+        "attr_FireCauseSpecific" : null, 
+        "attr_FireCode" : "SD5B", 
+        "attr_FireDepartmentID" : null, 
+        "attr_FireDiscoveryDateTime" : 1735020953000, 
+        "attr_FireMgmtComplexity" : null, 
+        "attr_FireOutDateTime" : null, 
+        "attr_FireStrategyConfinePercent" : null, 
+        "attr_FireStrategyFullSuppPrcnt" : null, 
+        "attr_FireStrategyMonitorPercent" : null, 
+        "attr_FireStrategyPointZonePrcnt" : null, 
+        "attr_FSJobCode" : "PD", 
+        "attr_FSOverrideCode" : "1522", 
+        "attr_GACC" : "SWCC", 
+        "attr_ICS209ReportDateTime" : null, 
+        "attr_ICS209RptForTimePeriodFrom" : null, 
+        "attr_ICS209RptForTimePeriodTo" : null, 
+        "attr_ICS209ReportStatus" : null, 
+        "attr_IncidentManagementOrg" : null, 
+        "attr_IncidentName" : "Levee", 
+        "attr_IncidentShortDescription" : null, 
+        "attr_IncidentTypeCategory" : "WF", 
+        "attr_IncidentTypeKind" : "FI", 
+        "attr_InitialLatitude" : 32.751746, 
+        "attr_InitialLongitude" : -114.647709, 
+        "attr_InitialResponseAcres" : null, 
+        "attr_InitialResponseDateTime" : null, 
+        "attr_IrwinID" : "{A4F1278C-EBAA-4E98-B8F3-78A63C275D1F}", 
+        "attr_IsFireCauseInvestigated" : null, 
+        "attr_IsFireCodeRequested" : 0, 
+        "attr_IsFSAssisted" : 1, 
+        "attr_IsMultiJurisdictional" : null, 
+        "attr_IsReimbursable" : null, 
+        "attr_IsTrespass" : 1, 
+        "attr_IsUnifiedCommand" : null, 
+        "attr_LocalIncidentIdentifier" : "001657", 
+        "attr_ModifiedBySystem" : "wildcade", 
+        "attr_PercentContained" : null, 
+        "attr_PercentPerimToBeContained" : null, 
+        "attr_POOCity" : null, 
+        "attr_POOCounty" : "Imperial", 
+        "attr_POODispatchCenterID" : "AZPDC", 
+        "attr_POOFips" : "06025", 
+        "attr_POOJurisdictionalAgency" : "BIA", 
+        "attr_POOJurisdictionalUnit" : "AZFYA", 
+        "attr_POOJurisdictUnitParentUnit" : null, 
+        "attr_POOLandownerCategory" : "BIA", 
+        "attr_POOLandownerKind" : "Federal", 
+        "attr_POOLegalDescPrincipalMerid" : null, 
+        "attr_POOLegalDescQtr" : null, 
+        "attr_POOLegalDescQtrQtr" : null, 
+        "attr_POOLegalDescRange" : null, 
+        "attr_POOLegalDescSection" : null, 
+        "attr_POOLegalDescTownship" : null, 
+        "attr_POOPredictiveServiceAreaID" : "SW03", 
+        "attr_POOProtectingAgency" : "BLM", 
+        "attr_POOProtectingUnit" : "AZCRD", 
+        "attr_POOState" : "US-CA", 
+        "attr_PredominantFuelGroup" : null, 
+        "attr_PredominantFuelModel" : null, 
+        "attr_PrimaryFuelModel" : null, 
+        "attr_SecondaryFuelModel" : null, 
+        "attr_TotalIncidentPersonnel" : null, 
+        "attr_UniqueFireIdentifier" : "2024-AZCRD-001657", 
+        "attr_FORID" : null, 
+        "attr_WFDSSDecisionStatus" : "No Decision", 
+        "attr_EstimatedFinalCost" : null, 
+        "attr_OrganizationalAssessment" : null, 
+        "attr_StratDecisionPublishDate" : null, 
+        "attr_CreatedOnDateTime_dt" : 1735037670380, 
+        "attr_ModifiedOnDateTime_dt" : 1735844666507, 
+        "attr_Source" : "IRWIN", 
+        "attr_ActiveFireCandidate" : 1, 
+        "attr_IsCpxChild" : 0, 
+        "attr_CpxName" : null, 
+        "attr_CpxID" : null, 
+        "attr_SourceGlobalID" : "{4F059277-6DC4-472E-A738-98117CCC9270}", 
+        "GlobalID" : "133928f3-bfba-46a9-9917-241562d2f8d5", 
+        "Shape__Area" : 6.5170920606760774E-06, 
+        "Shape__Length" : 0.088019456633889978, 
         "attr_IncidentComplexityLevel" : null
       }
     }, 
