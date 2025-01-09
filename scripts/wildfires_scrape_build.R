@@ -172,6 +172,7 @@ write_csv(fires,"data/wildfires_save.csv")
 
 #export pretty table for datawrapper
 fires_fordatawrappertable <- fires %>% 
+  filter(updated <= Sys.Date()-7) %>%
   mutate(county_state = paste0(county, ", ", state)) %>% 
   select(name, county_state, started, updated, acres_burned, percent_contained) %>% 
   mutate(started = format(as.POSIXct(started), format = "%B %d, %Y %I:%M %p %Z", tz = "America/Los_Angeles"),
@@ -181,7 +182,7 @@ fires_fordatawrappertable <- fires %>%
   mutate(percent_contained = case_when(is.na(as.character(percent_contained)) == TRUE ~ "Not available",
                                        TRUE ~ as.character(percent_contained))) %>% 
   rename(Name = name, 
-         `Location` = county_state, 
+         `County` = county_state, 
          Started = started, 
          Updated = updated, 
          `Acres burned` = acres_burned, 
@@ -189,14 +190,14 @@ fires_fordatawrappertable <- fires %>%
 
 # create a copy of the same table but for california only, filtering the records that end with the string ", CA"
 fires_fordatawrappertable_cali <- fires_fordatawrappertable %>% 
-  filter(grepl(", CA", Location))
+  filter(grepl(", CA", County))
 # Then manually drop the individual duplicate where the fire is name "Hurst (2025-Calfd-003294) Fire"
 fires_fordatawrappertable_cali <- fires_fordatawrappertable_cali %>% 
   filter(!grepl("2025-Calfd-003294", Name))
   
 # Save pretty datawrapper file as csv
 write_csv(fires_fordatawrappertable,"data/wildfires_datawrapper_save.csv")  
-write_csv(fires_fordatawrappertable,"data/wildfires_datawrapper_cali.csv")  
+write_csv(fires_fordatawrappertable_cali,"data/wildfires_datawrapper_cali.csv")  
 
 # Remove fires without lat longs so we can map
 # Manual validation = all tiny <1ac and all <10ac
