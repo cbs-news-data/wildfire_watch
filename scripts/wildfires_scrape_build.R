@@ -172,7 +172,7 @@ write_csv(fires,"data/wildfires_save.csv")
 
 #export pretty table for datawrapper
 fires_fordatawrappertable <- fires %>% 
-  filter(updated <= Sys.Date()-7) %>%
+  filter(updated >= Sys.Date()-7) %>%
   mutate(county_state = paste0(county, ", ", state)) %>% 
   select(name, county_state, started, updated, acres_burned, percent_contained) %>% 
   mutate(started = format(as.POSIXct(started), format = "%B %d, %Y %I:%M %p %Z", tz = "America/Los_Angeles"),
