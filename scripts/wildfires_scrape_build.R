@@ -186,9 +186,17 @@ fires_fordatawrappertable <- fires %>%
          Updated = updated, 
          `Acres burned` = acres_burned, 
          `% contained` = percent_contained)
+
+# create a copy of the same table but for california only, filtering the records that end with the string ", CA"
+fires_fordatawrappertable_cali <- fires_fordatawrappertable %>% 
+  filter(grepl(", CA", Location))
+# Then manually drop the individual duplicate where the fire is name "Hurst (2025-Calfd-003294) Fire"
+fires_fordatawrappertable_cali <- fires_fordatawrappertable_cali %>% 
+  filter(!grepl("2025-Calfd-003294", Name))
   
 # Save pretty datawrapper file as csv
 write_csv(fires_fordatawrappertable,"data/wildfires_datawrapper_save.csv")  
+write_csv(fires_fordatawrappertable,"data/wildfires_datawrapper_cali.csv")  
 
 # Remove fires without lat longs so we can map
 # Manual validation = all tiny <1ac and all <10ac
