@@ -1,6 +1,4 @@
 fed_fire_id,name,state,county,started,updated,acres_burned,percent_contained,type,fire_behavior,fire_cause,source,days_burning,days_sinceupdate,latitude,longitude,location,info_url,state_name
-2024-CAANF-243334,Bridge Fire,CA,Los Angeles,2024-09-08T21:12:00Z,2024-10-30T20:00:04Z,56030,100,WF,Minimal,Undetermined,NFIS,127,75.1,34.2305,-117.758,NA,NA,California
-2024-WYBHF-000399,Elk Fire,WY,Sheridan,2024-09-27T14:36:00Z,2024-10-27T16:55:07Z,98352,100,WF,Minimal,Natural,NFIS,108,78.3,44.89798,-107.526283,NA,NA,Wyoming
 2024-ORPRD-000793,793 Rv Hawley Ridge Fire,OR,Crook,2024-09-03T01:40:00Z,2024-11-21T19:26:29Z,198.83,NA,WF,NA,Natural,NFIS,132,53.2,44.083,-120.144333,NA,NA,Oregon
 2024-ORPRD-000672,0672 Rv Fire,OR,Gilliam,2024-08-18T03:02:02Z,2024-11-21T19:16:54Z,5488.4,NA,WF,NA,Undetermined,NFIS,148,53.2,45.744671,-120.176422,NA,NA,Oregon
 2024-CAINF-001995,Horseshoe Fire,CA,Inyo,2024-10-30T18:27:00Z,2024-11-28T06:25:45Z,4537,95,WF,Minimal,Undetermined,NFIS,75,46.7,36.512672,-118.146973,NA,NA,California

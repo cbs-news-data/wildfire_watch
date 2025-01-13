@@ -84,7 +84,7 @@ fed_fires <- nfis_perimeters %>%
   mutate_at(vars(started, updated), ms_to_date, t0 = "1970-01-01", timezone = "America/New_York") %>% 
   mutate(days_burning = floor(difftime(Sys.time(), started, units = "days")), 
          days_sinceupdate = round(difftime(Sys.time(), updated, units = "days"), 1)) %>% 
-  filter(acres_burned > 99 & days_sinceupdate < 90 | days_sinceupdate < 90)
+  filter(acres_burned > 99 & days_sinceupdate < 60 | days_sinceupdate < 60)
 
 # Standardize fire name and state columns
 fed_fires <- fed_fires %>% 
@@ -144,8 +144,8 @@ try(
 # except for leaving in very new fires
 try(
   cal_fires <- cal_fires %>%
-    filter(acres_burned>99 & days_sinceupdate<8 |
-             days_sinceupdate<7)
+    filter(acres_burned>99 & days_sinceupdate<14 |
+             days_sinceupdate<10)
 )
 
 # If a fire in fed_fires in california is also in cal_fires, add the latitude and longitude from cal_fires file
@@ -346,9 +346,9 @@ wildfire_map <- leaflet(nfis_perimeters, options = leafletOptions(zoomControl = 
   addControl(position = "topleft", html = headerhtml, className="map-title") %>%
   setView(-118.3,34.2, zoom = 8.5) %>%
   #  addProviderTiles(providers$CartoDB.Positron) %>%
-  addProviderTiles(providers$OpenStreetMap) %>%
+  addProviderTiles(providers$CartoDB.Voyager) %>%
   addPolygons(data = nfis_perimeters, 
-              color = "maroon",
+              color = "darkred",
               popup = perimeterLabel,
               weight = 1.5) %>%
   addAwesomeMarkers(data = fires,
