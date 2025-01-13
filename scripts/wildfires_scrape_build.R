@@ -152,8 +152,10 @@ try(
 try(
   fed_fires <- fed_fires %>%
     left_join(cal_fires %>% select(name,state,latitude,longitude), by=c("name","state")) %>%
-    mutate(cali_latitude = ifelse(is.na(latitude.x), latitude.y, latitude.x),
-           cali_longitude = ifelse(is.na(longitude.x), longitude.y, longitude.x)))
+    mutate(latitude = ifelse(is.na(latitude.x), latitude.y, latitude.x),
+           longitude = ifelse(is.na(longitude.x), longitude.y, longitude.x)) %>%
+    select(-latitude.x, -longitude.x, -latitude.y, -longitude.y)
+)
 
 # Merge and clean CA and national
 # Temporarily reduce California file
