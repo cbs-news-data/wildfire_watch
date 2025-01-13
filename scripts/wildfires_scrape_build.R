@@ -346,9 +346,9 @@ wildfire_map <- leaflet(nfis_perimeters, options = leafletOptions(zoomControl = 
   addControl(position = "topleft", html = headerhtml, className="map-title") %>%
   setView(-118.3,34.2, zoom = 8.5) %>%
   #  addProviderTiles(providers$CartoDB.Positron) %>%
-  addProviderTiles(providers$Esri.WorldStreetMap) %>%
+  addProviderTiles(providers$OpenStreetMap) %>%
   addPolygons(data = nfis_perimeters, 
-              color = "red",
+              color = "maroon",
               popup = perimeterLabel,
               weight = 1.5) %>%
   addAwesomeMarkers(data = fires,
