@@ -128,6 +128,10 @@ try(
 try(
   cal_fires$percent_contained <- as.numeric(cal_fires$percent_contained)
 )
+# if percent contained is NA, replace with numeric zero
+try(
+  cal_fires$percent_contained[is.na(cal_fires$percent_contained)] <- 0
+)
 # calculating fields for time passed elements in popups and for filtering old fires
 try(
   cal_fires$days_burning <- floor(difftime(Sys.Date(),cal_fires$started, units="days"))+1
