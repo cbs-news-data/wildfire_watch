@@ -1,6 +1,6 @@
 Name,County,Started,Updated,Acres burned,% contained
-Palisades Fire,"Los Angeles, CA","January 7, 2025 10:38 AM PST","January 15, 2025 6:09 PM PST",23713,21
-Eaton Fire,"Los Angeles, CA","January 7, 2025 6:18 PM PST","January 16, 2025 12:36 AM PST",14117,45
+Palisades Fire,"Los Angeles, CA","January 7, 2025 10:38 AM PST","January 15, 2025 6:09 PM PST",23713,22
+Eaton Fire,"Los Angeles, CA","January 7, 2025 6:18 PM PST","January 16, 2025 12:36 AM PST",14117,55
 Hurst Fire,"Los Angeles, CA","January 7, 2025 10:30 PM PST","January 10, 2025 7:25 PM PST",799,98
 Kenneth Fire,"Ventura, CA","January 9, 2025 2:52 PM PST","January 10, 2025 5:34 PM PST",1052,100
 Oak Fire,"Santa Barbara, CA","January 1, 2025 12:08 PM PST","January 12, 2025 1:36 AM PST",42,100
@@ -11,4 +11,4 @@ Sunset Fire,"Los Angeles, CA","January 8, 2025 9:57 AM PST","January 9, 2025 7:5
 Archer Fire,"Los Angeles, CA","January 10, 2025 3:24 AM PST","January 11, 2025 12:41 AM PST",19,100
 Auto Fire,"Ventura, CA","January 13, 2025 1:25 PM PST","January 15, 2025 9:33 AM PST",61,85
 Scout Fire,"Riverside, CA","January 14, 2025 5:10 AM PST","January 14, 2025 10:24 AM PST",2,100
-Little Mountain Fire,"San Bernardino, CA","January 15, 2025 6:44 AM PST","January 15, 2025 10:54 AM PST",34,0
+Little Mountain Fire,"San Bernardino, CA","January 15, 2025 6:44 AM PST","January 15, 2025 11:20 PM PST",34,100
