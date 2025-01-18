@@ -1,15 +1,15 @@
 fed_fire_id,name,state,county,started,updated,acres_burned,percent_contained,type,fire_behavior,fire_cause,source,days_burning,days_sinceupdate,latitude,longitude,location,info_url,state_name
-2024-AZTNF-001989,Horton Fire,AZ,Gila,2024-12-15T01:31:00Z,2025-01-12T13:40:26Z,8346,94,WF,Minimal,Human,NFIS,34,5.5,34.384474,-111.455141,NA,NA,Arizona
-2025-CALFD-000738,Palisades Fire,CA,Los Angeles,2025-01-07T18:38:00Z,2025-01-16T22:41:44Z,23713,39,WF,Minimal,Undetermined,NFIS,10,1.1,34.07022,-118.54453,NA,NA,California
-2025-CALAC-009087,Eaton Fire,CA,Los Angeles,2025-01-08T02:18:47Z,2025-01-18T00:52:24Z,14117,65,WF,Minimal,Undetermined,NFIS,9,0.1,34.19163,-118.10544,NA,NA,California
-2025-CALFD-0003294,Hurst Fire,CA,Los Angeles,2025-01-08T06:30:00Z,2025-01-11T03:25:04Z,799,100,WF,Minimal,Undetermined,NFIS,9,7,34.32533,-118.478134,NA,NA,California
-2025-CAVNC-003155,Kenneth Fire,CA,Ventura,2025-01-09T22:52:00Z,2025-01-11T01:34:57Z,1052,100,WF,Minimal,Undetermined,NFIS,8,7,34.185198,-118.66991,NA,NA,California
+2024-AZTNF-001989,Horton Fire,AZ,Gila,2024-12-15T01:31:00Z,2025-01-12T13:40:26Z,8346,94,WF,Minimal,Human,NFIS,34,5.9,34.384474,-111.455141,NA,NA,Arizona
+2025-CALFD-000738,Palisades Fire,CA,Los Angeles,2025-01-07T18:38:00Z,2025-01-16T22:41:44Z,23713,39,WF,Minimal,Undetermined,NFIS,10,1.5,34.07022,-118.54453,NA,NA,California
+2025-CALAC-009087,Eaton Fire,CA,Los Angeles,2025-01-08T02:18:47Z,2025-01-18T03:33:15Z,14117,65,WF,Minimal,Undetermined,NFIS,10,0.3,34.19163,-118.10544,NA,NA,California
+2025-CALFD-0003294,Hurst Fire,CA,Los Angeles,2025-01-08T06:30:00Z,2025-01-11T03:25:04Z,799,100,WF,Minimal,Undetermined,NFIS,10,7.3,34.32533,-118.478134,NA,NA,California
+2025-CAVNC-003155,Kenneth Fire,CA,Ventura,2025-01-09T22:52:00Z,2025-01-11T01:34:57Z,1052,100,WF,Minimal,Undetermined,NFIS,8,7.4,34.185198,-118.66991,NA,NA,California
 NA,Oak Fire,CA,Santa Barbara,2025-01-01T20:08:00Z,2025-01-12T09:36:42Z,42,100,Wildfire,NA,NA,CalFire,17,6,34.883723,-120.246601,"Tepesquet Canyon/Santa Maria Mesa Road, Santa Maria",https://www.fire.ca.gov/incidents/2025/1/1/oak-fire/,California
 NA,Tyler Fire,CA,Riverside,2025-01-08T03:25:39Z,2025-01-10T11:18:58Z,11,100,Wildfire,NA,NA,CalFire,10,8,33.706565,-116.164126,"Tyler Street & 47th Avenue, Coachella",https://www.fire.ca.gov/incidents/2025/1/8/tyler-fire/,California
 NA,Olivas Fire,CA,Ventura,2025-01-08T10:44:16Z,2025-01-13T14:12:44Z,11,100,Wildfire,NA,NA,CalFire,10,5,34.244456,-119.2567768,"Olivas Park Dr & E Harbor Blvd, Ventura",https://www.fire.ca.gov/incidents/2025/1/8/olivas-fire/,California
 NA,Lidia Fire,CA,Los Angeles,2025-01-08T14:07:38Z,2025-01-11T07:41:52Z,395,100,Wildfire,NA,NA,CalFire,10,7,34.4408,-118.2433,"5700 Block of Soledad Canyon Road, Acton",https://www.fire.ca.gov/incidents/2025/1/8/lidia-fire/,California
 NA,Sunset Fire,CA,Los Angeles,2025-01-08T17:57:36Z,2025-01-09T15:58:10Z,43,100,Wildfire,NA,NA,CalFire,10,9,34.1105,-118.3536,"2300 block Solar Dr, Hollywood Hills",https://www.fire.ca.gov/incidents/2025/1/8/sunset-fire/,California
 NA,Archer Fire,CA,Los Angeles,2025-01-10T11:24:44Z,2025-01-11T08:41:30Z,19,100,Wildfire,NA,NA,CalFire,8,7,34.3087,-118.5111,"Sesnon Boulevard, North of Meadowlark Avenue, Granada Hills",https://www.fire.ca.gov/incidents/2025/1/10/archer-fire/,California
-NA,Auto Fire,CA,Ventura,2025-01-13T21:25:00Z,2025-01-17T13:52:34Z,61,100,Wildfire,NA,NA,CalFire,5,1,34.23661,-119.20224,"Near Auto Center Drive, Ventura",https://www.fire.ca.gov/incidents/2025/1/13/auto-fire/,California
+NA,Auto Fire,CA,Ventura,2025-01-13T21:25:00Z,2025-01-18T00:09:04Z,61,100,Wildfire,NA,NA,CalFire,5,0,34.23661,-119.20224,"Near Auto Center Drive, Ventura",https://www.fire.ca.gov/incidents/2025/1/13/auto-fire/,California
 NA,Scout Fire,CA,Riverside,2025-01-14T13:10:51Z,2025-01-16T21:56:11Z,2,100,Wildfire,NA,NA,CalFire,4,2,33.989,-117.3887,"Between Indian Hill Road and the Santa Ana River, Riverside  ",https://www.fire.ca.gov/incidents/2025/1/14/scout-fire/,California
 NA,Little Mountain Fire,CA,San Bernardino,2025-01-15T14:44:41Z,2025-01-16T21:48:01Z,34,100,Wildfire,NA,NA,CalFire,3,2,34.154384,-117.32064,"Near Little Mountain Drive, San Bernardino",https://www.fire.ca.gov/incidents/2025/1/15/little-mountain-fire/,California
