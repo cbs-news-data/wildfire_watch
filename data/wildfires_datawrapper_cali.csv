@@ -1,10 +1,8 @@
 Name,County,Started,Updated,Acres burned,% contained
-Palisades Fire,"Los Angeles, CA","January 7, 2025 10:38 AM PST","January 16, 2025 2:41 PM PST",23713,61
-Eaton Fire,"Los Angeles, CA","January 7, 2025 6:18 PM PST","January 20, 2025 4:18 PM PST",14021,87
+Palisades Fire,"Los Angeles, CA","January 7, 2025 10:38 AM PST","January 16, 2025 2:41 PM PST",23713,63
+Eaton Fire,"Los Angeles, CA","January 7, 2025 6:18 PM PST","January 20, 2025 4:18 PM PST",14021,89
 Auto Fire,"Ventura, CA","January 13, 2025 1:25 PM PST","January 17, 2025 4:09 PM PST",61,100
 Scout Fire,"Riverside, CA","January 14, 2025 5:10 AM PST","January 16, 2025 1:56 PM PST",2,100
 Little Mountain Fire,"San Bernardino, CA","January 15, 2025 6:44 AM PST","January 16, 2025 1:48 PM PST",34,100
-Lilac Fire,"San Diego, CA","January 20, 2025 5:19 PM PST","January 20, 2025 7:22 PM PST",50,0
-Pala Fire,"San Diego, CA","January 20, 2025 6:16 PM PST","January 20, 2025 7:20 PM PST",30,0
-Pala 2 Fire,"San Diego, CA","January 20, 2025 4:18 PM PST","January 20, 2025 7:51 PM PST",17,0
-Lilac 2 Fire,"San Diego, CA","January 20, 2025 4:48 PM PST","January 20, 2025 8:24 PM PST",80,0
+Lilac Fire,"San Diego, CA","January 20, 2025 5:19 PM PST","January 20, 2025 11:55 PM PST",80,10
+Pala Fire,"San Diego, CA","January 20, 2025 6:16 PM PST","January 20, 2025 11:50 PM PST",17,0
