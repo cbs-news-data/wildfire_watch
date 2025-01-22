@@ -144,8 +144,8 @@ try(
 # except for leaving in very new fires
 try(
   cal_fires <- cal_fires %>%
-    filter(acres_burned>99 & days_sinceupdate<14 |
-             days_sinceupdate<10)
+    filter(acres_burned>99 & days_sinceupdate<30 |
+             days_sinceupdate<30)
 )
 
 # If a fire in fed_fires in california is also in cal_fires, add the latitude and longitude from cal_fires file
@@ -181,7 +181,7 @@ write_csv(fires,"data/wildfires_save.csv")
 
 #export pretty table for datawrapper
 fires_fordatawrappertable <- fires %>% 
-  filter(updated >= Sys.Date()-7) %>%
+  filter(updated >= Sys.Date()-30) %>%
   mutate(county_state = paste0(county, ", ", state)) %>% 
   select(name, county_state, started, updated, acres_burned, percent_contained) %>% 
   mutate(started = format(as.POSIXct(started), format = "%B %d, %Y %I:%M %p %Z", tz = "America/Los_Angeles"),
@@ -212,7 +212,7 @@ write_csv(fires_fordatawrappertable_cali,"data/wildfires_datawrapper_cali.csv")
 # Manual validation = all tiny <1ac and all <10ac
 fires <- fires %>% filter(!is.na(latitude) & !is.na(longitude))
 # Create flag for active vs. not for icons; 8-day cutoff
-fires$active <- if_else(fires$days_sinceupdate<8,"Yes","No")
+fires$active <- if_else(fires$days_sinceupdate<30,"Yes","No")
 # filter out fires that are not active or smaller than 100 acres
 fires <- fires %>% filter(active=="Yes") %>% filter(acres_burned>99)
 # count number of fires we're tracking
@@ -333,7 +333,7 @@ headerhtml <- tags$div(tag.map.title, HTML(
   <div class='header'>
     <div class='headline'>
       <h1>Current wildfires</h1>
-      <h3>There are currently <b style='color: #A5091E'>",
+      <h3>We are currently tracking <b style='color: #A5091E'>",
     fires_count,
     "</b> wildfires of more than 100 acres in the U.S. Click or hover over an icon to see more information about each fire.<br><br></h3>
     </div>
