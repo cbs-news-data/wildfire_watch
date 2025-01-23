@@ -1,6 +1,6 @@
 Name,County,Started,Updated,Acres burned,% contained
-Palisades Fire,"Los Angeles, CA","January 7, 2025 10:38 AM PST","January 21, 2025 3:43 PM PST",23448,68
-Eaton Fire,"Los Angeles, CA","January 7, 2025 6:18 PM PST","January 20, 2025 4:18 PM PST",14021,91
+Palisades Fire,"Los Angeles, CA","January 7, 2025 10:38 AM PST","January 21, 2025 3:43 PM PST",23448,70
+Eaton Fire,"Los Angeles, CA","January 7, 2025 6:18 PM PST","January 20, 2025 4:18 PM PST",14021,95
 Hurst Fire,"Los Angeles, CA","January 7, 2025 10:30 PM PST","January 10, 2025 7:25 PM PST",799,100
 Kenneth Fire,"Ventura, CA","January 9, 2025 2:52 PM PST","January 10, 2025 5:34 PM PST",1052,100
 Oak Fire,"Santa Barbara, CA","January 1, 2025 12:08 PM PST","January 12, 2025 1:36 AM PST",42,100
@@ -14,10 +14,10 @@ Archer Fire,"Los Angeles, CA","January 10, 2025 3:24 AM PST","January 11, 2025 1
 Auto Fire,"Ventura, CA","January 13, 2025 1:25 PM PST","January 17, 2025 4:09 PM PST",61,100
 Scout Fire,"Riverside, CA","January 14, 2025 5:10 AM PST","January 16, 2025 1:56 PM PST",2,100
 Little Mountain Fire,"San Bernardino, CA","January 15, 2025 6:44 AM PST","January 16, 2025 1:48 PM PST",34,100
-Lilac Fire,"San Diego, CA","January 20, 2025 5:19 PM PST","January 22, 2025 12:32 AM PST",85,90
+Lilac Fire,"San Diego, CA","January 20, 2025 5:19 PM PST","January 22, 2025 9:27 AM PST",85,95
 Pala Fire,"San Diego, CA","January 20, 2025 6:16 PM PST","January 21, 2025 1:49 PM PST",17,100
 Friars Fire,"San Diego, CA","January 21, 2025 4:32 AM PST","January 21, 2025 1:48 PM PST",3,100
 Ncfr3 4 Fire,"San Diego, CA","January 21, 2025 2:19 AM PST","January 21, 2025 10:23 AM PST",80,0
 Clay Fire,"Riverside, CA","January 21, 2025 9:00 AM PST","January 22, 2025 2:06 AM PST",38,45
-Bernardo Fire,"San Diego, CA","January 22, 2025 2:02 AM PST","January 22, 2025 4:23 AM PST",4,0
-Hughes Fire,"Los Angeles, CA","January 22, 2025 2:53 AM PST","January 22, 2025 4:49 AM PST",3407,0
+Center Fire,"San Diego, CA","January 22, 2025 2:02 AM PST","January 22, 2025 7:19 AM PST",4,0
+Hughes Fire,"Los Angeles, Ventura, CA","January 22, 2025 2:53 AM PST","January 22, 2025 9:57 AM PST",9268,0
