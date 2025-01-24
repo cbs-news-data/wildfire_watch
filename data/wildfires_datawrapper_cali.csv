@@ -1,8 +1,9 @@
 Name,County,Started,Updated,Acres burned,% contained
-Palisades Fire,"Los Angeles, CA","January 7, 2025 10:38 AM PST","January 21, 2025 3:43 PM PST",23448,72
+Palisades Fire,"Los Angeles, CA","January 7, 2025 10:38 AM PST","January 21, 2025 3:43 PM PST",23448,75
 Eaton Fire,"Los Angeles, CA","January 7, 2025 6:18 PM PST","January 20, 2025 4:18 PM PST",14021,95
 Hurst Fire,"Los Angeles, CA","January 7, 2025 10:30 PM PST","January 10, 2025 7:25 PM PST",799,100
 Kenneth Fire,"Ventura, CA","January 9, 2025 2:52 PM PST","January 10, 2025 5:34 PM PST",1052,100
+Hughes Fire,"Los Angeles, CA","January 22, 2025 10:37 AM PST","January 23, 2025 4:58 PM PST",10396,36
 Oak Fire,"Santa Barbara, CA","January 1, 2025 12:08 PM PST","January 12, 2025 1:36 AM PST",42,100
 Border Fire,"San Diego, CA","January 1, 2025 10:23 AM PST","January 2, 2025 2:04 PM PST",25,100
 Tyler Fire,"Riverside, CA","January 7, 2025 7:25 PM PST","January 10, 2025 3:18 AM PST",11,100
@@ -20,6 +21,8 @@ Friars Fire,"San Diego, CA","January 21, 2025 4:32 AM PST","January 21, 2025 1:4
 Ncfr3 4 Fire,"San Diego, CA","January 21, 2025 2:19 AM PST","January 21, 2025 10:23 AM PST",80,0
 Clay Fire,"Riverside, CA","January 21, 2025 9:00 AM PST","January 23, 2025 1:47 AM PST",39,70
 Center Fire,"San Diego, CA","January 22, 2025 2:02 AM PST","January 22, 2025 5:07 PM PST",7,100
-Hughes Fire,"Los Angeles, Ventura, CA","January 22, 2025 2:53 AM PST","January 23, 2025 2:34 AM PST",10176,14
 Sepulveda Fire,"Los Angeles, CA","January 22, 2025 4:36 PM PST","January 23, 2025 1:51 AM PST",45,60
 Laguna Fire,"Ventura, CA","January 23, 2025 1:41 AM PST","January 23, 2025 3:56 AM PST",50,0
+Border 2 Fire,"San Diego, CA","January 23, 2025 6:31 AM PST","January 23, 2025 9:59 AM PST",300,0
+Gilman Fire,"San Diego, CA","January 23, 2025 6:42 AM PST","January 23, 2025 7:57 AM PST",2,0
+Gibbel Fire,"Riverside, CA","January 23, 2025 8:40 AM PST","January 23, 2025 9:38 AM PST",15,0
