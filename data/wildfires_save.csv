@@ -1,12 +1,12 @@
 fed_fire_id,name,state,county,started,updated,acres_burned,percent_contained,type,fire_behavior,fire_cause,source,days_burning,days_sinceupdate,latitude,longitude,location,info_url,state_name
-2024-AZTNF-001989,Horton Fire,AZ,Gila,2024-12-15T01:31:00Z,2025-01-27T15:51:03Z,8346,100,WF,Minimal,Human,NFIS,46,2.4,34.384474,-111.455141,NA,NA,Arizona
-2025-CALFD-000738,Palisades Fire,CA,Los Angeles,2025-01-07T18:30:00Z,2025-01-21T23:43:48Z,23448,97,WF,Minimal,Undetermined,NFIS,22,8.1,34.07022,-118.54453,NA,NA,California
-2025-CALAC-009087,Eaton Fire,CA,Los Angeles,2025-01-08T02:18:47Z,2025-01-21T00:18:44Z,14021,99,WF,Minimal,Undetermined,NFIS,21,9.1,34.19163,-118.10544,NA,NA,California
-2025-CALFD-0003294,Hurst Fire,CA,Los Angeles,2025-01-08T06:30:00Z,2025-01-11T03:25:04Z,799,100,WF,Minimal,Undetermined,NFIS,21,19,34.32533,-118.478134,NA,NA,California
-2025-AZNAA-000008,Sonsela Butte Fire,NM,San Juan,2025-01-21T20:03:55Z,2025-01-22T16:29:14Z,133,NA,WF,NA,Human,NFIS,8,7.4,NA,NA,NA,NA,New Mexico
-2025-CAANF-250270,Hughes Fire,CA,Los Angeles,2025-01-22T18:37:00Z,2025-01-24T22:59:04Z,10425,98,WF,Minimal,Undetermined,NFIS,7,5.1,34.551719,-118.57574,NA,NA,California
-2025-CASDU-001643,Border 2 Fire,CA,San Diego,2025-01-23T21:58:14Z,2025-01-26T23:43:18Z,6625,96,WF,Minimal,Undetermined,NFIS,6,3.1,32.600524,-116.841271,NA,NA,California
-2025-ALALF-000028,Cave Creek Fire,AL,Clay,2025-01-26T02:43:11Z,2025-01-29T17:38:28Z,200,NA,WF,NA,Undetermined,NFIS,3,0.4,33.418999,-85.827185,NA,NA,Alabama
+2024-AZTNF-001989,Horton Fire,AZ,Gila,2024-12-15T01:31:00Z,2025-01-27T15:51:03Z,8346,100,WF,Minimal,Human,NFIS,46,2.8,34.384474,-111.455141,NA,NA,Arizona
+2025-CALFD-000738,Palisades Fire,CA,Los Angeles,2025-01-07T18:30:00Z,2025-01-21T23:43:48Z,23448,97,WF,Minimal,Undetermined,NFIS,22,8.5,34.07022,-118.54453,NA,NA,California
+2025-CALAC-009087,Eaton Fire,CA,Los Angeles,2025-01-08T02:18:47Z,2025-01-21T00:18:44Z,14021,99,WF,Minimal,Undetermined,NFIS,22,9.4,34.19163,-118.10544,NA,NA,California
+2025-CALFD-0003294,Hurst Fire,CA,Los Angeles,2025-01-08T06:30:00Z,2025-01-11T03:25:04Z,799,100,WF,Minimal,Undetermined,NFIS,22,19.3,34.32533,-118.478134,NA,NA,California
+2025-AZNAA-000008,Sonsela Butte Fire,NM,San Juan,2025-01-21T20:03:55Z,2025-01-22T16:29:14Z,133,NA,WF,NA,Human,NFIS,8,7.8,NA,NA,NA,NA,New Mexico
+2025-CAANF-250270,Hughes Fire,CA,Los Angeles,2025-01-22T18:37:00Z,2025-01-24T22:59:04Z,10425,98,WF,Minimal,Undetermined,NFIS,7,5.5,34.551719,-118.57574,NA,NA,California
+2025-CASDU-001643,Border 2 Fire,CA,San Diego,2025-01-23T21:58:14Z,2025-01-26T23:43:18Z,6625,96,WF,Minimal,Undetermined,NFIS,6,3.5,32.600524,-116.841271,NA,NA,California
+2025-ALALF-000028,Cave Creek Fire,AL,Clay,2025-01-26T02:43:11Z,2025-01-29T17:38:28Z,200,NA,WF,NA,Undetermined,NFIS,4,0.7,33.418999,-85.827185,NA,NA,Alabama
 NA,Oak Fire,CA,Santa Barbara,2025-01-01T20:08:00Z,2025-01-12T09:36:42Z,42,100,Wildfire,NA,NA,CalFire,29,18,34.883723,-120.246601,"Tepesquet Canyon/Santa Maria Mesa Road, Santa Maria",https://www.fire.ca.gov/incidents/2025/1/1/oak-fire/,California
 NA,Border Fire,CA,San Diego,2025-01-01T18:23:09Z,2025-01-02T22:04:25Z,25,100,Wildfire,NA,NA,CalFire,29,28,32.59853,-116.82817,Otay Mountain Wilderness,https://www.fire.ca.gov/incidents/2025/1/1/border-fire/,California
 NA,Tyler Fire,CA,Riverside,2025-01-08T03:25:39Z,2025-01-10T11:18:58Z,11,100,Wildfire,NA,NA,CalFire,22,20,33.706565,-116.164126,"Tyler Street & 47th Avenue, Coachella",https://www.fire.ca.gov/incidents/2025/1/8/tyler-fire/,California
@@ -29,4 +29,4 @@ NA,Sepulveda Fire,CA,Los Angeles,2025-01-23T00:36:20Z,2025-01-24T23:53:36Z,45,10
 NA,Laguna Fire,CA,Ventura,2025-01-23T09:41:57Z,2025-01-26T18:13:21Z,83,100,Wildfire,NA,NA,CalFire,7,4,34.1655,-119.059,"Laguna Rd and Lewis Rd, Camarillo",https://www.fire.ca.gov/incidents/2025/1/23/laguna-fire/,California
 NA,Gilman Fire,CA,San Diego,2025-01-23T14:42:58Z,2025-01-24T23:54:00Z,2,100,Wildfire,NA,NA,CalFire,7,6,32.8622,-117.237,"Gilman Drive and Via Alicante, South of La Jolla",https://www.fire.ca.gov/incidents/2025/1/23/gilman-fire/,California
 NA,Gibbel Fire,CA,Riverside,2025-01-23T16:40:30Z,2025-01-25T07:56:05Z,15,90,Wildfire,NA,NA,CalFire,7,5,33.708601,-116.964339,"State Street and Gibbel Road, Hemet",https://www.fire.ca.gov/incidents/2025/1/23/gibbel-fire/,California
-NA,Rosa Fire,CA,San Luis Obispo,2025-01-29T12:53:53Z,2025-01-29T16:58:52Z,102,75,Wildfire,NA,NA,CalFire,1,1,35.303682,-119.982524,"Soda Lake Rd., San Luis Obispo County",https://www.fire.ca.gov/incidents/2025/1/29/rosa-fire/,California
+NA,Rosa Fire,CA,San Luis Obispo,2025-01-29T12:53:53Z,2025-01-29T18:29:53Z,105,75,Wildfire,NA,NA,CalFire,1,1,35.303682,-119.982524,"Soda Lake Rd., San Luis Obispo County",https://www.fire.ca.gov/incidents/2025/1/29/rosa-fire/,California
