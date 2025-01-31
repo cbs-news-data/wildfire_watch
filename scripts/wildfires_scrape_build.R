@@ -179,34 +179,6 @@ fires <- left_join(fires,states,by=c("state"="state_abb"))
 # Save latest merged fire points file as csv
 write_csv(fires,"data/wildfires_save.csv")
 
-#export pretty table for datawrapper
-fires_fordatawrappertable <- fires %>% 
-  filter(updated >= Sys.Date()-30) %>%
-  mutate(county_state = paste0(county, ", ", state)) %>% 
-  select(name, county_state, started, updated, acres_burned, percent_contained) %>% 
-  mutate(started = format(as.POSIXct(started), format = "%B %d, %Y %I:%M %p %Z", tz = "America/Los_Angeles"),
-         started = str_replace_all(as.character(started), " 0", " ")) %>% 
-  mutate(updated = format(as.POSIXct(updated), format = "%B %d, %Y %I:%M %p %Z", tz = "America/Los_Angeles"),
-         updated = str_replace_all(as.character(updated), " 0", " ")) %>% 
-  mutate(percent_contained = case_when(is.na(as.character(percent_contained)) == TRUE ~ "Not available",
-                                       TRUE ~ as.character(percent_contained))) %>% 
-  rename(Name = name, 
-         `County` = county_state, 
-         Started = started, 
-         Updated = updated, 
-         `Acres burned` = acres_burned, 
-         `% contained` = percent_contained)
-
-# create a copy of the same table but for california only, filtering the records that end with the string ", CA"
-fires_fordatawrappertable_cali <- fires_fordatawrappertable %>% 
-  filter(grepl(", CA", County))
-# Then manually drop the individual duplicate where the fire is name "Hurst (2025-Calfd-003294) Fire"
-fires_fordatawrappertable_cali <- fires_fordatawrappertable_cali %>% 
-  filter(!grepl("2025-Calfd-003294", Name))
-  
-# Save pretty datawrapper file as csv
-write_csv(fires_fordatawrappertable,"data/wildfires_datawrapper_save.csv")  
-write_csv(fires_fordatawrappertable_cali,"data/wildfires_datawrapper_cali.csv")  
 
 # Remove fires without lat longs so we can map
 # Manual validation = all tiny <1ac and all <10ac

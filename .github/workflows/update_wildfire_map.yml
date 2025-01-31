@@ -38,7 +38,14 @@ jobs:
     # This step installs the necessary R packages required by the script.
     - name: Install R packages
       run: |
-        Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "leaflet", "leaflet.extras", "leaflet.providers", "sf", "htmlwidgets", "htmltools", "janitor", "lubridate"))'
+        Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "leaflet", "leaflet.extras", "leaflet.providers", "sf", "htmlwidgets", "htmltools", "janitor", "lubridate", "dotenv"))'
+        
+    - name: Set up environment variables based on DATAWRAPPR secret
+        run: echo "DW_API_KEY=${{ secrets.DATAWRAPPR }}" >> $GITHUB_ENV
+
+      - name: Install DatawRappr package
+        run: |
+          Rscript -e "pak::pkg_install('munichrocker/DatawRappr')"
 
     # Step 6: Run R script
     # This step runs the R script located in the scripts directory.
