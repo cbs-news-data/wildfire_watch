@@ -52,6 +52,7 @@ jobs:
     - name: Run R script
       run: |
         Rscript scripts/wildfires_scrape_build.R
+        Rscript scripts/containment_tables.R
 
     # Step 10: Commit and push changes
     - name: Commit and push changes
