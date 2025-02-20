@@ -1,5 +1,5 @@
 fed_fire_id,name,state,county,started,updated,acres_burned,percent_contained,type,fire_behavior,fire_cause,source,days_burning,days_sinceupdate,latitude,longitude,location,info_url,state_name
-2024-FLFNF-003187,Field Branch Fire,FL,Liberty,2024-12-21T20:08:00Z,2024-12-23T02:33:01Z,470,100,WF,Minimal,Undetermined,NFIS,60,59,30.052259,-85.071602,NA,NA,Florida
+2024-FLFNF-003187,Field Branch Fire,FL,Liberty,2024-12-21T20:08:00Z,2024-12-23T02:33:01Z,470,100,WF,Minimal,Undetermined,NFIS,60,59.4,30.052259,-85.071602,NA,NA,Florida
 NA,Palisades Fire,CA,Los Angeles,2025-01-07T10:30:00Z,2025-02-10T17:33:39Z,23707,100,Wildfire,NA,NA,CalFire,44,10,34.07022,-118.54453,"Southeast of Palisades Drive, Pacific Palisades",https://www.fire.ca.gov/incidents/2025/1/7/palisades-fire/,California
 NA,Eaton Fire,CA,Los Angeles,2025-01-07T18:18:00Z,2025-02-07T13:59:24Z,14021,100,Wildfire,NA,NA,CalFire,44,13,34.203483,-118.069155,"Near Altadena Drive and Midwick Drive, Altadena/Pasadena",https://www.fire.ca.gov/incidents/2025/1/7/eaton-fire/,California
 NA,Lilac Fire,CA,San Diego,2025-01-21T01:19:23Z,2025-01-23T00:57:42Z,85,100,Wildfire,NA,NA,CalFire,30,28,33.30932,-117.152114,"Old Hwy 395 and Lilac Road, Bonsall",https://www.fire.ca.gov/incidents/2025/1/21/lilac-fire/,California
