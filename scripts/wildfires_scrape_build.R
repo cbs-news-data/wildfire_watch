@@ -307,7 +307,7 @@ headerhtml <- tags$div(tag.map.title, HTML(
       <h1>Current wildfires</h1>
       <h3>We are currently tracking <b style='color: #A5091E'>",
     fires_count,
-    "</b> wildfires of more than 100 acres in the U.S. Click or hover over an icon to see more information about each fire.<br><br></h3>
+    "</b> wildfires of more than 50 acres in the U.S. Click or hover over an icon to see more information about each fire.<br><br></h3>
     </div>
   </div>"
   ))
