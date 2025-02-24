@@ -69,7 +69,7 @@ nfis_perimeters <- st_read("data/active_perimeters.geojson") %>%
 # First, repair invalid geometries
 nfis_perimeters <- st_make_valid(nfis_perimeters)
 # Remove any records in nfis_perimeters with fewer than 100 acres_burned
-nfis_perimeters <- nfis_perimeters %>% filter(acres_burned > 99)
+nfis_perimeters <- nfis_perimeters %>% filter(acres_burned > 49)
 # Adjust dTolerance as needed. Smaller values = less simplification
 # simplified_nfis_perimeters <- st_simplify(nfis_perimeters, dTolerance = 0.2)
 
@@ -80,7 +80,7 @@ fed_fires <- nfis_perimeters %>%
   mutate_at(vars(started, updated), ms_to_date, t0 = "1970-01-01", timezone = "America/New_York") %>% 
   mutate(days_burning = floor(difftime(Sys.time(), started, units = "days")), 
          days_sinceupdate = round(difftime(Sys.time(), updated, units = "days"), 1)) %>% 
-  filter(acres_burned > 99 & days_sinceupdate < 60 | days_sinceupdate < 60)
+  filter(acres_burned > 49 & days_sinceupdate < 90 | days_sinceupdate < 90)
 
 # Standardize fire name and state columns
 fed_fires <- fed_fires %>% 
@@ -144,7 +144,7 @@ try(
 # except for leaving in very new fires
 try(
   cal_fires <- cal_fires %>%
-    filter(acres_burned>99 & days_sinceupdate<30 |
+    filter(acres_burned>49 & days_sinceupdate<30 |
              days_sinceupdate<30)
 )
 
@@ -186,7 +186,7 @@ fires <- fires %>% filter(!is.na(latitude) & !is.na(longitude))
 # Create flag for active vs. not for icons; 8-day cutoff
 fires$active <- if_else(fires$days_sinceupdate<30,"Yes","No")
 # filter out fires that are not active or smaller than 100 acres
-fires <- fires %>% filter(active=="Yes") %>% filter(acres_burned>99)
+fires <- fires %>% filter(active=="Yes") %>% filter(acres_burned>49)
 # count number of fires we're tracking
 fires_count <- fires %>% st_drop_geometry() %>% count()
 
