@@ -1,0 +1,169 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.css"
+/>
+<script src="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.js"></script>
+<script
+  type="text/javascript"
+  src="https://pym.nprapps.org/pym.v1.min.js"
+></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/maplibre-gl@2.3.0/dist/maplibre-gl.css"
+/>
+
+<!-- Fonts -->
+<link rel="stylesheet" href="https://use.typekit.net/rdn8fde.css" />
+<style>
+  @font-face {
+    font-family: "Publico Headline";
+    src: url("fonts/PublicoHeadline-Black.woff2") format("woff2"),
+      url("fonts/PublicoHeadline-Black.woff") format("woff");
+  }
+
+  body {
+    margin: 0 !important;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: #a5091e;
+    color: #858585;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: #a5091e;
+  }
+
+  a#source {
+    color: #858585;
+    text-decoration: none;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  #header {
+    z-index: 1;
+    max-width: 980px;
+  }
+
+  .title {
+    font-family: "Publico Headline", serif;
+    line-height: 34px;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+  }
+
+  .description {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    max-width: 980px;
+    margin-top: 12px;
+  }
+
+  #map {
+    flex-grow: 1;
+    max-height: 600px;
+    max-width: 980px;
+    margin-bottom: 12px;
+  }
+
+  button.maplibregl-ctrl-compass {
+    display: none !important;
+  }
+
+  /* MEDIA QUERY */
+  @media (max-width: 430px) {
+    #map {
+      max-height: 900px !important;
+    }
+
+    .description {
+      margin-bottom: 10px;
+    }
+  }
+
+  .note {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+  }
+
+  .source {
+    font-family: "proxima-nova", sans-serif;
+    color: rgb(130, 130, 130);
+    font-size: 14px;
+  }
+</style>
+
+<div id="container">
+  <div id="header">
+    <div class="title">Current wildfires</div>
+    <p class="description">We are currently tracking TKTK wildfires of more than 100 acres in the U.S. Click or hover over to see more information about each fire.
+    </p>
+  </div>
+  <div id="map"></div>
+  <div class="note"></div>
+</div>
+
+<script>
+  const isMobile = window.innerWidth <= 768;
+  const initialZoom = isMobile ? 5 : 6;
+
+  const map = new maplibregl.Map({
+    container: "map",
+    style:
+      "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+    center: [-113.525, 35.106],
+    zoom: initialZoom,
+    maxZoom: 20,
+    minZoom: 2,
+    // hash: true,
+  });
+
+  map.scrollZoom.disable();
+  map.addControl(new maplibregl.NavigationControl(), "top-left");
+
+  map.on("load", () => {
+    map.addSource("combined", {
+      type: "geojson",
+      data: "data/wildfires_combined.geojson",
+      generateId: true,
+    });
+
+    map.addLayer({
+      id: "polygon-layer",
+      type: "fill",
+      source: "combined",
+      paint: {
+        "fill-color": "#a5091e",
+        "fill-opacity": 0.5,
+      },
+    });
+  // Add points layer from the same source
+  map.addLayer({
+    id: "points-layer",
+    type: "circle",
+    source: "combined",
+    paint: {
+      "circle-radius": 5,
+      "circle-color": "#007cbf",
+      "circle-stroke-width": 1,
+      "circle-stroke-color": "#ffffff",
+    },
+    filter: ["==", "$type", "Point"], // Show only points
+  });
+});
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var pymChild = new pym.Child();
+    pymChild.sendHeight();
+  });
+</script>

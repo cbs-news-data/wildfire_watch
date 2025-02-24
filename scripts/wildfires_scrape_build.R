@@ -19,6 +19,10 @@ library(lubridate)
 temp_file <- "data/temp.geojson"
 original_file <- "data/calfire_activefires.geojson"
 
+
+
+
+
 # Try downloading the file to a temporary file
 download_status <- try(download.file("https://www.fire.ca.gov/umbraco/api/IncidentApi/GeoJsonList?inactive=true", temp_file))
 
