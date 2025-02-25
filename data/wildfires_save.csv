@@ -1,5 +1,5 @@
 fed_fire_id,name,state,county,started,updated,acres_burned,percent_contained,type,fire_behavior,fire_cause,source,days_burning,days_sinceupdate,latitude,longitude,location,info_url,state_name
-2024-FLFNF-003187,Field Branch Fire,FL,Liberty,2024-12-21T20:08:00Z,2024-12-23T02:33:01Z,470,100,WF,Minimal,Undetermined,NFIS,65,64,30.052259,-85.071602,NA,NA,Florida
+2024-FLFNF-003187,Field Branch Fire,FL,Liberty,2024-12-21T20:08:00Z,2024-12-23T02:33:01Z,470,100,WF,Minimal,Undetermined,NFIS,65,64.4,30.052259,-85.071602,NA,NA,Florida
 NA,Palisades Fire,CA,Los Angeles,2025-01-07T10:30:00Z,2025-02-21T13:29:59Z,23707,100,Wildfire,NA,NA,CalFire,49,4,34.07022,-118.54453,"Southeast of Palisades Drive, Pacific Palisades",https://www.fire.ca.gov/incidents/2025/1/7/palisades-fire/,California
 NA,Eaton Fire,CA,Los Angeles,2025-01-07T18:18:00Z,2025-02-21T13:30:35Z,14021,100,Wildfire,NA,NA,CalFire,49,4,34.203483,-118.069155,"Near Altadena Drive and Midwick Drive, Altadena/Pasadena",https://www.fire.ca.gov/incidents/2025/1/7/eaton-fire/,California
 NA,Hughes Fire,CA,Los Angeles,2025-01-22T10:53:02Z,2025-01-30T22:10:52Z,10425,100,Wildfire,NA,NA,CalFire,34,26,34.553008,-118.56687,"Lake Hughes Road near Castaic Lake, Castaic",https://www.fire.ca.gov/incidents/2025/1/22/hughes-fire/,California
