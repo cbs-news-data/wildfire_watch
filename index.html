@@ -1,17 +1,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.css"
-/>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.css" />
 <script src="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.js"></script>
-<script
-  type="text/javascript"
-  src="https://pym.nprapps.org/pym.v1.min.js"
-></script>
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/maplibre-gl@2.3.0/dist/maplibre-gl.css"
-/>
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@2.3.0/dist/maplibre-gl.css" />
 
 <!-- Fonts -->
 <link rel="stylesheet" href="https://use.typekit.net/rdn8fde.css" />
@@ -68,6 +59,10 @@
     margin-top: 12px;
   }
 
+  .num-fires {
+    color: #a5091e;
+  }
+
   #map {
     flex-grow: 1;
     max-height: 600px;
@@ -77,6 +72,40 @@
 
   button.maplibregl-ctrl-compass {
     display: none !important;
+  }
+
+
+  .pop-up_content {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  p.fire-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  p.fire-location {
+    font-size: 14px;
+    /* font-weight: 300; */
+    margin: 0;
+    padding-bottom: 5px;
+  }
+
+  p.updated {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 5px;
+    color: #333;
+    font-style: italic;
+  }
+
+  p.fire-info {
+    font-size: 14px;
+    margin: 0;
   }
 
   /* MEDIA QUERY */
@@ -105,8 +134,7 @@
 <div id="container">
   <div id="header">
     <div class="title">Current wildfires</div>
-    <p class="description">We are currently tracking TKTK wildfires of more than 50 acres in the U.S. Click or hover over to see more information about each fire.
-    </p>
+    <div class="description"></div>
   </div>
   <div id="map"></div>
   <div class="note"></div>
@@ -131,36 +159,112 @@
   map.addControl(new maplibregl.NavigationControl(), "top-left");
 
   map.on("load", () => {
-    map.addSource("combined", {
-      type: "geojson",
-      data: "data/wildfires_combined.geojson",
-      generateId: true,
-    });
+    fetch("data/wildfires_combined.geojson")
+      .then((response) => response.json())
+      .then((geojson) => {
+        const wildfireCount = geojson.features.length; // Count wildfire objects
+        document.querySelector(".description").innerHTML =
+          `We are currently tracking <strong><span class="num-fires">${wildfireCount}</span></strong> wildfires of more than 50 acres in the U.S. Click or hover over to see more information about each fire.`;
 
-    map.addLayer({
-      id: "polygon-layer",
-      type: "fill",
-      source: "combined",
-      paint: {
-        "fill-color": "#a5091e",
-        "fill-opacity": 0.5,
-      },
-    });
-  // Add points layer from the same source
-  map.addLayer({
-    id: "points-layer",
-    type: "circle",
-    source: "combined",
-    paint: {
-      "circle-radius": 5,
-      "circle-color": "#007cbf",
-      "circle-stroke-width": 1,
-      "circle-stroke-color": "#ffffff",
-    },
-    filter: ["==", "$type", "Point"], // Show only points
+        const bounds = new maplibregl.LngLatBounds();
+
+        geojson.features.forEach((feature) => {
+          if (feature.geometry) {
+            const coords = feature.geometry.coordinates;
+            if (feature.geometry.type === "Point") {
+              bounds.extend(coords);
+            } else if (feature.geometry.type === "Polygon") {
+              coords[0].forEach((coord) => bounds.extend(coord));
+            } else if (feature.geometry.type === "MultiPolygon") {
+              coords.forEach((polygon) => {
+                polygon[0].forEach((coord) => bounds.extend(coord));
+              });
+            }
+          }
+        });
+
+        if (!bounds.isEmpty()) {
+          map.fitBounds(bounds, { padding: 50, maxZoom: 10 });
+        }
+
+        // Add the wildfire data source
+        map.addSource("combined", {
+          type: "geojson",
+          data: geojson,
+          generateId: true,
+        });
+
+        map.addLayer({
+          id: "polygon-layer",
+          type: "fill",
+          source: "combined",
+          paint: {
+            "fill-color": "#a5091e",
+            "fill-opacity": 0.5,
+          },
+        });
+
+        map.addLayer({
+          id: "points-layer",
+          type: "circle",
+          source: "combined",
+          paint: {
+            "circle-radius": 4, // circle size
+            "circle-color": "rgba(130, 4, 21, 0.4)", // dark red with opacity
+            "circle-stroke-color": "#a5091e", // red stroke
+            "circle-stroke-width": 2, // stroke width
+          },
+          filter: ["==", "$type", "Point"], // Show only points
+        });
+      })
+      .catch((error) => console.error("Error loading GeoJSON:", error));
   });
-});
 
+  map.on("click", "points-layer", (e) => {
+    // console.log(e.features) 
+    const coordinates = e.features[0].geometry.coordinates.slice();
+    const fire_name = e.features[0].properties.name;
+    const county = e.features[0].properties.county;
+    const state = e.features[0].properties.state;
+    const fire_size = Number(e.features[0].properties.acres_burned).toLocaleString();
+    const days_burning = Number(e.features[0].properties.days_burning);
+    const percent_contained = Number(e.features[0].properties.percent_contained);
+    const updatedRaw = e.features[0].properties.updated;
+const updated = updatedRaw ? new Date(updatedRaw).toLocaleString("en-US", {
+  month: "short",  // "Feb"
+  day: "numeric",  // "26"
+  hour: "numeric", // "2"
+  minute: "2-digit", // "30"
+  hour12: true, // Ensures AM/PM format
+}).replace(",", " at").replace(/\sAM/g, " a.m.").replace(/\sPM/g, " p.m.") : "Unknown";
+
+
+    // Create and display a popup with fire details
+    new maplibregl.Popup()
+      .setLngLat(coordinates) // Set the location of the popup
+      .setHTML(
+        `<div class="pop-up_content">
+       <p class="fire-name">${fire_name}</p>
+        <p class="fire-location">${county} County, ${state}</p>
+        <p class="fire-info">Started <b>${days_burning}</b> days ago <br>
+        <b>${fire_size}</b> acres burned <br>
+        <b>${percent_contained}%</b> contained</p>
+
+        <p class="updated">Last updated on ${updated} PST</p>
+        </div>`
+      )
+      .addTo(map); // Add the popup to the map
+  });
+
+  // Change the cursor when hovering over wildfire points
+  map.on("mouseenter", "points-layer", () => {
+    map.getCanvas().style.cursor = "pointer"; // Change cursor to a pointer on hover
+  });
+
+  // Reset cursor when mouse leaves the point
+  map.on("mouseleave", "points-layer", () => {
+    map.getCanvas().style.cursor = ""; // Reset cursor
+  });
 
   document.addEventListener("DOMContentLoaded", function () {
     var pymChild = new pym.Child();
