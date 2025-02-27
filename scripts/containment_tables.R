@@ -17,12 +17,10 @@ dw_api_key <- Sys.getenv("DW_API_KEY")
 # Configuration variables
 # Adjust these based on seasonal conditions
 min_acres_burned = 49
-federal_update_threshold = 60  
-calfire_update_threshold = 30  
 
 # Load data
 fires_fordatawrappertable <- read.csv("data/wildfires_save.csv") %>%
-  filter(updated >= Sys.Date() - 30) %>%
+  filter(updated >= Sys.Date() - 30, acres_burned > min_acres_burned) %>%
   mutate(
     county_state = paste0(county, ", ", state),
     started = format(as.Date(started), format = "%b. %d, %Y"),
