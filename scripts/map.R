@@ -8,6 +8,12 @@ library(janitor)
 library(lubridate)
 library(tidyr)
 
+# Configuration variables
+# Adjust these based on seasonal conditions
+min_acres_burned = 49
+federal_update_threshold = 60  
+calfire_update_threshold = 30  
+
 # Define file paths
 temp_file <- "data/temp.geojson"
 original_file <- "data/calfire_activefires.geojson"
@@ -60,7 +66,7 @@ nfis_perimeters <- st_read(perimeters_file, quiet = TRUE) %>%
     days_burning = as.integer(difftime(Sys.Date(), started, units = "days")),
     days_sinceupdate = as.integer(difftime(Sys.Date(), updated, units = "days"))
   ) %>%
-  filter(acres_burned > 49, days_sinceupdate < 60)
+  filter(acres_burned > min_acres_burned, days_sinceupdate < federal_update_threshold)
 
 # Load and process California state wildfire data
 calfire_activefires <- st_read(original_file, quiet = TRUE) %>%
@@ -85,7 +91,7 @@ calfire_activefires <- st_read(original_file, quiet = TRUE) %>%
     days_burning = as.integer(difftime(Sys.Date(), started, units = "days")),
     days_sinceupdate = as.integer(difftime(Sys.Date(), updated, units = "days"))
   ) %>%
-  filter(acres_burned > 49, days_sinceupdate < 30)
+  filter(acres_burned > min_acres_burned, days_sinceupdate < calfire_update_threshold)
 
 # Merge California and federal data
 fires <- bind_rows(nfis_perimeters, calfire_activefires) %>%

@@ -14,6 +14,12 @@ tryCatch({
 })
 dw_api_key <- Sys.getenv("DW_API_KEY")
 
+# Configuration variables
+# Adjust these based on seasonal conditions
+min_acres_burned = 49
+federal_update_threshold = 60  
+calfire_update_threshold = 30  
+
 # Load data
 fires_fordatawrappertable <- read.csv("data/wildfires_save.csv") %>%
   filter(updated >= Sys.Date() - 30) %>%
