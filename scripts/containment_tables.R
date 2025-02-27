@@ -16,7 +16,7 @@ dw_api_key <- Sys.getenv("DW_API_KEY")
 
 # Load data
 fires_fordatawrappertable <- read.csv("data/wildfires_save.csv") %>%
-  filter(updated >= Sys.Date() - 30) %>%
+  filter(updated >= Sys.Date() - 30, acres_burned > 49) %>%
   mutate(
     county_state = paste0(county, ", ", state),
     started = format(as.Date(started), format = "%b. %d, %Y"),
