@@ -2,7 +2,6 @@
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.css" />
 <script src="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.js"></script>
 <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@2.3.0/dist/maplibre-gl.css" />
 
 <!-- Fonts -->
 <link rel="stylesheet" href="https://use.typekit.net/rdn8fde.css" />
@@ -10,7 +9,7 @@
   @font-face {
     font-family: "Publico Headline";
     src: url("fonts/PublicoHeadline-Black.woff2") format("woff2"),
-      url("fonts/PublicoHeadline-Black.woff") format("woff");
+         url("fonts/PublicoHeadline-Black.woff") format("woff");
   }
 
   body {
@@ -28,11 +27,6 @@
     color: #a5091e;
   }
 
-  a#source {
-    color: #858585;
-    text-decoration: none;
-  }
-
   #container {
     display: flex;
     flex-direction: column;
@@ -46,9 +40,9 @@
 
   .title {
     font-family: "Publico Headline", serif;
-    line-height: 34px;
     font-size: 32px;
-    color: rgb(0, 0, 0);
+    color: #000;
+    line-height: 34px;
   }
 
   .description {
@@ -74,27 +68,25 @@
     display: none !important;
   }
 
-
   .pop-up_content {
     font-family: "proxima-nova", sans-serif;
     font-size: 16px;
     line-height: 1.3;
   }
 
-  p.fire-name {
+  .fire-name {
     font-weight: bold;
     font-size: 18px;
     margin: 0;
   }
 
-  p.fire-location {
+  .fire-location {
     font-size: 14px;
-    /* font-weight: 300; */
     margin: 0;
     padding-bottom: 5px;
   }
 
-  p.updated {
+  .updated {
     font-size: 12px;
     font-weight: 300;
     margin: 0;
@@ -103,12 +95,11 @@
     font-style: italic;
   }
 
-  p.fire-info {
+  .fire-info {
     font-size: 14px;
     margin: 0;
   }
 
-  /* MEDIA QUERY */
   @media (max-width: 430px) {
     #map {
       max-height: 900px !important;
@@ -126,14 +117,14 @@
 
   .source {
     font-family: "proxima-nova", sans-serif;
-    color: rgb(130, 130, 130);
+    color: #828282;
     font-size: 14px;
   }
 </style>
 
 <div id="container">
   <div id="header">
-    <div class="title">Current wildfires</div>
+    <div class="title">Current Wildfires</div>
     <div class="description"></div>
   </div>
   <div id="map"></div>
@@ -146,13 +137,11 @@
 
   const map = new maplibregl.Map({
     container: "map",
-    style:
-      "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+    style: "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
     center: [-113.525, 35.106],
     zoom: initialZoom,
     maxZoom: 20,
     minZoom: 2,
-    // hash: true,
   });
 
   map.scrollZoom.disable();
@@ -160,25 +149,20 @@
 
   map.on("load", () => {
     fetch("data/wildfires_combined.geojson")
-      .then((response) => response.json())
-      .then((geojson) => {
-        const wildfireCount = geojson.features.length; // Count wildfire objects
+      .then(response => response.json())
+      .then(geojson => {
+        const wildfireCount = geojson.features.length;
         document.querySelector(".description").innerHTML =
           `We are currently tracking <strong><span class="num-fires">${wildfireCount}</span></strong> wildfires of more than 50 acres in the U.S. Click or hover over to see more information about each fire.`;
 
         const bounds = new maplibregl.LngLatBounds();
-
-        geojson.features.forEach((feature) => {
+        geojson.features.forEach(feature => {
           if (feature.geometry) {
             const coords = feature.geometry.coordinates;
             if (feature.geometry.type === "Point") {
               bounds.extend(coords);
-            } else if (feature.geometry.type === "Polygon") {
-              coords[0].forEach((coord) => bounds.extend(coord));
-            } else if (feature.geometry.type === "MultiPolygon") {
-              coords.forEach((polygon) => {
-                polygon[0].forEach((coord) => bounds.extend(coord));
-              });
+            } else if (feature.geometry.type === "Polygon" || feature.geometry.type === "MultiPolygon") {
+              coords.flat().forEach(coord => bounds.extend(coord));
             }
           }
         });
@@ -187,7 +171,6 @@
           map.fitBounds(bounds, { padding: 50, maxZoom: 10 });
         }
 
-        // Add the wildfire data source
         map.addSource("combined", {
           type: "geojson",
           data: geojson,
@@ -209,65 +192,56 @@
           type: "circle",
           source: "combined",
           paint: {
-            "circle-radius": 4, // circle size
-            "circle-color": "rgba(130, 4, 21, 0.4)", // dark red with opacity
-            "circle-stroke-color": "#a5091e", // red stroke
-            "circle-stroke-width": 2, // stroke width
+            "circle-radius": 4,
+            "circle-color": "rgba(130, 4, 21, 0.4)",
+            "circle-stroke-color": "#a5091e",
+            "circle-stroke-width": 2,
           },
-          filter: ["==", "$type", "Point"], // Show only points
+          filter: ["==", "$type", "Point"],
         });
       })
-      .catch((error) => console.error("Error loading GeoJSON:", error));
+      .catch(error => console.error("Error loading GeoJSON:", error));
   });
 
-  map.on("click", "points-layer", (e) => {
-    // console.log(e.features) 
-    const coordinates = e.features[0].geometry.coordinates.slice();
-    const fire_name = e.features[0].properties.name;
-    const county = e.features[0].properties.county;
-    const state = e.features[0].properties.state;
-    const fire_size = Number(e.features[0].properties.acres_burned).toLocaleString();
-    const days_burning = Number(e.features[0].properties.days_burning);
-    const percent_contained = Number(e.features[0].properties.percent_contained);
-    const updatedRaw = e.features[0].properties.updated;
-const updated = updatedRaw ? new Date(updatedRaw).toLocaleString("en-US", {
-  month: "short",  // "Feb"
-  day: "numeric",  // "26"
-  hour: "numeric", // "2"
-  minute: "2-digit", // "30"
-  hour12: true, // Ensures AM/PM format
-}).replace(",", " at").replace(/\sAM/g, " a.m.").replace(/\sPM/g, " p.m.") : "Unknown";
+  function formatUpdatedDate(date) {
+    return new Date(date).toLocaleString("en-US", {
+      month: "short",
+      day: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+    }).replace(",", " at").replace(/\sAM/g, " a.m.").replace(/\sPM/g, " p.m.");
+  }
 
+  function createPopup(feature, coordinates) {
+    const { name, county, state, acres_burned, days_burning, percent_contained, updated } = feature.properties;
+    const fireSize = Number(acres_burned).toLocaleString();
+    const updatedFormatted = updated ? formatUpdatedDate(updated) : "Unknown";
 
-    // Create and display a popup with fire details
     new maplibregl.Popup()
-      .setLngLat(coordinates) // Set the location of the popup
-      .setHTML(
-        `<div class="pop-up_content">
-       <p class="fire-name">${fire_name}</p>
-        <p class="fire-location">${county} County, ${state}</p>
-        <p class="fire-info">Started <b>${days_burning}</b> days ago <br>
-        <b>${fire_size}</b> acres burned <br>
-        <b>${percent_contained}%</b> contained</p>
+      .setLngLat(coordinates)
+      .setHTML(`
+        <div class="pop-up_content">
+          <p class="fire-name">${name}</p>
+          <p class="fire-location">${county} County, ${state}</p>
+          <p class="fire-info">Started <b>${days_burning}</b> days ago<br><b>${fireSize}</b> acres burned<br><b>${percent_contained}%</b> contained</p>
+          <p class="updated">Last updated on ${updatedFormatted} PST</p>
+        </div>
+      `)
+      .addTo(map);
+  }
 
-        <p class="updated">Last updated on ${updated} PST</p>
-        </div>`
-      )
-      .addTo(map); // Add the popup to the map
-  });
+  map.on("click", "points-layer", (e) => createPopup(e.features[0], e.features[0].geometry.coordinates));
+  map.on("click", "polygon-layer", (e) => createPopup(e.features[0], e.features[0].geometry.coordinates[0][0]));
 
-  // Change the cursor when hovering over wildfire points
-  map.on("mouseenter", "points-layer", () => {
-    map.getCanvas().style.cursor = "pointer"; // Change cursor to a pointer on hover
-  });
+  map.on("mouseenter", "points-layer", () => map.getCanvas().style.cursor = "pointer");
+  map.on("mouseleave", "points-layer", () => map.getCanvas().style.cursor = "");
 
-  // Reset cursor when mouse leaves the point
-  map.on("mouseleave", "points-layer", () => {
-    map.getCanvas().style.cursor = ""; // Reset cursor
-  });
+  map.on("mouseenter", "polygon-layer", () => map.getCanvas().style.cursor = "pointer");
+  map.on("mouseleave", "polygon-layer", () => map.getCanvas().style.cursor = "");
 
-  document.addEventListener("DOMContentLoaded", function () {
-    var pymChild = new pym.Child();
+  document.addEventListener("DOMContentLoaded", () => {
+    const pymChild = new pym.Child();
     pymChild.sendHeight();
   });
 </script>
