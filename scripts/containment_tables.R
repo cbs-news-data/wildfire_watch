@@ -40,8 +40,13 @@ fires_fordatawrappertable <- read.csv("data/wildfires_save.csv") %>%
   )
 
 
-# Generate timestamp for charts
-formatted_datetime <- Sys.time() %>%
+# Generate timestamps for charts
+formatted_datetime_national <- Sys.time() %>%
+  with_tz("America/New_York") %>%
+  round_date("hour") %>%
+  format("%b. %e, %Y at %l %p EST.")
+
+formatted_datetime_cali <- Sys.time() %>%
   with_tz("America/Los_Angeles") %>%
   round_date("hour") %>%
   format("%b. %e, %Y at %l %p PST.")
@@ -53,7 +58,7 @@ dw_data_to_chart(fires_fordatawrappertable, "9zNRi", api_key = dw_api_key)
 dw_edit_chart(
   chart_id = "9zNRi",
   api_key = dw_api_key,
-  annotate = paste("Note: Data as of", formatted_datetime),
+  annotate = paste("Note: Data as of", formatted_datetime_national),
   folderId = "250056"
 )
 
@@ -71,7 +76,7 @@ dw_data_to_chart(fires_fordatawrappertable_cali, "QuBuz", api_key = dw_api_key)
 dw_edit_chart(
   chart_id = "QuBuz",
   api_key = dw_api_key,
-  annotate = paste("Note: Data as of", formatted_datetime),
+  annotate = paste("Note: Data as of", formatted_datetime_cali),
   folderId = "250056"
 )
 
