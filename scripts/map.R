@@ -1,4 +1,4 @@
-# Load necessary libraries
+# Libraries
 library(readr)
 library(dplyr)
 library(stringr)
@@ -105,11 +105,5 @@ st_write(fires, save_file, driver = "GeoJSON", delete_dsn = TRUE, quiet = TRUE)
 
 message("Wildfire data successfully processed and saved to: ", save_file)
 
-# Get updated date/time in "America/Los_Angeles" timezone and format it
-updated_datetime <- format(Sys.time(), "%B %d, %Y at %I:%M %p %Z", tz = "America/Los_Angeles")
-
-# Replace " 0" with a space to clean up the format (e.g., for the time)
-updated_datetime_pretty <- str_replace_all(updated_datetime, " 0", " ")
-
-# Save to CSV
-write.csv(data.frame(updated_datetime_pretty), "data/updated_datetime_df.csv", row.names = FALSE)
+# Save as csv
+write_csv(fires,"data/wildfires_save.csv")
