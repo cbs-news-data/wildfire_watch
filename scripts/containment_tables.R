@@ -6,6 +6,12 @@ library(DatawRappr)
 library(dotenv)
 library(lubridate)
 
+# Configuration variables
+# Adjust these based on seasonal conditions
+min_acres_burned = 49
+federal_update_threshold = 60  
+calfire_update_threshold = 30  
+
 # Load the .env file
 tryCatch({
   load_dot_env()
@@ -20,11 +26,7 @@ min_acres_burned = 49
 
 # Load data
 fires_fordatawrappertable <- read.csv("data/wildfires_save.csv") %>%
-<<<<<<< HEAD
   filter(updated >= Sys.Date() - 30, acres_burned > min_acres_burned) %>%
-=======
-  filter(updated >= Sys.Date() - 30, acres_burned > 49) %>%
->>>>>>> main
   mutate(
     county_state = paste0(county, ", ", state),
     started = format(as.Date(started), format = "%b. %d, %Y"),
