@@ -2452,15 +2452,7 @@
         "attr_ContainmentDateTime" : null, 
         "attr_ControlDateTime" : null, 
         "attr_CreatedBySystem" : "wildcade", 
-<<<<<<< HEAD
-        "attr_IncidentSize" : 1160, 
-=======
-<<<<<<< HEAD
-        "attr_IncidentSize" : 1160, 
-=======
         "attr_IncidentSize" : 1350, 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "attr_DiscoveryAcres" : 15, 
         "attr_DispatchCenterID" : "FLFIC", 
         "attr_EstimatedCostToDate" : 50000, 
@@ -2469,15 +2461,9 @@
         "attr_FFReportApprovedByUnit" : null, 
         "attr_FFReportApprovedDate" : null, 
         "attr_FireBehaviorGeneral" : "Moderate", 
-<<<<<<< HEAD
-        "attr_FireBehaviorGeneral1" : null, 
-        "attr_FireBehaviorGeneral2" : "Running", 
-        "attr_FireBehaviorGeneral3" : "Smoldering", 
-=======
         "attr_FireBehaviorGeneral1" : "Creeping", 
         "attr_FireBehaviorGeneral2" : "Running", 
         "attr_FireBehaviorGeneral3" : "Flanking", 
->>>>>>> main
         "attr_FireCause" : "Undetermined", 
         "attr_FireCauseGeneral" : null, 
         "attr_FireCauseSpecific" : null, 
@@ -2493,17 +2479,10 @@
         "attr_FSJobCode" : "P8", 
         "attr_FSOverrideCode" : "0805", 
         "attr_GACC" : "SACC", 
-<<<<<<< HEAD
-        "attr_ICS209ReportDateTime" : 1740615562000, 
-        "attr_ICS209RptForTimePeriodFrom" : 1740603600000, 
-        "attr_ICS209RptForTimePeriodTo" : 1740615300000, 
-        "attr_ICS209ReportStatus" : "I", 
-=======
         "attr_ICS209ReportDateTime" : 1740699618000, 
         "attr_ICS209RptForTimePeriodFrom" : 1740607200000, 
         "attr_ICS209RptForTimePeriodTo" : 1740697200000, 
         "attr_ICS209ReportStatus" : "U", 
->>>>>>> main
         "attr_IncidentManagementOrg" : "Type 4 IC", 
         "attr_IncidentName" : "Two Barrel", 
         "attr_IncidentShortDescription" : "ANF", 
@@ -2522,7 +2501,7 @@
         "attr_IsTrespass" : null, 
         "attr_IsUnifiedCommand" : 0, 
         "attr_LocalIncidentIdentifier" : "000590", 
-        "attr_ModifiedBySystem" : "wildcade", 
+        "attr_ModifiedBySystem" : "ics209", 
         "attr_PercentContained" : 60, 
         "attr_PercentPerimToBeContained" : 100, 
         "attr_POOCity" : null, 
@@ -2556,15 +2535,7 @@
         "attr_OrganizationalAssessment" : null, 
         "attr_StratDecisionPublishDate" : null, 
         "attr_CreatedOnDateTime_dt" : 1740592550477, 
-<<<<<<< HEAD
-        "attr_ModifiedOnDateTime_dt" : 1740661646703, 
-=======
-<<<<<<< HEAD
-        "attr_ModifiedOnDateTime_dt" : 1740661646703, 
-=======
         "attr_ModifiedOnDateTime_dt" : 1740699618693, 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "attr_Source" : "IRWIN", 
         "attr_ActiveFireCandidate" : 1, 
         "attr_IsCpxChild" : 0, 
@@ -2579,136 +2550,13 @@
     }, 
     {
       "type" : "Feature", 
-<<<<<<< HEAD
-      "id" : 37182, 
-=======
-<<<<<<< HEAD
-      "id" : 37182, 
-=======
       "id" : 37185, 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
       "geometry" : 
       {
         "type" : "Polygon", 
         "coordinates" : 
         [
           [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
-            [-103.347504588075, 44.1719712862712], 
-            [-103.347529863972, 44.1719617510076], 
-            [-103.347576058937, 44.1719748667464], 
-            [-103.347598824043, 44.1719984088332], 
-            [-103.347641967431, 44.1720177132341], 
-            [-103.347681999055, 44.1720192132054], 
-            [-103.347721110804, 44.1720114420912], 
-            [-103.347758650502, 44.1720044557549], 
-            [-103.347802701188, 44.1720136250392], 
-            [-103.347842537878, 44.1720304004895], 
-            [-103.347873774097, 44.1720464510781], 
-            [-103.347906885998, 44.172062027445], 
-            [-103.347939154382, 44.1720823131198], 
-            [-103.347969627033, 44.1721052256663], 
-            [-103.348007485632, 44.1721197827091], 
-            [-103.348046143732, 44.1721398351215], 
-            [-103.348090100994, 44.1721556691902], 
-            [-103.348142071228, 44.1721618707316], 
-            [-103.34818491907, 44.172176726723], 
-            [-103.348226308947, 44.1721956728262], 
-            [-103.348258880063, 44.1722179880483], 
-            [-103.348267321531, 44.1722520355947], 
-            [-103.34827836542, 44.17228042024], 
-            [-103.348253072454, 44.1723061567397], 
-            [-103.348251079991, 44.1723378763285], 
-            [-103.3482334793, 44.1723624639916], 
-            [-103.348195420376, 44.172406877812], 
-            [-103.348184570524, 44.1724334699041], 
-            [-103.348140878265, 44.1724229985283], 
-            [-103.34809757318, 44.1724378125735], 
-            [-103.348054578014, 44.1724438607389], 
-            [-103.348014520339, 44.1724501009089], 
-            [-103.347979158158, 44.1724717375736], 
-            [-103.347954075399, 44.1724986144225], 
-            [-103.347943701654, 44.1725262760311], 
-            [-103.347912770862, 44.1725511741739], 
-            [-103.347874291527, 44.1725661608624], 
-            [-103.347839279689, 44.1725486375186], 
-            [-103.347791372534, 44.1725443219184], 
-            [-103.347749543382, 44.1725278146481], 
-            [-103.347712675624, 44.1725375740407], 
-            [-103.347696160996, 44.1725655777605], 
-            [-103.347676384585, 44.172592977103], 
-            [-103.347645310961, 44.1726109939759], 
-            [-103.347604874197, 44.1726190427091], 
-            [-103.347570306126, 44.1726338283554], 
-            [-103.347534179479, 44.172649410366], 
-            [-103.347498253155, 44.1726658422179], 
-            [-103.347454506099, 44.1726736924961], 
-            [-103.347411335762, 44.1726825272793], 
-            [-103.347371456851, 44.1727103022001], 
-            [-103.347320246592, 44.172706246913], 
-            [-103.347285626419, 44.1727184965339], 
-            [-103.347243064241, 44.1727277584877], 
-            [-103.347229957821, 44.1727575803585], 
-            [-103.347211129133, 44.1727889943021], 
-            [-103.347165219832, 44.1728016672167], 
-            [-103.347124839662, 44.172801826361], 
-            [-103.34708676906, 44.1727968832224], 
-            [-103.347057333963, 44.1727763922587], 
-            [-103.347048545744, 44.1727435795123], 
-            [-103.347015217349, 44.172724263107], 
-            [-103.346976266398, 44.172709360219], 
-            [-103.34693521339, 44.172700621442], 
-            [-103.34689736018, 44.1726914264922], 
-            [-103.346873645555, 44.1726602193203], 
-            [-103.346837633892, 44.1726738258683], 
-            [-103.346807513381, 44.1726556711321], 
-            [-103.346769646697, 44.1726410343271], 
-            [-103.346757841037, 44.1726090417133], 
-            [-103.346767385637, 44.1725783235302], 
-            [-103.34679682792, 44.1725491793848], 
-            [-103.346819368448, 44.1725191918204], 
-            [-103.346805680818, 44.1724878763129], 
-            [-103.346778416949, 44.1724600606955], 
-            [-103.346755173939, 44.1724360671297], 
-            [-103.346729946551, 44.1724088262153], 
-            [-103.346728106801, 44.1723798823676], 
-            [-103.346716578721, 44.1723515725105], 
-            [-103.346710408193, 44.1723240409715], 
-            [-103.346717136575, 44.1722957027377], 
-            [-103.346725053428, 44.172268200811], 
-            [-103.346735915856, 44.1722385371943], 
-            [-103.346727961274, 44.1722054065011], 
-            [-103.346749896337, 44.1721751378402], 
-            [-103.34677485962, 44.1721509308898], 
-            [-103.346795094172, 44.172118591368], 
-            [-103.346824854459, 44.1720954384966], 
-            [-103.346851775171, 44.1720710169559], 
-            [-103.346891993645, 44.1720635564094], 
-            [-103.346921917425, 44.1720392521213], 
-            [-103.346953172509, 44.1720187686263], 
-            [-103.346990549611, 44.1720084125097], 
-            [-103.34702861662, 44.1720150489811], 
-            [-103.347063744341, 44.1720002915296], 
-            [-103.347094264603, 44.1719827944347], 
-            [-103.347123606275, 44.171963232295], 
-            [-103.347147785329, 44.1719294938548], 
-            [-103.347159529903, 44.17190310063], 
-            [-103.347184132962, 44.1718767924435], 
-            [-103.347226836176, 44.1718759142366], 
-            [-103.347254092858, 44.17189740163], 
-            [-103.34728409569, 44.1719218992721], 
-            [-103.347327672066, 44.1719280505813], 
-            [-103.347378008265, 44.1719392978043], 
-            [-103.347423431577, 44.1719480869509], 
-            [-103.347464320194, 44.1719528826119], 
-            [-103.347504588075, 44.1719712862712]
-<<<<<<< HEAD
-=======
-=======
             [-102.821480350246, 42.7898212167275], 
             [-102.821477283398, 42.7898269164226], 
             [-102.821456599688, 42.7898585330427], 
@@ -3035,53 +2883,20 @@
             [-102.821455066264, 42.7897943834574], 
             [-102.821487083119, 42.7898173167275], 
             [-102.821480350246, 42.7898212167275]
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
           ]
         ]
       }, 
       "properties" : {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
-        "OBJECTID" : 37182, 
-        "poly_SourceOID" : 2546, 
-        "poly_IncidentName" : "Tree Farm", 
-        "poly_FeatureCategory" : "Wildfire Daily Fire Perimeter", 
-        "poly_MapMethod" : "Auto-generated for InFORM", 
-        "poly_GISAcres" : 2, 
-<<<<<<< HEAD
-=======
-=======
         "OBJECTID" : 37185, 
         "poly_SourceOID" : 2552, 
         "poly_IncidentName" : "Hilltop", 
         "poly_FeatureCategory" : "Wildfire Daily Fire Perimeter", 
         "poly_MapMethod" : "Auto-generated for InFORM", 
         "poly_GISAcres" : 8, 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "poly_DeleteThis" : "No", 
         "poly_FeatureAccess" : "Public", 
         "poly_FeatureStatus" : "Approved", 
         "poly_IsVisible" : "Yes", 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
-        "poly_CreateDate" : 1740680416052, 
-        "poly_DateCurrent" : 1740684876229, 
-        "poly_PolygonDateTime" : 1740681541742, 
-        "poly_IRWINID" : "{D112915C-14B0-4B4E-8651-99250C9EAB28}", 
-        "poly_FORID" : null, 
-        "poly_Acres_AutoCalc" : 1.9477249552287974, 
-        "poly_SourceGlobalID" : "{8D0178C4-AFFA-4EDC-B40A-D91C4C90F30F}", 
-        "poly_Source" : "2025 NIFS", 
-        "attr_SourceOID" : 33057654, 
-<<<<<<< HEAD
-=======
-=======
         "poly_CreateDate" : 1740682684577, 
         "poly_DateCurrent" : 1740696347000, 
         "poly_PolygonDateTime" : 1740689046000, 
@@ -3091,23 +2906,13 @@
         "poly_SourceGlobalID" : "{ABE4E5D4-C12B-42FF-BB0A-B65DE8696A77}", 
         "poly_Source" : "2025 NIFS", 
         "attr_SourceOID" : 33057664, 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "attr_ABCDMisc" : null, 
         "attr_ADSPermissionState" : "DEFAULT", 
         "attr_CalculatedAcres" : null, 
         "attr_ContainmentDateTime" : null, 
         "attr_ControlDateTime" : null, 
         "attr_CreatedBySystem" : "wildcade", 
-<<<<<<< HEAD
-        "attr_IncidentSize" : 2, 
-=======
-<<<<<<< HEAD
-        "attr_IncidentSize" : 2, 
-=======
         "attr_IncidentSize" : 17.2, 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "attr_DiscoveryAcres" : 0.1, 
         "attr_DispatchCenterID" : "SDGPC", 
         "attr_EstimatedCostToDate" : null, 
@@ -3119,30 +2924,12 @@
         "attr_FireBehaviorGeneral1" : null, 
         "attr_FireBehaviorGeneral2" : null, 
         "attr_FireBehaviorGeneral3" : null, 
-<<<<<<< HEAD
-        "attr_FireCause" : "Human", 
-        "attr_FireCauseGeneral" : null, 
-        "attr_FireCauseSpecific" : null, 
-        "attr_FireCode" : "SF13", 
-        "attr_FireDepartmentID" : null, 
-        "attr_FireDiscoveryDateTime" : 1740678793000, 
-=======
-<<<<<<< HEAD
-        "attr_FireCause" : "Human", 
-        "attr_FireCauseGeneral" : null, 
-        "attr_FireCauseSpecific" : null, 
-        "attr_FireCode" : "SF13", 
-        "attr_FireDepartmentID" : null, 
-        "attr_FireDiscoveryDateTime" : 1740678793000, 
-=======
         "attr_FireCause" : "Undetermined", 
         "attr_FireCauseGeneral" : null, 
         "attr_FireCauseSpecific" : null, 
         "attr_FireCode" : "SF15", 
         "attr_FireDepartmentID" : null, 
         "attr_FireDiscoveryDateTime" : 1740679020000, 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "attr_FireMgmtComplexity" : null, 
         "attr_FireOutDateTime" : null, 
         "attr_FireStrategyConfinePercent" : null, 
@@ -3157,22 +2944,6 @@
         "attr_ICS209RptForTimePeriodTo" : null, 
         "attr_ICS209ReportStatus" : null, 
         "attr_IncidentManagementOrg" : null, 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
-        "attr_IncidentName" : "Tree Farm", 
-        "attr_IncidentShortDescription" : null, 
-        "attr_IncidentTypeCategory" : "WF", 
-        "attr_IncidentTypeKind" : "FI", 
-        "attr_InitialLatitude" : 44.169257, 
-        "attr_InitialLongitude" : -103.332149, 
-        "attr_InitialResponseAcres" : null, 
-        "attr_InitialResponseDateTime" : null, 
-        "attr_IrwinID" : "{D112915C-14B0-4B4E-8651-99250C9EAB28}", 
-<<<<<<< HEAD
-=======
-=======
         "attr_IncidentName" : "Hilltop", 
         "attr_IncidentShortDescription" : null, 
         "attr_IncidentTypeCategory" : "WF", 
@@ -3182,8 +2953,6 @@
         "attr_InitialResponseAcres" : null, 
         "attr_InitialResponseDateTime" : null, 
         "attr_IrwinID" : "{A4F72B40-D524-40F8-A4CB-84A0C69D49D1}", 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "attr_IsFireCauseInvestigated" : null, 
         "attr_IsFireCodeRequested" : 0, 
         "attr_IsFSAssisted" : 1, 
@@ -3191,34 +2960,14 @@
         "attr_IsReimbursable" : null, 
         "attr_IsTrespass" : null, 
         "attr_IsUnifiedCommand" : null, 
-<<<<<<< HEAD
-        "attr_LocalIncidentIdentifier" : "250161", 
-=======
-<<<<<<< HEAD
-        "attr_LocalIncidentIdentifier" : "250161", 
-=======
         "attr_LocalIncidentIdentifier" : "250162", 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "attr_ModifiedBySystem" : "wildcade", 
         "attr_PercentContained" : null, 
         "attr_PercentPerimToBeContained" : null, 
         "attr_POOCity" : null, 
-<<<<<<< HEAD
-        "attr_POOCounty" : "Meade", 
-        "attr_POODispatchCenterID" : "SDGPC", 
-        "attr_POOFips" : "46093", 
-=======
-<<<<<<< HEAD
-        "attr_POOCounty" : "Meade", 
-        "attr_POODispatchCenterID" : "SDGPC", 
-        "attr_POOFips" : "46093", 
-=======
         "attr_POOCounty" : "Dawes", 
         "attr_POODispatchCenterID" : "SDGPC", 
         "attr_POOFips" : "31045", 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "attr_POOJurisdictionalAgency" : null, 
         "attr_POOJurisdictionalUnit" : null, 
         "attr_POOJurisdictUnitParentUnit" : null, 
@@ -3230,76 +2979,32 @@
         "attr_POOLegalDescRange" : null, 
         "attr_POOLegalDescSection" : null, 
         "attr_POOLegalDescTownship" : null, 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
-        "attr_POOPredictiveServiceAreaID" : "RM05", 
-        "attr_POOProtectingAgency" : "DWF", 
-        "attr_POOProtectingUnit" : "SDSDS", 
-        "attr_POOState" : "US-SD", 
-<<<<<<< HEAD
-=======
-=======
         "attr_POOPredictiveServiceAreaID" : "RM24", 
         "attr_POOProtectingAgency" : "SFS", 
         "attr_POOProtectingUnit" : "NENES", 
         "attr_POOState" : "US-NE", 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "attr_PredominantFuelGroup" : null, 
         "attr_PredominantFuelModel" : null, 
         "attr_PrimaryFuelModel" : null, 
         "attr_SecondaryFuelModel" : null, 
         "attr_TotalIncidentPersonnel" : null, 
-<<<<<<< HEAD
-        "attr_UniqueFireIdentifier" : "2025-SDSDS-250161", 
-=======
-<<<<<<< HEAD
-        "attr_UniqueFireIdentifier" : "2025-SDSDS-250161", 
-=======
         "attr_UniqueFireIdentifier" : "2025-NENES-250162", 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "attr_FORID" : null, 
         "attr_WFDSSDecisionStatus" : "No Decision", 
         "attr_EstimatedFinalCost" : null, 
         "attr_OrganizationalAssessment" : null, 
         "attr_StratDecisionPublishDate" : null, 
-<<<<<<< HEAD
-        "attr_CreatedOnDateTime_dt" : 1740680382703, 
-        "attr_ModifiedOnDateTime_dt" : 1740687125510, 
-=======
-<<<<<<< HEAD
-        "attr_CreatedOnDateTime_dt" : 1740680382703, 
-        "attr_ModifiedOnDateTime_dt" : 1740687125510, 
-=======
         "attr_CreatedOnDateTime_dt" : 1740682672953, 
         "attr_ModifiedOnDateTime_dt" : 1740698958210, 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "attr_Source" : "IRWIN", 
         "attr_ActiveFireCandidate" : 1, 
         "attr_IsCpxChild" : 0, 
         "attr_CpxName" : null, 
         "attr_CpxID" : null, 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
-        "attr_SourceGlobalID" : "{12469D3C-679C-4E14-B53D-A958096F33DA}", 
-        "GlobalID" : "c0bdd2aa-6e60-40f2-80f4-891893f4166d", 
-        "Shape__Area" : 8.8700289779808372E-07, 
-        "Shape__Length" : 0.0041532735088142458, 
-<<<<<<< HEAD
-=======
-=======
         "attr_SourceGlobalID" : "{CBAD88B2-453B-4283-8AEE-65883CEB313B}", 
         "GlobalID" : "161d59da-7860-4247-819f-fe02b1bd8398", 
         "Shape__Area" : 7.6487717706186231E-06, 
         "Shape__Length" : 0.013167351539087283, 
->>>>>>> dce416105de7a4bec23c792841847a31273a1537
->>>>>>> main
         "attr_IncidentComplexityLevel" : null
       }
     }

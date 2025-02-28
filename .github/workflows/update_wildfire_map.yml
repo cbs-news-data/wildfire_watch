@@ -32,7 +32,7 @@ jobs:
     # Step 5: Install R packages
     - name: Install R packages
       run: |
-        Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "leaflet", "leaflet.extras", "leaflet.providers", "sf", "htmlwidgets", "htmltools", "janitor", "lubridate", "dotenv"))'
+        Rscript -e 'install.packages(c("readr", "dplyr", "stringr", "sf",  "janitor", "lubridate", "tidyr", "dotenv")'
 
     # Step 6: Install pak for better package management
     - name: Install pak package
@@ -51,7 +51,7 @@ jobs:
     # Step 9: Run R script
     - name: Run R script
       run: |
-        Rscript scripts/wildfires_scrape_build.R
+        Rscript scripts/map.R
         Rscript scripts/containment_tables.R
 
     # Step 10: Commit and push changes
