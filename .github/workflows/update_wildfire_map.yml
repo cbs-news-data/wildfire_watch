@@ -32,7 +32,7 @@ jobs:
     # Step 5: Install R packages
     - name: Install R packages
       run: |
-        Rscript -e 'install.packages(c("readr", "dplyr", "stringr", "sf",  "janitor", "lubridate", "tidyr", "dotenv")'
+        Rscript -e 'install.packages(c("readr", "dplyr", "stringr", "sf", "janitor", "lubridate", "tidyr", "dotenv"))'
 
     # Step 6: Install pak for better package management
     - name: Install pak package
