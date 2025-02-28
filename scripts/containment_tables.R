@@ -20,7 +20,11 @@ min_acres_burned = 49
 
 # Load data
 fires_fordatawrappertable <- read.csv("data/wildfires_save.csv") %>%
+<<<<<<< HEAD
   filter(updated >= Sys.Date() - 30, acres_burned > min_acres_burned) %>%
+=======
+  filter(updated >= Sys.Date() - 30, acres_burned > 49) %>%
+>>>>>>> main
   mutate(
     county_state = paste0(county, ", ", state),
     started = format(as.Date(started), format = "%b. %d, %Y"),
