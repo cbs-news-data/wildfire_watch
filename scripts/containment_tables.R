@@ -42,9 +42,9 @@ fires_fordatawrappertable <- read.csv("data/wildfires_save.csv") %>%
 
 # Generate timestamps for chart annotations
 formatted_datetime_national <- Sys.time() %>%
-  with_tz("America/New_York") %>%
+  with_tz("America/Los_Angeles") %>%
   round_date("hour") %>%
-  format("%b. %e, %Y at %l %p EST.")
+  format("%b. %e, %Y at %l %p PST.")
 
 formatted_datetime_cali <- Sys.time() %>%
   with_tz("America/Los_Angeles") %>%
