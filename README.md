@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **wildfire_watch** project provides real-time tracking of wildfires, focusing on monitoring fire locations, gathering incident data and visualizing it. It combines data from various sources, processes it, and outputs both geo-spatial data.
+The **wildfire_watch** project provides real-time tracking of wildfires, focusing on monitoring fire locations, gathering incident data and visualizing it.
 
 ## Visualizations
 
