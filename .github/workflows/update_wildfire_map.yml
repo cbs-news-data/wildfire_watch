@@ -1,4 +1,4 @@
-name: Update R Wildfire Map
+name: Update map and tables
 
 on:
   schedule:
