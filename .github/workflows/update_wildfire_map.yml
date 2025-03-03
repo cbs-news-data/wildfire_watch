@@ -2,7 +2,7 @@ name: Update map and tables
 
 on:
   schedule:
-    - cron: '45 1,12 * * *'  
+    - cron: '45 * * * *'  
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
