@@ -216,9 +216,25 @@
   }
 
   function createPopup(feature, coordinates) {
-    const { name, county, state, acres_burned, days_burning, percent_contained, updated } = feature.properties;
-    const fireSize = Number(acres_burned).toLocaleString();
+    const { 
+        name, 
+        county, 
+        state, 
+        acres_burned, 
+        days_burning, 
+        percent_contained, 
+        updated 
+    } = feature.properties;
+
+    const fireSize = acres_burned ? Number(acres_burned).toLocaleString() : "Not available";
+    const daysBurningFormatted = days_burning ?? "Not available";
+    const percentContainedFormatted = percent_contained !== null && percent_contained !== undefined 
+        ? `${percent_contained}%` 
+        : null;
     const updatedFormatted = updated ? formatUpdatedDate(updated) : "Unknown";
+
+    // Construct the containment HTML only if percent_contained exists
+    const containmentHTML = percentContainedFormatted ? `<br><b>${percentContainedFormatted}</b> contained` : "";
 
     new maplibregl.Popup()
       .setLngLat(coordinates)
@@ -226,12 +242,15 @@
         <div class="pop-up_content">
           <p class="fire-name">${name}</p>
           <p class="fire-location">${county} County, ${state}</p>
-          <p class="fire-info">Started <b>${days_burning}</b> days ago<br><b>${fireSize}</b> acres burned<br><b>${percent_contained}%</b> contained</p>
+          <p class="fire-info">
+            Started <b>${daysBurningFormatted}</b> days ago<br>
+            <b>${fireSize}</b> acres burned${containmentHTML}
+          </p>
           <p class="updated">Last updated on ${updatedFormatted} PST</p>
         </div>
       `)
       .addTo(map);
-  }
+}
 
   map.on("click", "points-layer", (e) => createPopup(e.features[0], e.features[0].geometry.coordinates));
   map.on("click", "polygon-layer", (e) => createPopup(e.features[0], e.features[0].geometry.coordinates[0][0]));
