@@ -133,12 +133,12 @@
 
 <script>
   const isMobile = window.innerWidth <= 768;
-  const initialZoom = isMobile ? 2 : 4;
+  const initialZoom = isMobile ? 2 : 3.5;
 
   const map = new maplibregl.Map({
     container: "map",
     style: "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
-    center: [-100.51, 40.8],
+    center: [-96.97, 39.18],
     zoom: initialZoom,
     maxZoom: 20,
     minZoom: 2
@@ -149,61 +149,81 @@
 
   map.on("load", () => {
     fetch("data/wildfires_combined.geojson")
-      .then(response => response.json())
-      .then(geojson => {
-        const wildfireCount = geojson.features.length;
-        document.querySelector(".description").innerHTML =
-          `We are tracking <strong><span class="num-fires">${wildfireCount}</span> current and recent</strong> wildfires of more than 50 acres in the U.S. Click on a point or perimeter to see more information about each fire.`;
+  .then(response => response.json())
+  .then(geojson => {
+    const wildfireCount = geojson.features.length;
+    document.querySelector(".description").innerHTML =
+      `We are tracking <strong><span class="num-fires">${wildfireCount}</span> current and recent</strong> wildfires of more than 50 acres in the U.S. Click on a point or perimeter to see more information about each fire.`;
 
-       // const bounds = new maplibregl.LngLatBounds();
-      //  geojson.features.forEach(feature => {
-      //    if (feature.geometry) {
-      //      const coords = feature.geometry.coordinates;
-      //      if (feature.geometry.type === "Point") {
-      //        bounds.extend(coords);
-      //      } else if (feature.geometry.type === "Polygon" || feature.geometry.type === "MultiPolygon") {
-      //        coords.flat().forEach(coord => bounds.extend(coord));
-      //      }
-      //    }
-      //  });
-
-      //  if (!bounds.isEmpty()) {
-      //    map.fitBounds(bounds, { padding: 50, maxZoom: 10 });
-      //  }
-
-
-
-        map.addSource("combined", {
-          type: "geojson",
-          data: geojson,
-          generateId: true,
-        });
-
-        map.addLayer({
-          id: "polygon-layer",
-          type: "fill",
-          source: "combined",
-          paint: {
-            "fill-color": "#a5091e",
-            "fill-opacity": 0.5,
-          },
-        });
-
-        map.addLayer({
-          id: "points-layer",
-          type: "circle",
-          source: "combined",
-          paint: {
-            "circle-radius": 4,
-            "circle-color": "rgba(130, 4, 21, 0.4)",
-            "circle-stroke-color": "#a5091e",
-            "circle-stroke-width": 2,
-          },
-          filter: ["==", "$type", "Point"],
-        });
-      })
-      .catch(error => console.error("Error loading GeoJSON:", error));
+  // add a layer for state outlines
+  map.addSource("states", {
+    type: "geojson",
+    data: "data/states.geojson"
   });
+
+  map.addLayer({
+    id: "states-layer",
+    type: "line",
+    source: "states",
+    paint: {
+      "line-color": "white",
+      "line-width": .2,
+      "line-opacity": 0.2}
+  });
+      
+    // Add points for features with lat/lon but without a Point geometry
+    geojson.features.forEach(feature => {
+      if (!feature.geometry || feature.geometry.type !== "Point") {
+        const { latitude, longitude } = feature.properties;
+        if (latitude !== null && longitude !== null) {
+          geojson.features.push({
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [longitude, latitude]
+            },
+            properties: feature.properties
+          });
+        }
+      }
+    });
+
+    map.addSource("combined", {
+      type: "geojson",
+      data: geojson,
+      generateId: true,
+    });
+
+    // Add polygon layer
+    map.addLayer({
+      id: "polygon-layer",
+      type: "fill",
+      source: "combined",
+      paint: {
+        "fill-color": "#a5091e",
+        "fill-opacity": 0.5,
+      },
+    });
+
+    // Add point layer
+    map.addLayer({
+      id: "points-layer",
+      type: "circle",
+      source: "combined",
+      paint: {
+        "circle-radius": 4,
+        "circle-color": "rgba(130, 4, 21, 0.4)",
+        "circle-stroke-color": "#a5091e",
+        "circle-stroke-width": 2,
+      },
+      filter: ["==", "$type", "Point"],
+    });
+  })
+  .catch(error => console.error("Error loading GeoJSON:", error));
+  });
+
+
+  let activePopup = null; // Store the currently open popup
 
   function formatUpdatedDate(date) {
     return new Date(date).toLocaleString("en-US", {
@@ -216,40 +236,43 @@
   }
 
   function createPopup(feature, coordinates) {
-    const { 
-        name, 
-        county, 
-        state, 
-        acres_burned, 
-        days_burning, 
-        percent_contained, 
-        updated 
-    } = feature.properties;
+  if (activePopup) {
+    activePopup.remove(); // Close any existing popup
+  }
 
-    const fireSize = acres_burned ? Number(acres_burned).toLocaleString() : "Not available";
-    const daysBurningFormatted = days_burning ?? "Not available";
-    const percentContainedFormatted = percent_contained !== null && percent_contained !== undefined 
-        ? `${percent_contained}%` 
-        : null;
-    const updatedFormatted = updated ? formatUpdatedDate(updated) : "Unknown";
+  const { 
+      name, 
+      county, 
+      state, 
+      acres_burned, 
+      days_burning, 
+      percent_contained, 
+      updated 
+  } = feature.properties;
 
-    // Construct the containment HTML only if percent_contained exists
-    const containmentHTML = percentContainedFormatted ? `<br><b>${percentContainedFormatted}</b> contained` : "";
+  const fireSize = acres_burned ? Number(acres_burned).toLocaleString() : "Not available";
+  const daysBurningFormatted = days_burning ?? "Not available";
+  const percentContainedFormatted = percent_contained !== null && percent_contained !== undefined 
+      ? `${percent_contained}%` 
+      : null;
+  const updatedFormatted = updated ? formatUpdatedDate(updated) : "Unknown";
 
-    new maplibregl.Popup()
-      .setLngLat(coordinates)
-      .setHTML(`
-        <div class="pop-up_content">
-          <p class="fire-name">${name}</p>
-          <p class="fire-location">${county} County, ${state}</p>
-          <p class="fire-info">
-            Started <b>${daysBurningFormatted}</b> days ago<br>
-            <b>${fireSize}</b> acres burned${containmentHTML}
-          </p>
-          <p class="updated">Last updated on ${updatedFormatted} PST</p>
-        </div>
-      `)
-      .addTo(map);
+  const containmentHTML = percentContainedFormatted ? `<br><b>${percentContainedFormatted}</b> contained` : "";
+
+  activePopup = new maplibregl.Popup()
+    .setLngLat(coordinates)
+    .setHTML(`
+      <div class="pop-up_content">
+        <p class="fire-name">${name}</p>
+        <p class="fire-location">${county} County, ${state}</p>
+        <p class="fire-info">
+          Started <b>${daysBurningFormatted}</b> days ago<br>
+          <b>${fireSize}</b> acres burned${containmentHTML}
+        </p>
+        <p class="updated">Last updated on ${updatedFormatted} PST</p>
+      </div>
+    `)
+    .addTo(map);
 }
 
   map.on("click", "points-layer", (e) => createPopup(e.features[0], e.features[0].geometry.coordinates));
