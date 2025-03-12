@@ -226,14 +226,24 @@
   let activePopup = null; // Store the currently open popup
 
   function formatUpdatedDate(date) {
-    return new Date(date).toLocaleString("en-US", {
-      month: "short",
-      day: "numeric",
-      hour: "numeric",
-      minute: "2-digit",
-      hour12: true,
-    }).replace(",", " at").replace(/\sAM/g, " a.m.").replace(/\sPM/g, " p.m.");
-  }
+  const dateObj = new Date(date);
+
+  // Convert to US Pacific Time (PST/PDT) dynamically
+  const options = {
+    timeZone: "America/Los_Angeles",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+    timeZoneName: "short",
+  };
+
+  return dateObj.toLocaleString("en-US", options)
+    .replace(",", " at")
+    .replace(/\sAM/g, " a.m.")
+    .replace(/\sPM/g, " p.m.");
+}
 
   function createPopup(feature, coordinates) {
   if (activePopup) {
@@ -269,7 +279,7 @@
           Started <b>${daysBurningFormatted}</b> days ago<br>
           <b>${fireSize}</b> acres burned${containmentHTML}
         </p>
-        <p class="updated">Last updated on ${updatedFormatted} PST</p>
+        <p class="updated">Last updated on ${updatedFormatted}</p>
       </div>
     `)
     .addTo(map);

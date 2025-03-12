@@ -40,16 +40,20 @@ fires_fordatawrappertable <- read.csv("data/wildfires_save.csv") %>%
   ) %>% distinct(Name, County, .keep_all = TRUE)  # Adjust these columns based on what should define a unique row
 
 
-# Generate timestamps for chart annotations
+# Generate timestamps for chart annotations with dynamic timezone abbreviation and "a.m./p.m."
 formatted_datetime_national <- Sys.time() %>%
   with_tz("America/Los_Angeles") %>%
   round_date("hour") %>%
-  format("%b. %e, %Y at %l %p PST.")
+  format("%b. %e, %Y at %l:%M %p %Z.") %>%
+  gsub("AM", "a.m.", .) %>%
+  gsub("PM", "p.m.", .)
 
 formatted_datetime_cali <- Sys.time() %>%
   with_tz("America/Los_Angeles") %>%
   round_date("hour") %>%
-  format("%b. %e, %Y at %l %p PST.")
+  format("%b. %e, %Y at %l:%M %p %Z.") %>%
+  gsub("AM", "a.m.", .) %>%
+  gsub("PM", "p.m.", .)
 
 # Upload and publish national containment chart
 datawrapper_auth(api_key = dw_api_key)
