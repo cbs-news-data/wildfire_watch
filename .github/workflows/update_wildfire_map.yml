@@ -53,6 +53,7 @@ jobs:
       run: |
         Rscript scripts/map.R
         Rscript scripts/containment_tables.R
+        Rscript scripts/page_datetime.R
 
     # Step 10: Commit and push changes
     - name: Commit and push changes
