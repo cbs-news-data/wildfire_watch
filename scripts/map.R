@@ -65,7 +65,11 @@ nfis_perimeters <- st_read(perimeters_file, quiet = TRUE) %>%
     days_burning = as.integer(difftime(Sys.Date(), started, units = "days")),
     days_sinceupdate = as.integer(difftime(Sys.Date(), updated, units = "days"))
   ) %>%
-  filter(acres_burned > min_acres_burned, days_sinceupdate < federal_update_threshold)
+  filter(acres_burned > min_acres_burned, days_sinceupdate < federal_update_threshold) %>% 
+  mutate(latitude = case_when(fed_fire_id == "2025-MN2QS-001729" ~ 47.2898754221127,
+                              TRUE ~ latitude)) %>% 
+  mutate(longitude = case_when(fed_fire_id == "2025-MN2QS-001729" ~ -91.8411746756444,
+                              TRUE ~ longitude)) #manually fix Camp House fire lat/long in MN
 
 # Load and process California state wildfire data
 calfire_activefires <- st_read(original_file, quiet = TRUE) %>%
