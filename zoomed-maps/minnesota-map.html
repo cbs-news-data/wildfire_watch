@@ -291,7 +291,8 @@
       acres_burned, 
       days_burning, 
       percent_contained, 
-      updated 
+      perimeter_updated,
+      data_updated  
   } = feature.properties;
 
   const fireSize = acres_burned ? Number(acres_burned).toLocaleString() : "Not available";
@@ -299,7 +300,8 @@
   const percentContainedFormatted = percent_contained !== null && percent_contained !== undefined 
       ? `${percent_contained}%` 
       : null;
-  const updatedFormatted = updated ? formatUpdatedDate(updated) : "Unknown";
+  const data_updatedFormatted = data_updated ? formatUpdatedDate(data_updated) : "Unknown";
+  const perimeter_updatedFormatted = perimeter_updated ? formatUpdatedDate(perimeter_updated) : "Unknown";
 
   const containmentHTML = percentContainedFormatted ? `<br><b>${percentContainedFormatted}</b> contained` : "";
 
@@ -313,7 +315,8 @@
           Started <b>${daysBurningFormatted}</b> days ago<br>
           <b>${fireSize}</b> acres burned${containmentHTML}
         </p>
-        <p class="updated">Last updated on ${updatedFormatted}</p>
+        <p class="updated">Data last updated on ${data_updatedFormatted}</p>
+        <p class="updated">Perimeter last updated on ${perimeter_updatedFormatted}</p>
       </div>
     `)
     .addTo(map);

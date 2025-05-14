@@ -50,7 +50,8 @@ nfis_perimeters <- st_read(perimeters_file, quiet = TRUE) %>%
     state = attr_POOState,
     county = attr_POOCounty,
     started = attr_FireDiscoveryDateTime,
-    updated = poly_DateCurrent,
+    perimeter_updated = poly_DateCurrent,
+    data_updated = attr_ModifiedOnDateTime_dt,
     acres_burned = attr_IncidentSize,
     percent_contained = attr_PercentContained,
     type = attr_IncidentTypeCategory,
@@ -61,9 +62,9 @@ nfis_perimeters <- st_read(perimeters_file, quiet = TRUE) %>%
     geometry
   ) %>%
   mutate(
-    across(c(started, updated), ms_to_date),
+    across(c(started, perimeter_updated, data_updated), ms_to_date),
     days_burning = as.integer(difftime(Sys.Date(), started, units = "days")),
-    days_sinceupdate = as.integer(difftime(Sys.Date(), updated, units = "days"))
+    days_sinceupdate = as.integer(difftime(Sys.Date(), data_updated, units = "days"))
   ) %>%
   filter(acres_burned > min_acres_burned, days_sinceupdate < federal_update_threshold) %>% 
   mutate(latitude = case_when(fed_fire_id == "2025-MN2QS-001729" ~ 47.2898754221127,
@@ -87,7 +88,8 @@ calfire_activefires <- st_read(original_file, quiet = TRUE) %>%
     latitude = Latitude,
     longitude = Longitude,
     started = Started,
-    updated = Updated,
+    perimeter_updated = Updated,
+    data_updated = Updated,
     acres_burned = AcresBurned,
     percent_contained = PercentContained,
     url = Url
@@ -96,7 +98,7 @@ calfire_activefires <- st_read(original_file, quiet = TRUE) %>%
     across(c(acres_burned, percent_contained), as.numeric),
     percent_contained = replace_na(percent_contained, 0),
     days_burning = as.integer(difftime(Sys.Date(), started, units = "days")),
-    days_sinceupdate = as.integer(difftime(Sys.Date(), updated, units = "days"))
+    days_sinceupdate = as.integer(difftime(Sys.Date(), data_updated, units = "days"))
   ) %>%
   filter(acres_burned > min_acres_burned, days_sinceupdate < calfire_update_threshold)
 
