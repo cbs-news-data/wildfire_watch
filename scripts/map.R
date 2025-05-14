@@ -69,7 +69,11 @@ nfis_perimeters <- st_read(perimeters_file, quiet = TRUE) %>%
   mutate(latitude = case_when(fed_fire_id == "2025-MN2QS-001729" ~ 47.2898754221127,
                               TRUE ~ latitude)) %>% 
   mutate(longitude = case_when(fed_fire_id == "2025-MN2QS-001729" ~ -91.8411746756444,
-                              TRUE ~ longitude)) #manually fix Camp House fire lat/long in MN
+                              TRUE ~ longitude)) %>%  #manually fix Camp House fire lat/long in MN
+  mutate(latitude = case_when(fed_fire_id == "2025-MN4XS-001134" ~ 43.5272356542704,
+                              TRUE ~ latitude)) %>% 
+  mutate(longitude = case_when(fed_fire_id == "2025-MN4XS-001134" ~ -95.0817210662137,
+                               TRUE ~ longitude)) #manually fix Loon Lake lat/long in MN
 
 # Load and process California state wildfire data
 calfire_activefires <- st_read(original_file, quiet = TRUE) %>%
