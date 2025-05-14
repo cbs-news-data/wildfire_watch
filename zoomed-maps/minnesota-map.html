@@ -146,7 +146,7 @@
       <div class="desc_link"><a href="https://www.cbsnews.com/wildfirewatch/" target="_blank"><strong><span class="cbs_ww_link">Click here</span></strong></a> to see more fire data with our Wildfire Watch tool.</div>
     </div>
     <div id="map"></div>
-    <div class="source">Source: <a href="https://data-nifc.opendata.arcgis.com/" target="_blank">National Interagency Fire Center</a></div>
+    <div class="source">Source: <a href="https://data-nifc.opendata.arcgis.com/" target="_blank">National Interagency Fire Center</a>, <a href="https://cwfis.cfs.nrcan.gc.ca/datamart/metadata/activefires" target="_blank">Canadian Interagency Forest Fire Centre</a></div>
   </div>
 
 </body>
@@ -187,7 +187,7 @@
     const acresBurned = filteredGeojson.features[0].properties.acres_burned;
     const pctContained = filteredGeojson.features[0].properties.percent_contained;
     document.querySelector(".description").innerHTML =
-      `We are tracking <strong><span class="num-fires">${wildfireCount}</span> current and recent</strong> wildfires of more than 50 acres in the Minnesota Click on a point or perimeter to see more information about each fire.`;
+      `We are tracking <strong><span class="num-fires">${wildfireCount}</span> current and recent</strong> wildfires of more than 50 acres in Minnesota. We are also tracking wildfires larger than 50 acres in Canada. Click on a point or perimeter to see more information about each fire.`;
 
   // add a layer for state outlines
   map.addSource("states", {
@@ -203,6 +203,25 @@
       "line-color": "white",
       "line-width": .2,
       "line-opacity": 0.2}
+  });
+
+  //add canada points
+
+  map.addSource("canada", {
+    type: "geojson",
+    data: "../data/canada_wildfires_clean.geojson"
+  });
+
+  map.addLayer({
+    id: "canada-layer",
+    type: "circle",
+    source: "canada",
+    paint: {
+        "circle-radius": 4,
+        "circle-color": "rgba(130, 4, 21, 0.4)",
+        "circle-stroke-color": "#a5091e",
+        "circle-stroke-width": 2,
+      }
   });
       
     // Add points for features with lat/lon but without a Point geometry
@@ -279,6 +298,7 @@
     .replace(/\sPM/g, " p.m.");
 }
 
+//popup for US data
   function createPopup(feature, coordinates) {
   if (activePopup) {
     activePopup.remove(); // Close any existing popup
@@ -322,14 +342,49 @@
     .addTo(map);
 }
 
+//popup for Canada data
+function createCanadaPopup(feature, coordinates) {
+  if (activePopup) {
+    activePopup.remove(); // Close any existing popup
+  }
+
+  const { 
+      firename, 
+      startdate_clean, 
+      acres,
+      days_burning
+  } = feature.properties;
+
+  const fireSize = acres ? Number(acres).toLocaleString() : "Not available";
+  const daysBurningFormatted = days_burning ?? "Not available";
+
+  activePopup = new maplibregl.Popup()
+    .setLngLat(coordinates)
+    .setHTML(`
+      <div class="pop-up_content">
+        <p class="fire-name">${firename}</p>
+        <p class="fire-location">(Canada)</p>
+        <p class="fire-info">
+          Started <b>${daysBurningFormatted}</b> days ago<br>
+          <b>${fireSize}</b> acres burned
+        </p>
+      </div>
+    `)
+    .addTo(map);
+}
+
   map.on("click", "points-layer", (e) => createPopup(e.features[0], e.features[0].geometry.coordinates));
   map.on("click", "polygon-layer", (e) => createPopup(e.features[0], e.features[0].geometry.coordinates[0][0]));
+  map.on("click", "canada-layer", (e) => createCanadaPopup(e.features[0], e.features[0].geometry.coordinates));
 
   map.on("mouseenter", "points-layer", () => map.getCanvas().style.cursor = "pointer");
   map.on("mouseleave", "points-layer", () => map.getCanvas().style.cursor = "");
 
   map.on("mouseenter", "polygon-layer", () => map.getCanvas().style.cursor = "pointer");
   map.on("mouseleave", "polygon-layer", () => map.getCanvas().style.cursor = "");
+
+  map.on("mouseenter", "canada-layer", () => map.getCanvas().style.cursor = "pointer");
+  map.on("mouseleave", "canada-layer", () => map.getCanvas().style.cursor = "");
 
   document.addEventListener("DOMContentLoaded", () => {
     const pymChild = new pym.Child();
