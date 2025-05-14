@@ -21,11 +21,11 @@ min_acres_burned <- 49  # Minimum acres burned threshold
 
 # Load and process wildfires data
 fires_fordatawrappertable <- read.csv("data/wildfires_save.csv") %>%
-  filter(updated >= Sys.Date() - 30, acres_burned > min_acres_burned) %>%
+  filter(data_updated >= Sys.Date() - 30, acres_burned > min_acres_burned) %>%
   mutate(
     county_state = paste0(county, ", ", state),
     started = format(as.Date(started), "%b. %d, %Y"),
-    updated = format(as.Date(updated), "%b. %d, %Y"),
+    data_updated = format(as.Date(data_updated), "%b. %d, %Y"),
     percent_contained = ifelse(
       is.na(as.character(percent_contained)), "Not available", as.character(percent_contained)
     )
@@ -34,7 +34,7 @@ fires_fordatawrappertable <- read.csv("data/wildfires_save.csv") %>%
     Name = name,
     `County` = county_state,
     Started = started,
-    Updated = updated,
+    Updated = data_updated,
     `Acres burned` = acres_burned,
     `% contained` = percent_contained
   ) %>% distinct(Name, County, .keep_all = TRUE)  # Adjust these columns based on what should define a unique row
