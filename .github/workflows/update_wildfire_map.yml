@@ -52,6 +52,7 @@ jobs:
     - name: Run R script
       run: |
         Rscript scripts/map.R
+        Rscript scripts/canada_fires.R
         Rscript scripts/containment_tables.R
         Rscript scripts/page_datetime.R
 
