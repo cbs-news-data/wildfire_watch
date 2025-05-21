@@ -67804,7 +67804,7 @@
         "attr_OrganizationalAssessment" : null, 
         "attr_StratDecisionPublishDate" : null, 
         "attr_CreatedOnDateTime_dt" : 1747760353067, 
-        "attr_ModifiedOnDateTime_dt" : 1747776200180, 
+        "attr_ModifiedOnDateTime_dt" : 1747832420483, 
         "attr_Source" : "IRWIN", 
         "attr_ActiveFireCandidate" : 1, 
         "attr_IsCpxChild" : 0, 
@@ -68327,7 +68327,7 @@
         "attr_ControlDateTime" : null, 
         "attr_CreatedBySystem" : "wildcade", 
         "attr_IncidentSize" : 2, 
-        "attr_DiscoveryAcres" : 0.5, 
+        "attr_DiscoveryAcres" : 2, 
         "attr_DispatchCenterID" : "MNMNCC", 
         "attr_EstimatedCostToDate" : null, 
         "attr_FinalAcres" : null, 
@@ -68409,7 +68409,7 @@
         "attr_OrganizationalAssessment" : null, 
         "attr_StratDecisionPublishDate" : null, 
         "attr_CreatedOnDateTime_dt" : 1747769408700, 
-        "attr_ModifiedOnDateTime_dt" : 1747769448900, 
+        "attr_ModifiedOnDateTime_dt" : 1747832399617, 
         "attr_Source" : "IRWIN", 
         "attr_ActiveFireCandidate" : 1, 
         "attr_IsCpxChild" : 0, 
@@ -68419,7 +68419,7 @@
         "GlobalID" : "2ad21f0c-16a1-4f10-ac4c-3464af73dfa1", 
         "Shape__Area" : 1.348538717138581E-06, 
         "Shape__Length" : 0.006431920074003835, 
-        "attr_IncidentComplexityLevel" : null
+        "attr_IncidentComplexityLevel" : "Type 4 Incident"
       }
     }
   ]
