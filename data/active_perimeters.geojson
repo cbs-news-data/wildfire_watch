@@ -69930,7 +69930,7 @@
         "attr_FireCause" : "Undetermined", 
         "attr_FireCauseGeneral" : "Undetermined (remarks required)", 
         "attr_FireCauseSpecific" : "Under investigation", 
-        "attr_FireCode" : null, 
+        "attr_FireCode" : "S24Z", 
         "attr_FireDepartmentID" : null, 
         "attr_FireDiscoveryDateTime" : 1748824260000, 
         "attr_FireMgmtComplexity" : null, 
@@ -69964,7 +69964,7 @@
         "attr_IsTrespass" : null, 
         "attr_IsUnifiedCommand" : null, 
         "attr_LocalIncidentIdentifier" : "220007", 
-        "attr_ModifiedBySystem" : "INFORM_Inspector", 
+        "attr_ModifiedBySystem" : "firecode", 
         "attr_PercentContained" : null, 
         "attr_PercentPerimToBeContained" : null, 
         "attr_POOCity" : null, 
@@ -69998,7 +69998,7 @@
         "attr_OrganizationalAssessment" : null, 
         "attr_StratDecisionPublishDate" : null, 
         "attr_CreatedOnDateTime_dt" : 1748874941630, 
-        "attr_ModifiedOnDateTime_dt" : 1748965765460, 
+        "attr_ModifiedOnDateTime_dt" : 1748966918667, 
         "attr_Source" : "IRWIN", 
         "attr_ActiveFireCandidate" : 1, 
         "attr_IsCpxChild" : 0, 
@@ -70407,7 +70407,7 @@
         "attr_IncidentTypeCategory" : "WF", 
         "attr_IncidentTypeKind" : "FI", 
         "attr_InitialLatitude" : 34.09692, 
-        "attr_InitialLongitude" : -106.87166, 
+        "attr_InitialLongitude" : -34.09692, 
         "attr_InitialResponseAcres" : null, 
         "attr_InitialResponseDateTime" : null, 
         "attr_IrwinID" : "{6C42DC3E-50AE-49FB-A68E-89B9127C709C}", 
@@ -70453,7 +70453,7 @@
         "attr_OrganizationalAssessment" : null, 
         "attr_StratDecisionPublishDate" : null, 
         "attr_CreatedOnDateTime_dt" : 1748870524300, 
-        "attr_ModifiedOnDateTime_dt" : 1748872223940, 
+        "attr_ModifiedOnDateTime_dt" : 1748967209600, 
         "attr_Source" : "IRWIN", 
         "attr_ActiveFireCandidate" : 1, 
         "attr_IsCpxChild" : 0, 
@@ -70463,7 +70463,7 @@
         "GlobalID" : "a186a0c6-e841-4796-844d-e0ae86fe00d9", 
         "Shape__Area" : 6.8922372520319186E-07, 
         "Shape__Length" : 0.0060627429662000847, 
-        "attr_IncidentComplexityLevel" : null
+        "attr_IncidentComplexityLevel" : "Type 4 Incident"
       }
     }
   ]
