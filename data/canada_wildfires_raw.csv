@@ -2,8 +2,8 @@ agency, firename, lat, lon, startdate, hectares, stage_of_control, timezone, res
 conus, 2025-Route 13-SDCRA - SDCRA, 44.6542, -101.984, 2025-03-10 14:15:00, 13740.8, 100% contained, GMT
 conus, Munger Mountain Prescribed - W, 43.3742, -110.759, 2025-04-10 16:00:00, 18.225, Prescribed, GMT
 conus, 2025 Hwy 12 MM 176 - NDSRA - N, 45.6335, -100.627, 2025-03-13 19:15:00, 141.75, 100% contained, GMT
-conus, Deer Prescribed - ORWWF, 44.7335, -118.158, 2025-04-23 15:00:00, 65.205, Prescribed, GMT
 conus, 3 Cent 301-3 Prescribed Burn -, 44.6852, -118.24, 2025-04-23 15:00:08, 130.41, Prescribed, GMT
+conus, Deer Prescribed - ORWWF, 44.7335, -118.158, 2025-04-23 15:00:00, 65.205, Prescribed, GMT
 conus, Starvation 4A Prescribed Burn, 45.6469, -117.26, 2025-04-24 16:10:34, 46.17, Prescribed, GMT
 conus, 2025-Buffalo - SDCRA, 45.0939, -100.405, 2025-04-11 17:50:00, 247.455, 100% contained, GMT
 conus, Limber Jim 603 Prescribed  - O, 47.1883, -118.38, 2025-04-23 14:30:00, 16.2, Prescribed, GMT
@@ -23,12 +23,12 @@ bc, G90126, 59.7717, -123.993, 2025-04-25 00:54:00, 0, UC, PDT, MOD
 bc, G90304, 59.4235, -122.898, 2025-05-09 03:18:00, 38.2, BH, PDT, FUL
 bc, G90351, 59.2333, -122.872, 2025-05-19 23:42:00, 0, BH, PDT, FUL
 bc, G90302, 59.3912, -122.826, 2025-05-09 02:23:00, 3.3, UC, PDT, FUL
-conus, Shingle - IDNCF, 45.3806, -116.44, 2025-05-05 17:33:00, 40.5, 0% contained, GMT
-conus, UM 140 Training Burn - ORWWF, 44.7278, -118.011, 2025-05-08 14:00:00, 0.405, Prescribed, GMT
-conus, Starvation 7A Prescribed  - OR, 45.659, -117.21, 2025-05-08 15:00:00, 66.015, Prescribed, GMT
 conus, Sawlog - MTBDF, 45.8281, -113.253, 2025-05-01 18:07:18, 822.15, 100% contained, GMT
 conus, Big Creek - MTBRF, 46.4902, -114.289, 2025-05-07 21:30:00, 30.375, 0% contained, GMT
 conus, Munger Shaw - MNMNS, 47.0803, -92.3439, 2025-05-12 18:37:00, 509.895, 95% contained, GMT
+conus, Shingle - IDNCF, 45.3806, -116.44, 2025-05-05 17:33:00, 40.5, 0% contained, GMT
+conus, UM 140 Training Burn - ORWWF, 44.7278, -118.011, 2025-05-08 14:00:00, 0.405, Prescribed, GMT
+conus, Starvation 7A Prescribed  - OR, 45.659, -117.21, 2025-05-08 15:00:00, 66.015, Prescribed, GMT
 conus, Chippewa National Forest Presc, 47.0681, -94.2525, 2025-04-01 12:00:00, 0, Prescribed, GMT
 on, THU_FIRE_009, 48.3657, -89.3243, 2025-05-21 22:03:00, 7, UC, GMT, FUL
 mb, WE004, 53.8681, -101.38, 2025-05-03 05:00:00, 40315.7, UC, CDT, FUL
