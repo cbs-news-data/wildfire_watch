@@ -56140,7 +56140,7 @@
         "attr_ContainmentDateTime" : null, 
         "attr_ControlDateTime" : null, 
         "attr_CreatedBySystem" : "wildcade", 
-        "attr_IncidentSize" : 300, 
+        "attr_IncidentSize" : 318, 
         "attr_DiscoveryAcres" : 0.1, 
         "attr_DispatchCenterID" : "MTHDC", 
         "attr_EstimatedCostToDate" : 200000, 
@@ -56189,7 +56189,7 @@
         "attr_IsTrespass" : null, 
         "attr_IsUnifiedCommand" : 1, 
         "attr_LocalIncidentIdentifier" : "000261", 
-        "attr_ModifiedBySystem" : "ics209", 
+        "attr_ModifiedBySystem" : "wildcade", 
         "attr_PercentContained" : 0, 
         "attr_PercentPerimToBeContained" : 100, 
         "attr_POOCity" : null, 
@@ -56223,7 +56223,7 @@
         "attr_OrganizationalAssessment" : null, 
         "attr_StratDecisionPublishDate" : null, 
         "attr_CreatedOnDateTime_dt" : 1749504596830, 
-        "attr_ModifiedOnDateTime_dt" : 1749519521527, 
+        "attr_ModifiedOnDateTime_dt" : 1749529066507, 
         "attr_Source" : "IRWIN", 
         "attr_ActiveFireCandidate" : 1, 
         "attr_IsCpxChild" : 0, 
@@ -56233,7 +56233,7 @@
         "GlobalID" : "1121a461-8f2f-4a57-892d-9dacd869a9de", 
         "Shape__Area" : 6.82182776472473E-05, 
         "Shape__Length" : 0.037690357195184571, 
-        "attr_IncidentComplexityLevel" : null
+        "attr_IncidentComplexityLevel" : "Type 4 Incident"
       }
     }
   ]
