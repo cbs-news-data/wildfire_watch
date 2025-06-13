@@ -60221,7 +60221,7 @@
         "attr_ContainmentDateTime" : null, 
         "attr_ControlDateTime" : null, 
         "attr_CreatedBySystem" : "wildcade", 
-        "attr_IncidentSize" : 500, 
+        "attr_IncidentSize" : 2000, 
         "attr_DiscoveryAcres" : 26.2, 
         "attr_DispatchCenterID" : "NMSDC", 
         "attr_EstimatedCostToDate" : 500000, 
@@ -60270,7 +60270,7 @@
         "attr_IsTrespass" : null, 
         "attr_IsUnifiedCommand" : 0, 
         "attr_LocalIncidentIdentifier" : "000384", 
-        "attr_ModifiedBySystem" : "ics209", 
+        "attr_ModifiedBySystem" : "wildcade", 
         "attr_PercentContained" : 0, 
         "attr_PercentPerimToBeContained" : 100, 
         "attr_POOCity" : null, 
@@ -60304,7 +60304,7 @@
         "attr_OrganizationalAssessment" : null, 
         "attr_StratDecisionPublishDate" : null, 
         "attr_CreatedOnDateTime_dt" : 1749739886550, 
-        "attr_ModifiedOnDateTime_dt" : 1749779785770, 
+        "attr_ModifiedOnDateTime_dt" : 1749783621730, 
         "attr_Source" : "IRWIN", 
         "attr_ActiveFireCandidate" : 1, 
         "attr_IsCpxChild" : 0, 
@@ -60314,7 +60314,7 @@
         "GlobalID" : "feafa36e-cd4a-4e07-b7c5-b07d655825b0", 
         "Shape__Area" : 1.3558448245021282E-05, 
         "Shape__Length" : 0.029351293151506443, 
-        "attr_IncidentComplexityLevel" : "Type 1 Incident"
+        "attr_IncidentComplexityLevel" : "Type 4 Incident"
       }
     }, 
     {
