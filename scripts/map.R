@@ -35,7 +35,7 @@ if (safe_download("https://www.fire.ca.gov/umbraco/api/IncidentApi/GeoJsonList?i
 }
 
 # Download active federal wildfire perimeters
-safe_download("https://services3.arcgis.com/T4QMspbfLg3qTGWY/ArcGIS/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?where=0%3D0&outFields=*&returnGeometry=true&f=pgeojson", perimeters_file)
+safe_download("https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson", perimeters_file)
 
 # Function to convert milliseconds from UTC to POSIX date
 ms_to_date <- function(ms, t0 = "1970-01-01", timezone = "America/Los_Angeles") {
