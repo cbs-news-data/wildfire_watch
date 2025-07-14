@@ -242,179 +242,177 @@
   }
 
   map.on("load", () => {
-  fetch("../data/wildfires_combined.geojson")
-    .then(response => response.json())
-    .then(geojson => {
-      document.querySelector(".description").innerHTML =
-        `Click on a point or perimeter to see more information about each fire.`;
+    fetch("../data/wildfires_combined.geojson")
+      .then(response => response.json())
+      .then(geojson => {
+        document.querySelector(".description").innerHTML =
+          `Click on a point or perimeter to see more information about each fire.`;
 
-      // Add state outlines
-      map.addSource("state", {
-        type: "geojson",
-        data: "../data/states.geojson"
-      });
-
-      map.addLayer({
-        id: "state-outline",
-        type: "line",
-        source: "state",
-        paint: {
-          "line-color": "#000",
-          "line-width": 1.5,
-          "line-dasharray": [2, 2],
-          "line-opacity": 0.8
-        }
-      });
-
-      // Add Grand Canyon boundary
-      map.addSource("grand-canyon-boundary", {
-        type: "geojson",
-        data: "../data/boundaries/grand-canyon-boundary.json"
-      });
-
-      map.addLayer({
-        id: "grand-canyon-outline",
-        type: "line",
-        source: "grand-canyon-boundary",
-        paint: {
-          "line-color": "#000",
-          "line-width": 2,
-          "line-dasharray": [2, 2],
-          "line-opacity": 0.8
-        }
-      });
-
-      // Create fallback points for polygon-only fires
-      const fallbackPoints = [];
-      geojson.features.forEach(feature => {
-        if (!feature.geometry || feature.geometry.type !== "Point") {
-          const { latitude, longitude } = feature.properties;
-          if (latitude !== null && longitude !== null) {
-            fallbackPoints.push({
-              type: "Feature",
-              geometry: { type: "Point", coordinates: [longitude, latitude] },
-              properties: feature.properties
-            });
+        map.addSource("state", {
+          type: "geojson",
+          data: "../data/states.geojson"
+        });
+        geojson.features.push({
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-112.1401, 36.0544]
+          },
+          properties: {
+            name: "Grand Canyon"
           }
-        }
-      });
+        });
 
-      // Add fallback points
-      geojson.features = geojson.features.concat(fallbackPoints);
 
-      // Add Grand Canyon point
-      geojson.features.push({
-        type: "Feature",
-        geometry: {
-          type: "Point",
-          coordinates: [-112.1401, 36.0544]
-        },
-        properties: {
-          name: "Grand Canyon"
-        }
-      });
+        map.addSource("combined", {
+          type: "geojson",
+          data: "../data/wildfires_combined.geojson"
+        });
 
-      // Final combined source (only do this ONCE)
-      map.addSource("combined", {
-        type: "geojson",
-        data: geojson,
-        generateId: true,
-      });
+        map.addLayer({
+          id: "polygon-layer",
+          type: "fill",
+          source: "combined",
+          filter: ["==", "$type", "Polygon"],
+          paint: {
+            "fill-color": "#a5091e",
+            "fill-opacity": 0.5
+          }
+        });
 
-      // Polygon layer
-      map.addLayer({
-        id: "polygon-layer",
-        type: "fill",
-        source: "combined",
-        filter: ["==", "$type", "Polygon"],
-        paint: {
-          "fill-color": "#a5091e",
-          "fill-opacity": 0.5
-        }
-      });
+        map.addLayer({
+          id: "state-outline",
+          type: "line",
+          source: "state",
+          paint: {
+            "line-color": "#000",
+            "line-width": 1.5,
+            "line-dasharray": [2, 2],
+            "line-opacity": 0.8
+          }
+        });
 
-      // Point layer (excluding Grand Canyon)
-      map.addLayer({
-        id: "points-layer",
-        type: "circle",
-        source: "combined",
-        filter: [
-          "all",
-          ["==", "$type", "Point"],
-          ["!=", ["get", "name"], "Grand Canyon"]
-        ],
-        paint: {
-          "circle-radius": 4,
-          "circle-color": "rgba(130, 4, 21, 0.4)",
-          "circle-stroke-color": "#a5091e",
-          "circle-stroke-width": 2,
-        }
-      });
+        map.addSource("grand-canyon-boundary", {
+          type: "geojson",
+          data: "../data/boundaries/grand-canyon-boundary.json"
+        });
 
-      // Grand Canyon point
-      map.addLayer({
-        id: "grand-canyon-point",
-        type: "circle",
-        source: "combined",
-        filter: ["==", ["get", "name"], "Grand Canyon"],
-        paint: {
-          "circle-radius": 4,
-          "circle-color": "#000000",
-          "circle-stroke-color": "#fff",
-          "circle-stroke-width": 0.5,
-        }
-      });
+        map.addLayer({
+          id: "grand-canyon-outline",
+          type: "line",
+          source: "grand-canyon-boundary",
+          paint: {
+            "line-color": "#000",
+            "line-width": 2,
+            "line-dasharray": [2, 2],
+            "line-opacity": 0.8
+          }
+        });
 
-      // Labels for selected fires
-      map.addLayer({
-        id: "fire-labels",
-        type: "symbol",
-        source: "combined",
-        filter: [
-          "match",
-          ["get", "name"],
-          ["Dragon Bravo Fire", "White Sage Fire"],
-          true,
-          false
-        ],
-        layout: {
-          "text-field": ["get", "name"],
-          "text-font": ["Open Sans Regular"],
-          "text-offset": [0, 0.5],
-          "text-anchor": "right",
-          "text-size": 18
-        },
-        paint: {
-          "text-color": "#fff",
-          "text-halo-color": "#000",
-          "text-halo-width": 1
-        }
-      });
+        // Promote point fallback if polygon lacks geometry
+        geojson.features.forEach(feature => {
+          if (!feature.geometry || feature.geometry.type !== "Point") {
+            const { latitude, longitude } = feature.properties;
+            if (latitude !== null && longitude !== null) {
+              geojson.features.push({
+                type: "Feature",
+                geometry: { type: "Point", coordinates: [longitude, latitude] },
+                properties: feature.properties
+              });
+            }
+          }
+        });
 
-      // Label for Grand Canyon
-      map.addLayer({
-        id: "canyon-labels",
-        type: "symbol",
-        source: "combined",
-        filter: ["==", ["get", "name"], "Grand Canyon"],
-        layout: {
-          "text-field": ["get", "name"],
-          "text-font": ["Open Sans Regular"],
-          "text-offset": [0, 0.5],
-          "text-anchor": "top",
-          "text-size": 14
-        },
-        paint: {
-          "text-color": "#fff",
-          "text-halo-color": "#000",
-          "text-halo-width": 0.8
-        }
-      });
 
-      if (pymChild) pymChild.sendHeight();
-    })
-    .catch(error => console.error("Error loading GeoJSON:", error));
-});
+
+
+        map.addLayer({
+          id: "points-layer",
+          type: "circle",
+          source: "combined",
+          filter: [
+            "all",
+            ["==", "$type", "Point"],
+            ["!=", ["get", "name"], "Grand Canyon"]
+          ],
+          paint: {
+            "circle-radius": 4,
+            "circle-color": "rgba(130, 4, 21, 0.4)",
+            "circle-stroke-color": "#a5091e",
+            "circle-stroke-width": 2,
+          }
+        });
+
+
+        map.addLayer({
+          id: "fire-labels",
+          type: "symbol",
+          source: "combined",
+          filter: [
+            "match",
+            ["get", "name"],
+            ["Dragon Bravo Fire", "White Sage Fire"],
+            true,
+            false
+          ],
+          layout: {
+            "text-field": ["get", "name"],
+            "text-font": ["Open Sans Regular"],
+            "text-offset": [0, .5],
+            "text-anchor": "right",
+            "text-size": 18
+          },
+          paint: {
+            "text-color": "#fff",
+            "text-halo-color": "#000",
+            "text-halo-width": 1
+          }
+        });
+
+        map.addLayer({
+          id: "canyon-labels",
+          type: "symbol",
+          source: "combined",
+          filter: [
+            "match",
+            ["get", "name"],
+            ["Grand Canyon"],
+            true,
+            false
+          ],
+          layout: {
+            "text-field": ["get", "name"],
+            "text-font": ["Open Sans Regular"],
+            "text-offset": [0, .5],
+            "text-anchor": "top",
+            "text-size": 14
+          },
+          paint: {
+            "text-color": "#fff",
+            "text-halo-color": "#000",
+            "text-halo-width": .8
+          }
+        });
+
+
+        map.addLayer({
+          id: "grand-canyon-point",
+          type: "circle",
+          source: "combined",
+          filter: ["==", ["get", "name"], "Grand Canyon"],
+          paint: {
+            "circle-radius": 4,
+            "circle-color": "#000000",
+            "circle-stroke-color": "#fff",
+            "circle-stroke-width": .5,
+          }
+        });
+
+        if (pymChild) pymChild.sendHeight();
+      })
+      .catch(error => console.error("Error loading GeoJSON:", error));
+  });
+  
 
   map.on("click", "points-layer", (e) => {
     const feature = e.features[0];
