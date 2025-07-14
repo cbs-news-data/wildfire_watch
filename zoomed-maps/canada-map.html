@@ -141,70 +141,41 @@
 
   <div id="container">
     <div id="header">
-      <div class="title">Wildfires in Minnesota</div>
+      <div class="title">Wildfires in Canada</div>
       <div class="description"></div>
       <div class="desc_link"><a href="https://www.cbsnews.com/wildfirewatch/" target="_blank"><strong><span class="cbs_ww_link">Click here</span></strong></a> to see more fire data with our Wildfire Watch tool.</div>
     </div>
     <div id="map"></div>
-    <div class="source">Source: <a href="https://data-nifc.opendata.arcgis.com/" target="_blank">National Interagency Fire Center</a>, <a href="https://cwfis.cfs.nrcan.gc.ca/datamart/metadata/activefires" target="_blank">Canadian Interagency Forest Fire Centre</a></div>
+    <div class="source">Source: <a href="https://cwfis.cfs.nrcan.gc.ca/datamart/metadata/activefires" target="_blank">Canadian Interagency Forest Fire Centre</a></div>
   </div>
 
 </body>
 
 <script>
   const isMobile = window.innerWidth <= 768;
-  const initialZoom = isMobile ? 3 : 5;
+  const initialZoom = isMobile ? 2 : 3;
 
 
   const map = new maplibregl.Map({
     container: "map",
-    style: "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
-    center: [-93.8644847, 46.2376638],
+    style: "https://vapi.mc-cdn.io/styles/CTS%20Satellite%20Map.json?access_token=u3Q9ykMVHQIvvHegtpo2qgbyUxXbtw2N9e8983fde25feff58982455e437cb67145892361",
+    center: [-108.6162438,59.7959301],
     zoom: initialZoom,
     maxZoom: 20,
-    minZoom: 5
+    minZoom: 1
   });
 
   map.scrollZoom.disable();
   map.addControl(new maplibregl.NavigationControl(), "top-left");
 
   map.on("load", () => {
-    fetch("../data/wildfires_combined.geojson")
-  .then(response => response.json())
+    fetch("../data/canada_wildfires_clean.geojson")
+   .then(response => response.json())
   .then(geojson => {
-    const filteredFires = geojson.features.filter(
-      feature => feature.properties.state === "MN"
-      
-    );
-
-    console.log(filteredFires)
-
-    const filteredGeojson = {
-        ...geojson,
-        features: filteredFires
-      };
-
-    const wildfireCount = filteredGeojson.features.length;
-    const acresBurned = filteredGeojson.features[0].properties.acres_burned;
-    const pctContained = filteredGeojson.features[0].properties.percent_contained;
+    const wildfireCount = geojson.features.length;
     document.querySelector(".description").innerHTML =
-      `We are tracking <strong><span class="num-fires">${wildfireCount}</span> current and recent</strong> wildfires of more than 50 acres in Minnesota. We are also tracking wildfires larger than 50 acres in Canada. Click on a point or perimeter to see more information about each fire.`;
+      `We are tracking <strong><span class="num-fires">${wildfireCount}</span> current and recent</strong> wildfires of more than 50 acres in Canada. Click on a point or perimeter to see more information about each fire.`;
 
-  // add a layer for state outlines
-  map.addSource("states", {
-    type: "geojson",
-    data: "../data/states.geojson"
-  });
-
-  map.addLayer({
-    id: "states-layer",
-    type: "line",
-    source: "states",
-    paint: {
-      "line-color": "white",
-      "line-width": .2,
-      "line-opacity": 0.2}
-  });
 
   //add canada points
 
@@ -225,53 +196,6 @@
       }
   });
       
-    // Add points for features with lat/lon but without a Point geometry
-    filteredGeojson.features.forEach(feature => {
-      if (!feature.geometry || feature.geometry.type !== "Point") {
-        const { latitude, longitude } = feature.properties;
-        if (latitude !== null && longitude !== null) {
-          filteredGeojson.features.push({
-            type: "Feature",
-            geometry: {
-              type: "Point",
-              coordinates: [longitude, latitude]
-            },
-            properties: feature.properties
-          });
-        }
-      }
-    });
-
-    map.addSource("combined", {
-      type: "geojson",
-      data: filteredGeojson,
-      generateId: true,
-    });
-
-    // Add polygon layer
-    map.addLayer({
-      id: "polygon-layer",
-      type: "fill",
-      source: "combined",
-      paint: {
-        "fill-color": "#a5091e",
-        "fill-opacity": 0.5,
-      },
-    });
-
-    // Add point layer
-    map.addLayer({
-      id: "points-layer",
-      type: "circle",
-      source: "combined",
-      paint: {
-        "circle-radius": 4,
-        "circle-color": "rgba(130, 4, 21, 0.4)",
-        "circle-stroke-color": "#a5091e",
-        "circle-stroke-width": 2,
-      },
-      filter: ["==", "$type", "Point"],
-    });
   })
   .catch(error => console.error("Error loading GeoJSON:", error));
   });
@@ -299,49 +223,7 @@
     .replace(/\sPM/g, " p.m.");
 }
 
-//popup for US data
-  function createPopup(feature, coordinates) {
-  if (activePopup) {
-    activePopup.remove(); // Close any existing popup
-  }
 
-  const { 
-      name, 
-      county, 
-      state, 
-      acres_burned, 
-      days_burning, 
-      percent_contained, 
-      perimeter_updated,
-      data_updated  
-  } = feature.properties;
-
-  const fireSize = acres_burned ? Number(acres_burned).toLocaleString() : "Not available";
-  const daysBurningFormatted = days_burning ?? "Not available";
-  const percentContainedFormatted = percent_contained !== null && percent_contained !== undefined 
-      ? `${percent_contained}%` 
-      : null;
-  const data_updatedFormatted = data_updated ? formatUpdatedDate(data_updated) : "Unknown";
-  const perimeter_updatedFormatted = perimeter_updated ? formatUpdatedDate(perimeter_updated) : "Unknown";
-
-  const containmentHTML = percentContainedFormatted ? `<br><b>${percentContainedFormatted}</b> contained` : "";
-
-  activePopup = new maplibregl.Popup()
-    .setLngLat(coordinates)
-    .setHTML(`
-      <div class="pop-up_content">
-        <p class="fire-name">${name}</p>
-        <p class="fire-location">${county} County, ${state}</p>
-        <p class="fire-info">
-          Started <b>${daysBurningFormatted}</b> days ago<br>
-          <b>${fireSize}</b> acres burned${containmentHTML}
-        </p>
-        <p class="updated">Data last updated on ${data_updatedFormatted}</p>
-        <p class="updated">Perimeter last updated on ${perimeter_updatedFormatted}</p>
-      </div>
-    `)
-    .addTo(map);
-}
 
 //popup for Canada data
 function createCanadaPopup(feature, coordinates) {
