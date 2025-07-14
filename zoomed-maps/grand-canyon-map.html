@@ -1,11 +1,14 @@
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.css" />
-<script src="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.js"></script>
-<script src="https://pym.nprapps.org/pym.v1.min.js"></script>
-<script src="https://d3js.org/d3.v7.min.js"></script>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.css" />
+  <script src="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.js"></script>
+  <script src="https://pym.nprapps.org/pym.v1.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
 
-<!-- Fonts -->
-<link rel="stylesheet" href="https://use.typekit.net/rdn8fde.css" />
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/rdn8fde.css" />
+</head>
+
 <style>
   body {
     margin: 0 !important;
@@ -76,7 +79,7 @@
   .line-swatch {
     width: 20px;
     height: 0;
-    border-top: 2px dashed #000;
+    border-top: 2px dashed #f1b24b;
     margin-right: 4px;
   }
 
@@ -145,26 +148,30 @@
   }
 </style>
 
-<div id="container">
-  <div id="header">
-    <div class="title">Fires burning near Grand Canyon</div>
-    <div class="description"></div>
-    <div class="bucket-legend">
-      <div class="bucket-item">
-        <div class="bucket-swatch" style="background-color:#a5091e;"></div>
-        <span class="bucket-label">Active fires</span>
-      </div>
-      <div class="bucket-item">
-        <div class="line-swatch"></div>
-        <span class="bucket-label">Grand Canyon National Park</span>
+<body>
+
+  <div id="container">
+    <div id="header">
+      <div class="title">Fires burning near Grand Canyon</div>
+      <div class="description"></div>
+      <div class="bucket-legend">
+        <div class="bucket-item">
+          <div class="bucket-swatch" style="background-color:#a5091e;"></div>
+          <span class="bucket-label">Active fires</span>
+        </div>
+        <div class="bucket-item">
+          <div class="line-swatch"></div>
+          <span class="bucket-label">Grand Canyon National Park</span>
+        </div>
       </div>
     </div>
+    <div id="map"></div>
+    <div class="note">Data as of </div>
+    <div class="source">Map: Taylor Johnston / CBS News • Source: <a href="https://www.nifc.gov/" target="_blank">National
+        Interagency Fire Center</a></div>
   </div>
-  <div id="map"></div>
-  <div class="note">Data as of </div>
-  <div class="source">Map: Taylor Johnston / CBS News • Source: <a href="https://www.nifc.gov/" target="_blank">National
-      Interagency Fire Center</a></div>
-</div>
+
+</body>
 
 <script>
   let pymChild;
@@ -263,6 +270,33 @@
           }
         });
 
+        map.addSource("grand-canyon-boundary", {
+          type: "geojson",
+          data: "../data/boundaries/grand-canyon-boundary.json"
+        });
+
+        map.addLayer({
+          id: "grand-canyon-outline",
+          type: "line",
+          source: "grand-canyon-boundary",
+          paint: {
+            "line-color": "#f1b24b",
+            "line-width": 3,
+            "line-dasharray": [2, 2],
+            "line-opacity": 0.8
+          }
+        });
+
+        map.addLayer({
+          id: "grand-canyon-polygon",
+          type: "fill",
+          source: "grand-canyon-boundary",
+          paint: {
+            "fill-color": "#ffe9c5",
+            "fill-opacity": 0.4
+          }
+        });
+
 
         map.addSource("combined", {
           type: "geojson",
@@ -276,7 +310,7 @@
           filter: ["==", "$type", "Polygon"],
           paint: {
             "fill-color": "#a5091e",
-            "fill-opacity": 0.5
+            "fill-opacity": 0.6
           }
         });
 
@@ -292,22 +326,7 @@
           }
         });
 
-        map.addSource("grand-canyon-boundary", {
-          type: "geojson",
-          data: "../data/boundaries/grand-canyon-boundary.json"
-        });
-
-        map.addLayer({
-          id: "grand-canyon-outline",
-          type: "line",
-          source: "grand-canyon-boundary",
-          paint: {
-            "line-color": "#000",
-            "line-width": 2,
-            "line-dasharray": [2, 2],
-            "line-opacity": 0.8
-          }
-        });
+        
 
         // Promote point fallback if polygon lacks geometry
         geojson.features.forEach(feature => {
