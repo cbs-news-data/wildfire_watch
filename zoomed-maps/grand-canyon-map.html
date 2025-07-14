@@ -1,0 +1,373 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.css" />
+<script src="https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.js"></script>
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<!-- Fonts -->
+<link rel="stylesheet" href="https://use.typekit.net/rdn8fde.css" />
+<style>
+  @font-face {
+    font-family: "Publico Headline";
+    src: url("fonts/PublicoHeadline-Black.woff2") format("woff2"),
+         url("fonts/PublicoHeadline-Black.woff") format("woff");
+  }
+
+  body {
+    margin: 0 !important;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: #858585;
+    color: #858585;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: #a5091e;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  #header {
+    z-index: 1;
+    max-width: 980px;
+  }
+
+  .title {
+    font-family: "Publico Headline", serif;
+    font-size: 32px;
+    color: #000;
+    line-height: 34px;
+  }
+
+  .description {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    max-width: 980px;
+    margin-top: 12px;
+  }
+
+  .num-fires {
+    color: #a5091e;
+  }
+
+     .bucket-swatch {
+      width: 15px;
+      height: 15px;
+      border-radius: 2px;
+      margin-right: 4px;
+    }
+
+.bucket-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.bucket-item {
+  display: flex;
+  align-items: center;
+}
+
+.bucket-label {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.line-swatch {
+  width: 20px;
+  height: 0;
+  border-top: 2px dashed #f1b24b;
+  margin-right: 4px;
+}
+
+  #map {
+    flex-grow: 1;
+    max-height: 600px;
+    max-width: 980px;
+    margin-bottom: 12px;
+  }
+
+  button.maplibregl-ctrl-compass {
+    display: none !important;
+  }
+
+  .pop-up_content {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .fire-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .fire-location {
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+
+  .updated {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 5px;
+    color: #333;
+    font-style: italic;
+  }
+
+  .fire-info {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  @media (max-width: 430px) {
+    #map {
+      max-height: 900px !important;
+    }
+
+    .description {
+      margin-bottom: 10px;
+    }
+  }
+
+  .note {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+  }
+
+  .source {
+    font-family: "proxima-nova", sans-serif;
+    color: #828282;
+    font-size: 14px;
+  }
+</style>
+
+<div id="container">
+  <div id="header">
+    <div class="title">Fires burning near Grand Canyon</div>
+    <div class="description"></div>
+<div class="bucket-legend">
+  <div class="bucket-item">
+    <div class="bucket-swatch" style="background-color:#a5091e;"></div>
+    <span class="bucket-label">Active fires</span>
+  </div>
+  <div class="bucket-item">
+  <div class="line-swatch"></div>
+  <span class="bucket-label">Grand Canyon National Park</span>
+</div>
+</div>
+  </div>
+  <div id="map"></div>
+  <div class="note">Data as of </div>
+    <div class="source">Map: Taylor Johnston / CBS News • Source: <a href="https://www.nifc.gov/" target="blank">National Interagency Fire Center</div>
+
+</div>
+
+<script>
+  const isMobile = window.innerWidth <= 768;
+  const initialZoom = isMobile ? 2 : 3.5;
+
+  const map = new maplibregl.Map({
+    container: "map",
+    style: "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
+    center: [-112.037, 35.965],
+    zoom: initialZoom,
+    maxZoom: 20,
+    minZoom: 7,
+    hash: true
+  });
+
+  map.scrollZoom.disable();
+  map.addControl(new maplibregl.NavigationControl(), "top-left");
+
+  map.on("load", () => {
+    fetch("../data/wildfires_combined.geojson")
+  .then(response => response.json())
+  .then(geojson => {
+    const wildfireCount = geojson.features.length;
+    document.querySelector(".description").innerHTML =
+      `Click on a point or perimeter to see more information about each fire.`;
+
+  map.addSource("grand-canyon-boundary", {
+    type: "geojson",
+    data: "../data/boundaries/grand-canyon-boundary.json"
+  });
+
+//   map.addLayer({
+//     id: "grand-canyon-layer",
+//     type: "line",
+//     source: "grand-canyon-boundary",
+//     paint: {
+//       "line-color": "yellow",
+//       "line-width": 1,
+//       "line-opacity": 0.4}
+
+//   });
+
+map.addLayer({
+  id: "grand-canyon-outline",
+  type: "line",
+  source: "grand-canyon-boundary",
+  paint: {
+    "line-color": "#f1b24b",
+    "line-width": 1,
+    "line-dasharray": [2, 4],
+    "line-opacity": 0.8
+  }
+});
+      
+    // Add points for features with lat/lon but without a Point geometry
+    geojson.features.forEach(feature => {
+      if (!feature.geometry || feature.geometry.type !== "Point") {
+        const { latitude, longitude } = feature.properties;
+        if (latitude !== null && longitude !== null) {
+          geojson.features.push({
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [longitude, latitude]
+            },
+            properties: feature.properties
+          });
+        }
+      }
+    });
+
+    map.addSource("combined", {
+      type: "geojson",
+      data: geojson,
+      generateId: true,
+    });
+
+    // Add polygon layer
+    map.addLayer({
+      id: "polygon-layer",
+      type: "fill",
+      source: "combined",
+      paint: {
+        "fill-color": "#a5091e",
+        "fill-opacity": 0.5,
+      },
+    });
+
+    // Add point layer
+    map.addLayer({
+      id: "points-layer",
+      type: "circle",
+      source: "combined",
+      paint: {
+        "circle-radius": 4,
+        "circle-color": "rgba(130, 4, 21, 0.4)",
+        "circle-stroke-color": "#a5091e",
+        "circle-stroke-width": 2,
+      },
+      filter: ["==", "$type", "Point"],
+    });
+  })
+  .catch(error => console.error("Error loading GeoJSON:", error));
+  });
+
+
+  let activePopup = null; // Store the currently open popup
+
+  function formatUpdatedDate(date) {
+  const dateObj = new Date(date);
+
+  // Convert to US Pacific Time (PST/PDT) dynamically
+  const options = {
+    timeZone: "America/Los_Angeles",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+    timeZoneName: "short",
+  };
+
+  return dateObj.toLocaleString("en-US", options)
+    .replace(",", " at")
+    .replace(/\sAM/g, " a.m.")
+    .replace(/\sPM/g, " p.m.");
+}
+
+  function createPopup(feature, coordinates) {
+  if (activePopup) {
+    activePopup.remove(); // Close any existing popup
+  }
+
+  const { 
+      name, 
+      county, 
+      state, 
+      acres_burned, 
+      days_burning, 
+      percent_contained, 
+      perimeter_updated,
+      data_updated  
+  } = feature.properties;
+
+  const fireSize = acres_burned ? Number(acres_burned).toLocaleString() : "Not available";
+  const daysBurningFormatted = days_burning ?? "Not available";
+  const percentContainedFormatted = percent_contained !== null && percent_contained !== undefined 
+      ? `${percent_contained}%` 
+      : null;
+  const data_updatedFormatted = data_updated ? formatUpdatedDate(data_updated) : "Unknown";
+  const perimeter_updatedFormatted = perimeter_updated ? formatUpdatedDate(perimeter_updated) : "Unknown";
+
+  const containmentHTML = percentContainedFormatted ? `<br><b>${percentContainedFormatted}</b> contained` : "";
+
+  activePopup = new maplibregl.Popup()
+    .setLngLat(coordinates)
+    .setHTML(`
+      <div class="pop-up_content">
+        <p class="fire-name">${name}</p>
+        <p class="fire-location">${county} County, ${state}</p>
+        <p class="fire-info">
+          Started <b>${daysBurningFormatted}</b> days ago<br>
+          <b>${fireSize}</b> acres burned${containmentHTML}
+        </p>
+        <p class="updated">Last updated on ${data_updatedFormatted}</p>
+      </div>
+    `)
+    .addTo(map);
+}
+
+  map.on("click", "points-layer", (e) => createPopup(e.features[0], e.features[0].geometry.coordinates));
+map.on("click", "polygon-layer", (e) => {
+  if (e.features.length > 0) {
+    const feature = e.features[0];
+    const coordinates = e.lngLat; // Use click location
+    createPopup(feature, [coordinates.lng, coordinates.lat]);
+  }
+});
+  map.on("mouseenter", "points-layer", () => map.getCanvas().style.cursor = "pointer");
+  map.on("mouseleave", "points-layer", () => map.getCanvas().style.cursor = "");
+
+  map.on("mouseenter", "polygon-layer", () => map.getCanvas().style.cursor = "pointer");
+  map.on("mouseleave", "polygon-layer", () => map.getCanvas().style.cursor = "");
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const pymChild = new pym.Child();
+    pymChild.sendHeight();
+  });
+
+  d3.csv("../data/updated_datetime_df.csv").then(data => {
+  if (data.length > 0 && data[0].updated_datetime_pretty) {
+    document.querySelector(".note").innerHTML = `Data as of ${data[0].updated_datetime_pretty}`;
+  }
+});
+</script>

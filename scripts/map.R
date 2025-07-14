@@ -52,7 +52,7 @@ nfis_perimeters <- st_read(perimeters_file, quiet = TRUE) %>%
     started = attr_FireDiscoveryDateTime,
     perimeter_updated = poly_DateCurrent,
     data_updated = attr_ModifiedOnDateTime_dt,
-    acres_burned = attr_IncidentSize,
+    acres_burned = poly_GISAcres,
     percent_contained = attr_PercentContained,
     type = attr_IncidentTypeCategory,
     fire_behavior = attr_FireBehaviorGeneral,
@@ -62,6 +62,7 @@ nfis_perimeters <- st_read(perimeters_file, quiet = TRUE) %>%
     geometry
   ) %>%
   mutate(
+    acres_burned = round(acres_burned),
     across(c(started, perimeter_updated, data_updated), ms_to_date),
     days_burning = as.integer(difftime(Sys.Date(), started, units = "days")),
     days_sinceupdate = as.integer(difftime(Sys.Date(), data_updated, units = "days"))
