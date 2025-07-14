@@ -288,8 +288,13 @@
 }
 
   map.on("click", "points-layer", (e) => createPopup(e.features[0], e.features[0].geometry.coordinates));
-  map.on("click", "polygon-layer", (e) => createPopup(e.features[0], e.features[0].geometry.coordinates[0][0]));
-
+map.on("click", "polygon-layer", (e) => {
+  if (e.features.length > 0) {
+    const feature = e.features[0];
+    const coordinates = e.lngLat; // Use click location
+    createPopup(feature, [coordinates.lng, coordinates.lat]);
+  }
+});
   map.on("mouseenter", "points-layer", () => map.getCanvas().style.cursor = "pointer");
   map.on("mouseleave", "points-layer", () => map.getCanvas().style.cursor = "");
 
