@@ -31,7 +31,6 @@
   #container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
   }
 
   #header {
@@ -91,12 +90,12 @@
     margin-right: 4px;
   }
 
-  #map {
-    flex-grow: 1;
-    max-height: 600px;
-    max-width: 980px;
-    margin-bottom: 12px;
-  }
+#map {
+  height: 600px;
+  width: 100%;
+  max-width: 980px;
+  margin-bottom: 12px;
+}
 
   button.maplibregl-ctrl-compass {
     display: none !important;
@@ -135,9 +134,10 @@
   }
 
   @media (max-width: 430px) {
-    #map {
-      max-height: 900px !important;
-    }
+  #map {
+    height: 900px !important;
+  }
+
 
     .description {
       margin-bottom: 10px;
