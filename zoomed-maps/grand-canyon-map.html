@@ -86,7 +86,7 @@
   .line-swatch {
     width: 20px;
     height: 0;
-    border-top: 2px dashed #f1b24b;
+    border-top: 2px dashed #000;
     margin-right: 4px;
   }
 
@@ -189,11 +189,11 @@
 
   const map = new maplibregl.Map({
     container: "map",
-    style: "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
+    style: "https://vapi.mc-cdn.io/styles/CTS%20Flat%20Map.json?access_token=u3Q9ykMVHQIvvHegtpo2qgbyUxXbtw2N9e8983fde25feff58982455e437cb67145892361",
     center: [-112.806, 36.386],
     zoom: initialZoom,
     maxZoom: 20,
-    minZoom: 7
+    minZoom: 6
   });
 
   map.scrollZoom.disable();
@@ -268,9 +268,9 @@
           type: "line",
           source: "grand-canyon-boundary",
           paint: {
-            "line-color": "#f1b24b",
-            "line-width": 1,
-            "line-dasharray": [2, 4],
+            "line-color": "#000",
+            "line-width": 1.5,
+            "line-dasharray": [2, 2],
             "line-opacity": 0.8
           }
         });
