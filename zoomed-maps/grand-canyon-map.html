@@ -263,7 +263,7 @@
 
         map.addSource("state", {
           type: "geojson",
-          data: "../data/states.geojson"
+          data: "../data/states2.geojson"
         });
         geojson.features.push({
           type: "Feature",
@@ -292,6 +292,23 @@
             "line-opacity": 0.8
           }
         });
+
+        map.addLayer({
+  id: "state-labels",
+  type: "symbol",
+  source: "state",
+  layout: {
+    "text-field": ["upcase", ["get", "NAME"]],  
+    "text-font": ["Open Sans Regular"],
+    "text-size": 12,
+    "text-anchor": "center"
+  },
+  paint: {
+    "text-color": "#fff",
+    "text-halo-color": "#000",
+    "text-halo-width": 1
+  }
+});
 
         map.addLayer({
           id: "grand-canyon-polygon",
@@ -379,6 +396,7 @@
             "circle-stroke-width": 2,
           }
         });
+        
 
 
         map.addLayer({
