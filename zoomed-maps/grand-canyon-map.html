@@ -25,6 +25,11 @@
     color: #a5091e;
   }
 
+  .desc-link {
+    color: #a5091e;
+    text-decoration: none;
+  }
+
   #container {
     display: flex;
     flex-direction: column;
@@ -153,7 +158,7 @@
   <div id="container">
     <div id="header">
       <div class="title">Fires burning near Grand Canyon</div>
-      <div class="description"></div>
+      <div class="description">We are tracking the latest wildfires burning near Grand Canyon. Click on a fire perimeter to see more details or <a href="https://www.cbsnews.com/wildfirewatch/" target="_blank" class="desc-link">click here</a> to see more fire data with our Wildfire Watch tool.</div>
       <div class="bucket-legend">
         <div class="bucket-item">
           <div class="bucket-swatch" style="background-color:#a5091e;"></div>
@@ -167,7 +172,8 @@
     </div>
     <div id="map"></div>
     <div class="note">Data as of </div>
-    <div class="source">Map: Taylor Johnston / CBS News • Source: <a href="https://www.nifc.gov/" target="_blank">National
+    <div class="source">Source: <a href="https://www.nifc.gov/"
+        target="_blank">National
         Interagency Fire Center</a></div>
   </div>
 
@@ -252,8 +258,7 @@
     fetch("../data/wildfires_combined.geojson")
       .then(response => response.json())
       .then(geojson => {
-        document.querySelector(".description").innerHTML =
-          `TKTKTK text here`;
+       ;
 
         map.addSource("state", {
           type: "geojson",
@@ -300,7 +305,7 @@
 
         map.addSource("combined", {
           type: "geojson",
-          data: "../data/wildfires_combined.geojson"
+          data: geojson
         });
 
         map.addLayer({
@@ -326,22 +331,34 @@
           }
         });
 
-        
-
-        // Promote point fallback if polygon lacks geometry
-        geojson.features.forEach(feature => {
-          if (!feature.geometry || feature.geometry.type !== "Point") {
-            const { latitude, longitude } = feature.properties;
-            if (latitude !== null && longitude !== null) {
-              geojson.features.push({
+        map.addSource("fire-labels-manual", {
+          type: "geojson",
+          data: {
+            type: "FeatureCollection",
+            features: [
+              {
                 type: "Feature",
-                geometry: { type: "Point", coordinates: [longitude, latitude] },
-                properties: feature.properties
-              });
-            }
+                geometry: {
+                  type: "Point",
+                  coordinates: [-112.103833, 36.239167]  // 🔥 Example: Dragon Bravo Fire
+                },
+                properties: {
+                  name: "Dragon Bravo Fire"
+                }
+              },
+              {
+                type: "Feature",
+                geometry: {
+                  type: "Point",
+                  coordinates: [-112.455345, 36.861175]  // 🔥 Example: White Sage Fire
+                },
+                properties: {
+                  name: "White Sage Fire"
+                }
+              }
+            ]
           }
         });
-
 
 
 
@@ -366,25 +383,18 @@
         map.addLayer({
           id: "fire-labels",
           type: "symbol",
-          source: "combined",
-          filter: [
-            "match",
-            ["get", "name"],
-            ["Dragon Bravo Fire", "White Sage Fire"],
-            true,
-            false
-          ],
+          source: "fire-labels-manual",
           layout: {
             "text-field": ["get", "name"],
-            "text-font": ["Open Sans Regular"],
-            "text-offset": [0, .5],
-            "text-anchor": "right",
+            "text-font": ["Open Sans Bold"],
+            "text-offset": [0, 0.5],
+            "text-anchor": "left",
             "text-size": 18
           },
           paint: {
-            "text-color": "#fff",
-            "text-halo-color": "#000",
-            "text-halo-width": 1
+            "text-color": "#000",
+            "text-halo-color": "#fff",  // Light tan background
+            "text-halo-width": 1,
           }
         });
 
@@ -401,15 +411,15 @@
           ],
           layout: {
             "text-field": ["get", "name"],
-            "text-font": ["Open Sans Regular"],
+            "text-font": ["Open Sans Bold"],
             "text-offset": [0, .5],
             "text-anchor": "top",
             "text-size": 14
           },
           paint: {
-            "text-color": "#fff",
-            "text-halo-color": "#000",
-            "text-halo-width": .8
+            "text-color": "#000", // Text color
+            "text-halo-color": "#fff", // Light background color
+            "text-halo-width": 1, // Width of the background halo
           }
         });
 
@@ -431,7 +441,7 @@
       })
       .catch(error => console.error("Error loading GeoJSON:", error));
   });
-  
+
 
   map.on("click", "points-layer", (e) => {
     const feature = e.features[0];
