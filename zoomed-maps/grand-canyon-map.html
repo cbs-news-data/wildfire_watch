@@ -193,12 +193,28 @@
 
   const map = new maplibregl.Map({
     container: "map",
-    style: "https://raw.githubusercontent.com/go2garret/maps/main/src/assets/json/arcgis_hybrid.json",
+    style: "https://vapi.mc-cdn.io/styles/CTS%20Satellite%20Map.json?access_token=u3Q9ykMVHQIvvHegtpo2qgbyUxXbtw2N9e8983fde25feff58982455e437cb67145892361",
     center: [-112.806, 36.386],
     zoom: initialZoom,
     maxZoom: 20,
     minZoom: 6
   });
+
+map.on("style.load", () => {
+  const labelLayerIds = map.getStyle().layers
+    .filter(l =>
+      l.type === "symbol" &&
+      (
+        l.id.toLowerCase().includes("place") ||
+        l.id.toLowerCase().includes("boundaryname-state-us-abbr") ||
+        l.id.toLowerCase().includes("boundaryname-state-us-name") ||
+        l.id.toLowerCase().includes("boundaryname-first-level")
+      )
+    )
+    .map(l => l.id);
+
+  labelLayerIds.forEach(id => map.setLayoutProperty(id, "visibility", "none"));
+});
 
   map.scrollZoom.disable();
   map.addControl(new maplibregl.NavigationControl(), "top-left");
@@ -304,7 +320,7 @@ map.addLayer({
   source: "centroids",
   layout: {
     "text-field": ["upcase", ["get", "STATE_NAME"]],
-    "text-font": ["Open Sans Regular"],
+    "text-font": ["TTNorms-Medium"],
     "text-size": 12,
     "text-anchor": "center"
   },
@@ -321,7 +337,7 @@ map.addLayer({
           source: "grand-canyon-boundary",
           paint: {
             "fill-color": "#ffe9c5",
-            "fill-opacity": 0.4
+            "fill-opacity": 0.65
           }
         });
 
@@ -338,7 +354,7 @@ map.addLayer({
           filter: ["==", "$type", "Polygon"],
           paint: {
             "fill-color": "#a5091e",
-            "fill-opacity": 0.6
+            "fill-opacity": 0.8
           }
         });
 
@@ -410,9 +426,9 @@ map.addLayer({
           source: "fire-labels-manual",
           layout: {
             "text-field": ["get", "name"],
-            "text-font": ["Open Sans Bold"],
+            "text-font": ["TTNorms-Medium"],
             "text-offset": [0, 0.4],
-            "text-anchor": "left",
+            "text-anchor": "bottom",
             "text-size": 18
           },
           paint: {
@@ -435,7 +451,7 @@ map.addLayer({
           ],
           layout: {
             "text-field": ["get", "name"],
-            "text-font": ["Open Sans Bold"],
+            "text-font": ["TTNorms-Medium"],
             "text-offset": [0, .5],
             "text-anchor": "top",
             "text-size": 14
