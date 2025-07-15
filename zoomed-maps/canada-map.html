@@ -21,7 +21,7 @@
 
   a {
     text-decoration: underline;
-    text-decoration-color: #a5091e;
+    text-decoration-color: #858585;
     color: #858585;
   }
 
@@ -126,13 +126,10 @@
     font-size: 14px;
   }
 
-  .desc_link {
-    font-family: "proxima-nova", sans-serif;
-  }
-
-  .cbs_ww_link {
+  .desc-link {
     color: #a5091e;
-    text-decoration: underline;
+    text-decoration: none;
+    font-weight: bold;
   }
 
 </style>
@@ -140,11 +137,11 @@
 <body>
 
   <div id="container">
-    <div id="header">
+    <id id="header">
       <div class="title">Wildfires in Canada</div>
       <div class="description"></div>
-      <div class="desc_link"><a href="https://www.cbsnews.com/wildfirewatch/" target="_blank"><strong><span class="cbs_ww_link">Click here</span></strong></a> to see more fire data with our Wildfire Watch tool.</div>
-    </div>
+      <div class="description"><a href="https://www.cbsnews.com/wildfirewatch/" target="_blank" class="desc-link">Click here</a> to see more fire data with our Wildfire Watch tool.</div>
+    </id>
     <div id="map"></div>
     <div class="source">Source: <a href="https://cwfis.cfs.nrcan.gc.ca/datamart/metadata/activefires" target="_blank">Canadian Interagency Forest Fire Centre</a></div>
   </div>
@@ -174,7 +171,7 @@
   .then(geojson => {
     const wildfireCount = geojson.features.length;
     document.querySelector(".description").innerHTML =
-      `We are tracking <strong><span class="num-fires">${wildfireCount}</span> current and recent</strong> wildfires of more than 50 acres in Canada. Click on a point or perimeter to see more information about each fire.`;
+      `We are tracking <strong><span class="num-fires">${wildfireCount}</span> current and recent</strong> wildfires of more than 50 acres in Canada. Click on a point to see more information about each fire.`;
 
 
   //add canada points
