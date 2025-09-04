@@ -137,7 +137,7 @@
 
   const map = new maplibregl.Map({
     container: "map",
-    style: "https://vapi.mc-cdn.io/styles/CTS%20Web%20Data%20Dark.json?access_token=u3Q9ykMVHQIvvHegtpo2qgbyUxXbtw2N9e8983fde25feff58982455e437cb67145892361",
+    style: "cbs_dark_v3.json",
     center: [-96.97, 39.18],
     zoom: initialZoom,
     maxZoom: 20,
@@ -158,18 +158,18 @@
     document.querySelector(".description").innerHTML =
       `We are tracking <strong><span class="num-fires">${wildfireCount}</span> current and recent</strong> wildfires of more than 50 acres in the U.S. Click on a point or perimeter to see more information about each fire.`;
 
-    // Add state outlines
-    map.addSource("states", { type: "geojson", data: "data/states.geojson" });
-    map.addLayer({
-      id: "states-layer",
-      type: "line",
-      source: "states",
-      paint: {
-        "line-color": "white",
-        "line-width": 0.2,
-        "line-opacity": 0.2
-      }
-    });
+    // // Add state outlines
+    // map.addSource("states", { type: "geojson", data: "data/states.geojson" });
+    // map.addLayer({
+    //   id: "states-layer",
+    //   type: "line",
+    //   source: "states",
+    //   paint: {
+    //     "line-color": "white",
+    //     "line-width": 0.2,
+    //     "line-opacity": 0.2
+    //   }
+    // });
 
     // Safely add fallback points
     const extraPoints = geojson.features
