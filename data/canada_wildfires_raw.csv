@@ -23,28 +23,26 @@ ak, Mountain Village Dump, 62.0871, -163.752, 2025-05-28 00:00:00, 14, Active, ,
 ak, Caribou, 66.1673, -155.763, 2025-06-15 00:00:00, 784.2, Active, , Limited
 ak, Konovalof Lake, 60.6604, -151.16, 2025-08-15 00:00:00, 0, Active, , Full
 ak, Retreat Ct, 60.5089, -151.112, 2025-08-18 00:00:00, 0, Active, , Critical
-ak, Kawichiark 1, 66.5653, -158.039, 2025-06-16 00:00:00, 1873.7, Active, , Limited
 ak, Kawichiark 2, 66.5704, -158.032, 2025-06-16 00:00:00, 1081.4, Active, , Limited
 ak, Canyon, 67.0609, -160.438, 2025-06-16 00:00:00, 1.9, Active, , Full
 ak, Hogatza, 66.7583, -153.848, 2025-06-16 00:00:00, 11858.4, Active, , Limited
 ak, Chicken, 65.2034, -153.498, 2025-06-16 00:00:00, 3268.9, Active, , Limited
 ak, Tetilesook, 66.92, -159.58, 2025-06-16 00:00:00, 519.2, Active, , Limited
+ak, Kawichiark 1, 66.5653, -158.039, 2025-06-16 00:00:00, 1873.7, Active, , Limited
+ak, Kandik, 65.4357, -142.243, 2025-06-18 00:00:00, 2157.8, Active, , Limited
+ak, Billy Hawk 2, 66.061, -156.828, 2025-06-18 00:00:00, 4.6, Active, , Modified (Jul 10)
 ak, Klikhtentotzna, 66.5839, -154.678, 2025-06-17 00:00:00, 47752.6, Active, , Limited
 ak, Obrien, 65.3285, -147.875, 2025-06-17 00:00:00, 3095, Active, , Limited
 ak, Billy Hawk, 66.0291, -156.754, 2025-06-18 00:00:00, 33.4, Active, , Modified (Jul 10)
-ak, Kandik, 65.4357, -142.243, 2025-06-18 00:00:00, 2157.8, Active, , Limited
-ak, Billy Hawk 2, 66.061, -156.828, 2025-06-18 00:00:00, 4.6, Active, , Modified (Jul 10)
 ak, Ninetyeight, 64.6051, -146.195, 2025-06-19 00:00:00, 6557.2, Active, , Limited
 ak, Himalaya Road, 65.1283, -147.771, 2025-06-19 00:00:00, 2452.9, Active, , Full
-ak, Lush, 65.5212, -150.341, 2025-06-18 00:00:00, 10808, Active, , Full
 ak, Elephant, 65.2892, -150.171, 2025-06-19 00:00:00, 3671, Active, , Limited
+ak, Lush, 65.5212, -150.341, 2025-06-18 00:00:00, 10808, Active, , Full
 ak, Orum, 65.2594, -150.622, 2025-06-18 00:00:00, 2287.2, Active, , Limited
 ak, Brigadier, 64.6464, -146.273, 2025-06-18 00:00:00, 160.5, Active, , Limited
 ak, Nikolai, 65.0072, -157.313, 2025-06-19 00:00:00, 11.1, Active, , Full
 ak, Bonnifield Creek, 64.1739, -147.811, 2025-06-19 00:00:00, 7021.6, Active, , Full
 ak, Lockwood, 66.7203, -155.119, 2025-06-19 00:00:00, 203.2, Active, , Limited
-ak, Salmon Trout, 66.83, -141.54, 2025-06-20 00:00:00, 527.8, Active, , Limited
-ak, Goldstream Creek, 64.7355, -148.759, 2025-06-20 00:00:00, 8290.7, Active, , Full
 ak, Bear Creek, 64.0414, -149.285, 2025-06-19 00:00:00, 12794, Active, , Full
 ak, Ikheenjik, 65.612, -144.236, 2025-06-19 00:00:00, 7958.5, Active, , Limited
 ak, Bonanza Creek, 64.6932, -148.444, 2025-06-19 00:00:00, 5093.3, Active, , Full
@@ -53,33 +51,35 @@ ak, Richards, 65.6858, -156.727, 2025-06-20 00:00:00, 233.5, Active, , Modified 
 ak, Christian, 67.3409, -144.808, 2025-06-20 00:00:00, 25946.2, Active, , Limited
 ak, Buckley Bar, 65.3682, -144.344, 2025-06-20 00:00:00, 3911.5, Active, , Modified (Jul 10)
 ak, Aggie Creek, 65.1228, -148.154, 2025-06-20 00:00:00, 14109.1, Active, , Full
+ak, Salmon Trout, 66.83, -141.54, 2025-06-20 00:00:00, 527.8, Active, , Limited
+ak, Goldstream Creek, 64.7355, -148.759, 2025-06-20 00:00:00, 8290.7, Active, , Full
 ak, Sikik, 67.97, -158.14, 2025-07-06 00:00:00, 5883.1, Active, , Limited
 ak, Kuna, 68.5052, -158.039, 2025-07-06 00:00:00, 1.4, Active, , Limited
 ak, Jade, 67.1971, -158.407, 2025-07-06 00:00:00, 1.1, Active, , Modified (Jul 10)
 ak, Kobuk, 67.3051, -159.069, 2025-07-06 00:00:00, 32.2, Active, , Limited
+ak, Windfall Mountain Oil Shale, 65.0282, -141.246, 2025-05-01 00:00:00, 0, Active, , Modified (Jul 10)
 ak, 7 Mile Lookout, 63.25, -143.129, 2025-06-19 00:00:00, 1658.8, Active, , Full
 ak, Moran, 65.4019, -152.89, 2025-06-19 00:00:00, 5596.9, Active, , Limited
-ak, Windfall Mountain Oil Shale, 65.0282, -141.246, 2025-05-01 00:00:00, 0, Active, , Modified (Jul 10)
-ak, Kugarak, 66.5589, -158.601, 2025-06-26 00:00:00, 2.1, Active, , Limited
 ak, Monte Cristo Creek, 64.4605, -145.863, 2025-06-22 00:00:00, 3553.1, Active, , Full
 ak, Racquet, 66.3264, -141.107, 2025-06-23 00:00:00, 699.7, Active, , Limited
 ak, Mauneluk, 67.1599, -155.97, 2025-06-25 00:00:00, 1222.3, Active, , Limited
-ak, South Fork, 62.33, -153.44, 2025-07-04 00:00:00, 78.1, Active, , Limited
+ak, Kugarak, 66.5589, -158.601, 2025-06-26 00:00:00, 2.1, Active, , Limited
 ak, Tsukon, 66.8268, -146.021, 2025-07-04 00:00:00, 600.7, Active, , Full
+ak, South Fork, 62.33, -153.44, 2025-07-04 00:00:00, 78.1, Active, , Limited
 ak, Gisasa, 65.2542, -157.719, 2025-07-09 00:00:00, 6, Active, , Modified (Jul 10)
 ak, Saint George Creek, 64.2228, -147.892, 2025-06-19 00:00:00, 11830.1, Active, , Full
 ak, Runt, 66.2939, -141.154, 2025-06-23 00:00:00, 6487.4, Active, , Limited
-ak, Helmet, 67.7374, -143.945, 2025-07-01 00:00:00, 252.4, Active, , Limited
 ak, Shiliak, 67.0725, -161.757, 2025-07-03 00:00:00, 9.2, Active, , Modified (Jul 10)
+ak, Noatak Dump, 67.57, -163, 2025-06-29 00:00:00, 0, Active, , Critical
+ak, Helmet, 67.7374, -143.945, 2025-07-01 00:00:00, 252.4, Active, , Limited
 ak, Uncle Sam Creek, 64.4515, -146.272, 2025-07-03 00:00:00, 353.5, Active, , Full
 ak, Doc, 66.1627, -146.209, 2025-07-03 00:00:00, 366.2, Active, , Limited
-ak, Noatak Dump, 67.57, -163, 2025-06-29 00:00:00, 0, Active, , Critical
 ak, Trout Creek Oil Shale, 65.0973, -141.639, 2025-05-01 00:00:00, 0, Active, , Limited
 ak, Echo 3, 60.4404, -151.119, 2025-06-16 00:00:00, 0, Active, , Critical
 ak, Tok River, 63.1828, -143.065, 2025-06-21 00:00:00, 135.1, Active, , Full
 ak, Sand Lake, 63.7972, -144.365, 2025-06-21 00:00:00, 2573, Active, , Full
-ak, Ulaneak, 67.31, -156.22, 2025-07-11 00:00:00, 141.3, Active, , Limited
 ak, Reed, 67.0559, -154.853, 2025-07-09 00:00:00, 1375.3, Active, , Limited
+ak, Ulaneak, 67.31, -156.22, 2025-07-11 00:00:00, 141.3, Active, , Limited
 ak, Ladue River, 63.4064, -141.794, 2025-06-20 00:00:00, 42.6, Active, , Limited
 ak, River Trail, 63.4187, -141.948, 2025-06-20 00:00:00, 9650, Active, , Limited
 conus, Beulah - UTWCF, 40.81, -110.703, 2025-08-08 00:14:11, 2316.2, 0% contained, GMT
@@ -117,9 +117,9 @@ conus, Orleans Complex - CASRF, 41.4067, -123.589, 2025-07-08 21:31:00, 8966.29,
 conus, West Fork - MTCGF, 44.9433, -111.368, 2025-08-19 21:18:42, 390.015, 83% contained, GMT
 conus, Flat - OR95S, 44.5131, -121.354, 2025-08-21 20:29:00, 9455.13, 81% contained, GMT
 conus, Elkhorn - Idaho - IDSCF, 44.6053, -115.265, 2025-07-29 20:52:47, 720.495, 0% contained, GMT
+ak, Moldy, 65.5827, -156.74, 2025-06-20 00:00:00, 29247.6, Active, , Modified (Jul 10)
 ak, Burnt, 67.4692, -144.645, 2025-07-11 00:00:00, 489.8, Active, , Limited
 ak, Camp, 64.4771, -145.532, 2025-07-14 00:00:00, 679.3, Active, , Limited
-ak, Moldy, 65.5827, -156.74, 2025-06-20 00:00:00, 29247.6, Active, , Modified (Jul 10)
 conus, Cottonwood Peak - NVEKD, 41.39, -116.209, 2025-08-15 23:02:00, 53704.6, 86% contained, GMT
 ak, Polly, 64.2543, -141.329, 2025-07-10 00:00:00, 184.6, Active, , Limited
 conus, Cedar - CASHF, 40.415, -123.226, 2025-09-03 18:45:56, 42.12, 95% contained, GMT
@@ -137,35 +137,35 @@ conus, Sugar - WA0107, 48.6094, -119.704, 2025-09-07 03:02:44, 38.88, 75% contai
 conus, Ransome - MTKNF, 48.54, -115.64, 2025-08-21 11:05:00, 283.905, 31% contained, GMT
 conus, Rock  - IDBOF, 44.6669, -116.158, 2025-08-13 04:37:00, 1132.38, 95% contained, GMT
 conus, Big Bear - IDPAF, 45.4811, -114.983, 2025-07-09 11:00:00, 6569.1, 90% contained, GMT
-conus, Ulm Creek - IDIPF, 47.8797, -115.987, 2025-08-30 13:59:00, 1174.91, 10% contained, GMT
 conus, Black Rock - ORPRD, 44.9894, -120.488, 2025-09-04 22:29:01, 17756, 80% contained, GMT
 conus, Marks Creek - OROCF, 44.4197, -120.49, 2025-09-02 16:22:00, 695.79, 88% contained, GMT
 conus, Isabella and Lost Girls - MTKN, 48.1226, -115.679, 2025-08-31 23:30:00, 329.265, 0% contained, GMT
 conus, Snow Peak - WACOF, 48.5631, -118.467, 2025-09-01 20:09:00, 305.37, 0% contained, GMT
 conus, Log - Klamath National Forest, 41.415, -123.266, 2025-08-26 17:13:34, 473.85, 0% contained, GMT
-conus, Rattle Mountain - IDIPF, 48.3172, -116.086, 2025-09-02 16:35:21, 49.41, 0% contained, GMT
 conus, Green Mtn - IDIPF, 48.1167, -116.344, 2025-08-29 10:27:00, 27.945, 0% contained, GMT
+conus, Rattle Mountain - IDIPF, 48.3172, -116.086, 2025-09-02 16:35:21, 49.41, 0% contained, GMT
 conus, Green Rattle Complex  - IDIPF, 48.3238, -116.033, 2025-08-29 22:27:55, 219.105, 0% contained, GMT
 conus, Dollar Lake - WYBTF, 43.3281, -110.006, 2025-08-21 18:15:00, 7860.24, 62% contained, GMT
-conus, Windy Rock - MTMTS, 46.7183, -112.843, 2025-08-14 21:00:00, 2440.12, 43% contained, GMT
-conus, Lower Sugarloaf - WAOWF, 47.7556, -120.554, 2025-09-01 14:30:00, 6637.54, 0% contained, GMT
 conus, Emigrant - ORWIF, 43.4688, -122.242, 2025-08-24 16:30:00, 13097.3, 27% contained, GMT
+conus, Windy Rock - MTMTS, 46.7183, -112.843, 2025-08-14 21:00:00, 2440.12, 43% contained, GMT
 conus, Island Creek - IDNCF, 46.0355, -115.438, 2025-08-01 01:36:41, 6030.04, 5% contained, GMT
-conus, Labor Mountain - WAOWF, 47.3828, -120.819, 2025-09-01 12:29:00, 1888.11, 0% contained, GMT
-conus, Moon Complex - ORRSF, 42.6875, -123.915, 2025-09-04 20:25:00, 1595.7, 5% contained, GMT
 conus, Tacoma Creek - WANES, 48.4942, -117.511, 2025-09-01 06:04:00, 1591.65, 26% contained, GMT
 conus, Katy Creek - WACOF, 48.6767, -118.16, 2025-08-30 06:45:00, 1578.29, 10% contained, GMT
 conus, Lynx Mountain - WACOA, 48.3408, -118.341, 2025-09-02 17:47:00, 3170.75, 15% contained, GMT
 conus, Rattlesnake - WACOA, 47.8779, -118.385, 2025-09-01 13:20:42, 8846.82, 85% contained, GMT
-conus, Crown Creek - WANES, 48.833, -117.883, 2025-08-29 22:18:00, 5763.56, 30% contained, GMT
 conus, East - IDNCF, 46.5742, -114.842, 2025-08-20 11:39:00, 894.645, 0% contained, GMT
 conus, Mire - IDNCF, 46.5626, -115.142, 2025-08-13 16:40:00, 562.14, 0% contained, GMT
 conus, Bridge - OR - ORMAF, 44.5938, -118.603, 2025-09-04 02:30:32, 141.75, 91% contained, GMT
+conus, Crown Creek - WANES, 48.833, -117.883, 2025-08-29 22:18:00, 5763.56, 30% contained, GMT
+conus, Kelsey Peak - OR71S, 42.7294, -123.76, 2025-09-03 19:28:00, 420.795, 44% contained, GMT
+conus, White Pine - IDNCF, 47.0181, -116.656, 2025-08-31 21:30:00, 423.225, 10% contained, GMT
+conus, Dillon - CASRF, 41.53, -123.541, 2025-08-25 22:23:00, 4839.75, 78% contained, GMT
+conus, Perry - WANCP, 48.922, -121.105, 2025-08-27 22:48:00, 714.015, 30% contained, GMT
 conus, Bear Gulch - WAOLF, 47.4958, -123.302, 2025-07-07 01:00:00, 4391.42, 9% contained, GMT
 conus, Blue - Klamath National Forest, 41.78, -123.195, 2025-08-27 00:15:00, 1483.52, 30% contained, GMT
-conus, Kelsey Peak - OR71S, 42.7294, -123.76, 2025-09-03 19:28:00, 420.795, 44% contained, GMT
 conus, Wildcat - WAOWF, 46.8453, -121.397, 2025-08-25 20:48:00, 3408.07, 8% contained, GMT
-conus, White Pine - IDNCF, 47.0181, -116.656, 2025-08-31 21:30:00, 423.225, 10% contained, GMT
 conus, Foley Ridge - ORWIF, 44.1544, -122.018, 2025-09-06 21:07:00, 167.67, 0% contained, GMT
-conus, Perry - WANCP, 48.922, -121.105, 2025-08-27 22:48:00, 714.015, 30% contained, GMT
-conus, Dillon - CASRF, 41.53, -123.541, 2025-08-25 22:23:00, 4839.75, 78% contained, GMT
+conus, Lower Sugarloaf - WAOWF, 47.7556, -120.554, 2025-09-01 14:30:00, 7005.69, 0% contained, GMT
+conus, Labor Mountain - WAOWF, 47.3828, -120.819, 2025-09-01 12:29:00, 1942.79, 0% contained, GMT
+conus, Ulm Creek - IDIPF, 47.8797, -115.987, 2025-08-30 13:59:00, 1185.84, 10% contained, GMT
+conus, Moon Complex - ORRSF, 42.6875, -123.915, 2025-09-04 20:25:00, 1602.99, 5% contained, GMT
