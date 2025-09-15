@@ -32,8 +32,8 @@ ak, Tetilesook, 66.92, -159.58, 2025-06-16 00:00:00, 519.2, Active, , Limited
 ak, Klikhtentotzna, 66.5839, -154.678, 2025-06-17 00:00:00, 47752.6, Active, , Limited
 ak, Obrien, 65.3285, -147.875, 2025-06-17 00:00:00, 3095, Active, , Limited
 ak, Billy Hawk, 66.0291, -156.754, 2025-06-18 00:00:00, 33.4, Active, , Modified (Jul 10)
-ak, Kandik, 65.4357, -142.243, 2025-06-18 00:00:00, 2157.8, Active, , Limited
 ak, Billy Hawk 2, 66.061, -156.828, 2025-06-18 00:00:00, 4.6, Active, , Modified (Jul 10)
+ak, Kandik, 65.4357, -142.243, 2025-06-18 00:00:00, 2157.8, Active, , Limited
 ak, Nikolai, 65.0072, -157.313, 2025-06-19 00:00:00, 11.1, Active, , Full
 ak, Bonnifield Creek, 64.1739, -147.811, 2025-06-19 00:00:00, 7021.6, Active, , Full
 ak, Lockwood, 66.7203, -155.119, 2025-06-19 00:00:00, 203.2, Active, , Limited
@@ -58,8 +58,8 @@ ak, Kuna, 68.5052, -158.039, 2025-07-06 00:00:00, 1.4, Active, , Limited
 ak, Jade, 67.1971, -158.407, 2025-07-06 00:00:00, 1.1, Active, , Modified (Jul 10)
 ak, Kobuk, 67.3051, -159.069, 2025-07-06 00:00:00, 32.2, Active, , Limited
 ak, Windfall Mountain Oil Shale, 65.0282, -141.246, 2025-05-01 00:00:00, 0, Active, , Modified (Jul 10)
-ak, 7 Mile Lookout, 63.25, -143.129, 2025-06-19 00:00:00, 1658.8, Active, , Full
 ak, Moran, 65.4019, -152.89, 2025-06-19 00:00:00, 5596.9, Active, , Limited
+ak, 7 Mile Lookout, 63.25, -143.129, 2025-06-19 00:00:00, 1658.8, Active, , Full
 ak, Racquet, 66.3264, -141.107, 2025-06-23 00:00:00, 699.7, Active, , Limited
 ak, Mauneluk, 67.1599, -155.97, 2025-06-25 00:00:00, 1222.3, Active, , Limited
 ak, Monte Cristo Creek, 64.4605, -145.863, 2025-06-22 00:00:00, 3553.1, Active, , Full
@@ -134,8 +134,8 @@ conus, Root - CASHF, 41.1603, -122.397, 2025-09-01 16:34:00, 295.245, 97% contai
 conus, Twin - IDNCF, 46.8605, -115.299, 2025-08-01 04:00:00, 344.25, 0% contained, GMT
 conus, Sugar - WA0107, 48.6094, -119.704, 2025-09-07 03:02:44, 38.88, 75% contained, GMT
 conus, Ransome - MTKNF, 48.54, -115.64, 2025-08-21 11:05:00, 283.905, 31% contained, GMT
-conus, Big Bear - IDPAF, 45.4811, -114.983, 2025-07-09 11:00:00, 6569.1, 90% contained, GMT
 conus, Rock  - IDBOF, 44.6669, -116.158, 2025-08-13 04:37:00, 1132.38, 95% contained, GMT
+conus, Big Bear - IDPAF, 45.4811, -114.983, 2025-07-09 11:00:00, 6569.1, 90% contained, GMT
 conus, Black Rock - ORPRD, 44.9894, -120.488, 2025-09-04 22:29:01, 17756, 80% contained, GMT
 conus, Marks Creek - OROCF, 44.4197, -120.49, 2025-09-02 16:22:00, 695.79, 88% contained, GMT
 conus, Isabella and Lost Girls - MTKN, 48.1226, -115.679, 2025-08-31 23:30:00, 329.265, 0% contained, GMT
@@ -151,17 +151,17 @@ conus, East - IDNCF, 46.5742, -114.842, 2025-08-20 11:39:00, 894.645, 0% contain
 conus, Bridge - OR - ORMAF, 44.5938, -118.603, 2025-09-04 02:30:32, 141.75, 91% contained, GMT
 conus, White Pine - IDNCF, 47.0181, -116.656, 2025-08-31 21:30:00, 423.225, 10% contained, GMT
 conus, Kelsey Peak - OR71S, 42.7294, -123.76, 2025-09-03 19:28:00, 420.795, 44% contained, GMT
-conus, Wildcat - WAOWF, 46.8453, -121.397, 2025-08-25 20:48:00, 3408.07, 8% contained, GMT
 conus, Foley Ridge - ORWIF, 44.1544, -122.018, 2025-09-06 21:07:00, 167.67, 0% contained, GMT
 conus, Bear Gulch - WAOLF, 47.4958, -123.302, 2025-07-07 01:00:00, 4391.42, 9% contained, GMT
-conus, Perry - WANCP, 48.922, -121.105, 2025-08-27 22:48:00, 714.015, 40% contained, GMT
-conus, Island Creek - IDNCF, 46.0355, -115.438, 2025-08-01 01:36:41, 6049.89, 5% contained, GMT
+conus, Wildcat - WAOWF, 46.8453, -121.397, 2025-08-25 20:48:00, 3408.07, 8% contained, GMT
 conus, Labor Mountain - WAOWF, 47.3828, -120.819, 2025-09-01 12:29:00, 1942.79, 0% contained, GMT
 conus, Ulm Creek - IDIPF, 47.8797, -115.987, 2025-08-30 13:59:00, 1185.84, 10% contained, GMT
-conus, Lower Sugarloaf - WAOWF, 47.7556, -120.554, 2025-09-01 14:30:00, 7005.69, 0% contained, GMT
+conus, Perry - WANCP, 48.922, -121.105, 2025-08-27 22:48:00, 714.015, 40% contained, GMT
+conus, Island Creek - IDNCF, 46.0355, -115.438, 2025-08-01 01:36:41, 6049.89, 5% contained, GMT
 conus, Katy Creek - WACOF, 48.6767, -118.16, 2025-08-30 06:45:00, 1577.47, 10% contained, GMT
 conus, Moon Complex - ORRSF, 42.6875, -123.915, 2025-09-04 20:25:00, 1602.99, 6% contained, GMT
 conus, Emigrant - ORWIF, 43.4688, -122.242, 2025-08-24 16:30:00, 13100.5, 34% contained, GMT
+conus, Lower Sugarloaf - WAOWF, 47.7556, -120.554, 2025-09-01 14:30:00, 7005.69, 0% contained, GMT
 conus, Lynx Mountain - WACOA, 48.3408, -118.341, 2025-09-02 17:47:00, 3174.79, 15% contained, GMT
 conus, Dollar Lake - WYBTF, 43.3281, -110.006, 2025-08-21 18:15:00, 7883.73, 63% contained, GMT
 conus, Crown Creek - WANES, 48.833, -117.883, 2025-08-29 22:18:00, 5762.34, 30% contained, GMT
