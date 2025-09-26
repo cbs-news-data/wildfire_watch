@@ -2,52 +2,67 @@ name: Update map and tables
 
 on:
   schedule:
-    - cron: '45 * * * *'
-  workflow_dispatch:
+    - cron: '45 * * * *'  
+  workflow_dispatch:  # Allows manual trigger
 
 jobs:
   run-script:
     runs-on: macos-latest
-    env:
-      DW_API_KEY: ${{ secrets.DATAWRAPPR }}
 
     steps:
+    # Step 1: Checkout the repository
     - name: Checkout repository
       uses: actions/checkout@v3
 
+    # Step 2: Unlink conflicting pkg-config
+    - name: Unlink conflicting pkg-config
+      run: |
+        brew unlink pkg-config || true  # Avoid errors if already unlinked
+
+    # Step 3: Install system dependencies
     - name: Install system dependencies
       run: |
         brew update
         brew install gdal udunits pandoc
 
-    - name: Set up R and dependencies
-      uses: r-lib/actions/setup-r-dependencies@v2
-      with:
-        extra-packages: |
-          readr
-          dplyr
-          stringr
-          sf
-          janitor
-          lubridate
-          tidyr
-          dotenv
-          munichrocker/DatawRappr
-        cache-version: 1
+    # Step 4: Set up R
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v2
 
-    - name: Run update scripts
+    # Step 5: Install R packages
+    - name: Install R packages
+      run: |
+        Rscript -e 'install.packages(c("readr", "dplyr", "stringr", "sf", "janitor", "lubridate", "tidyr", "dotenv"))'
+
+    # Step 6: Install pak for better package management
+    - name: Install pak package
+      run: |
+        Rscript -e 'install.packages("pak")'
+
+    # Step 7: Set up environment variables
+    - name: Set up environment variables
+      run: echo "DW_API_KEY=${{ secrets.DATAWRAPPR }}" >> $GITHUB_ENV
+
+    # Step 8: Install DatawRappr package
+    - name: Install DatawRappr package
+      run: |
+        Rscript -e "pak::pkg_install('munichrocker/DatawRappr')"
+
+    # Step 9: Run R script
+    - name: Run R script
       run: |
         Rscript scripts/map.R
         Rscript scripts/canada_fires.R
         Rscript scripts/containment_tables.R
         Rscript scripts/page_datetime.R
 
+    # Step 10: Commit and push changes
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add .
-        git commit -m 'Update data and map' || true
+        git commit -m 'Update data and map' || true  # Prevent errors if no changes
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
