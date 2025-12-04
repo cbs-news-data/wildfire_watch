@@ -3,7 +3,7 @@
 "name": "canada_wildfires_clean",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "agency": "pc", "firename": " 2025PA4", "startdate": "2025-07-01T01:36:00Z", "hectares": 7665.0, "stage_of_control": "OC", "timezone": "CDT", "response_type": " FUL", "acres": 18940.0, "days_burning": 154, "startdate_clean": "July 1 at 01:36 a.m. CDT" }, "geometry": { "type": "Point", "coordinates": [ -106.142, 54.3558 ] } },
-{ "type": "Feature", "properties": { "agency": "mb", "firename": " NO045", "startdate": "2025-06-30T05:00:00Z", "hectares": 82.1, "stage_of_control": "OC", "timezone": "CDT", "response_type": " MON", "acres": 203.0, "days_burning": 155, "startdate_clean": "June 30 at 05:00 a.m. CDT" }, "geometry": { "type": "Point", "coordinates": [ -98.4453, 54.3742 ] } }
+{ "type": "Feature", "properties": { "agency": "pc", "firename": " 2025PA4", "startdate": "2025-07-01T01:36:00Z", "hectares": 7665.0, "stage_of_control": "OC", "timezone": "CDT", "response_type": " FUL", "acres": 18940.0, "days_burning": 155, "startdate_clean": "July 1 at 01:36 a.m. CDT" }, "geometry": { "type": "Point", "coordinates": [ -106.142, 54.3558 ] } },
+{ "type": "Feature", "properties": { "agency": "mb", "firename": " NO045", "startdate": "2025-06-30T05:00:00Z", "hectares": 82.1, "stage_of_control": "OC", "timezone": "CDT", "response_type": " MON", "acres": 203.0, "days_burning": 156, "startdate_clean": "June 30 at 05:00 a.m. CDT" }, "geometry": { "type": "Point", "coordinates": [ -98.4453, 54.3742 ] } }
 ]
 }
