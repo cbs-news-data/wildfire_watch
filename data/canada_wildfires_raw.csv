@@ -1,7 +1,6 @@
 agency, firename, lat, lon, startdate, hectares, stage_of_control, timezone, response_type
 ab, SWF-076-2025, 54.8114, -115.41, 2025-05-25 19:13:00, 16852, UC, MST, FUL
 conus, Moon Complex - ORRSF, 42.6875, -123.915, 2025-09-04 20:25:00, 7905.6, 90% contained, GMT
-conus, Wildcat - WAOWF, 46.8453, -121.397, 2025-08-25 20:48:00, 6314.76, 95% contained, GMT
 pc, 2025PA4, 54.3558, -106.142, 2025-07-01 01:36:00, 7665, OC, CDT, FUL
 conus, Bartlett - NVWID, 41.4989, -118.867, 2025-07-04 15:58:00, 2498.45, 100% contained, GMT
 conus, Little Missouri National Grass, 46.5998, -103.479, 2025-09-23 19:36:14, 0, Prescribed, GMT
@@ -13,6 +12,4 @@ conus, Chippewa National Forest Pile, 47.5692, -94.585, 2025-11-30 13:00:00, 0, 
 nb, 70982, 47.7116, -65.2934, 2025-12-22 13:31:09, 1.8, UC, AST, FUL
 bc, K42325, 50.5537, -119.34, 2025-12-22 16:29:00, 0, UC, PDT, FUL
 ab, SWF-085-2025, 56.789, -113.838, 2025-05-27 19:16:00, 138581, UC, MDT, FUL
-ab, SWF-094-2025, 56.9977, -114.46, 2025-05-29 00:21:00, 74621, UC, MDT, FUL
-ab, SWF-092-2025, 56.3196, -115.105, 2025-05-27 22:53:00, 88302, UC, MDT, FUL
 conus, Bear Gulch - WAOLF, 47.4958, -123.302, 2025-07-07 01:00:00, 8194.37, 100% contained, GMT
