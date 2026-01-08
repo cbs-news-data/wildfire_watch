@@ -30,7 +30,7 @@ safe_download <- function(url, dest) {
 }
 
 # Download and update CalFire data
-if (safe_download("https://www.fire.ca.gov/umbraco/api/IncidentApi/GeoJsonList?inactive=true", temp_file)) {
+if (safe_download("https://incidents.fire.ca.gov/umbraco/api/IncidentApi/GeoJsonList?inactive=true", temp_file)) {
   file.rename(temp_file, original_file)
 }
 
@@ -81,7 +81,7 @@ nfis_perimeters <- st_read(perimeters_file, quiet = TRUE) %>%
 calfire_activefires <- st_read(original_file, quiet = TRUE) %>%
   mutate(state = "CA") %>%
   select(
-    name = Name,
+    name = name,
     state,
     county = County,
     location = Location,
